@@ -1,14 +1,17 @@
-#ifndef AppInfo_ H_  /* Include guard */
-#define AppInfo_H_
+#ifndef APPINFO_H
+#define APPINFO_H
 
-int AppVersion = 0.0.1;
-string AppName = "Roomba";
+#include <string.h>
+#include <iostream>
+
+
+std::string AppVersion = "0.0.1";
+std::string AppName = "Roomba";
 
 void DisplayAppInfo(void){
- 
- std::cout<<"Version":<<AppVersion<<std::endl;
- std::cout<<"Name:"<<AppName<<std::endl;
+
+ std::cout <<"Version: "<<AppVersion<<std::endl;
+ std::cout <<"Name: "<<AppName<<std::endl;
 }
 
-
-#endif // AppInfo_H_
+#endif // APPINFO_H
