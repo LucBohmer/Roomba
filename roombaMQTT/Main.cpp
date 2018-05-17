@@ -1,16 +1,17 @@
- /* Roomba project 
-  * Ivo, Lars Luc, Julian
-  *
-  *
-  */
+   /* Roomba project
+    * Ivo, Lars Luc, Julian
+    *
+    *
+    */
 
-#include AppInfo.h
+#include <AppInfo.h>
 
-int main(void){
 
-  DisplayAppInfo();     // Display print application name and version.
+  int main(void){
 
-return 0;
+    DisplayAppInfo();     // Display print application name and version.
 
-}
+  return 0;
+
+  }
 
