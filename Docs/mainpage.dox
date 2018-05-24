@@ -1,1 +1,40 @@
+/*!
 
+\mainpage Compiling and executing cpMQTT
+
+MQTT client for calculating temperature conversions:
+- Celsius to Fahrenheit
+- Fahrenheit to Celsius (not yet implemented)
+
+\section sec1 Compiling cpMQTT
+
+This application must be compiled by a makefile using the make command 
+executing \link Makefile \endlink.
+
+cpMQTT uses the Mosquitto C and C++ library, this library must be installed.
+
+\section sec2 Executing cpMQTT
+
+Use the next commands and options to start the application. Some examples:
+
+- host = 127.0.0.1 (default)
+- port = 1883 (default)
+
+\verbatim ./cpMQTT \endverbatim
+
+- host = broker.hivemq.com  
+- port = 1883 (default)
+
+\verbatim ./cpMQTT  broker.hivemq.com \endverbatim
+
+- host = RPI2000.local  
+- port = 5000
+
+\verbatim ./cpMQTT  RPI2000.local  5000 \endverbatim
+
+After starting cpMQTT will try to connect to the selected MQTT broker.
+
+The application will show a lot of logging and debug information to stdout
+and stderr. This can be switched off by changing the related code.
+
+*/
