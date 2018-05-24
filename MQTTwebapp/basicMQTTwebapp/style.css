@@ -1,0 +1,19 @@
+body {
+	font-family: arial, helvetica, sans-serif;
+	background-color: #AAAABB;
+	margin: 20px;
+}
+
+header {
+	display: block;
+	font-weight: bold;
+	background-color: #7496B9;
+	border-radius: 5px;
+}
+
+footer {
+	text-align: right;
+	font-weight: bold;
+	background-color: #7496B9;
+	border-radius: 5px;
+}
