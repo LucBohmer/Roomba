@@ -1,1 +1,16 @@
-bla
+@startuml
+title Roomba MQTT client classdiagram
+
+package "mosqpp" #DDDD00 {
+class mosquittopp 
+} 
+
+mosquittopp <|-- CommandProcessor
+CommandProcessor <|-- RoombaMQTT
+SenseHAT <|-down- RoombaSH
+
+RoombaMQTT *-left- RoombaSH
+
+SenseHAT *-up- Joystick
+SenseHAT *-up- LedMatrix
+@enduml
