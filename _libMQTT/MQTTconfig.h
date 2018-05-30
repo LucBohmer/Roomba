@@ -6,7 +6,7 @@
 const char *getHostname();
 const std::string HOSTNAME{getHostname()};
 
-const std::string GROUP{"1718"};
+const std::string GROUP{"1718sem4"};
 
 const int MQTT_KEEP_ALIVE{60};
 const int MQTT_QoS_0{0};
