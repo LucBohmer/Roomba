@@ -1,5 +1,5 @@
-#include "../parLoop.h"
-#include "../CommandProcessor.h"
+#include "../_libUtils/parLoop.h"
+#include "../_libMQTT/CommandProcessor.h"
 
 ParLoop(heartBeat(), 5);
 
