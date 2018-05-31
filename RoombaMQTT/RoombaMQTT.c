@@ -4,6 +4,7 @@
 ParLoop(heartBeat(), 5);
 
 heartBeat(){
-  std::cout << "alive" << std::endl;
+  CommandProcessor::on_connect(0);
+  CommandProcessor::publishInfo("heartbeat", "still connected");
 }
 
