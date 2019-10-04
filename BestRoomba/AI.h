@@ -11,7 +11,14 @@
 
 class AI{
 
-    
+private:
+    IOhandler IOh;
+
+    public:
+    AI(): IOh()
+    {}
+	void roombaRunning();
+	
 };
 
 
