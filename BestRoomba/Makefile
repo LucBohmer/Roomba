@@ -8,7 +8,7 @@ CXXFLAGS = -std=c++11 -Wall -Weffc++ -Os $(INCLUDING) \
                           -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8
 LDFLAGS = -lmosquittopp -L/usr/local/lib  -lm -pthread
 
-EXECUTABLE = BestroombaN.A.
+EXECUTABLE = BestRoomba
 SOURCES := ${wildcard *.cpp} \
            ${wildcard ../../_libMQTT/*.cpp}
 HEADERS := ${wildcard *.h} \
