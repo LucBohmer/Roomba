@@ -1,3 +1,8 @@
-void main(void){
-  std::cout << APPNAME_VERSION << std::endl;
+#include "BestroombaN.A"
+int main(int argc, char *argv[]){
+	showAppInfo();
+	startApplication();
+
+	return 0;
 }
+
