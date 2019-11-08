@@ -1,0 +1,63 @@
+\hypertarget{class_joystick}{}\section{Joystick Class Reference}
+\label{class_joystick}\index{Joystick@{Joystick}}
+
+
+{\ttfamily \#include $<$Joystick.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_joystick_aee767adfa96c50ebb6ca1af13ddb6187}\label{class_joystick_aee767adfa96c50ebb6ca1af13ddb6187}} 
+{\bfseries Joystick} (const \mbox{\hyperlink{class_joystick}{Joystick}} \&other)=delete
+\item 
+\mbox{\Hypertarget{class_joystick_ad5b1112a556aba93875e60e70a2f6643}\label{class_joystick_ad5b1112a556aba93875e60e70a2f6643}} 
+\mbox{\hyperlink{class_joystick}{Joystick}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_joystick}{Joystick}} \&other)=delete
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_joystick_a24b286e28a1e3ada2bc42c4b1ef16339}\label{class_joystick_a24b286e28a1e3ada2bc42c4b1ef16339}} 
+jshandler {\bfseries direction\+UP} = nullptr
+\item 
+\mbox{\Hypertarget{class_joystick_aca32b8875e35bd9af63065e0d5dfafb9}\label{class_joystick_aca32b8875e35bd9af63065e0d5dfafb9}} 
+jshandler {\bfseries direction\+D\+O\+WN} = nullptr
+\item 
+\mbox{\Hypertarget{class_joystick_a0a7fa96faefa92d2f2e09251b460b5ed}\label{class_joystick_a0a7fa96faefa92d2f2e09251b460b5ed}} 
+jshandler {\bfseries direction\+L\+E\+FT} = nullptr
+\item 
+\mbox{\Hypertarget{class_joystick_a6fcd661de0e47977ebfddd1950004bd1}\label{class_joystick_a6fcd661de0e47977ebfddd1950004bd1}} 
+jshandler {\bfseries direction\+R\+I\+G\+HT} = nullptr
+\item 
+\mbox{\Hypertarget{class_joystick_ab7b8181af7f4b77fe567c9fe2b00cf89}\label{class_joystick_ab7b8181af7f4b77fe567c9fe2b00cf89}} 
+jshandler {\bfseries direction\+P\+R\+E\+S\+S\+ED} = nullptr
+\item 
+\mbox{\Hypertarget{class_joystick_a9699d1491b81b53353a30cfc675ef188}\label{class_joystick_a9699d1491b81b53353a30cfc675ef188}} 
+jshandler {\bfseries direction\+A\+NY} = nullptr
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_joystick_a663bef4817dc643d2e54fe5083ae6177}\label{class_joystick_a663bef4817dc643d2e54fe5083ae6177}} 
+void {\bfseries stop} ()
+\item 
+\mbox{\Hypertarget{class_joystick_a5fa4903e3722b1e374db191dc75a1383}\label{class_joystick_a5fa4903e3722b1e374db191dc75a1383}} 
+void {\bfseries handle\+Events} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_joystick_a3d79892eee022da43bee5658daeec7bd}\label{class_joystick_a3d79892eee022da43bee5658daeec7bd}} 
+std\+::atomic$<$ bool $>$ {\bfseries running\+\_\+}
+\item 
+\mbox{\Hypertarget{class_joystick_a885c832d840018ec59c82f081fa18060}\label{class_joystick_a885c832d840018ec59c82f081fa18060}} 
+std\+::thread {\bfseries thread\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_joystick}{Joystick}} reacts to sense\+H\+AT joystick events received in a loop executed in a thread. Objects are not copyable by copy ctor and assignment. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib\+Sense\+H\+A\+T/Joystick.\+h\item 
+lib\+Sense\+H\+A\+T/Joystick.\+cpp\end{DoxyCompactItemize}
