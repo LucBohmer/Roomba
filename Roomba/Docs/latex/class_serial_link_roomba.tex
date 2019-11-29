@@ -1,0 +1,73 @@
+\hypertarget{class_serial_link_roomba}{}\section{Serial\+Link\+Roomba Class Reference}
+\label{class_serial_link_roomba}\index{SerialLinkRoomba@{SerialLinkRoomba}}
+
+
+\mbox{\hyperlink{class_serial_link}{Serial\+Link}} for the Best\+Roomba H\+E\+A\+D\+ER file.  
+
+
+
+
+{\ttfamily \#include $<$Serial\+Link\+Commands.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_serial_link_roomba_a536844bfafe880f566cc1f8abc93cbde}\label{class_serial_link_roomba_a536844bfafe880f566cc1f8abc93cbde}} 
+void \mbox{\hyperlink{class_serial_link_roomba_a536844bfafe880f566cc1f8abc93cbde}{start\+\_\+safe}} ()
+\begin{DoxyCompactList}\small\item\em -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- F\+U\+N\+C\+T\+I\+O\+NS -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_serial_link_roomba_ad82450a39ad2d2688f495a0798d784c0}\label{class_serial_link_roomba_ad82450a39ad2d2688f495a0798d784c0}} 
+void {\bfseries Drive} (int speedL, int speedR)
+\item 
+void \mbox{\hyperlink{class_serial_link_roomba_a8f5da920bc06886a0d02b5e1fe519fd6}{Spot}} ()
+\item 
+void \mbox{\hyperlink{class_serial_link_roomba_abb7f3a45935604914a96ea97cb7e6f59}{Clean}} ()
+\item 
+void \mbox{\hyperlink{class_serial_link_roomba_ab9d56883a0b905cc4ed67adb5bf74ff3}{Vacuum}} (bool state)
+\item 
+\mbox{\Hypertarget{class_serial_link_roomba_aeac6d1c2769d0ee7d1fd567fce6a57d0}\label{class_serial_link_roomba_aeac6d1c2769d0ee7d1fd567fce6a57d0}} 
+bool \mbox{\hyperlink{class_serial_link_roomba_aeac6d1c2769d0ee7d1fd567fce6a57d0}{is\+Collision}} ()
+\begin{DoxyCompactList}\small\item\em -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- S\+E\+N\+S\+O\+RS -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_serial_link_roomba_ae037dd67be9218ce68eedc54f9691e02}\label{class_serial_link_roomba_ae037dd67be9218ce68eedc54f9691e02}} 
+bool {\bfseries Button\+Spot} ()
+\item 
+\mbox{\Hypertarget{class_serial_link_roomba_a6045278b17864e9dfc2f2254da431159}\label{class_serial_link_roomba_a6045278b17864e9dfc2f2254da431159}} 
+void \mbox{\hyperlink{class_serial_link_roomba_a6045278b17864e9dfc2f2254da431159}{Led\+Spot\+Green}} ()
+\begin{DoxyCompactList}\small\item\em -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- L\+E\+DS -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_serial_link}{Serial\+Link}} for the Best\+Roomba H\+E\+A\+D\+ER file. 
+
+Contains default baudrate and different functions. Functions\+: start\+\_\+safe, Drive, Spot, Clean, \mbox{\hyperlink{class_vacuum}{Vacuum}}. \mbox{\hyperlink{class_sensors}{Sensors}}\+: is\+Collision, Button\+Spot. 
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_serial_link_roomba_abb7f3a45935604914a96ea97cb7e6f59}\label{class_serial_link_roomba_abb7f3a45935604914a96ea97cb7e6f59}} 
+\index{SerialLinkRoomba@{SerialLinkRoomba}!Clean@{Clean}}
+\index{Clean@{Clean}!SerialLinkRoomba@{SerialLinkRoomba}}
+\subsubsection{\texorpdfstring{Clean()}{Clean()}}
+{\footnotesize\ttfamily void Serial\+Link\+Roomba\+::\+Clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clean ON \mbox{\Hypertarget{class_serial_link_roomba_a8f5da920bc06886a0d02b5e1fe519fd6}\label{class_serial_link_roomba_a8f5da920bc06886a0d02b5e1fe519fd6}} 
+\index{SerialLinkRoomba@{SerialLinkRoomba}!Spot@{Spot}}
+\index{Spot@{Spot}!SerialLinkRoomba@{SerialLinkRoomba}}
+\subsubsection{\texorpdfstring{Spot()}{Spot()}}
+{\footnotesize\ttfamily void Serial\+Link\+Roomba\+::\+Spot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Spot ON \mbox{\Hypertarget{class_serial_link_roomba_ab9d56883a0b905cc4ed67adb5bf74ff3}\label{class_serial_link_roomba_ab9d56883a0b905cc4ed67adb5bf74ff3}} 
+\index{SerialLinkRoomba@{SerialLinkRoomba}!Vacuum@{Vacuum}}
+\index{Vacuum@{Vacuum}!SerialLinkRoomba@{SerialLinkRoomba}}
+\subsubsection{\texorpdfstring{Vacuum()}{Vacuum()}}
+{\footnotesize\ttfamily void Serial\+Link\+Roomba\+::\+Vacuum (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{class_vacuum}{Vacuum}} ON
+
+\mbox{\hyperlink{class_vacuum}{Vacuum}} O\+FF 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+lib\+Utils/\+Serial\+Link/Serial\+Link\+Commands.\+h\end{DoxyCompactItemize}

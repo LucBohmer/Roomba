@@ -1,0 +1,47 @@
+/*!
+
+\mainpage Compiling and executing BestroombaN.A.
+
+this is an image
+// @image html roomba.jpg 
+
+MQTT client for calculating temperature conversions:
+- Celsius to Fahrenheit
+- Fahrenheit to Celsius (not yet implemented)
+
+\section sec1 Compiling BestroombaN.A.
+
+This application must be compiled by a makefile using the make command 
+executing \link Makefile \endlink.
+
+BestroombaN.A. uses the Mosquitto C and C++ library, this library must be installed.
+
+\section sec2 Test
+
+
+
+\section sec3 Executing BestroombaN.A.
+
+Use the next commands and options to start the application. Some examples:
+
+- host = 127.0.0.1 (default)
+- port = 1883 (default)
+
+\verbatim ./BestroombaN.A. \endverbatim
+
+- host = broker.hivemq.com  
+- port = 1883 (default)
+
+\verbatim ./BestroombaN.A.  broker.hivemq.com \endverbatim
+
+- host = RPI2000.local  
+- port = 5000
+
+\verbatim ./BestroombaN.A.  RPI2000.local  5000 \endverbatim
+
+After starting BestroombaN.A. will try to connect to the selected MQTT broker.
+
+The application will show a lot of logging and debug information to stdout
+and stderr. This can be switched off by changing the related code.
+
+*/

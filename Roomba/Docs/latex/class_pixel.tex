@@ -1,0 +1,71 @@
+\hypertarget{class_pixel}{}\section{Pixel Class Reference}
+\label{class_pixel}\index{Pixel@{Pixel}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pixel_ac2ab5194684b31a50d429b26a0569ed9}\label{class_pixel_ac2ab5194684b31a50d429b26a0569ed9}} 
+enum {\bfseries R\+GB} \{ {\bfseries R}, 
+{\bfseries G}, 
+{\bfseries B}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pixel_acfc5df218e6b318edcb09cdf6727c529}\label{class_pixel_acfc5df218e6b318edcb09cdf6727c529}} 
+{\bfseries Pixel} (uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+\item 
+\mbox{\Hypertarget{class_pixel_a787fa2f52c2c61b3ad51a0ffe80b6a25}\label{class_pixel_a787fa2f52c2c61b3ad51a0ffe80b6a25}} 
+{\bfseries Pixel} (const \mbox{\hyperlink{class_pixel}{Pixel}} \&other)=default
+\item 
+\mbox{\Hypertarget{class_pixel_ac00753b6afb5bf23405c18f1be0ba7b8}\label{class_pixel_ac00753b6afb5bf23405c18f1be0ba7b8}} 
+\mbox{\hyperlink{class_pixel}{Pixel}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_pixel}{Pixel}} \&other)=default
+\item 
+\mbox{\Hypertarget{class_pixel_a567af5d1018e23555f2a27885f2cb5ca}\label{class_pixel_a567af5d1018e23555f2a27885f2cb5ca}} 
+uint8\+\_\+t {\bfseries operator\mbox{[}$\,$\mbox{]}} (const R\+GB \&c) const
+\item 
+\mbox{\Hypertarget{class_pixel_aee26e313f33828aad54775818acb7f4e}\label{class_pixel_aee26e313f33828aad54775818acb7f4e}} 
+uint8\+\_\+t \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const R\+GB \&c)
+\item 
+\mbox{\Hypertarget{class_pixel_ab132854e665ea7526cfd4ecca1654d2b}\label{class_pixel_ab132854e665ea7526cfd4ecca1654d2b}} 
+uint16\+\_\+t {\bfseries packed} () const
+\item 
+\mbox{\Hypertarget{class_pixel_a1159eae28181f9bd41ac10833122a7d2}\label{class_pixel_a1159eae28181f9bd41ac10833122a7d2}} 
+void {\bfseries invert} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pixel_a0873aef3100f5b2400ee7ca185bf263a}\label{class_pixel_a0873aef3100f5b2400ee7ca185bf263a}} 
+static const \mbox{\hyperlink{class_pixel}{Pixel}} {\bfseries R\+ED} \{255, 0, 0\}
+\item 
+\mbox{\Hypertarget{class_pixel_af1e95f87b82dedb916c81f427b3eb68a}\label{class_pixel_af1e95f87b82dedb916c81f427b3eb68a}} 
+static const \mbox{\hyperlink{class_pixel}{Pixel}} {\bfseries G\+R\+E\+EN} \{0, 255, 0\}
+\item 
+\mbox{\Hypertarget{class_pixel_a64e919862b4e618715e6d6dba7671112}\label{class_pixel_a64e919862b4e618715e6d6dba7671112}} 
+static const \mbox{\hyperlink{class_pixel}{Pixel}} {\bfseries B\+L\+UE} \{0, 0, 255\}
+\item 
+\mbox{\Hypertarget{class_pixel_a12c08beec64c8d57bdd9ef3b49244aa3}\label{class_pixel_a12c08beec64c8d57bdd9ef3b49244aa3}} 
+static const \mbox{\hyperlink{class_pixel}{Pixel}} {\bfseries W\+H\+I\+TE} \{255, 255, 255\}
+\item 
+\mbox{\Hypertarget{class_pixel_a67edde6c97818a595235295f750b50fd}\label{class_pixel_a67edde6c97818a595235295f750b50fd}} 
+static const \mbox{\hyperlink{class_pixel}{Pixel}} {\bfseries G\+R\+EY} \{128, 128, 128\}
+\item 
+\mbox{\Hypertarget{class_pixel_a77c8aab7dad0995df6fdc8ccf65e92ee}\label{class_pixel_a77c8aab7dad0995df6fdc8ccf65e92ee}} 
+static const \mbox{\hyperlink{class_pixel}{Pixel}} {\bfseries B\+L\+A\+NK} \{0, 0, 0\}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pixel_aacd4ab1e37e7b6507b3580d2a3cd0fd9}\label{class_pixel_aacd4ab1e37e7b6507b3580d2a3cd0fd9}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_pixel}{Pixel}} \&lhs, const \mbox{\hyperlink{class_pixel}{Pixel}} \&rhs)
+\item 
+\mbox{\Hypertarget{class_pixel_a96c765b304a1ef8aad3e454b02d21de5}\label{class_pixel_a96c765b304a1ef8aad3e454b02d21de5}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_pixel}{Pixel}} \&lhs, const \mbox{\hyperlink{class_pixel}{Pixel}} \&rhs)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib\+Sense\+H\+A\+T/Pixel.\+h\item 
+lib\+Sense\+H\+A\+T/Pixel.\+cpp\end{DoxyCompactItemize}

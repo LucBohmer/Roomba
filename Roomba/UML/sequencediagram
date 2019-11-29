@@ -1,0 +1,40 @@
+@startuml
+
+title MQTT QoS levels\n
+
+== QoS0: fire and forget, most unreliable\n \
+doesn't survive failures, never duplicated ==
+"Publisher" -> "Broker" : publish(topic, msg, QoS=0)
+"Broker" -> "Subscriber" : publish(topic, msg)
+"Publisher" -> "Publisher" : delete msg
+
+== QoS1: at least once\n \
+survives connection loss, can be duplicated ==
+"Publisher" -> "Publisher" : store msg
+"Publisher" -> "Broker" : publish(topic, msg, QoS=1)
+"Broker" --> "Broker" : store msg
+"Broker" -> "Subscriber" : publish(topic, msg)
+"Broker" --> "Broker" : delete msg
+"Broker" --> "Publisher" : PUBACK
+"Publisher" --> "Publisher" : delete msg
+
+== QoS2: only once, slowest\n \
+survives connection loss, never duplicated ==
+"Publisher" -> "Publisher" : store msg
+"Publisher" -> "Broker" : publish(topic, msg, QoS=2)
+"Broker" --> "Broker" : store msg
+"Broker" -> "Subscriber" : publish(topic, msg)
+"Broker"--> "Publisher" : PUBREC
+"Publisher" --> "Broker" : PUBREL
+"Broker" --> "Broker" : delete msg
+"Broker" --> "Publisher" : PUBCOMP
+"Publisher" --> "Publisher" : delete msg
+
+== Overall QoS ==
+note over Publisher, Subscriber
+        The overall QoS is always equal to the lowest of the
+        publish or subscribe.
+end note
+
+@enduml
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MQTT</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- contains the site styles -->
+
+  <meta charset="UTF-8">
+  <meta name="description" content="BestroombaN.A webserver">
+  <meta name="keywords" content="bestroombaN.A, HAN">
+  <meta name="author" content="Lars Hunneman, Ivo Ebbers,Luc Böhmer">
+
+  <!-- Include JQuery library from CDN -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <!-- Include Paho JavaScript MQTT Client from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+
+  <script src="mqtt_functions.js"></script>
+</head>
+
+<body onload="initVars();">
+  <div class="content">
+    <a href="index.html">
+    
+      <!-- Place a image -->
+    </a>
+
+    <ul>
+      <li>
+        <a href="mqqt.html">Home</a>
+      </li>
+      <!-- This is a bar -->
+      <li>
+        <a href="doxygen/index.html">Doxygen</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      </li>	
+      <!-- add in every page this line-->
+    </ul>
+    <hr>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="txt_MQTT_Broker_URL" class="col-sm-2 control-label">WebSocket MQTT Broker URL:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="txt_MQTT_Broker_URL">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="txt_MQTT_Client_ID" class="col-sm-2 control-label">MQTT Client ID:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="txt_MQTT_Client_ID">
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-success col-sm-4" id="btn_Connect_to_Broker" onclick="mqtt_Connect_with_Broker();">Connect</button>
+        </div>
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="txt_MQTT_topicroot" class="col-sm-2 control-label">MQTT topic root:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="txt_MQTT_topicroot">
+        </div>
+      </div>
+      <hr>
+    </form>
+    
+     <!-- <section id="pubsub" class="panel-body">
+         <h2>Publishing and subscribing</h2>
+         <p>
+            <input disabled type="button" class="btn btn-success" id="button1on" onclick='led("green", "1");' value=" on  " />
+            <input type="button" class="btn btn-danger" disabled id="button1off" onclick='led("green", "0");' value=" off " /> &rarr; Broker &rarr;
+            <font id="ledgreenO" size='6' bgcolor='grey' color='green'>O </font>
+         </p>
+         <p>
+            <input type="button" class="btn btn-success" id="button2on" onclick='led("yellow", "1");' value=" on  " />
+            <input type="button" class="btn btn-danger" id="button2off" onclick='led("yellow", "0");' value=" off " /> &rarr; Broker &rarr;
+            <font id="ledyellowO" size='6' bgcolor='grey' color='yellow'> O </font>
+         </p>
+         <p>
+            <input type="button" class="btn btn-success" id="button3on" onclick='led("red", "1");' value=" on  " />
+            <input type="button" class="btn btn-danger" id="button3off" onclick='led("red", "0");' value=" off " /> &rarr; Broker &rarr;
+            <font id="ledredO" size='6' bgcolor='grey' color='red'> O </font>
+         </p>
+         <p>
+            Broker &rarr; Temperature = &nbsp;
+            <textarea name="outputArea1" id="outputArea1" rows=1 cols=5 onClick="this.select();" readonly="yes">???</textarea>
+         </p>
+         <p>
+            Broker &rarr; &nbsp; &nbsp; &nbsp; Humidity = &nbsp;
+            <textarea name="outputArea2" id="outputArea2" rows=1 cols=5 onClick="this.select();" readonly="yes">???</textarea>
+         </p>
+      </section> -->
+
+
+    <h2>ROOMBA buttons</h2>
+    <p>
+        <button type="button" class="btn btn-success" id="CLEAN" onclick='publish("clean", "1");' value=" CLEAN " />CLEAN</button>
+        <!--<button type="button" class="btn btn-danger" id="CLEANoff" onclick='publish("clean", "0");' value=" CLEAN off " />CLEAN off</button>-->
+
+        <button type="button" class="btn btn-success" id="DOCK" onclick='publish("dock", "1");' value=" DOCK " />DOCK</button>
+        <!--<button type="button" class="btn btn-danger" id="DOCKoff" onclick='publish("dock", "0");' value=" DOCK off " />DOCK off</button>-->
+
+        <button type="button" class="btn btn-success" id="SPOT" onclick='publish("spot", "1");' value=" SPOT " />SPOT</button>
+        <!--<button type="button" class="btn btn-danger" id="SPOToff" onclick='publish("spot", "0");' value=" SPOT off " />SPOT off</button>-->
+
+       <!-- <button type="button" class="btn btn-success" id="LEDon" onclick='publishRPI("MSH/msh/command", "setPixel 1 1 255 255 255");' value=" LED on " />LED on</button>
+        <button type="button" class="btn btn-danger" id="LEDoff" onclick='publishRPI("MSH/msh/command", "setPixel 1 1 0 0 0");' value=" LED off " />LED off</button>-->
+
+        
+      <!--<button id="CLEAN">CLEAN</button>
+      <button id="DOCK">DOCK</button>
+      <button id="SPOT">SPOT</button>-->
+      <p>
+
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="txtAr_Console">Console:</label>
+            <div class="col-sm-9">
+              <textarea ype="textarea" class="form-control" rows="12" cols="100" id="txtAr_Console"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="btn_Clear_Console"></label>
+            <div class="col-sm-4">
+              <button type="button" id="btn_Clear_Console" class="btn btn-warning col-sm-4" onclick="clear_Console();">Clear console</button>
+            </div>
+          </div>
+        </form>
+
+  </div>
+
+  <p> </p>
+
+  <footer>Hogeschool Arnhem Nijmegen</footer>
+  <!-- It's a nice looking footer -->
+  </div>
+</body>
+
+</html>
