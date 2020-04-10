@@ -1,7 +1,7 @@
 #ifndef VACUUM_H
 #define VACUUM_H
 
-#include "../_libUtils/SerialLink/SerialLinkAS.h"
+#include "../_libUtils/SerialLink/SerialLink.h"
 
 /*!
 * \brief Class to controll the vacuum. Sends the right signals to the seriallink SA. Checks if the appclication is started.
@@ -11,10 +11,10 @@ class Vacuum
 {
   private:
     bool enable_;
-    SerialLinkAS &SL_;
+    SerialLink &SL_;
 
   public:
-    Vacuum(SerialLinkAS &SL) : enable_(false), SL_(SL)
+    Vacuum(SerialLink &SL) : enable_(false), SL_(SL)
     {
     }
     ~Vacuum() {}

@@ -7,7 +7,7 @@
 #include "vacuum.h"
 #include "sensors.h"
 
-#include "../_libUtils/SerialLink/SerialLinkAS.h"
+#include "../_libUtils/SerialLink/SerialLink.h"
 
 /*!
 * \brief Handels all te IO. Gets a commando from AI and controls the right acuators
@@ -17,7 +17,7 @@ class IOhandler
 {
 
   private:
-    SerialLinkAS SL;
+    SerialLink SL;
     Motor motors;
     Vacuum vacuum;
 
