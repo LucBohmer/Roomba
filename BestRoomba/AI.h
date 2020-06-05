@@ -2,6 +2,7 @@
 #define AI_H
 
 #include "../roombaIO/ioHandler.h"
+#include "../_libUtils/SerialLink/SerialLinkCommands.h"
 #include <chrono>
 #include <thread>
 
@@ -13,7 +14,7 @@ class AI{
 
 private:
     IOhandler IOh;
-
+   
     public:
     AI(): IOh()
     {}

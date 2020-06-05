@@ -1,14 +1,15 @@
 #include "AI.h"
 
+SerialLinkRoomba SLR;
 /*!
 * \brief Drives till a collision, changes direction and goes on
 */
 
 void AI::roombaRunning() 
 	{
-		IOh.start();
-		IOh.startVacuum();
-		IOh.moveForward();
+		SLR.start_safe();
+		SLR.Spot();
+		SLR.Drive(20,20);
 
 		/*
 		 * Add collission detection

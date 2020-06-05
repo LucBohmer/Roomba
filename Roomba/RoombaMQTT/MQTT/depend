@@ -1,2 +1,0 @@
-MQTTClient.o: MQTTClient.cpp MQTTClient.h
-main.o: main.cpp MQTTClient.h

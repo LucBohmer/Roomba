@@ -11,10 +11,10 @@ class Vacuum
 {
   private:
     bool enable_;
-    SerialLink &SL_;
+    SerialLinkRoomba &SL_;
 
   public:
-    Vacuum(SerialLink &SL) : enable_(false), SL_(SL)
+    Vacuum(SerialLinkRoomba &SL) : enable_(false), SL_(SL)
     {
     }
     ~Vacuum() {}

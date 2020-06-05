@@ -17,7 +17,7 @@ class IOhandler
 {
 
   private:
-    SerialLink SL;
+    SerialLinkRoomba SL;
     Motor motors;
     Vacuum vacuum;
 

@@ -4,7 +4,7 @@
 #include "../_libMQTT/MQTTconfig.h"
 #include "../_libSenseHAT/SenseHAT.h"
 #include "RandomWalk.h"
-#include "RoombaMQTTclient.h"
+#include "RoombaMQTTClient.h"
 
 #include <iostream>
 #include <iomanip>

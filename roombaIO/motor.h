@@ -1,7 +1,7 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
-#include "../_libUtils/SerialLink/SerialLink.h"
+#include "../_libUtils/SerialLink/SerialLinkCommands.h"
 
 /*!
 * \brief Class to controll the motors. Sends the right signals to the seriallink SA. Checks if the appclication is started.
@@ -13,10 +13,10 @@ class Motor
     int speedL_;
     int speedR_;
     bool enable_;
-    SerialLink& SL_;
+    SerialLinkRoomba& SL_;
 
   public:
-    Motor(SerialLink& SL) : speedL_(0),speedR_(0), enable_(false), SL_(SL)
+    Motor(SerialLinkRoomba& SL) : speedL_(0),speedR_(0), enable_(false), SL_(SL)
     {}
 
     void start()

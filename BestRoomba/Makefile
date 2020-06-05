@@ -1,5 +1,5 @@
 CCXX = g++
-INCLUDING = -I./../../_libMQTT -I./../../_libUtils -I./usr/local/boost_1_53_0/boost
+INCLUDING = -I./../_libMQTT -I./../_libUtils -I./usr/local/boost_1_53_0/boost
 CXXFLAGS = -std=c++11 -Wall -Weffc++ -Os $(INCLUDING) \
 	   -D_GLIBCXX_USE_NANOSLEEP \
                           -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 \
@@ -10,10 +10,11 @@ LDFLAGS = -lmosquittopp -L/usr/local/lib  -lm -pthread
 
 EXECUTABLE = BestRoomba
 SOURCES := ${wildcard *.cpp} \
-           ${wildcard ../../_libMQTT/*.cpp}
+           ${wildcard ../_libMQTT/*.cpp} \
+           ${wildcard ../_libUtils/*.cpp}
 HEADERS := ${wildcard *.h} \
-           ${wildcard ../../_libMQTT/*.h} \
-           ${wildcard ../../_libUtil/*.h}
+           ${wildcard ../_libMQTT/*.h} \
+           ${wildcard ../_libUtils/*.h}
 OBJECTS := ${SOURCES:.cpp=.o}
 OBJECTS := ${OBJECTS:.c=.o}
 
