@@ -1,6 +1,5 @@
 #include "AI.h"
 
-SerialLinkRoomba SLR;
 /*!
 * \brief Drives till a collision, changes direction and goes on
 */
