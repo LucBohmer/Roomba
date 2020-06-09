@@ -7,9 +7,9 @@ SerialLinkRoomba SLR;
 
 void AI::roombaRunning() 
 	{
-		SLR.start_safe();
-		SLR.Spot();
-		SLR.Drive(20,20);
+		IOh.start();
+                IOh.startVacuum();
+                IOh.moveForward();
 
 		/*
 		 * Add collission detection
