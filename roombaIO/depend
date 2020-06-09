@@ -1,0 +1,12 @@
+ioHandler.o: ioHandler.cpp ioHandler.h motor.h \
+ ../_libUtils/SerialLink/SerialLinkAS.h \
+ ../_libUtils/SerialLink/SerialLink.h \
+ ../_libUtils/SerialLink/OpenInterfaceConfig.h vacuum.h sensors.h
+main.o: main.cpp ioHandler.h motor.h \
+ ../_libUtils/SerialLink/SerialLinkAS.h \
+ ../_libUtils/SerialLink/SerialLink.h \
+ ../_libUtils/SerialLink/OpenInterfaceConfig.h vacuum.h sensors.h
+SerialLink.o: ../_libUtils/SerialLink/SerialLink.cpp \
+ ../_libUtils/SerialLink/SerialLink.h
+OpenInterfaceConfig.o: ../_libUtils/SerialLink/OpenInterfaceConfig.cpp \
+ ../_libUtils/SerialLink/OpenInterfaceConfig.h
