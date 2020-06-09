@@ -1,0 +1,32 @@
+@startuml
+Package "Roomba" {
+ folder "Motors" {
+   [Motor 1]
+     [Motor 2]
+      }
+       [Serial Adapter Roomba]
+        [Vacuum]
+	 [Battery]
+	  folder "Sensors" {
+	    [Cliff]
+	      [Bump]
+	       }
+	       }
+
+Package "RasPi" {
+ MQTT - [Command Processor]
+  [Serial Adapter Raspi]
+  }
+
+Package "Server" {
+ [MQTT Broker]
+  package "Website" {
+    [JavaScript MQTT]
+      [UI]
+       }
+       }
+
+[MQTT Broker] <--> [JavaScript MQTT]
+[MQTT Broker] <..> MQTT : WiFi
+[Serial Adapter Raspi] <..> [Serial Adapter Roomba]
+@enduml
