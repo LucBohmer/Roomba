@@ -1,19 +1,80 @@
-# C++ objects and libs
+# This file is used to ignore files which are generated
+# ----------------------------------------------------------------------------
 
-*.slo
-*.lo
-*.o
+#BestRoombaNA
+
+#directories to ignore
+build/   #directory that contains the binaries
+.vscode/ #directory containing vscode local user files
+
+*.num
+*~
+*.autosave
 *.a
-*.la
-*.lai
+*.core
+*.moc
+*.o
+*.obj
+*.orig
+*.rej
 *.so
-*.dll
-*.dylib
-
-# Qt-es
-
-*.pro.user
-*.pro.user.*
+*.so.*
+*_pch.h.cpp
+*_resource.rc
+*.qm
+.#*
+*.*#
+core
+!core/
+tags
+.DS_Store
+.directory
+*.debug
+*.prl
+*.app
 moc_*.cpp
+ui_*.h
 qrc_*.cpp
-*-build-*
+Thumbs.db
+*.res
+*.rc
+/.qmake.cache
+/.qmake.stash
+
+# qtcreator generated files
+*.pro.user*
+
+# xemacs temporary files
+*.flc
+
+# Vim temporary files
+.*.swp
+
+# Visual Studio generated files
+*.ib_pdb_index
+*.idb
+*.ilk
+*.pdb
+*.sln
+*.suo
+*.vcproj
+*vcproj.*.*.user
+*.ncb
+*.sdf
+*.opensdf
+*.vcxproj
+*vcxproj.*
+.vscode/
+
+# MinGW generated files
+*.Debug
+*.Release
+
+# Python byte code
+*.pyc
+
+# Binaries
+# --------
+*.dll
+*.exe
+

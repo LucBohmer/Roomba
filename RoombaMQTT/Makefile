@@ -8,7 +8,7 @@ CXXFLAGS = -std=c++14 -Wall -Weffc++ -Os $(INCLUDING) \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8
 LDFLAGS = -L/usr/local/lib -lmosquittopp -lm -pthread -lRTIMULib
 
-EXECUTABLE = RoombaMQTTclient
+EXECUTABLE = RoombaMQTTClient
 SOURCES := ${wildcard *.cpp} \
            ${wildcard ../_libMQTT/*.cpp} \
 			  ${wildcard ../_libUtils/*.cpp} \

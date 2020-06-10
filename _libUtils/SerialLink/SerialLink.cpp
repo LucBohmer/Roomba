@@ -1,8 +1,5 @@
 #include "SerialLink.h"
 
-std::mutex SerialLink::read_mtx_{};
-std::mutex SerialLink::write_mtx_{};
-
 /**
  *  \brief SerialLink::SerialLink starts a communication with an external device at a certain baud rate
  *  \param comPort is a std::string containing the 'name' of the port ('/dev/...')
@@ -52,6 +49,7 @@ SerialLink::~SerialLink() {
 /**
  *  \brief SerialLink::write writes data to the connected device
  *  \param dat is an array containing the data to send through the serial interface
+ *  \note This functions is not thread safe
  **/
 void SerialLink::write(const std::vector<uint8_t>& dat) {
     if (dat.empty()) {
@@ -59,7 +57,6 @@ void SerialLink::write(const std::vector<uint8_t>& dat) {
         return;
     }
     try {
-        std::lock_guard<std::mutex> lock{write_mtx_};
         boost::asio::write(port_, boost::asio::buffer(dat));
         //port_.write_some(boost::asio::buffer(dat));
     }
@@ -70,23 +67,32 @@ void SerialLink::write(const std::vector<uint8_t>& dat) {
 
 /**
  *  \brief SerialLink::read reads data from the serial devie
- *  \param dat is a vector that will be used to store the data
  *  \param read_size is of type size_t and determines the size of the data to be read
+ *  \return std::vector<uint8_t> that contains the received data
+ *  \note This function is not thread safe
  **/
-void SerialLink::read(std::vector<uint8_t>& dat, const size_t read_size) {
+std::vector<uint8_t> SerialLink::read(const size_t read_size) {
+    std::vector<uint8_t> dat;
     try {
         dat.resize(read_size);
-        std::lock_guard<std::mutex> lock{read_mtx_};
         boost::asio::read(port_, boost::asio::buffer(dat, read_size));
         //port_.read_some(boost::asio::buffer(dat, read_size));
     }
     catch(const std::exception& e) {
         std::cerr << "ERROR: " << e.what() << '\n';
     }
+
+    return dat;
 }
 
-void SerialLink::readWrite(const std::vector<uint8_t>& data_out, std::vector<uint8_t>& data_in, const size_t read_size) {
+/**
+ *  \brief SerialLink::writeRead writes data to the Roomba and waits for a reply
+ *  \param data_out is of type std::vector<uint8_t> and contains the data to be send to the Roomba
+ *  \param read_size is of type size_t and indicates the size of the data that the Roomba will send back (see the Datasheet for the lengths)
+ *  \return std::vector<uint8_t> which contains the received data
+ *  \note This functions is not thread safe
+ **/
+std::vector<uint8_t> SerialLink::writeRead(const std::vector<uint8_t>& data_out, const size_t read_size) {
     write(data_out);
-    read(data_in, read_size);
+    return read(read_size);
 }
-

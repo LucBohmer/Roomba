@@ -3,17 +3,12 @@
 
 #include <atomic>
 #include <chrono>
-#include <functional>
 #include <iostream>
 #include <thread>
 
 using namespace std::chrono_literals;
 using callbackFunction_t = std::function<void()>;
 
-/// Utility class for provinding a loop executing a callback function #cbf
-/// in a thread. After executing this function this thread will sleep for
-/// #loopTimeSeconds seconds. This class in non-copyable. RAII: the thread
-/// is created by the constructor and is stopped in the destructor # Parloop.
 class ParLoop
 {
 public:

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <unistd.h>
 #include "MQTTClient.h"
+#include "../_libUtils/ParLoop.h"
+#include "../_libMQTT/CommandProcessor.h"
 
 int main(int argc, char* argv[])
 {
@@ -9,11 +11,11 @@ int main(int argc, char* argv[])
         return 0;
     }
 
-    MQTTClient cli("Roomba", "roomba/beat", argv[1], atoi(argv[2]));
+    ParLoop(heartBeat(), 5);
 
-    while(1){
-        usleep(2*1000000);
-        cli.send_message("heartbeat");
-    }
+    heartBeat(){
+    CommandProcessor::on_connect(0);
+    CommandProcessor::publishInfo("heartbeat", "still connected");
+}
     return 0;
 }

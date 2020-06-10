@@ -1,0 +1,2 @@
+# ignore doxygen output, build locally using: doxygen Doxyfile
+DoxygenOutput/
