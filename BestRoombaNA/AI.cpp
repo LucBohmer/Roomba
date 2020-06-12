@@ -1,10 +1,7 @@
 #include "AI.h"
 #include "BestRoombaNA.h"
 
-/*!
-* \brief drives till a collision , turns around and repeats
-*/
-
+// drives till a collision , turns around and repeats
 void AI::startup()
 {
     IOh.start();

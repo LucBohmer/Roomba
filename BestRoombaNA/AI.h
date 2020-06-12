@@ -5,10 +5,7 @@
 #include <chrono>
 #include <thread>
 
-/*!
-* \brief AI holds the cleaning stratagy. holds diffecent programms 
-*/
-
+// AI holds the cleaning stratagy. holds diffecent programms 
 class AI{
 
     private:
@@ -19,11 +16,5 @@ class AI{
     {}
     void startup();
 };
-
-
-
-
-
-
 
 #endif

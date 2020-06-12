@@ -3,10 +3,7 @@
 
 #include "../BestRoombaNA/SerialLinkAS.h"
 
-/*!
-* \brief Class to controll the vacuum. Sends the right signals to the seriallink SA. Checks if the appclication is started.
-*/
-
+//Class to controll the vacuum. Sends the right signals to the seriallink SA. Checks if the appclication is started.
 class Vacuum
 {
   private:
@@ -39,5 +36,4 @@ class Vacuum
         }
     }
 };
-
 #endif

@@ -3,10 +3,7 @@
 
 #include "../BestRoombaNA/SerialLinkAS.h"
 
-/*!
-* \brief Class to controll the motors. Sends the right signals to the seriallink SA. Checks if the appclication is started.
-*/
-
+// Class to controll the motors. Sends the right signals to the seriallink SA. Checks if the appclication is started.
 class Motor
 {
   private:
@@ -42,5 +39,4 @@ class Motor
         }
     }
 };
-
 #endif

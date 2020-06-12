@@ -8,7 +8,6 @@
 *\brief Contains default baudrate and different functions.
 *\brief Functions: start_safe, Drive, Spot, Clean, Vacuum.
 *\brief Sensors: isCollision, ButtonSpot.
-*\param value
 */
 class SerialLinkAS
 {
@@ -21,6 +20,7 @@ class SerialLinkAS
 ///----------------------- FUNCTIES -----------------------------
     void start_safe()
     {
+        std::cout<<"hij komt hier"<<std::endl;
         sl.write(startSafe());
     }
 

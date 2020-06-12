@@ -2,20 +2,14 @@
 #ifndef IOHANDLER_H
 #define IOHANDLER_H
 
-
 #include "motor.h"
 #include "vacuum.h"
 #include "sensors.h"
-
 #include "../BestRoombaNA/SerialLinkAS.h"
 
-/*!
-* \brief Handels all te IO. Gets a commando from AI and controls the right acuators
-*/
-
+// Handels all te IO. Gets a commando from AI and controls the right acuators
 class IOhandler
 {
-
   private:
     SerialLinkAS SL;
     Motor motors;
@@ -25,7 +19,6 @@ class IOhandler
     IOhandler():SL(), motors(SL), vacuum(SL)
     {
     }
-
     void start();
     void stop();
     void moveForward();
@@ -37,7 +30,5 @@ class IOhandler
     void stopVacuum();
     bool isCollision();
     bool isButtonSpot();
-
 };
-
 #endif 
