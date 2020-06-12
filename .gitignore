@@ -78,3 +78,8 @@ Thumbs.db
 *.dll
 *.exe
 
+#depend file
+depend
+
+#executable
+BestRoombaNA
