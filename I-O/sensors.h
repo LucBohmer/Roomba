@@ -1,7 +1,7 @@
 #ifndef SENSOR_H
 #define SENSOR_H
 
-#include "../_libUtils/SerialLink/SerialLinkAS.h"
+#include "../BestRoombaNA/SerialLinkAS.h"
 
 /*!
 * \brief Needs to be implemented !!!

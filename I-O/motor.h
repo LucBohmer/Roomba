@@ -1,7 +1,7 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
-#include "../_libUtils/SerialLink/SerialLinkAS.h"
+#include "../BestRoombaNA/SerialLinkAS.h"
 
 /*!
 * \brief Class to controll the motors. Sends the right signals to the seriallink SA. Checks if the appclication is started.
