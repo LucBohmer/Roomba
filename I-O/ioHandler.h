@@ -5,13 +5,13 @@
 #include "motor.h"
 #include "vacuum.h"
 #include "sensors.h"
-#include "../BestRoombaNA/SerialLinkAS.h"
+#include "../BestRoombaNA/SerialCommand.h"
 
 // Handels all te IO. Gets a commando from AI and controls the right acuators
 class IOhandler
 {
   private:
-    SerialLinkAS SL;
+    SerialCommand SL;
     Motor motors;
     Vacuum vacuum;
 

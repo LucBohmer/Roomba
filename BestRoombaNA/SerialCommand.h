@@ -1,21 +1,21 @@
-#ifndef SERIALLINKAS_H
-#define SERIALLINKAS_H
+#ifndef SERIALCOMMAND_H
+#define SERIALCOMMAND_H
 #include "../_libUtils/SerialLink/SerialLink.h"
 #include "../_libUtils/SerialLink/OpenInterfaceConfig.h"
 
 /*!
-*\brief SerialLink for the BestRoomba HEADER file.
+*\brief Command -> Seriele Communication for the BestRoomba HEADER file.
 *\brief Contains default baudrate and different functions.
 *\brief Functions: start_safe, Drive, Spot, Clean, Vacuum.
 *\brief Sensors: isCollision, ButtonSpot.
 */
-class SerialLinkAS
+class SerialCommand
 {
   private:
   SerialLink sl{"/dev/ttyUSB0", static_cast<unsigned int>(Baud::ROOMBA_DEFAULT)};
 
   public:
-    SerialLinkAS() {}
+    SerialCommand() {}
 
 ///----------------------- FUNCTIES -----------------------------
     void start_safe()
@@ -68,4 +68,4 @@ class SerialLinkAS
         sl.write({139, 2, 0, 255});
     }
 };
-#endif
+#endif 

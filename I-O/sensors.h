@@ -1,15 +1,15 @@
 #ifndef SENSOR_H
 #define SENSOR_H
 
-#include "../BestRoombaNA/SerialLinkAS.h"
+#include "../BestRoombaNA/SerialCommand.h"
 
 class Sensors
 {
 private:
-SerialLinkAS& SL_;
+SerialCommand& SL_;
 
 public:
-Sensors(SerialLinkAS& SL): SL_(SL)
+Sensors(SerialCommand& SL): SL_(SL)
 {}
 
 };

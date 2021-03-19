@@ -1,17 +1,17 @@
 #ifndef VACUUM_H
 #define VACUUM_H
 
-#include "../BestRoombaNA/SerialLinkAS.h"
+#include "../BestRoombaNA/SerialCommand.h"
 
 //Class to controll the vacuum. Sends the right signals to the seriallink SA. Checks if the appclication is started.
 class Vacuum
 {
   private:
     bool enable_;
-    SerialLinkAS &SL_;
+    SerialCommand &SL_;
 
   public:
-    Vacuum(SerialLinkAS &SL) : enable_(false), SL_(SL)
+    Vacuum(SerialCommand &SL) : enable_(false), SL_(SL)
     {
     }
     ~Vacuum() {}

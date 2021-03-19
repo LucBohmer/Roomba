@@ -1,7 +1,7 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
-#include "../BestRoombaNA/SerialLinkAS.h"
+#include "../BestRoombaNA/SerialCommand.h"
 
 // Class to controll the motors. Sends the right signals to the seriallink SA. Checks if the appclication is started.
 class Motor
@@ -10,10 +10,10 @@ class Motor
     int speedL_;
     int speedR_;
     bool enable_;
-    SerialLinkAS& SL_;
+    SerialCommand& SL_;
 
   public:
-    Motor(SerialLinkAS& SL) : speedL_(0),speedR_(0), enable_(false), SL_(SL)
+    Motor(SerialCommand& SL) : speedL_(0),speedR_(0), enable_(false), SL_(SL)
     {}
 
     void start()
