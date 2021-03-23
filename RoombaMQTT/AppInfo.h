@@ -1,7 +1,7 @@
 #ifndef APPINFO_H
 #define APPINFO_H
 
-#define APPNAME "Aspirateur"
+#define APPNAME "BestRoombaNA"
 
 #define MAJOR_VERSION "0"
 #define MINOR_VERSION "4"

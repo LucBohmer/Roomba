@@ -42,8 +42,8 @@ void CommandProcessor::on_connect(int rc)
 
 void CommandProcessor::on_log(int level, const char *str)
 {
-   //std::cerr << "---- # log CommandProcessor " << level << ": " << str
-   //          << std::endl;
+   std::cerr << "---- # log CommandProcessor " << level << ": " << str
+             << std::endl;
 }
 
 void CommandProcessor::registerCommand(const std::string& command,

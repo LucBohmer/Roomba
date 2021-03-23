@@ -3,7 +3,7 @@
 #include "../_libMQTT/CommandProcessor.h"
 #include "../_libMQTT/MQTTconfig.h"
 #include "../_libSenseHAT/SenseHAT.h"
-#include "RandomWalk.h"
+//#include "RandomWalk.h"
 #include "RoombaMQTTClient.h"
 
 #include <iostream>
@@ -28,6 +28,8 @@ int main(int argc,char *argv[])
 
    string mqttBroker{MQTT_LOCAL_BROKER};
    int mqttBrokerPort{MQTT_LOCAL_BROKER_PORT};
+   cout << MQTT_LOCAL_BROKER << endl;
+   cout << MQTT_LOCAL_BROKER_PORT << endl;
 
    switch (argc)
    {
@@ -56,7 +58,7 @@ int main(int argc,char *argv[])
    {
 	   signal(SIGINT, handleSIGINT);
 
-      //cout << "-- MQTT application: " << APPNAME_VERSION << "  ";
+      cout << "-- MQTT application: " << APPNAME_VERSION << "  ";
       mosqpp::lib_init();
       mosqpp::lib_version(&majorMosquitto, &minorMosquitto, &revisionMosquitto);
       cout << "uses Mosquitto lib version "

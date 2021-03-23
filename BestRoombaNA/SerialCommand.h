@@ -21,6 +21,7 @@ class SerialCommand
     void start_safe()
     {
         std::cout<<"hij komt hier"<<std::endl;
+	std::cout<< "Roomba Default Baud: " << static_cast<unsigned int>(Baud::ROOMBA_DEFAULT) << std::endl;
         sl.write(startSafe());
     }
 
