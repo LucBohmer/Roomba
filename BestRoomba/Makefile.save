@@ -1,20 +1,19 @@
 CCXX = g++
-INCLUDING = -I./../_libMQTT -I./../_libUtils -I./usr/local/boost_1_53_0/boost
+INCLUDING = -I./../../_libMQTT -I./../../_libUtils
 CXXFLAGS = -std=c++11 -Wall -Weffc++ -Os $(INCLUDING) \
-	   -D_GLIBCXX_USE_NANOSLEEP \
-                          -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 \
-                          -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 \
-                          -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 \
-                          -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8
+			  -D_GLIBCXX_USE_NANOSLEEP \
+			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 \
+			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 \
+			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 \
+			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8
 LDFLAGS = -lmosquittopp -L/usr/local/lib  -lm -pthread
 
 EXECUTABLE = BestRoomba
 SOURCES := ${wildcard *.cpp} \
-           ${wildcard ../_libMQTT/*.cpp} \
-           ${wildcard ../_libUtils/*.cpp}
+	   ${wildcard ../../_libMQTT/*.cpp}
 HEADERS := ${wildcard *.h} \
-           ${wildcard ../_libMQTT/*.h} \
-           ${wildcard ../_libUtils/*.h}
+	   ${wildcard ../../_libMQTT/*.h} \
+	   ${wildcard ../../_libUtil/*.h}
 OBJECTS := ${SOURCES:.cpp=.o}
 OBJECTS := ${OBJECTS:.c=.o}
 
@@ -23,7 +22,7 @@ all: ${EXECUTABLE}
 
 $(EXECUTABLE): $(OBJECTS) buildnumber.num
 	$(CXX) $(CXXFLAGS) $(OBJECTS) $(LDFLAGS) -o $@
-        @echo "-- Build: " $$(cat buildnumber.num)
+	@echo "-- Build: " $$(cat buildnumber.num)
 
 # Create dependency file compiler option -MM
 depend: $(SOURCES)
@@ -34,7 +33,7 @@ depend: $(SOURCES)
 # Buildnumber in text file
 buildnumber.num: $(OBJECTS)
 	@echo
-        @echo "-- Sources: " $(SOURCES)
+	@echo "-- Sources: " $(SOURCES)
 	@echo
 	@if ! test -f buildnumber.num; then echo 0 > buildnumber.num; fi
 	@echo $$(($$(cat buildnumber.num)+1)) > buildnumber.num

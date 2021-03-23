@@ -1,7 +1,7 @@
 #ifndef SENSOR_H
 #define SENSOR_H
 
-#include "../_libUtils/SerialLink/SerialLinkAS.h"
+#include "../_libUtils/SerialLink/SerialLink.h"
 
 /*!
 * \brief Needs to be implemented !!!
@@ -10,11 +10,11 @@
 class Sensors
 {
 private:
-SerialLinkAS& SL_;
+SerialLink& SL_;
 
 
 public:
-Sensors(SerialLinkAS& SL): SL_(SL)
+Sensors(SerialLink& SL): SL_(SL)
 {}
 
 

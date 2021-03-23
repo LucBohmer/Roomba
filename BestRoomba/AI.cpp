@@ -7,8 +7,8 @@
 void AI::roombaRunning() 
 	{
 		IOh.start();
-		IOh.startVacuum();
-		IOh.moveForward();
+                IOh.startVacuum();
+                IOh.moveForward();
 
 		/*
 		 * Add collission detection

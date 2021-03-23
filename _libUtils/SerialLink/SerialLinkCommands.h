@@ -1,7 +1,7 @@
 #ifndef SERIALLINKCOMMANDS_H
 #define SERIALLINKCOMMANDS_H
 #include "SerialLink.h"
-#include "OpenInterfaceConfig.h"
+#include "InterfaceConfig.h"
 
 /*!
 *\brief SerialLink for the BestRoomba HEADER file.
@@ -21,7 +21,7 @@ class SerialLinkRoomba
 ///----------------------- FUNCTIONS -----------------------------
     void start_safe()
     {
-        sl.write(startSafe());
+        sl.write({128});
     }
 
     void Drive(int speedL, int speedR)
@@ -54,12 +54,12 @@ class SerialLinkRoomba
 ///----------------------- SENSORS ------------------------------
     bool isCollision()
     {
-        return (sl.writeRead({142, 7}, 2).at(1) >> 0) & 0x1;
+        return 0;//(sl.readWrite({142, 7}, 2).at(1) >> 0) & 0x1;
     }
 
     bool ButtonSpot()
     {
-        return (sl.writeRead({142, 2}, 2).at(1) >> 0) & 0X2;
+        return 0;//(sl.readWrite({142, 2}, 2).at(1) >> 0) & 0X2;
     }
 
 ///------------------------- LEDS --------------------------------
