@@ -1528,6 +1528,26 @@ libmosq_EXPORT int mosquitto_pub_topic_check(const char *topic);
  */
 libmosq_EXPORT int mosquitto_sub_topic_check(const char *topic);
 
+
+libmosq_EXPORT int mosquitto_subscribe_simple(
+   	struct 	mosquitto_message 	**	messages,
+   		int 		msg_count,
+   		bool 		want_retained,
+   	const 	char 	*	topic,
+   		int 		qos,
+   	const 	char 	*	host,
+   		int 		port,
+   	const 	char 	*	client_id,
+   		int 		keepalive,
+   		bool 		clean_session,
+   	const 	char 	*	username,
+   	const 	char 	*	password,
+   	const struct 	libmosquitto_will 	*	will,
+   	const struct 	libmosquitto_tls 	*	tls
+)
+
+
+
 #ifdef __cplusplus
 }
 #endif
