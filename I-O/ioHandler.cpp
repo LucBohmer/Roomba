@@ -23,7 +23,7 @@ void IOhandler::stop()
 */
 void IOhandler::moveForward()
 {
-    motors.setDrive(300, 300);
+    motors.setDrive(motorSpeed, motorSpeed);
 }
 
 /*!
@@ -31,7 +31,7 @@ void IOhandler::moveForward()
 */
 void IOhandler::moveBackward()
 {
-    motors.setDrive(-300, -300);
+    motors.setDrive(-motorSpeed, -motorSpeed);
 }
 
 /*!
@@ -39,7 +39,7 @@ void IOhandler::moveBackward()
 */
 void IOhandler::rotateLeft()
 {
-    motors.setDrive(300, -300);
+    motors.setDrive(motorSpeed, -motorSpeed);
 }
 
 /*!
@@ -47,7 +47,7 @@ void IOhandler::rotateLeft()
 */
 void IOhandler::rotateRight()
 {
-    motors.setDrive(-300, 300);
+    motors.setDrive(-motorSpeed, motorSpeed);
 }
 
 /*!
@@ -64,6 +64,7 @@ void IOhandler::standStill()
 void IOhandler::startVacuum()
 {
     vacuum.setOnOff(true);
+   // SL.LedSpotGreen();
 }
 
 /*!
@@ -99,3 +100,5 @@ bool IOhandler::isButtonSpot()
         return false;
     }
 }
+
+

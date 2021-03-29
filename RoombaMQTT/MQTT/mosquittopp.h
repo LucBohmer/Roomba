@@ -34,8 +34,8 @@ Contributors:
 #endif
 
 #include <cstdlib>
+#include "mosquitto1.h"
 #include <mosquitto.h>
-#include "/usr/local/include/mosquitto.h"
 #include <time.h>
 
 namespace mosqpp {

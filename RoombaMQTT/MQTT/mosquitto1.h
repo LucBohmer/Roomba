@@ -1544,7 +1544,27 @@ libmosq_EXPORT int mosquitto_subscribe_simple(
    	const 	char 	*	password,
    	const struct 	libmosquitto_will 	*	will,
    	const struct 	libmosquitto_tls 	*	tls
-)
+);
+
+libmosq_EXPORT int mosquitto_subscribe_callback(
+   		int 		(*callback)(struct mosquitto *, void *, const struct mosquitto_message *),
+   		void 	*	userdata,
+   	const 	char 	*	topic,
+   		int 		qos,
+   	const 	char 	*	host,
+   		int 		port,
+   	const 	char 	*	client_id,
+   		int 		keepalive,
+   		bool 		clean_session,
+   	const 	char 	*	username,
+   	const 	char 	*	password,
+   	const struct 	libmosquitto_will 	*	will,
+   	const struct 	libmosquitto_tls 	*	tls
+);
+
+libmosq_EXPORT int mosquitto_validate_utf8(const char *str, int len);
+
+libmosq_EXPORT void mosquitto_connect_with_flags_callback_set(struct mosquitto 	*mosq, void(*on_connect)(struct mosquitto *, void *, int, int));
 
 
 

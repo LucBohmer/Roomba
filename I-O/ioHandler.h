@@ -14,6 +14,7 @@ class IOhandler
     SerialCommand SL;
     Motor motors;
     Vacuum vacuum;
+    int motorSpeed = 150;
 
   public:
     IOhandler():SL(), motors(SL), vacuum(SL)

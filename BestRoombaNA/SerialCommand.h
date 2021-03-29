@@ -55,7 +55,9 @@ class SerialCommand
 ///----------------------- SENSOREN ------------------------------
     bool isCollision()
     {
-        return (sl.writeRead({142, 7}, 2).at(1) >> 0) & 0x1;
+        return (sl.writeRead({142, 1}, 10).at(1) & 0x1);
+        //return (sl.writeRead({142, 7}, 2).at(1) >> 0) & 0x1;
+
     }
 
     bool ButtonSpot()
