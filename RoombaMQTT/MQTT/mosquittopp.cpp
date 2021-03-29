@@ -17,8 +17,9 @@ Contributors:
 #include <cstdlib>
 
 #include "mosquitto1.h" 
-#include <mosquitto.h>
+//#include <mosquitto.h>
 #include <mosquittopp.h>
+#include <mosquitto.h>
 
 #define UNUSED(A) (void)(A)
 
