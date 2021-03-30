@@ -1,9 +1,9 @@
 #ifndef ROOMBAMQTTCLIENT_H
 #define ROOMBAMQTTCLIENT_H
 
-#include "../_libMQTT/CommandProcessor.h"
-#include "../_libUtils/ParLoop.h"
-#include "../_libSenseHAT/SenseHAT.h"
+#include "/home/iot/Roomba/_libMQTT/CommandProcessor.h"
+#include "/home/iot/Roomba/_libUtils/ParLoop.h"
+#include "/home/iot/Roomba/_libSenseHAT/SenseHAT.h"
 #include "json.hpp"
 
 using json = nlohmann::json;

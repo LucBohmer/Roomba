@@ -11,11 +11,13 @@ int main(int argc, char* argv[])
         return 0;
     }
 
-    ParLoop(heartBeat(), 5);
+/*    heartBeat(){
+        CommandProcessor::on_connect(0);
+        CommandProcessor::publishInfo("heartbeat", "still connected");
+    }
 
-    heartBeat(){
-    CommandProcessor::on_connect(0);
-    CommandProcessor::publishInfo("heartbeat", "still connected");
-}
+    ParLoop(heartBeat(), 5);
+*/
+
     return 0;
 }
