@@ -3,10 +3,19 @@
 
 #include "AppInfo.h"
 #include "AI.h"
+#include "/home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h"
 #include <iostream>
 #include <iomanip>
 
-void startApplication();
-void showAppInfo();
-
+class BestRoombaNA
+{
+	public:
+	BestRoombaNA();
+	void startApplication();
+	
+	private:
+	void showAppInfo();
+	AI ai{};
+	MQTTClient mqttClient;
+};
 #endif

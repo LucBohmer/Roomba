@@ -51,6 +51,89 @@ MQTTClient::MQTTClient(const std::string &appname,
     std::cerr << "Data in json format = " << jsonData_ << std::endl;
 }
 
+void MQTTClient::startClient()
+{
+	using namespace std;
+	
+   int majorMosquitto{0};
+   int minorMosquitto{0};
+   int revisionMosquitto{0};
+
+   string mqttBroker{MQTT_LOCAL_BROKER};
+   int mqttBrokerPort{MQTT_LOCAL_BROKER_PORT};
+   cout << MQTT_LOCAL_BROKER << endl;
+   cout << MQTT_LOCAL_BROKER_PORT << endl;
+
+   switch (argc)
+   {
+   case 1:
+      // Using MQTT_LOCAL_BROKER and MQTT_LOCAL_BROKER_PORT
+      break;
+   case 2:
+      // Using MQTT_LOCAL_BROKER_PORT
+      mqttBroker = string(argv[1]);
+      break;
+   case 3:
+      mqttBroker = string(argv[1]);
+      mqttBrokerPort = stoi(argv[2]);
+      break;
+   default:
+      cerr << endl
+           << "ERROR command line arguments:\n"
+              "\tsenseHAT\n"
+              "\tsenseHAT <URL broker>\n"
+              "\tsenseHAT <URL broker> <broker port>\n"
+           << endl;
+      exit(EXIT_FAILURE);
+   }
+
+	try
+   {
+	   signal(SIGINT, handleSIGINT);
+
+      cout << "-- MQTT application: " << APPNAME_VERSION << "  ";
+      mosqpp::lib_init();
+      mosqpp::lib_version(&majorMosquitto, &minorMosquitto, &revisionMosquitto);
+      cout << "uses Mosquitto lib version "
+           << majorMosquitto
+           << '.' << minorMosquitto
+           << '.' << revisionMosquitto << endl;
+
+	   MQTTClient mqttSenseHAT("MSH", "msh", mqttBroker, mqttBrokerPort);
+		mqttSenseHAT.publishInfo("main()",
+                               "--------- Hello " "APPNAME_VERSION" " ---------");
+      //RandomWalk rw{mqttSenseHAT.senseHAT_.leds};
+
+		// Checking rc for reconnection, 'clients' is an initializer_list
+	   auto clients = {static_cast<mosqpp::mosquittopp*>(&mqttSenseHAT)};
+	   cout << "-- MQTT and SenseHAT are ready" << endl;
+	   while (!receivedSIGINT)
+	   {
+		   for (auto client: clients)
+		   {
+			   int rc = client->loop();
+			   if (rc)
+			   {
+				   cerr << "-- MQTT reconnect" << endl;
+				   client->reconnect();
+			   }
+		   }
+	   }
+   }
+   catch(exception& e)
+   {
+	   cerr << "-- Exception " << e.what() << endl;
+   }
+   catch(...)
+   {
+	   cerr << "-- UNKNOWN EXCEPTION\n";
+   }
+
+   cout << "\n-- MQTT application: " << "APPNAME_VERSION" << " stopped"
+	     << endl << endl;
+   mosqpp::lib_cleanup();
+}
+
 MQTTClient::~MQTTClient()
 {
     senseHAT_.leds.clear(Pixel{50, 0, 0});

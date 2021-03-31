@@ -2,8 +2,9 @@
 
 int main(int argc, char *argv[])
 {
-    showAppInfo();
-    startApplication();
+	BestRoombaNA Roomba;
+	Roomba.startApplication();
+
 
     return 0;
 }
