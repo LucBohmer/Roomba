@@ -66,7 +66,7 @@ protected:
   void setPixel(const parameters_t &commandParameters);
   void getPixel(const parameters_t &commandParameters);
   void invertPixel(const parameters_t &commandParameters);
-  void cylonPar(void );
+  void cylonPar(const parameters_t &commandParameters);
   void cylon(const parameters_t &commandParameters);
   void sendHeartbeat();
   void handleSensorData();
