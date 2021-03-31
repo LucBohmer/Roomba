@@ -1,9 +1,0 @@
-ioHandler.o: ioHandler.cpp ioHandler.h motor.h \
- ../BestRoombaNA/SerialCommand.h \
- ../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
- ../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h vacuum.h \
- sensors.h
-SerialLink.o: ../_libUtils/SerialLink/SerialLink.cpp \
- ../_libUtils/SerialLink/SerialLink.h
-OpenInterfaceConfig.o: ../_libUtils/SerialLink/OpenInterfaceConfig.cpp \
- ../_libUtils/SerialLink/OpenInterfaceConfig.h

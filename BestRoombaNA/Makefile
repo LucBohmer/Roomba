@@ -1,5 +1,5 @@
 CXX = g++
-INCLUDING = #-I../_libMQTT -I../RoombaMQTT -I../_libUtils/SerialLink
+INCLUDING = #-I/home/iot/Roomba/_libMQTT -I/home/iot/Roomba/RoombaMQTT -I/home/iot/Roomba/_libUtils/SerialLink
 #INCLUDING = SerialCommand.h
 CXXFLAGS = -std=c++11 -Wall -Wextra -Weffc++ -Os $(INCLUDING) \
            -D_GLIBCXX_USE_NANOSLEEP \
@@ -11,15 +11,15 @@ LDFLAGS = -L/usr/local/lib -pthread -lboost_system
 
 EXECUTABLE = BestRoombaNA
 SOURCES = ${wildcard *.cpp} \
-		  ${wildcard ../_libUtils/SerialLink/*.cpp} \
-		  ${wildcard ../I-O/*.cpp} \
-          ${wildcard ../_libMQTT/*.cpp}   \
-          ${wildcard ../RoombaMQTT/*.cpp} 
+		  ${wildcard /home/iot/Roomba/_libUtils/SerialLink/*.cpp} \
+		  ${wildcard /home/iot/Roomba/I-O/*.cpp} \
+          ${wildcard /home/iot/Roomba/_libMQTT/*.cpp}   \
+          ${wildcard /home/iot/Roomba/RoombaMQTT/*.cpp} 
 HEADERS = ${wildcard *.h} \
-		  ${wildcard ../_libUtils/SerialLink/*.h} \
-		  ${wildcard ../I-O/*.h} \
-          ${wildcard ../_libMQTT/*.h}  \
-          ${wildcard ../RoombaMQTT/*.h}
+		  ${wildcard /home/iot/Roomba/_libUtils/SerialLink/*.h} \
+		  ${wildcard /home/iot/Roomba/I-O/*.h} \
+          ${wildcard /home/iot/Roomba/_libMQTT/*.h}  \
+          ${wildcard /home/iot/Roomba/RoombaMQTT/*.h}
 OBJECTS = ${SOURCES:.cpp=.o}
 
 .PHONY: all

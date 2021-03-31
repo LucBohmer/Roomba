@@ -2,7 +2,7 @@
 #define COMMANDPROCESSOR_H
 
 #include "Topic.h"
-#include "mosquittopp.h"
+#include <mosquittopp.h>
 #include <functional>
 #include <map>
 #include <string>
