@@ -18,12 +18,12 @@ MQTTClient::MQTTClient(const std::string &appname,
                        const std::string &host,
                        int port) : CommandProcessor(appname, clientname, host, port),
                                    senseHAT_{},
+								   jsonData_{},
                                    mqttID_{HOSTNAME + appname + clientname},
                                    x_{0},
                                    y_{0},
                                    publishSensorData_(std::bind(&MQTTClient::handleSensorData, this), 60),
-                                   heartbeatPar_(std::bind(&MQTTClient::sendHeartbeat, this), 10),
-                                   jsonData_{}
+                                   heartbeatPar_(std::bind(&MQTTClient::sendHeartbeat, this), 10)
 {
     std::cerr << "---- CTOR MQTTsenseHAT host = '" << host
               << "'  port = " << port
