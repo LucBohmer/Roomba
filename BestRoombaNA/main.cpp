@@ -1,8 +1,8 @@
 #include "BestRoombaNA.h"
 
-int main(int argc, char *argv[])
+int main(void)
 {
-	BestRoombaNA Roomba;
+        BestRoombaNA Roomba;
 	Roomba.startApplication();
 
 

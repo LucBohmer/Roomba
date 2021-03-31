@@ -1,7 +1,7 @@
 CXX = g++
 INCLUDING = #-I../_libMQTT -I../RoombaMQTT -I../_libUtils/SerialLink
 #INCLUDING = SerialCommand.h
-CXXFLAGS = -std=c++11 -Wall -Wextra -Weffc++ -Os $(INCLUDING) \
+CXXFLAGS = -std=c++14 -Wall -Wextra -Weffc++ -Os $(INCLUDING) \
            -D_GLIBCXX_USE_NANOSLEEP \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 \

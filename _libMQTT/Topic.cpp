@@ -27,7 +27,7 @@ Topic& Topic::add(const char* pItem)
 
 std::string Topic::operator[](const int nIndex) const
 {
-   if (nIndex < cachedSplit_.size()) {
+   if (int(nIndex) < int(cachedSplit_.size())) {
       return cachedSplit_[nIndex];
    }
    return "";

@@ -1,8 +1,8 @@
 AI.o: AI.cpp AI.h /home/iot/Roomba/I-O/ioHandler.h \
  /home/iot/Roomba/I-O/motor.h \
- /home/iot/Roomba/I-O/../BestRoombaNA/SerialCommand.h \
- /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
- /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
+ /home/iot/Roomba/BestRoombaNA/SerialCommand.h \
+ /home/iot/Roomba/_libUtils/SerialLink/SerialLink.h \
+ /home/iot/Roomba/_libUtils/SerialLink/OpenInterfaceConfig.h \
  /home/iot/Roomba/I-O/vacuum.h /home/iot/Roomba/I-O/sensors.h \
  BestRoombaNA.h AppInfo.h /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h \
  /home/iot/Roomba/_libMQTT/CommandProcessor.h \
@@ -15,9 +15,9 @@ AI.o: AI.cpp AI.h /home/iot/Roomba/I-O/ioHandler.h \
  /home/iot/Roomba/_libMQTT/MQTTconfig.h
 BestRoombaNA.o: BestRoombaNA.cpp BestRoombaNA.h AppInfo.h AI.h \
  /home/iot/Roomba/I-O/ioHandler.h /home/iot/Roomba/I-O/motor.h \
- /home/iot/Roomba/I-O/../BestRoombaNA/SerialCommand.h \
- /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
- /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
+ /home/iot/Roomba/BestRoombaNA/SerialCommand.h \
+ /home/iot/Roomba/_libUtils/SerialLink/SerialLink.h \
+ /home/iot/Roomba/_libUtils/SerialLink/OpenInterfaceConfig.h \
  /home/iot/Roomba/I-O/vacuum.h /home/iot/Roomba/I-O/sensors.h \
  /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h \
  /home/iot/Roomba/_libMQTT/CommandProcessor.h \
@@ -30,9 +30,9 @@ BestRoombaNA.o: BestRoombaNA.cpp BestRoombaNA.h AppInfo.h AI.h \
  /home/iot/Roomba/_libMQTT/MQTTconfig.h
 main.o: main.cpp BestRoombaNA.h AppInfo.h AI.h \
  /home/iot/Roomba/I-O/ioHandler.h /home/iot/Roomba/I-O/motor.h \
- /home/iot/Roomba/I-O/../BestRoombaNA/SerialCommand.h \
- /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
- /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
+ /home/iot/Roomba/BestRoombaNA/SerialCommand.h \
+ /home/iot/Roomba/_libUtils/SerialLink/SerialLink.h \
+ /home/iot/Roomba/_libUtils/SerialLink/OpenInterfaceConfig.h \
  /home/iot/Roomba/I-O/vacuum.h /home/iot/Roomba/I-O/sensors.h \
  /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h \
  /home/iot/Roomba/_libMQTT/CommandProcessor.h \
@@ -48,9 +48,9 @@ SerialLink.o: ../_libUtils/SerialLink/SerialLink.cpp \
 OpenInterfaceConfig.o: ../_libUtils/SerialLink/OpenInterfaceConfig.cpp \
  ../_libUtils/SerialLink/OpenInterfaceConfig.h
 ioHandler.o: ../I-O/ioHandler.cpp ../I-O/ioHandler.h ../I-O/motor.h \
- ../I-O/../BestRoombaNA/SerialCommand.h \
- ../I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
- ../I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
+ /home/iot/Roomba/BestRoombaNA/SerialCommand.h \
+ /home/iot/Roomba/_libUtils/SerialLink/SerialLink.h \
+ /home/iot/Roomba/_libUtils/SerialLink/OpenInterfaceConfig.h \
  ../I-O/vacuum.h ../I-O/sensors.h
 Topic.o: ../_libMQTT/Topic.cpp ../_libMQTT/Topic.h \
  ../_libMQTT/Tokenizer.h
@@ -67,7 +67,5 @@ RoombaMQTTClient.o: ../RoombaMQTT/RoombaMQTTClient.cpp \
  /home/iot/Roomba/_libSenseHAT/Joystick.h \
  /home/iot/Roomba/_libSenseHAT/LedMatrix.h ../RoombaMQTT/json.hpp \
  ../RoombaMQTT/AppInfo.h /home/iot/Roomba/_libMQTT/MQTTconfig.h \
- ../RoombaMQTT/../_libMQTT/MQTTconfig.h \
- ../RoombaMQTT/../_libUtils/ParWait.h \
- ../RoombaMQTT/../_libUtils/ParLoop.h \
- ../RoombaMQTT/../_libSenseHAT/Pixel.h
+ /home/iot/Roomba/_libUtils/ParWait.h \
+ /home/iot/Roomba/_libSenseHAT/Pixel.h
