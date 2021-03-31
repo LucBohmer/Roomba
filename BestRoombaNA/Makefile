@@ -1,8 +1,15 @@
 CXX = g++
 INCLUDING = #-I/home/iot/Roomba/_libMQTT -I/home/iot/Roomba/RoombaMQTT -I/home/iot/Roomba/_libUtils/SerialLink
 #INCLUDING = SerialCommand.h
-CXXFLAGS = -std=c++14 -Wall -Wextra -Weffc++ -Os $(INCLUDING) \
+CXXFLAGS = -std=c++14 -Wall -Wextra -Weffc++ -Wpedantic \
+           -Wcast-align -Wcast-qual -Wctor-dtor-privacy \
+           -Wdisabled-optimization -Wformat=2 -Winit-self -Wlogical-op \
+           -Wmissing-include-dirs -Wnoexcept -Wold-style-cast \
+           -Woverloaded-virtual -Wredundant-decls -Wshadow -Wsign-promo \
+           -Wstrict-null-sentinel -Wstrict-overflow=5 -Wundef -Wno-unused \
+           -Wno-variadic-macros -Wno-parentheses -fdiagnostics-show-option \
            -D_GLIBCXX_USE_NANOSLEEP \
+           -Os $(INCLUDING) \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 \
 			  -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 \
