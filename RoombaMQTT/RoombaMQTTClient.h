@@ -45,7 +45,7 @@ private:
   void data2json();
   
   volatile sig_atomic_t receivedSIGINT{false};
-  void handleSIGINT(int /* s */);
+  static void handleSIGINT(int /* s */);
 
 protected:
   const std::string mqttID_;

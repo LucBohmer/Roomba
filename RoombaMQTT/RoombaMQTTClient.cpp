@@ -3,6 +3,9 @@
 #include "../_libUtils/ParWait.h"
 #include "../_libUtils/ParLoop.h"
 #include "../_libSenseHAT/Pixel.h"
+
+#include <csignal>
+#include <iomanip>
 #include <algorithm>
 #include <functional>
 #include <iostream>
@@ -71,12 +74,12 @@ void MQTTClient::startClient()
            << '.' << minorMosquitto
            << '.' << revisionMosquitto << endl;
 
-		mqttSenseHAT.publishInfo("main()",
+      publishInfo("main()",
                                "--------- Hello " "APPNAME_VERSION" " ---------");
       //RandomWalk rw{mqttSenseHAT.senseHAT_.leds};
 
 		// Checking rc for reconnection, 'clients' is an initializer_list
-	   auto clients = {static_cast<mosqpp::mosquittopp*>(&mqttSenseHAT)};
+	   auto clients = {static_cast<mosqpp::mosquittopp*>(this)};
 	   cout << "-- MQTT and SenseHAT are ready" << endl;
 	   while (!receivedSIGINT)
 	   {
