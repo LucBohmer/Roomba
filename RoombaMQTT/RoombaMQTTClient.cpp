@@ -1,8 +1,8 @@
 #include "RoombaMQTTClient.h"
-#include "../_libMQTT/MQTTconfig.h"
-#include "../_libUtils/ParWait.h"
-#include "../_libUtils/ParLoop.h"
-#include "../_libSenseHAT/Pixel.h"
+#include "/home/iot/Roomba/_libMQTT/MQTTconfig.h"
+#include "/home/iot/Roomba/_libUtils/ParWait.h"
+#include "/home/iot/Roomba/_libUtils/ParLoop.h"
+#include "/home/iot/Roomba/_libSenseHAT/Pixel.h"
 
 #include <csignal>
 #include <iomanip>

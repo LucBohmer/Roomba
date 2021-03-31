@@ -1,7 +1,7 @@
 #ifndef SENSOR_H
 #define SENSOR_H
 
-#include "../BestRoombaNA/SerialCommand.h"
+#include "/home/iot/Roomba/BestRoombaNA/SerialCommand.h"
 
 class Sensors
 {

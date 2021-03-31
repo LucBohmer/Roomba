@@ -1,7 +1,7 @@
 #ifndef SERIALCOMMAND_H
 #define SERIALCOMMAND_H
-#include "../_libUtils/SerialLink/SerialLink.h"
-#include "../_libUtils/SerialLink/OpenInterfaceConfig.h"
+#include "/home/iot/Roomba/_libUtils/SerialLink/SerialLink.h"
+#include "/home/iot/Roomba/_libUtils/SerialLink/OpenInterfaceConfig.h"
 
 /*!
 *\brief Command -> Seriele Communication for the BestRoomba HEADER file.

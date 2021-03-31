@@ -1,7 +1,7 @@
 #ifndef VACUUM_H
 #define VACUUM_H
 
-#include "../BestRoombaNA/SerialCommand.h"
+#include "/home/iot/Roomba/BestRoombaNA/SerialCommand.h"
 
 //Class to controll the vacuum. Sends the right signals to the seriallink SA. Checks if the appclication is started.
 class Vacuum
