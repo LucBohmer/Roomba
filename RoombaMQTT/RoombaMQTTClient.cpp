@@ -59,34 +59,6 @@ void MQTTClient::startClient()
    int minorMosquitto{0};
    int revisionMosquitto{0};
 
-   string mqttBroker{MQTT_LOCAL_BROKER};
-   int mqttBrokerPort{MQTT_LOCAL_BROKER_PORT};
-   cout << MQTT_LOCAL_BROKER << endl;
-   cout << MQTT_LOCAL_BROKER_PORT << endl;
-
-   switch (argc)
-   {
-   case 1:
-      // Using MQTT_LOCAL_BROKER and MQTT_LOCAL_BROKER_PORT
-      break;
-   case 2:
-      // Using MQTT_LOCAL_BROKER_PORT
-      mqttBroker = string(argv[1]);
-      break;
-   case 3:
-      mqttBroker = string(argv[1]);
-      mqttBrokerPort = stoi(argv[2]);
-      break;
-   default:
-      cerr << endl
-           << "ERROR command line arguments:\n"
-              "\tsenseHAT\n"
-              "\tsenseHAT <URL broker>\n"
-              "\tsenseHAT <URL broker> <broker port>\n"
-           << endl;
-      exit(EXIT_FAILURE);
-   }
-
 	try
    {
 	   signal(SIGINT, handleSIGINT);
@@ -99,7 +71,6 @@ void MQTTClient::startClient()
            << '.' << minorMosquitto
            << '.' << revisionMosquitto << endl;
 
-	   MQTTClient mqttSenseHAT("MSH", "msh", mqttBroker, mqttBrokerPort);
 		mqttSenseHAT.publishInfo("main()",
                                "--------- Hello " "APPNAME_VERSION" " ---------");
       //RandomWalk rw{mqttSenseHAT.senseHAT_.leds};
