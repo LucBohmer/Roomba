@@ -47,7 +47,7 @@ function onConnect() {
       // document.getElementById("button3on").disabled = false;
       // document.getElementById("button3off").disabled = false;
       MQTT_Client.subscribe("BestRoomba/#");
-      MQTT_Client.subscribe("ESEiot/1718sem4/RPI584852/#");
+      MQTT_Client.subscribe("ESEiot/1718sem4/#");
 }
 
 // Called when the client loses its connection
