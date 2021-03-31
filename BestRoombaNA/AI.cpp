@@ -5,6 +5,8 @@
 void AI::startup()
 {
     IOh.start();
+}
+/*
     IOh.startVacuum();
     std::this_thread::sleep_for(std::chrono::seconds(5));
     IOh.stopVacuum();
@@ -35,5 +37,5 @@ void AI::startup()
         std::this_thread::sleep_for(std::chrono::milliseconds(10));
 
     }
+*/
 
-}
