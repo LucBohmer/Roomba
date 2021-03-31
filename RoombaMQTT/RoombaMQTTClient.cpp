@@ -205,7 +205,7 @@ void MQTTClient::invertPixel(const parameters_t &commandParameters)
     }
 }
 
-void MQTTClient::cylonPar(const parameters_t &commandParameters)
+void MQTTClient::cylonPar(void )
 {
     auto putDot = [this](int x, const Pixel &pixel) {
         senseHAT_.leds.setPixel(x, 3, pixel);
