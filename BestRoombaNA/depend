@@ -71,14 +71,3 @@ RoombaMQTTClient.o: ../RoombaMQTT/RoombaMQTTClient.cpp \
  ../RoombaMQTT/../_libUtils/ParWait.h \
  ../RoombaMQTT/../_libUtils/ParLoop.h \
  ../RoombaMQTT/../_libSenseHAT/Pixel.h
-main.o: ../RoombaMQTT/main.cpp ../RoombaMQTT/AppInfo.h \
- ../RoombaMQTT/../_libMQTT/CommandProcessor.h \
- ../RoombaMQTT/../_libMQTT/Topic.h ../RoombaMQTT/../_libMQTT/MQTTconfig.h \
- ../RoombaMQTT/../_libSenseHAT/SenseHAT.h \
- ../RoombaMQTT/../_libSenseHAT/Joystick.h \
- ../RoombaMQTT/../_libSenseHAT/LedMatrix.h \
- ../RoombaMQTT/RoombaMQTTClient.h \
- /home/iot/Roomba/_libMQTT/CommandProcessor.h \
- /home/iot/Roomba/_libUtils/ParLoop.h \
- /home/iot/Roomba/_libSenseHAT/SenseHAT.h ../RoombaMQTT/json.hpp \
- /home/iot/Roomba/_libMQTT/MQTTconfig.h
