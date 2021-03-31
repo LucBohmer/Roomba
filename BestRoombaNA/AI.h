@@ -1,7 +1,7 @@
 #ifndef AI_H
 #define AI_H
 
-#include "../I-O/ioHandler.h"
+#include "/home/iot/Roomba/I-O/ioHandler.h"
 #include <chrono>
 #include <thread>
 

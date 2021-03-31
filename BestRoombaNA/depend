@@ -1,9 +1,10 @@
-AI.o: AI.cpp AI.h ../I-O/ioHandler.h ../I-O/motor.h \
- ../I-O/../BestRoombaNA/SerialCommand.h \
- ../I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
- ../I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
- ../I-O/vacuum.h ../I-O/sensors.h BestRoombaNA.h AppInfo.h \
- /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h \
+AI.o: AI.cpp AI.h /home/iot/Roomba/I-O/ioHandler.h \
+ /home/iot/Roomba/I-O/motor.h \
+ /home/iot/Roomba/I-O/../BestRoombaNA/SerialCommand.h \
+ /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
+ /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
+ /home/iot/Roomba/I-O/vacuum.h /home/iot/Roomba/I-O/sensors.h \
+ BestRoombaNA.h AppInfo.h /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h \
  /home/iot/Roomba/_libMQTT/CommandProcessor.h \
  /home/iot/Roomba/_libMQTT/Topic.h /home/iot/Roomba/_libUtils/ParLoop.h \
  /home/iot/Roomba/_libSenseHAT/SenseHAT.h \
@@ -13,10 +14,11 @@ AI.o: AI.cpp AI.h ../I-O/ioHandler.h ../I-O/motor.h \
  /home/iot/Roomba/RoombaMQTT/AppInfo.h \
  /home/iot/Roomba/_libMQTT/MQTTconfig.h
 BestRoombaNA.o: BestRoombaNA.cpp BestRoombaNA.h AppInfo.h AI.h \
- ../I-O/ioHandler.h ../I-O/motor.h ../I-O/../BestRoombaNA/SerialCommand.h \
- ../I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
- ../I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
- ../I-O/vacuum.h ../I-O/sensors.h \
+ /home/iot/Roomba/I-O/ioHandler.h /home/iot/Roomba/I-O/motor.h \
+ /home/iot/Roomba/I-O/../BestRoombaNA/SerialCommand.h \
+ /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
+ /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
+ /home/iot/Roomba/I-O/vacuum.h /home/iot/Roomba/I-O/sensors.h \
  /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h \
  /home/iot/Roomba/_libMQTT/CommandProcessor.h \
  /home/iot/Roomba/_libMQTT/Topic.h /home/iot/Roomba/_libUtils/ParLoop.h \
@@ -26,11 +28,12 @@ BestRoombaNA.o: BestRoombaNA.cpp BestRoombaNA.h AppInfo.h AI.h \
  /home/iot/Roomba/RoombaMQTT/json.hpp \
  /home/iot/Roomba/RoombaMQTT/AppInfo.h \
  /home/iot/Roomba/_libMQTT/MQTTconfig.h
-main.o: main.cpp BestRoombaNA.h AppInfo.h AI.h ../I-O/ioHandler.h \
- ../I-O/motor.h ../I-O/../BestRoombaNA/SerialCommand.h \
- ../I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
- ../I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
- ../I-O/vacuum.h ../I-O/sensors.h \
+main.o: main.cpp BestRoombaNA.h AppInfo.h AI.h \
+ /home/iot/Roomba/I-O/ioHandler.h /home/iot/Roomba/I-O/motor.h \
+ /home/iot/Roomba/I-O/../BestRoombaNA/SerialCommand.h \
+ /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
+ /home/iot/Roomba/I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
+ /home/iot/Roomba/I-O/vacuum.h /home/iot/Roomba/I-O/sensors.h \
  /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h \
  /home/iot/Roomba/_libMQTT/CommandProcessor.h \
  /home/iot/Roomba/_libMQTT/Topic.h /home/iot/Roomba/_libUtils/ParLoop.h \
@@ -49,3 +52,33 @@ ioHandler.o: ../I-O/ioHandler.cpp ../I-O/ioHandler.h ../I-O/motor.h \
  ../I-O/../BestRoombaNA/../_libUtils/SerialLink/SerialLink.h \
  ../I-O/../BestRoombaNA/../_libUtils/SerialLink/OpenInterfaceConfig.h \
  ../I-O/vacuum.h ../I-O/sensors.h
+Topic.o: ../_libMQTT/Topic.cpp ../_libMQTT/Topic.h \
+ ../_libMQTT/Tokenizer.h
+Tokenizer.o: ../_libMQTT/Tokenizer.cpp ../_libMQTT/Tokenizer.h
+CommandProcessor.o: ../_libMQTT/CommandProcessor.cpp \
+ ../_libMQTT/CommandProcessor.h ../_libMQTT/Topic.h \
+ ../_libMQTT/MQTTconfig.h ../_libMQTT/Tokenizer.h
+MQTTconfig.o: ../_libMQTT/MQTTconfig.cpp ../_libMQTT/MQTTconfig.h
+RoombaMQTTClient.o: ../RoombaMQTT/RoombaMQTTClient.cpp \
+ ../RoombaMQTT/RoombaMQTTClient.h \
+ /home/iot/Roomba/_libMQTT/CommandProcessor.h \
+ /home/iot/Roomba/_libMQTT/Topic.h /home/iot/Roomba/_libUtils/ParLoop.h \
+ /home/iot/Roomba/_libSenseHAT/SenseHAT.h \
+ /home/iot/Roomba/_libSenseHAT/Joystick.h \
+ /home/iot/Roomba/_libSenseHAT/LedMatrix.h ../RoombaMQTT/json.hpp \
+ ../RoombaMQTT/AppInfo.h /home/iot/Roomba/_libMQTT/MQTTconfig.h \
+ ../RoombaMQTT/../_libMQTT/MQTTconfig.h \
+ ../RoombaMQTT/../_libUtils/ParWait.h \
+ ../RoombaMQTT/../_libUtils/ParLoop.h \
+ ../RoombaMQTT/../_libSenseHAT/Pixel.h
+main.o: ../RoombaMQTT/main.cpp ../RoombaMQTT/AppInfo.h \
+ ../RoombaMQTT/../_libMQTT/CommandProcessor.h \
+ ../RoombaMQTT/../_libMQTT/Topic.h ../RoombaMQTT/../_libMQTT/MQTTconfig.h \
+ ../RoombaMQTT/../_libSenseHAT/SenseHAT.h \
+ ../RoombaMQTT/../_libSenseHAT/Joystick.h \
+ ../RoombaMQTT/../_libSenseHAT/LedMatrix.h \
+ ../RoombaMQTT/RoombaMQTTClient.h \
+ /home/iot/Roomba/_libMQTT/CommandProcessor.h \
+ /home/iot/Roomba/_libUtils/ParLoop.h \
+ /home/iot/Roomba/_libSenseHAT/SenseHAT.h ../RoombaMQTT/json.hpp \
+ /home/iot/Roomba/_libMQTT/MQTTconfig.h

@@ -12,14 +12,14 @@ LDFLAGS = -L/usr/local/lib -pthread -lboost_system
 EXECUTABLE = BestRoombaNA
 SOURCES = ${wildcard *.cpp} \
 		  ${wildcard ../_libUtils/SerialLink/*.cpp} \
-		  ${wildcard ../I-O/*.cpp}
-#          ${wildcard ../_libMQTT/*.cpp}
-#          ${wildcard ../RoombaMQTT/*.cpp}
+		  ${wildcard ../I-O/*.cpp} \
+          ${wildcard ../_libMQTT/*.cpp}   \
+          ${wildcard ../RoombaMQTT/*.cpp} 
 HEADERS = ${wildcard *.h} \
 		  ${wildcard ../_libUtils/SerialLink/*.h} \
-		  ${wildcard ../I-O/*.h}
-#          ${wildcard ../_libMQTT/*.h} 
-#          ${wildcard ../RoombaMQTT/*.h}
+		  ${wildcard ../I-O/*.h} \
+          ${wildcard ../_libMQTT/*.h}  \
+          ${wildcard ../RoombaMQTT/*.h}
 OBJECTS = ${SOURCES:.cpp=.o}
 
 .PHONY: all

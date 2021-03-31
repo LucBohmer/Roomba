@@ -16,10 +16,10 @@ class BestRoombaNA
 	void startApplication();
 	
 	private:
-	string mqttBroker{MQTT_LOCAL_BROKER};
-    int mqttBrokerPort{MQTT_LOCAL_BROKER_PORT};
+	std::string mqttBroker{MQTT_LOCAL_BROKER};
+        int mqttBrokerPort{MQTT_LOCAL_BROKER_PORT};
 	void showAppInfo();
 	AI ai{};
-	MQTTClient mqttClient("MSH", "msh", mqttBroker, mqttBrokerPort);
+	MQTTClient mqttClient{"MSH", "msh", mqttBroker, mqttBrokerPort};
 };
 #endif
