@@ -1,10 +1,19 @@
 #ifndef ROOMBAMQTTCLIENT_H
 #define ROOMBAMQTTCLIENT_H
 
-#include "../_libMQTT/CommandProcessor.h"
-#include "../_libUtils/ParLoop.h"
-#include "../_libSenseHAT/SenseHAT.h"
+#include "/home/iot/Roomba/_libMQTT/CommandProcessor.h"
+#include "/home/iot/Roomba/_libUtils/ParLoop.h"
+#include "/home/iot/Roomba/_libSenseHAT/SenseHAT.h"
 #include "json.hpp"
+
+#include "AppInfo.h"
+#include "/home/iot/Roomba/_libMQTT/MQTTconfig.h"
+//#include "RandomWalk.h"
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <csignal>
 
 using json = nlohmann::json;
 
@@ -20,20 +29,23 @@ public:
   MQTTClient() = delete;
   MQTTClient(const MQTTClient &other) = delete;
   MQTTClient &operator=(const MQTTClient &other) = delete;
+  void startClient();
   virtual ~MQTTClient();
 
   SenseHAT senseHAT_;
 
 private:
-   // Data examples, not in json format.
-   double pi_;
-   bool happy_;
-   std::string name_;
-   std::vector<int> list_;
-   // json is a first-class data type.
+  // Data examples, not in json format.
+  double pi_;
+  bool happy_;
+  std::string name_;
+  std::vector<int> list_;
+  // json is a first-class data type.
   json jsonData_;
-
   void data2json();
+  
+  volatile sig_atomic_t receivedSIGINT{false};
+  void handleSIGINT(int /* s */);
 
 protected:
   const std::string mqttID_;

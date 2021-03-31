@@ -5,8 +5,9 @@
 #include <chrono>
 #include <iostream>
 #include <thread>
+#include <chrono>
 
-using namespace std::chrono_literals;
+using namespace std::chrono;
 using callbackFunction_t = std::function<void()>;
 
 class ParLoop
