@@ -12,9 +12,7 @@ BestRoombaNA::~BestRoombaNA()
 
 void BestRoombaNA::startApplication()
 {
-showAppInfo();
-    std::cout << mqttBroker << std::endl;
-    std::cout << mqttBrokerPort << std::endl;
+    showAppInfo();
     ai.startup();
     mqttClient.startClient();
 }
