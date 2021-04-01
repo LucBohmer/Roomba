@@ -61,7 +61,8 @@ MQTTClient::MQTTClient(const std::string &appname,
 
 void handleSIGINT(int /* s */)
 {
-   receivedSIGINT = true;
+	MQTTClient::receivedSIGINT = true;
+   //receivedSIGINT = true;
 }
 
 void MQTTClient::startClient()
