@@ -18,21 +18,18 @@ SerialLink::SerialLink(const std::string& comPort,
         port_.open(comPort_);
     }
     catch(const std::exception& e) {
-        std::cerr << "ERROR: " << e.what() << '\n';
-	std::cerr << "BOE: constructor" << '\n'; 
+        std::cerr << "ERROR: " << e.what() << '\n'; 
         return;
     }
 
     //Check whether the port is open or not
     if (port_.is_open()) {
         //Set all the options for the serial link
-	std::cout << "port is open" << '\n';
         port_.set_option(boost::asio::serial_port_base::baud_rate(baud));
         port_.set_option(boost::asio::serial_port_base::character_size(character_size));
         port_.set_option(boost::asio::serial_port_base::parity(parity));
         port_.set_option(boost::asio::serial_port_base::stop_bits(stop_bits));
-        port_.set_option(boost::asio::serial_port_base::flow_control(flow_control));
-	
+        port_.set_option(boost::asio::serial_port_base::flow_control(flow_control));	
     }
     else {
         std::cerr << "ERROR: Serial port couldn't be opened\n";
