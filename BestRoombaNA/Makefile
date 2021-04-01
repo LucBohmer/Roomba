@@ -12,6 +12,7 @@ EXECUTABLE = BestRoombaNA
 
 SOURCES = ${wildcard *.cpp} \
 	${wildcard /home/iot/Roomba/_libUtils/*.cpp} \
+	${wildcard /home/iot/Roomba/_libUtils/SerialLink/*.cpp} \
 	${wildcard /home/iot/Roomba/I-O/*.cpp} \
 	${wildcard /home/iot/Roomba/_libSenseHAT/*.cpp} \
         ${wildcard /home/iot/Roomba/_libSenseHAT/*.c} \
@@ -20,6 +21,7 @@ SOURCES = ${wildcard *.cpp} \
 
 HEADERS = ${wildcard *.h} \
 	${wildcard /home/iot/Roomba/_libUtils/*.h} \
+	${wildcard /home/iot/Roomba/_libUtils/SerialLink/*.h} \
 	${wildcard /home/iot/Roomba/I-O/*.h} \
 	${wildcard /home/iot/Roomba/_libSenseHAT/*.h} \
 	${wildcard /home/iot/Roomba/_libMQTT/*.h} \

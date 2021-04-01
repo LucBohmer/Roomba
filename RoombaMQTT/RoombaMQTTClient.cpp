@@ -10,6 +10,7 @@
 #include <functional>
 #include <iostream>
 #include <string>
+#define UNUSED(x) (void)(x)
 
 using namespace std;
 
@@ -56,6 +57,11 @@ MQTTClient::MQTTClient(const std::string &appname,
 
     data2json();
     std::cerr << "Data in json format = " << jsonData_ << std::endl;
+}
+
+void handleSIGINT(int /* s */)
+{
+   receivedSIGINT = true;
 }
 
 void MQTTClient::startClient()
@@ -207,6 +213,7 @@ void MQTTClient::invertPixel(const parameters_t &commandParameters)
 
 void MQTTClient::cylonPar(const parameters_t &commandParameters)
 {
+    UNUSED(commandParameters);
     auto putDot = [this](int x, const Pixel &pixel) {
         senseHAT_.leds.setPixel(x, 3, pixel);
         senseHAT_.leds.setPixel(x, 4, pixel);
@@ -266,3 +273,8 @@ void MQTTClient::sendHeartbeat()
 {
     publishAddition("heartbeat" , "json data heartbeat: " + jsonData_.dump());
 }
+
+
+
+
+

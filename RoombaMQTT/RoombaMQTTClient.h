@@ -15,6 +15,8 @@
 #include <string>
 #include <csignal>
 
+//volatile sig_atomic_t receivedSIGINT{false};
+
 using json = nlohmann::json;
 
 using parameters_t = std::vector<std::string>;
@@ -22,6 +24,8 @@ using parameters_t = std::vector<std::string>;
 class MQTTClient : public CommandProcessor
 {
 public:
+  volatile sig_atomic_t receivedSIGINT{false};
+
   MQTTClient(const std::string &appname,
              const std::string &clientname,
              const std::string &host,
@@ -44,8 +48,8 @@ private:
   json jsonData_;
   void data2json();
   
-  volatile sig_atomic_t receivedSIGINT{false};
-  static void handleSIGINT(int /* s */);
+//  volatile sig_atomic_t receivedSIGINT{false};
+//  void handleSIGINT(int /* s */);
 
 protected:
   const std::string mqttID_;

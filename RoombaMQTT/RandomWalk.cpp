@@ -1,10 +1,12 @@
 #include "RandomWalk.h"
+#define UNUSED(x) (void)(x)
 
 std::mutex RandomWalk::mtx_;
 
 RandomWalk::RandomWalk(LedMatrix& leds,
                        const Pixel& pixel,
                        int walkStepSeconds):
+
    rdev_{},
    reng_{rdev_()},
    uniformRandom_{-1, 1},
@@ -13,7 +15,9 @@ RandomWalk::RandomWalk(LedMatrix& leds,
    y_{4},
    pixel_{pixel},
    pl_{std::bind(&RandomWalk::randomWalk, this), walkStepSeconds}
-{}
+{
+   UNUSED(leds);
+}
 
 void RandomWalk::randomWalk()
 {

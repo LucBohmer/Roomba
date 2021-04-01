@@ -1,5 +1,6 @@
 #include "Pixel.h"
 #include "LedMatrixDevice.h"
+#define UNUSED(x) (void)(x)
 
 bool operator==(const Pixel& lhs, const Pixel& rhs)
 {
@@ -35,6 +36,8 @@ uint8_t Pixel::operator[](const RGB& c) const
          return r_;
       case RGB::G:
          return g_;
+      case RGB::B:
+         break;
    }
    return b_;
 }
@@ -46,6 +49,8 @@ uint8_t& Pixel::operator[](const RGB& c)
          return r_;
       case RGB::G:
          return g_;
+      case RGB::B:
+         break;
    }
    return b_;
 }
