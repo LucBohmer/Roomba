@@ -5,6 +5,11 @@ BestRoombaNA::BestRoombaNA()
 	
 }
 
+BestRoombaNA::~BestRoombaNA()
+{
+	
+}
+
 void BestRoombaNA::startApplication()
 {
 	

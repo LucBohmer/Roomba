@@ -13,6 +13,7 @@ class BestRoombaNA
 {
 	public:
 	BestRoombaNA();
+	~BestRoombaNA();
 	void startApplication();
 	
 	private:
