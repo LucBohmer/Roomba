@@ -2,7 +2,7 @@
 #define BESTROOMBANA_H
 
 #include "AppInfo.h"
-#include "/home/iot/Roomba/_libUtils/SerialLink/SerialLink.h"
+//#include "/home/iot/Roomba/_libUtils/SerialLink/SerialLink.h"
 #include "AI.h"
 #include "/home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h"
 #include "/home/iot/Roomba/_libMQTT/MQTTconfig.h"

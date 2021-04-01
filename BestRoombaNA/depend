@@ -3,20 +3,11 @@ AI.o: AI.cpp AI.h /home/iot/Roomba/I-O/ioHandler.h \
  /home/iot/Roomba/BestRoombaNA/SerialCommand.h \
  /home/iot/Roomba/_libUtils/SerialLink/SerialLink.h \
  /home/iot/Roomba/_libUtils/SerialLink/OpenInterfaceConfig.h \
- /home/iot/Roomba/I-O/vacuum.h /home/iot/Roomba/I-O/sensors.h \
- BestRoombaNA.h AppInfo.h /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h \
- /home/iot/Roomba/_libMQTT/CommandProcessor.h \
- /home/iot/Roomba/_libMQTT/Topic.h /home/iot/Roomba/_libUtils/ParLoop.h \
- /home/iot/Roomba/_libSenseHAT/SenseHAT.h \
- /home/iot/Roomba/_libSenseHAT/Joystick.h \
- /home/iot/Roomba/_libSenseHAT/LedMatrix.h \
- /home/iot/Roomba/RoombaMQTT/json.hpp \
- /home/iot/Roomba/RoombaMQTT/AppInfo.h \
- /home/iot/Roomba/_libMQTT/MQTTconfig.h
-BestRoombaNA.o: BestRoombaNA.cpp BestRoombaNA.h AppInfo.h \
- /home/iot/Roomba/_libUtils/SerialLink/SerialLink.h AI.h \
+ /home/iot/Roomba/I-O/vacuum.h /home/iot/Roomba/I-O/sensors.h
+BestRoombaNA.o: BestRoombaNA.cpp BestRoombaNA.h AppInfo.h AI.h \
  /home/iot/Roomba/I-O/ioHandler.h /home/iot/Roomba/I-O/motor.h \
  /home/iot/Roomba/BestRoombaNA/SerialCommand.h \
+ /home/iot/Roomba/_libUtils/SerialLink/SerialLink.h \
  /home/iot/Roomba/_libUtils/SerialLink/OpenInterfaceConfig.h \
  /home/iot/Roomba/I-O/vacuum.h /home/iot/Roomba/I-O/sensors.h \
  /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h \
@@ -28,10 +19,10 @@ BestRoombaNA.o: BestRoombaNA.cpp BestRoombaNA.h AppInfo.h \
  /home/iot/Roomba/RoombaMQTT/json.hpp \
  /home/iot/Roomba/RoombaMQTT/AppInfo.h \
  /home/iot/Roomba/_libMQTT/MQTTconfig.h
-main.o: main.cpp BestRoombaNA.h AppInfo.h \
- /home/iot/Roomba/_libUtils/SerialLink/SerialLink.h AI.h \
+main.o: main.cpp BestRoombaNA.h AppInfo.h AI.h \
  /home/iot/Roomba/I-O/ioHandler.h /home/iot/Roomba/I-O/motor.h \
  /home/iot/Roomba/BestRoombaNA/SerialCommand.h \
+ /home/iot/Roomba/_libUtils/SerialLink/SerialLink.h \
  /home/iot/Roomba/_libUtils/SerialLink/OpenInterfaceConfig.h \
  /home/iot/Roomba/I-O/vacuum.h /home/iot/Roomba/I-O/sensors.h \
  /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h \

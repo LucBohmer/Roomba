@@ -30,6 +30,7 @@ MQTTClient::MQTTClient(const std::string &appname,
                                    publishSensorData_(std::bind(&MQTTClient::handleSensorData, this), 60),
                                    heartbeatPar_(std::bind(&MQTTClient::sendHeartbeat, this), 10)
 {
+    //receivedSIGINT{false};
     std::cerr << "---- CTOR MQTTsenseHAT host = '" << host
               << "'  port = " << port
               << "  id = " << mqttID_
@@ -59,8 +60,11 @@ MQTTClient::MQTTClient(const std::string &appname,
     std::cerr << "Data in json format = " << jsonData_ << std::endl;
 }
 
+volatile sig_atomic_t receivedSIGINT{false};
+
 void handleSIGINT(int /* s */)
 {
+//   MQTTClient::receivedSIGINT = true;
    receivedSIGINT = true;
 }
 
@@ -73,8 +77,9 @@ void MQTTClient::startClient()
    int revisionMosquitto{0};
 
 	try
-   {
-	   signal(SIGINT, handleSIGINT);
+  {
+     
+            signal(SIGINT, handleSIGINT);
 
       cout << "-- MQTT application: " << APPNAME_VERSION << "  ";
       mosqpp::lib_init();

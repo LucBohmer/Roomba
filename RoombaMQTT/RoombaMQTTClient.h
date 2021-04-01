@@ -24,7 +24,7 @@ using parameters_t = std::vector<std::string>;
 class MQTTClient : public CommandProcessor
 {
 public:
-  volatile sig_atomic_t receivedSIGINT{false};
+//  static volatile sig_atomic_t receivedSIGINT{false};
 
   MQTTClient(const std::string &appname,
              const std::string &clientname,
@@ -37,6 +37,9 @@ public:
   virtual ~MQTTClient();
 
   SenseHAT senseHAT_;
+//  volatile sig_atomic_t receivedSIGINT{false};
+//  static volatile sig_atomic_t receivedSIGINT;
+
 
 private:
   // Data examples, not in json format.
