@@ -6,6 +6,9 @@
 #include "/home/iot/Roomba/_libSenseHAT/SenseHAT.h"
 #include "json.hpp"
 
+//needed for ioHandler object
+#include "/home/iot/Roomba/I-O/ioHandler.h"
+
 #include "AppInfo.h"
 #include "/home/iot/Roomba/_libMQTT/MQTTconfig.h"
 //#include "RandomWalk.h"
@@ -37,8 +40,8 @@ public:
   virtual ~MQTTClient();
 
   SenseHAT senseHAT_;
-//  volatile sig_atomic_t receivedSIGINT{false};
-//  static volatile sig_atomic_t receivedSIGINT;
+  
+  ioHandler ioHandler_;
 
 
 private:
@@ -77,6 +80,9 @@ protected:
   void cylon(const parameters_t &commandParameters);
   void sendHeartbeat();
   void handleSensorData();
+  
+  // Roomba functions
+  void clean(const parameters_t &commandParameters);
 };
 
 #endif

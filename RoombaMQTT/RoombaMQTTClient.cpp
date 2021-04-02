@@ -53,6 +53,9 @@ MQTTClient::MQTTClient(const std::string &appname,
                                         placeholders::_1));
     registerCommand("cylon", bind(&MQTTClient::cylon, this,
                                   placeholders::_1));
+	// Roomba buttons							  
+	registerCommand("clean", bind(&MQTTClient::clean, this,
+                                  placeholders::_1));
 
     senseHAT_.leds.setPixel(x_, y_, Pixel{200, 100, 100});
 
@@ -277,6 +280,18 @@ void MQTTClient::data2json()
 void MQTTClient::sendHeartbeat()
 {
     publishAddition("heartbeat" , "json data heartbeat: " + jsonData_.dump());
+}
+
+void MQTTClient::clean(const parameters_t &commandParameters)
+{
+    if (commandParameters.size() != 0)
+    {
+        publishError("clean", "number of parameters != 0");
+    }
+    else
+    {
+        ioHandler.Clean();
+    }
 }
 
 
