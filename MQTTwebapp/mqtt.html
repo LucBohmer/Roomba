@@ -1,143 +1,294 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
-  <title>MQTT</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- contains the site styles -->
+   <title>BestRoombaNA</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta charset="UTF-8">
-  <meta name="description" content="BestroombaNA webserver">
-  <meta name="keywords" content="bestroombaNA, HAN">
-  <meta name="author" content="Lars Hunneman, Julian de Kievid, Ivo Ebbers, Luc Böhmer">
+   <!-- Latest compiled and minified Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Include JQuery library from CDN -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
-  <!-- Include Paho JavaScript MQTT Client from CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <!-- Include JQuery library from CDN -->
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   <!-- Include Paho JavaScript MQTT Client from CDN -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
 
-  <script src="mqtt_functions.js"></script>
+   <script type="text/javascript">
+      var WebSocket_MQTT_Broker_URL = "";
+      var MQTT_Client_ID = "";
+      var MQTT_Topic = "";
+      var MQTT_Client = "";
+
+      function mqtt_Connect_with_Broker() {
+         // Set variables
+         WebSocket_MQTT_Broker_URL =
+            document.getElementById("txt_MQTT_Broker_URL").value;
+         MQTT_Client_ID =
+            document.getElementById("txt_MQTT_Client_ID").value;
+
+         // Create a MQTT Client nstance
+         MQTT_Client =
+            new Paho.MQTT.Client(WebSocket_MQTT_Broker_URL, MQTT_Client_ID);
+
+         // set callback handlers
+         MQTT_Client.onConnectionLost = onConnectionLost;
+         MQTT_Client.onMessageArrived = onMessageArrived;
+
+         var options = {
+            // Connection attempt timeout in seconds
+            timeout: 3,
+            onSuccess: onConnect,
+            onFailure: function(message) {
+               alert("Connection to MQTT broker failed: " + message.errorMessage);
+            }
+         };
+
+         MQTT_Client.connect(options);
+      }
+
+      // Subscribe to MQTT Topic
+      function mqtt_Subscribe_to_Topic() {
+         MQTT_Subscribe_Topic =
+            document.getElementById("txt_MQTT_Subscribe_Topic").value;
+         if (Boolean(MQTT_Subscribe_Topic)) {
+            MQTT_Client.subscribe(MQTT_Subscribe_Topic);
+            Set_New_Console_Msg("Subscribed to MQTT topic: " + "\"" +
+               MQTT_Subscribe_Topic + "\"");
+         } else {
+            Set_New_Console_Msg("ERROR: not subscribed, MQTT topic is empty string");
+         }
+      }
+
+      // Send MQTT Message
+      function mqtt_Publish_Message() {
+         message =
+            new Paho.MQTT.Message(document.getElementById("txt_MQTT_Msg").value);
+         message.destinationName =
+            document.getElementById("txt_MQTT_Publish_Topic").value;
+         if (Boolean(message.destinationName)) {
+            MQTT_Client.send(message);
+            Set_New_Console_Msg("Published " + "\"" +
+               document.getElementById("txt_MQTT_Msg").value +
+               "\"" + " to topic: " +
+               "\"" + document.getElementById("txt_MQTT_Publish_Topic").value +
+               "\"");
+         } else {
+            Set_New_Console_Msg("ERROR: not published, MQTT topic is empty string");
+         }
+      }
+	  
+	  // Send MQTT Clean Message
+      function mqtt_Publish_Clean_Message() {
+         message = new Paho.MQTT.Message("clean");
+         message.destinationName = document.getElementById("txt_MQTT_Publish_Topic").value;
+         MQTT_Client.send(message);
+         Set_New_Console_Msg("Published " + "\"" +
+            "clean" +
+            "\"" + " to topic: " +
+            "\"" + document.getElementById("txt_MQTT_Publish_Topic").value +
+            "\"");
+      }
+	  
+	  // Send MQTT Spot Message
+      function mqtt_Publish_Spot_Message() {
+         message = new Paho.MQTT.Message("spot");
+         message.destinationName = document.getElementById("txt_MQTT_Publish_Topic").value;
+         MQTT_Client.send(message);
+         Set_New_Console_Msg("Published " + "\"" +
+            "spot" +
+            "\"" + " to topic: " +
+            "\"" + document.getElementById("txt_MQTT_Publish_Topic").value +
+            "\"");
+      }
+
+	  // Send MQTT Dock Message
+      function mqtt_Publish_Dock_Message() {
+         message = new Paho.MQTT.Message("dock");
+         message.destinationName = document.getElementById("txt_MQTT_Publish_Topic").value;
+         MQTT_Client.send(message);
+         Set_New_Console_Msg("Published " + "\"" +
+            "dock" +
+            "\"" + " to topic: " +
+            "\"" + document.getElementById("txt_MQTT_Publish_Topic").value +
+            "\"");
+      }
+
+      // Called when the client connects
+      function onConnect() {
+         // Once a connection has been made, make a subscription and send a message.
+         Set_New_Console_Msg("Connected with MQTT Broker: " + "\"" +
+            document.getElementById("txt_MQTT_Broker_URL").value + "\"");
+         console.log("Connected to " + WebSocket_MQTT_Broker_URL);
+         document.getElementById("btn_Connect_to_Broker").disabled = true;
+         document.getElementById("txt_MQTT_Broker_URL").disabled = true;
+         document.getElementById("txt_MQTT_Client_ID").disabled = true;
+      }
+
+      // Called when the client loses its connection
+      function onConnectionLost(responseObject) {
+         if (responseObject.errorCode !== 0) {
+            Set_New_Console_Msg("ERROR: connection lost with MQTT Broker: " +
+               "\"" + responseObject.errorMessage + "\"");
+            document.getElementById("btn_Connect_to_Broker").disabled = false;
+            document.getElementById("txt_MQTT_Broker_URL").disabled = false;
+            document.getElementById("txt_MQTT_Client_ID").disabled = false;
+         }
+      }
+
+      // called when a message arrives
+      function onMessageArrived(message) {
+         Set_New_Console_Msg("message: " +
+            "\"" + message.payloadString + "\"" + "  topic: " +
+            "\"" + message.destinationName + "\"" + "  QoS: " + "\"" +
+            message.qos + "\"");
+      }
+
+      // Document Ready Event
+      $(document).ready(function() {
+         //Set default MQTT Broker WebSocket URL
+         document.getElementById("txt_MQTT_Broker_URL").value =
+            "ws://192.168.178.168:9001/ws";
+		 document.getElementById("txt_MQTT_Subscribe_Topic").value = 
+		 "ESEiot/1718sem4/BestRoombaNA/MSH/msh/heartbeat";
+		 document.getElementById("txt_MQTT_Publish_Topic").value = 
+		 "ESEiot/1718sem4/BestRoombaNA/MSH/msh/command";
+         //Generate Random MQTT Clinet ID
+         gen_MQTT_Client_ID();
+      })
+
+      // Set MQTT Messages to TextArea
+      function Set_New_Console_Msg(text) {
+         document.getElementById("txtAr_Console").value =
+            document.getElementById("txtAr_Console").value +
+            get_Fromatted_Time().toString() +
+            "   " + text + "\n";
+         document.getElementById("txtAr_Console").scrollTop =
+            document.getElementById("txtAr_Console").scrollHeight;
+      }
+
+      //Clear Console
+      function clear_Console() {
+         document.getElementById("txtAr_Console").value = "";
+      }
+
+      // Get Formatted time in Hour:Minute:Seconds AM/PM format
+      function get_Fromatted_Time() {
+         var dt = new Date();
+         var hours = dt.getHours() == 0 ? "12" : dt.getHours() > 12 ? dt.getHours() - 12 : dt.getHours();
+         var minutes = (dt.getMinutes() < 10 ? "0" : "") + dt.getMinutes();
+         var seconds = (dt.getSeconds() < 10 ? "0" : "") + dt.getSeconds();
+         var ampm = dt.getHours() < 12 ? "AM" : "PM";
+         var formattedTime = hours + ":" + minutes + ":" + seconds + " " + ampm;
+         return formattedTime;
+      }
+
+      // Randomly generate Client ID
+      function gen_MQTT_Client_ID() {
+         document.getElementById("txt_MQTT_Client_ID").value =
+            Math.floor(100000000000 + Math.random() * 900000000000);
+      }
+   </script>
+   <title>MQTT pub sub</title>
 </head>
 
-<body onload="initVars();">
-  <div class="content">
-    <a href="index.html">
-    
-      <!-- Place a image -->
-    </a>
+<body>
+   <article>
 
-    <ul>
-      <li>
-        <a href="mqqt.html">Home</a>
-      </li>
-      <!-- This is a bar -->
-      <li>
-        <a href="doxygen/index.html">Doxygen</a>
-      </li>
-      <li>
-        <a href="about.html">About</a>
-      </li>
-      </li>	
-      <!-- add in every page this line-->
-    </ul>
-    <hr>
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label for="txt_MQTT_Broker_URL" class="col-sm-2 control-label">WebSocket MQTT Broker URL:</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="txt_MQTT_Broker_URL">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="txt_MQTT_Client_ID" class="col-sm-2 control-label">MQTT Client ID:</label>
-        <div class="col-sm-6">
-          <input type="text" class="form-control" id="txt_MQTT_Client_ID">
-        </div>
-        <div class="col-sm-4">
-          <button type="button" class="btn btn-success col-sm-4" id="btn_Connect_to_Broker" onclick="mqtt_Connect_with_Broker();">Connect</button>
-        </div>
-      </div>
+      <header>
+         <h1>&nbsp; BestRoombaNA </h1>
+		 <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     MQTT WebApp</h5>
+         <ul class="nav nav-tabs">
+            <li class="active"><a href="mqtt.html" target="_self">Home</a></li>
+            <li><a href="doxygen/index.html"target="_blank2">Doxygen</a></li> 
+            <li><a href="about.html" target="_blank2">About</a></li>
+         </ul>
+      </header>
+<br>      
+      <form class="form-horizontal">
+         <div class="form-group">
+            <label for="txt_MQTT_Broker_URL" class="col-sm-2 control-label">WebSocket MQTT Broker URL:</label>
+            <div class="col-sm-6">
+               <input type="text" class="form-control" id="txt_MQTT_Broker_URL">
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="txt_MQTT_Client_ID" class="col-sm-2 control-label">MQTT Client ID:</label>
+            <div class="col-sm-6">
+               <input type="text" class="form-control" id="txt_MQTT_Client_ID">
+            </div>
+            <div class="col-sm-3">
+               <button type="button" class="btn btn-success col-sm-5" id="btn_Connect_to_Broker" onclick="mqtt_Connect_with_Broker();">Connect</button>
+            </div>
+         </div>
+         <hr>
+         <div class="form-group">
+            <label for="txt_MQTT_Subscribe_Topic" class="col-sm-2 control-label">MQTT Topic (Subscribe):</label>
+            <div class="col-sm-6">
+               <input type="text" class="form-control" id="txt_MQTT_Subscribe_Topic" placeholder="Type MQTT topic here...">
+            </div>
+            <div class="col-sm-3">
+               <button type="button" class="btn btn-primary col-sm-5" onclick="mqtt_Subscribe_to_Topic();">Subscribe</button>
+            </div>
+         </div>
+      </form>
+
       <hr>
-      <div class="form-group">
-        <label for="txt_MQTT_topicroot" class="col-sm-2 control-label">MQTT topic root:</label>
-        <div class="col-sm-6">
-          <input type="text" class="form-control" id="txt_MQTT_topicroot">
-        </div>
-      </div>
+
+      <form class="form-horizontal">
+         <div class="form-group">
+            <label class="col-sm-2 control-label" for="txt_MQTT_Publish_Topic">MQTT topic (Publish):</label>
+            <div class="col-sm-6">
+               <input type="text" class="form-control" id="txt_MQTT_Publish_Topic" placeholder="Type MQTT topic here...">
+            </div>
+         </div>
+         <div class="form-group">
+            <label class="col-sm-2 control-label" for="txt_MQTT_Msg">MQTT message:</label>
+            <div class="col-sm-6">
+               <input type="text" class="form-control" id="txt_MQTT_Msg" placeholder="Type MQTT message here...">
+            </div>
+            <div class="col-sm-3">
+               <button type="button" class="btn btn-primary col-sm-5" onclick="mqtt_Publish_Message();">Publish</button>
+            </div>
+         </div>
+      </form>
+
       <hr>
-    </form>
-    
-     <!-- <section id="pubsub" class="panel-body">
-         <h2>Publishing and subscribing</h2>
-         <p>
-            <input disabled type="button" class="btn btn-success" id="button1on" onclick='led("green", "1");' value=" on  " />
-            <input type="button" class="btn btn-danger" disabled id="button1off" onclick='led("green", "0");' value=" off " /> &rarr; Broker &rarr;
-            <font id="ledgreenO" size='6' bgcolor='grey' color='green'>O </font>
-         </p>
-         <p>
-            <input type="button" class="btn btn-success" id="button2on" onclick='led("yellow", "1");' value=" on  " />
-            <input type="button" class="btn btn-danger" id="button2off" onclick='led("yellow", "0");' value=" off " /> &rarr; Broker &rarr;
-            <font id="ledyellowO" size='6' bgcolor='grey' color='yellow'> O </font>
-         </p>
-         <p>
-            <input type="button" class="btn btn-success" id="button3on" onclick='led("red", "1");' value=" on  " />
-            <input type="button" class="btn btn-danger" id="button3off" onclick='led("red", "0");' value=" off " /> &rarr; Broker &rarr;
-            <font id="ledredO" size='6' bgcolor='grey' color='red'> O </font>
-         </p>
-         <p>
-            Broker &rarr; Temperature = &nbsp;
-            <textarea name="outputArea1" id="outputArea1" rows=1 cols=5 onClick="this.select();" readonly="yes">???</textarea>
-         </p>
-         <p>
-            Broker &rarr; &nbsp; &nbsp; &nbsp; Humidity = &nbsp;
-            <textarea name="outputArea2" id="outputArea2" rows=1 cols=5 onClick="this.select();" readonly="yes">???</textarea>
-         </p>
-      </section> -->
+	  <form class="form-horizontal">
+		<div class="form-group">
+			<label class="col-sm-2 control-label" for="txt_MQTT_Msg">Buttons:</label>
+			<div class="col-sm-6">
+			<button type="button" class="btn btn-success" id="CLEAN" onclick="mqtt_Publish_Clean_Message();" />CLEAN</button>
 
+			<button type="button" class="btn btn-success" id="DOCK" onclick="mqtt_Publish_Dock_Message();" />DOCK</button>
 
-    <h2>ROOMBA buttons</h2>
-    <p>
-        <button type="button" class="btn btn-success" id="CLEAN" onclick='publish("clean", "1");' value=" CLEAN " />CLEAN</button>
-        <button type="button" class="btn btn-danger" id="CLEANoff" onclick='publish("clean", "0");' value=" CLEAN off " />CLEAN off</button>
-
-        <button type="button" class="btn btn-success" id="DOCK" onclick='publish("dock", "1");' value=" DOCK " />DOCK</button>
-        <button type="button" class="btn btn-danger" id="DOCKoff" onclick='publish("dock", "0");' value=" DOCK off " />DOCK off</button>
-
-        <button type="button" class="btn btn-success" id="SPOT" onclick='publish("spot", "1");' value=" SPOT " />SPOT</button>
-        <button type="button" class="btn btn-danger" id="SPOToff" onclick='publish("spot", "0");' value=" SPOT off " />SPOT off</button>
-
-       <!-- <button type="button" class="btn btn-success" id="LEDon" onclick='publishRPI("MSH/msh/command", "setPixel 1 1 255 255 255");' value=" LED on " />LED on</button>
-        <button type="button" class="btn btn-danger" id="LEDoff" onclick='publishRPI("MSH/msh/command", "setPixel 1 1 0 0 0");' value=" LED off " />LED off</button>-->
-
-        
-      <!--<button id="CLEAN">CLEAN</button>
-      <button id="DOCK">DOCK</button>
-      <button id="SPOT">SPOT</button>-->
-      <p>
-
-        <form class="form-horizontal">
-          <div class="form-group">
+			<button type="button" class="btn btn-success" id="SPOT" onclick="mqtt_Publish_Spot_Message();" />SPOT</button>
+			</div>
+	  </div>
+	  </form>
+  <hr>
+      <form class="form-horizontal">
+         <div class="form-group">
             <label class="col-sm-2 control-label" for="txtAr_Console">Console:</label>
             <div class="col-sm-9">
-              <textarea ype="textarea" class="form-control" rows="12" cols="100" id="txtAr_Console"></textarea>
+               <textarea ype="textarea" class="form-control" rows="12" cols="100" id="txtAr_Console"></textarea>
             </div>
-          </div>
-          <div class="form-group">
+         </div>
+         <div class="form-group">
             <label class="col-sm-2 control-label" for="btn_Clear_Console"></label>
-            <div class="col-sm-4">
-              <button type="button" id="btn_Clear_Console" class="btn btn-warning col-sm-4" onclick="clear_Console();">Clear console</button>
+            <div class="col-sm-6">
+               <button type="button" id="btn_Clear_Console" class="btn btn-warning col-sm-4" onclick="clear_Console();">Clear console</button>
             </div>
-          </div>
-        </form>
+         </div>
+      </form>
 
-  </div>
-
-  <p> </p>
-
-  <footer>Hogeschool Arnhem Nijmegen</footer>
-  <!-- It's a nice looking footer -->
-  </div>
+   </article>
+ 
+  <hr>
+   <footer>
+      <h4>&nbsp;&nbsp;HAN - Embedded Systems Engineering &nbsp;</h4>
+   </footer>
 </body>
 
 </html>
