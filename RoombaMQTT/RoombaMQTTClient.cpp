@@ -303,7 +303,7 @@ void MQTTClient::spot(const parameters_t &commandParameters)
     }
     else
     {
-        ioHandler.Spot();
+        ioHandler_.Spot();
     }
 }
 
@@ -315,7 +315,7 @@ void MQTTClient::dock(const parameters_t &commandParameters)
     }
     else
     {
-        ioHandler.Dock();
+        ioHandler_.Dock();
     }
 }
 
