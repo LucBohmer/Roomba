@@ -6,8 +6,8 @@
 #include <thread>
 
 // AI holds the cleaning stratagy. holds diffecent programms 
-class AI{
-
+class AI
+{
     private:
     IOhandler IOh;
 

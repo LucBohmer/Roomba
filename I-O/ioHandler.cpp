@@ -101,16 +101,25 @@ bool IOhandler::isButtonSpot()
     }
 }
 
+/*!
+* \brief Starts a normal cleaning cycle
+*/
 void IOhandler::Clean()
 {
 	SL.Clean();
 }
 
+/*!
+* \brief Starts a spot cleaning cycle
+*/
 void IOhandler::Spot()
 {
 	SL.Spot();
 }
 
+/*!
+* \brief Starts the dock-seeking
+*/
 void IOhandler::Dock()
 {
 	SL.Dock();

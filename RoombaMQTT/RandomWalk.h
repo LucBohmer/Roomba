@@ -5,7 +5,6 @@
 #include "ParLoop.h"
 #include "Pixel.h"
 
-/// @todo Remove unused include files in the interface.
 #include <algorithm>
 #include <functional>
 #include <mutex>

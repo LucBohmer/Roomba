@@ -31,7 +31,6 @@ MQTTClient::MQTTClient(const std::string &appname,
                                    publishSensorData_(std::bind(&MQTTClient::handleSensorData, this), 60),
                                    heartbeatPar_(std::bind(&MQTTClient::sendHeartbeat, this), 10)
 {
-    //receivedSIGINT{false};
     std::cerr << "---- CTOR MQTTsenseHAT host = '" << host
               << "'  port = " << port
               << "  id = " << mqttID_
@@ -72,7 +71,6 @@ volatile sig_atomic_t receivedSIGINT{false};
 
 void handleSIGINT(int /* s */)
 {
-//   MQTTClient::receivedSIGINT = true;
    receivedSIGINT = true;
 }
 

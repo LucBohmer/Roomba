@@ -3,7 +3,7 @@
 
 #include "SerialCommand.h"
 
-//Class to controll the vacuum. Sends the right signals to the seriallink SA. Checks if the appclication is started.
+// Class to controll the vacuum. Sends the right signals to the seriallink with the serialCommand class. Checks if the appclication is started.
 class Vacuum
 {
   private:

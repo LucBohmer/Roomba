@@ -2,9 +2,8 @@
 
 int main(void)
 {
-        BestRoombaNA Roomba;
+    BestRoombaNA Roomba;
 	Roomba.startApplication();
-
-
+	
     return 0;
 }

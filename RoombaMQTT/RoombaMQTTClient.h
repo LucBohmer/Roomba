@@ -27,8 +27,6 @@ using parameters_t = std::vector<std::string>;
 class MQTTClient : public CommandProcessor
 {
 public:
-//  static volatile sig_atomic_t receivedSIGINT{false};
-
   MQTTClient(const std::string &appname,
              const std::string &clientname,
              const std::string &host,
@@ -53,9 +51,6 @@ private:
   // json is a first-class data type.
   json jsonData_;
   void data2json();
-  
-//  volatile sig_atomic_t receivedSIGINT{false};
-//  void handleSIGINT(int /* s */);
 
 protected:
   const std::string mqttID_;

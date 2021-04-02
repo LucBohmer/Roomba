@@ -58,7 +58,6 @@ void SerialLink::write(const std::vector<uint8_t>& dat) {
     }
     try {
         boost::asio::write(port_, boost::asio::buffer(dat));
-        //port_.write_some(boost::asio::buffer(dat));
     }
     catch(const std::exception& e) {
         std::cerr << "ERROR: " << e.what() << '\n';
@@ -76,7 +75,6 @@ std::vector<uint8_t> SerialLink::read(const size_t read_size) {
     try {
         dat.resize(read_size);
         boost::asio::read(port_, boost::asio::buffer(dat, read_size));
-        //port_.read_some(boost::asio::buffer(dat, read_size));
     }
     catch(const std::exception& e) {
         std::cerr << "ERROR: " << e.what() << '\n';

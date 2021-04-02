@@ -1,7 +1,5 @@
 #include "AI.h"
-//#include "BestRoombaNA.h"
 
-// drives till a collision , turns around and repeats
 void AI::startup()
 {
     IOh.start();
@@ -12,8 +10,6 @@ void AI::startup()
     IOh.stopVacuum();
 
     IOh.Clean();
-}
-/*
     IOh.moveForward();
     std::this_thread::sleep_for(std::chrono::seconds(1));
     IOh.moveBackward();
