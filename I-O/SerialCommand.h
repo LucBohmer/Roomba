@@ -4,9 +4,9 @@
 #include "/home/iot/Roomba/_libUtils/SerialLink/OpenInterfaceConfig.h"
 
 /*!
-*\brief Command -> Seriele Communication for the BestRoomba HEADER file.
+*\brief Command -> Serial Communication for the BestRoomba HEADER file.
 *\brief Contains default baudrate and different functions.
-*\brief Functions: start_safe, Drive, Spot, Clean, Vacuum.
+*\brief Functions: start_safe, Drive, Spot, Clean, Dock, Vacuum.
 *\brief Sensors: isCollision, ButtonSpot.
 */
 class SerialCommand

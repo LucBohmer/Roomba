@@ -101,16 +101,25 @@ bool IOhandler::isButtonSpot()
     }
 }
 
+/*!
+* \brief Starts Roomba in Clean mode. When called again the Roomba wil stop this action.
+*/
 void IOhandler::Clean()
 {
 	SL.Clean();
 }
 
+/*!
+* \brief Starts Roomba in Spot mode. When called again the Roomba wil stop this action.
+*/
 void IOhandler::Spot()
 {
 	SL.Spot();
 }
 
+/*!
+* \brief Starts Roomba in Dock mode. When called again the Roomba wil stop this action.
+*/
 void IOhandler::Dock()
 {
 	SL.Dock();

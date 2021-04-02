@@ -1,15 +1,21 @@
 #include "BestRoombaNA.h"
-
+/*! 
+ * \brief BestRoombaNA Class Constructor.
+ */
 BestRoombaNA::BestRoombaNA()
 {
 
 }
-
+/*! 
+ * \brief BestRoombaNA Class Destructor.
+ */
 BestRoombaNA::~BestRoombaNA()
 {
 
 }
-
+/*!
+ * \brief Starts BestRoombaNA Application. Print application info to console, startup AI and mqttClient instances.
+ */
 void BestRoombaNA::startApplication()
 {
     showAppInfo();
@@ -17,6 +23,9 @@ void BestRoombaNA::startApplication()
     mqttClient.startClient();
 }
 
+/*!
+ * \brief BestRoombaNA Application info is printed to console. 
+ */
 void BestRoombaNA::showAppInfo()
 {
   std::cout << std::setfill('-') << std::setw(30) << "" << std::endl;
