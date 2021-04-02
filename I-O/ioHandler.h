@@ -5,7 +5,7 @@
 #include "motor.h"
 #include "vacuum.h"
 #include "sensors.h"
-#include "/home/iot/Roomba/BestRoombaNA/SerialCommand.h"
+#include "SerialCommand.h"
 
 // Handels all te IO. Gets a commando from AI and controls the right acuators
 class IOhandler
