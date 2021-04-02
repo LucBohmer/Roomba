@@ -83,6 +83,8 @@ protected:
   
   // Roomba functions
   void clean(const parameters_t &commandParameters);
+  void spot(const parameters_t &commandParameters);
+  void dock(const parameters_t &commandParameters);
 };
 
 #endif

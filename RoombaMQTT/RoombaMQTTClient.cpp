@@ -294,6 +294,30 @@ void MQTTClient::clean(const parameters_t &commandParameters)
     }
 }
 
+void MQTTClient::spot(const parameters_t &commandParameters)
+{
+    if (commandParameters.size() != 0)
+    {
+        publishError("spot", "number of parameters != 0");
+    }
+    else
+    {
+        ioHandler.Spot();
+    }
+}
+
+void MQTTClient::dock(const parameters_t &commandParameters)
+{
+    if (commandParameters.size() != 0)
+    {
+        publishError("dock", "number of parameters != 0");
+    }
+    else
+    {
+        ioHandler.Dock();
+    }
+}
+
 
 
 
