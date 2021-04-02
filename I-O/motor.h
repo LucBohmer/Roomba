@@ -1,7 +1,7 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
-#include "/home/iot/Roomba/BestRoombaNA/SerialCommand.h"
+#include "SerialCommand.h"
 
 // Class to controll the motors. Sends the right signals to the seriallink SA. Checks if the appclication is started.
 class Motor
