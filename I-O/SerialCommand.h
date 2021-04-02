@@ -30,12 +30,17 @@ class SerialCommand
 
     void Spot()
     {
-        sl.write({134});            /// Spot ON
+        sl.write({134});            /// Spot Commando
     }
 
     void Clean()
     {
-        sl.write({135});            /// Clean ON
+        sl.write({135});            /// Clean Commando
+    }
+	
+	void Dock()
+    {
+        sl.write({143});            /// Force Dock Seeking
     }
 
     void Vacuum(bool state)

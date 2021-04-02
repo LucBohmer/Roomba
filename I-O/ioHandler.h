@@ -7,7 +7,7 @@
 #include "sensors.h"
 #include "SerialCommand.h"
 
-// Handels all te IO. Gets a commando from AI and controls the right acuators
+// Handles all the IO. Gets a commando from AI and controls the right acuators
 class IOhandler
 {
   private:
@@ -31,5 +31,8 @@ class IOhandler
     void stopVacuum();
     bool isCollision();
     bool isButtonSpot();
+	void Clean();
+	void Spot();
+	void Dock();
 };
 #endif 
