@@ -19,6 +19,7 @@ MQTTClient::MQTTClient(const std::string &appname,
                        const std::string &host,
                        int port) : CommandProcessor(appname, clientname, host, port),
                                    senseHAT_{},
+				   ioHandler_{},
 								   pi_{0},
 								   happy_{0},
 								   name_{0},
@@ -290,7 +291,7 @@ void MQTTClient::clean(const parameters_t &commandParameters)
     }
     else
     {
-        ioHandler.Clean();
+        ioHandler_.Clean();
     }
 }
 

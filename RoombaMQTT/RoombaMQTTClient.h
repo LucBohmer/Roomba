@@ -41,7 +41,7 @@ public:
 
   SenseHAT senseHAT_;
   
-  ioHandler ioHandler_;
+  IOhandler ioHandler_;
 
 
 private:

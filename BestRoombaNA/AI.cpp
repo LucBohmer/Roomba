@@ -11,6 +11,9 @@ void AI::startup()
     std::this_thread::sleep_for(std::chrono::seconds(5));
     IOh.stopVacuum();
 
+    IOh.Clean();
+}
+/*
     IOh.moveForward();
     std::this_thread::sleep_for(std::chrono::seconds(1));
     IOh.moveBackward();

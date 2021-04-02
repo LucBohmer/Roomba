@@ -103,16 +103,16 @@ bool IOhandler::isButtonSpot()
 
 void IOhandler::Clean()
 {
-	SL.Clean;
+	SL.Clean();
 }
 
 void IOhandler::Spot()
 {
-	SL.Spot;
+	SL.Spot();
 }
 
 void IOhandler::Dock()
 {
-	SL.Dock;
+	SL.Dock();
 }
 
