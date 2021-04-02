@@ -1,0 +1,4 @@
+<map id="IOhandler::Spot" name="IOhandler::Spot">
+<area shape="rect" id="node2" href="$a00021.html#a12277d5ef016e6f28debf16ee3e93598" title="SerialCommand::Spot" alt="" coords="167,5,317,32"/>
+<area shape="rect" id="node3" href="$a00022.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="365,5,480,32"/>
+</map>

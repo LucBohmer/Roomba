@@ -1,0 +1,4 @@
+<map id="Vacuum::stop" name="Vacuum::stop">
+<area shape="rect" id="node2" href="$a00021.html#a4e08e3c36644f4af624a1e8ca53a23fa" title="SerialCommand::Vacuum" alt="" coords="156,5,327,32"/>
+<area shape="rect" id="node3" href="$a00022.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="375,5,489,32"/>
+</map>
