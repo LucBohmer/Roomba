@@ -103,9 +103,9 @@ function onMessageArrived(message) {
 $(document).ready(function () {
       //Set default MQTT Broker WebSocket URL
       document.getElementById("txt_MQTT_Broker_URL").value =
-            "ws://broker.hivemq.com:8000/mqtt";
+            "ws://192.168.178.168:9001/ws";
       document.getElementById("txt_MQTT_topicroot").value =
-            "BestRoomba/";
+            "ESEiot/1718sem4/BestRoombaNA/MSH/msh/command/";
       //Generate Random MQTT Clinet ID
       gen_MQTT_Client_ID();
       // document.getElementById("button1on").disabled = true;
