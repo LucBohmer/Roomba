@@ -57,6 +57,10 @@ MQTTClient::MQTTClient(const std::string &appname,
 	// Roomba buttons							  
 	registerCommand("clean", bind(&MQTTClient::clean, this,
                                   placeholders::_1));
+	registerCommand("spot", bind(&MQTTClient::spot, this,
+                                  placeholders::_1));
+	registerCommand("dock", bind(&MQTTClient::dock, this,
+                                  placeholders::_1));
 
     senseHAT_.leds.setPixel(x_, y_, Pixel{200, 100, 100});
 
