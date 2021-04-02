@@ -3,6 +3,10 @@
 
 #include "SerialCommand.h"
 
+/*!
+* \brief Motor class for controlling the motors. It sends the right signals to the seriallink with the serialCommand class.
+*/
+
 // Class to controll the motors. Sends the right signals to the seriallink with the serialCommand class. Checks if the appclication is started.
 class Motor
 {
