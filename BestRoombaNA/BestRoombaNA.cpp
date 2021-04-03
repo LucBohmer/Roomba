@@ -14,7 +14,8 @@ BestRoombaNA::~BestRoombaNA()
 
 }
 /*!
- * \brief Starts BestRoombaNA Application. Print application info to console, startup AI and mqttClient instances.
+ * \brief Starts BestRoombaNA Application. 
+ * Print application info to console, startup AI and mqttClient instances.
  */
 void BestRoombaNA::startApplication()
 {

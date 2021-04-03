@@ -6,8 +6,8 @@
 #include <thread>
 
 /**
- *  \class AI inherits IOh class.
- *  Holds the cleaning strategies and different programs.
+ *  @brief Holds the cleaning strategies and different programs.
+ *  AI inherits IOh class.
  */ 
 class AI{
 

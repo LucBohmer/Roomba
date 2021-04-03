@@ -9,6 +9,13 @@
 class RTHumidity;
 class RTPressure;
 
+/**
+ *  @brief Contains functionalities of RPi senseHAT.
+ *  Functionalities:
+ *		- Joystick
+ * 		- Ledmatrix
+ * 		- Humidity and Pressure sensor
+ */ 
 class SenseHAT
 {
 public:

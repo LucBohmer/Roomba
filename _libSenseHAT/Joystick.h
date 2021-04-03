@@ -10,9 +10,10 @@ enum {JS_UP = 103, JS_DOWN = 108, JS_LEFT = 105, JS_RIGHT = 106,
 
 using jshandler = std::function<void()>;
 
-/// Joystick reacts to senseHAT joystick events received in a loop
-/// executed in a thread.
-/// Objects are not copyable by copy ctor and assignment.
+/*! @brief Controls senseHAT joystick.
+    Joystick reacts to senseHAT joystick events received in a loop
+    executed in a thread.
+*/ Objects are not copyable by copy ctor and assignment.
 class Joystick
 {
 public:

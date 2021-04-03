@@ -1,6 +1,9 @@
 #ifndef APPINFO_H
 #define APPINFO_H
-
+/** \file AppInfo.h
+ * This file holds application information: Appname, major and minor appversion
+ */
+ 
 #define APPNAME "BestRoombaNA"
 
 #define MAJOR_VERSION "2"

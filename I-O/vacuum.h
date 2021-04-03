@@ -3,7 +3,7 @@
 
 #include "SerialCommand.h"
 /*!
-*\brief Class to controll the vacuum. 
+*\brief Class to control the vacuum. 
 *\brief Sends the correct signals to the Seriallink instance. 
 *\brief Checks if the application is started.
 */
@@ -37,7 +37,9 @@ class Vacuum
         SL_.Vacuum(false);
         
     }
-
+	/*! \fn Turn vacuum ON or OFF. 
+	 *  @par state Boolean to turn vacuum ON or OFF. Valid values: true or false.
+	 */
     void setOnOff(bool state)
     {
         if (enable_ == true)

@@ -10,6 +10,9 @@
 #include <iomanip>
 #include <string>
 
+/**
+ *  @brief Main application to control Roomba.
+ */ 
 class BestRoombaNA
 {
 	public:

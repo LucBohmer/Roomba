@@ -13,7 +13,9 @@
 #define UNUSED(x) (void)(x)
 
 using namespace std;
-
+/**
+ *  @brief Constructor.
+ */ 
 MQTTClient::MQTTClient(const std::string &appname,
                        const std::string &clientname,
                        const std::string &host,
@@ -72,7 +74,6 @@ volatile sig_atomic_t receivedSIGINT{false};
 
 void handleSIGINT(int /* s */)
 {
-//   MQTTClient::receivedSIGINT = true;
    receivedSIGINT = true;
 }
 
@@ -130,7 +131,9 @@ void MQTTClient::startClient()
 	     << endl << endl;
    mosqpp::lib_cleanup();
 }
-
+/**
+ *  @brief Destructor.
+ */ 
 MQTTClient::~MQTTClient()
 {
     senseHAT_.leds.clear(Pixel{50, 0, 0});

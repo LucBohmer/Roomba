@@ -5,25 +5,26 @@
 #include "/home/iot/Roomba/_libUtils/ParLoop.h"
 #include "/home/iot/Roomba/_libSenseHAT/SenseHAT.h"
 #include "json.hpp"
-
-//needed for ioHandler object
 #include "/home/iot/Roomba/I-O/ioHandler.h"
-
 #include "AppInfo.h"
 #include "/home/iot/Roomba/_libMQTT/MQTTconfig.h"
 //#include "RandomWalk.h"
-
 #include <iostream>
 #include <iomanip>
 #include <string>
 #include <csignal>
 
-//volatile sig_atomic_t receivedSIGINT{false};
 
 using json = nlohmann::json;
 
 using parameters_t = std::vector<std::string>;
 
+/*!
+  @brief Handle Mosquitto functionalities. 
+  Set up broker and client, make connection, subscribtion and publish. 
+  Contains functions for controlling senseHat functionalities and Roomba IO.
+
+*/
 class MQTTClient : public CommandProcessor
 {
 public:
@@ -53,9 +54,6 @@ private:
   // json is a first-class data type.
   json jsonData_;
   void data2json();
-  
-//  volatile sig_atomic_t receivedSIGINT{false};
-//  void handleSIGINT(int /* s */);
 
 protected:
   const std::string mqttID_;
