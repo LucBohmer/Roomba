@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: ParQueue&lt; D &gt; Class Template Reference</title>
+<title>BestRoombaNA: ParWait Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -109,49 +109,53 @@ $(document).ready(function(){initNavTree('a00015.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00158.html">List of all members</a>  </div>
+<a href="a00159.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ParQueue&lt; D &gt; Class Template Reference</div>  </div>
+<div class="title">ParWait Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="a00047_source.html">ParQueue.h</a>&quot;</code></p>
+<p><code>#include &quot;<a class="el" href="a00048_source.html">ParWait.h</a>&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a73a919e4b58f1220a6f3a52af625b616"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a73a919e4b58f1220a6f3a52af625b616">ParQueue</a> (std::function&lt; void(const D &amp;)&gt; handleData)</td></tr>
-<tr class="separator:a73a919e4b58f1220a6f3a52af625b616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ea9ecbf02398dbf4862f07bf33b8504"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a4ea9ecbf02398dbf4862f07bf33b8504">ParQueue</a> (const <a class="el" href="a00015.html">ParQueue</a> &amp;other)=delete</td></tr>
-<tr class="separator:a4ea9ecbf02398dbf4862f07bf33b8504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedef197ecfe9a5625d8501b25b262504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html">ParQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aedef197ecfe9a5625d8501b25b262504">operator=</a> (const <a class="el" href="a00015.html">ParQueue</a> &amp;other)=delete</td></tr>
-<tr class="separator:aedef197ecfe9a5625d8501b25b262504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a737d7f14e46d3144b3a9a51499e3079d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a737d7f14e46d3144b3a9a51499e3079d">~ParQueue</a> ()</td></tr>
-<tr class="separator:a737d7f14e46d3144b3a9a51499e3079d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae91d6ba584f537b85a8f1024d72128b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ae91d6ba584f537b85a8f1024d72128b5">provide</a> (const D &amp;data)</td></tr>
-<tr class="separator:ae91d6ba584f537b85a8f1024d72128b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab369159efc089a70d7be3b5c7cb12d74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ab369159efc089a70d7be3b5c7cb12d74">ParWait</a> (<a class="el" href="a00046.html#ad9a38d817d817f5985696d016c3e4f04">callbackFunction_t</a> cbf, int waitTimeSeconds=0)</td></tr>
+<tr class="separator:ab369159efc089a70d7be3b5c7cb12d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63da26de5c61e94edf72df63b85bb577"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a63da26de5c61e94edf72df63b85bb577">ParWait</a> (const <a class="el" href="a00015.html">ParWait</a> &amp;other)=delete</td></tr>
+<tr class="separator:a63da26de5c61e94edf72df63b85bb577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6876b1f496bc44eb7f305aac839e5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html">ParWait</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aaf6876b1f496bc44eb7f305aac839e5d">operator=</a> (const <a class="el" href="a00015.html">ParWait</a> &amp;other)=delete</td></tr>
+<tr class="separator:aaf6876b1f496bc44eb7f305aac839e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa41f17a8348d1901ed2e75359383b56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aaa41f17a8348d1901ed2e75359383b56">~ParWait</a> ()=default</td></tr>
+<tr class="separator:aaa41f17a8348d1901ed2e75359383b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename D&gt;<br />
-class ParQueue&lt; D &gt;</h3>
+<div class="textblock"><p>Always instantiate <a class="el" href="a00015.html">ParWait</a> objects dynamiccaly. A <a class="el" href="a00015.html">ParWait</a> object will deallocate it-self! </p>
 
-
-<p>Definition at line <a class="el" href="a00047_source.html#l00012">12</a> of file <a class="el" href="a00047_source.html">ParQueue.h</a>.</p>
+<p>Definition at line <a class="el" href="a00048_source.html#l00014">14</a> of file <a class="el" href="a00048_source.html">ParWait.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a73a919e4b58f1220a6f3a52af625b616"></a>
+<a class="anchor" id="ab369159efc089a70d7be3b5c7cb12d74"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename D &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00015.html">ParQueue</a>&lt; D &gt;::<a class="el" href="a00015.html">ParQueue</a> </td>
+          <td class="memname">ParWait::ParWait </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(const D &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>handleData</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00046.html#ad9a38d817d817f5985696d016c3e4f04">callbackFunction_t</a>&#160;</td>
+          <td class="paramname"><em>cbf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>waitTimeSeconds</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -161,33 +165,21 @@ template&lt;typename D &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00047_source.html#l00015">15</a> of file <a class="el" href="a00047_source.html">ParQueue.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                                   :</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      handleData_{handleData},</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      queueMutex_{},</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      queueConditionVar_{},</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      queue_{},</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      running_{<span class="keyword">true</span>},</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      threadConsuming_{&amp;ParQueue::consume, <span class="keyword">this</span>}</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   {}</div></div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00015_a73a919e4b58f1220a6f3a52af625b616_cgraph.png" border="0" usemap="#a00015_a73a919e4b58f1220a6f3a52af625b616_cgraph" alt=""/></div>
-<map name="a00015_a73a919e4b58f1220a6f3a52af625b616_cgraph" id="a00015_a73a919e4b58f1220a6f3a52af625b616_cgraph">
-<area shape="rect" id="node2" href="a00015.html#aedef197ecfe9a5625d8501b25b262504" title="ParQueue::operator=" alt="" coords="200,5,343,32"/>
-</map>
-</div>
-</p>
-
+<p>Definition at line <a class="el" href="a00048_source.html#l00017">17</a> of file <a class="el" href="a00048_source.html">ParWait.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                           :</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      waitTimeSeconds_{waitTimeSeconds},</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      cbf_{cbf},</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      par_{&amp;ParWait::parWaitf, <span class="keyword">this</span>}</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      par_.detach();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   }</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a4ea9ecbf02398dbf4862f07bf33b8504"></a>
+<a class="anchor" id="a63da26de5c61e94edf72df63b85bb577"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename D &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00015.html">ParQueue</a>&lt; D &gt;::<a class="el" href="a00015.html">ParQueue</a> </td>
+          <td class="memname">ParWait::ParWait </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00015.html">ParQueue</a>&lt; D &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00015.html">ParWait</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -201,17 +193,15 @@ template&lt;typename D &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a737d7f14e46d3144b3a9a51499e3079d"></a>
+<a class="anchor" id="aaa41f17a8348d1901ed2e75359383b56"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename D &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00015.html">ParQueue</a>&lt; D &gt;::~<a class="el" href="a00015.html">ParQueue</a> </td>
+          <td class="memname">ParWait::~ParWait </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -219,29 +209,25 @@ template&lt;typename D &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00047_source.html#l00025">25</a> of file <a class="el" href="a00047_source.html">ParQueue.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;   {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      stop();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aedef197ecfe9a5625d8501b25b262504"></a>
+<a class="anchor" id="aaf6876b1f496bc44eb7f305aac839e5d"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename D &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00015.html">ParQueue</a>&amp; <a class="el" href="a00015.html">ParQueue</a>&lt; D &gt;::operator= </td>
+          <td class="memname"><a class="el" href="a00015.html">ParWait</a>&amp; ParWait::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00015.html">ParQueue</a>&lt; D &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00015.html">ParWait</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -255,43 +241,15 @@ template&lt;typename D &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae91d6ba584f537b85a8f1024d72128b5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename D &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00015.html">ParQueue</a>&lt; D &gt;::provide </td>
-          <td>(</td>
-          <td class="paramtype">const D &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00047_source.html#l00030">30</a> of file <a class="el" href="a00047_source.html">ParQueue.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;         std::lock_guard&lt;std::mutex&gt; lg(queueMutex_);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;         queue_.push(data);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      }  <span class="comment">// Release lock</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      queueConditionVar_.notify_one();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   }</div></div><!-- fragment -->
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/iot/Roomba/_libUtils/<a class="el" href="a00047_source.html">ParQueue.h</a></li>
+<li>/home/iot/Roomba/_libUtils/<a class="el" href="a00048_source.html">ParWait.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00015.html">ParQueue</a></li>
+    <li class="navelem"><a class="el" href="a00015.html">ParWait</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

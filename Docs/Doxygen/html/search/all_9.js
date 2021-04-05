@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['joystick',['Joystick',['../a00009.html',1,'Joystick'],['../a00009.html#a158b1f77b78717efbf1b8fac43b1fcef',1,'Joystick::Joystick()'],['../a00009.html#aee767adfa96c50ebb6ca1af13ddb6187',1,'Joystick::Joystick(const Joystick &amp;other)=delete']]],
+  ['joystick',['Joystick',['../a00008.html',1,'Joystick'],['../a00008.html#a158b1f77b78717efbf1b8fac43b1fcef',1,'Joystick::Joystick()'],['../a00008.html#aee767adfa96c50ebb6ca1af13ddb6187',1,'Joystick::Joystick(const Joystick &amp;other)=delete']]],
   ['joystick_2ecpp',['Joystick.cpp',['../a00033.html',1,'']]],
   ['joystick_2eh',['Joystick.h',['../a00034.html',1,'']]],
   ['joystickdevice_2ec',['JoystickDevice.c',['../a00035.html',1,'']]],

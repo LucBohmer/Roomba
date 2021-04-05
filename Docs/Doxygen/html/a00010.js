@@ -1,10 +1,7 @@
 var a00010 =
 [
-    [ "LedMatrix", "a00010.html#a2604720ce8497f9c84ad3b327629072d", null ],
-    [ "~LedMatrix", "a00010.html#a8faf8a7d51221ee711b8f0998e2a03ed", null ],
-    [ "clear", "a00010.html#a2737d95498692cc098be8edc8937ada6", null ],
-    [ "clear", "a00010.html#ac9de9b5c9b37f13a1d9eec2d3d7970ed", null ],
-    [ "getPixel", "a00010.html#a7f46ff6f7d413db5ac77225d47219397", null ],
-    [ "invert", "a00010.html#af1e9e51216169ec51398b259129de5e1", null ],
-    [ "setPixel", "a00010.html#a00eb3db37486902ee8509a95c1ac09fe", null ]
+    [ "Motor", "a00010.html#ad00286e2c5722bedbd12fdc34b5e1cef", null ],
+    [ "setDrive", "a00010.html#ade0b803de873e02a479b27f2c6e97b92", null ],
+    [ "start", "a00010.html#a4611645742488ec6e915e555b6468a27", null ],
+    [ "stop", "a00010.html#a015fd5308d4d27e5dcf7f9ea3d5c03f6", null ]
 ];

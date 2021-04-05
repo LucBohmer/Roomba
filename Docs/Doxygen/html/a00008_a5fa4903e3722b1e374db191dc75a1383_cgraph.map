@@ -1,0 +1,5 @@
+<map id="Joystick::handleEvents" name="Joystick::handleEvents">
+<area shape="rect" id="node2" href="$a00035.html#aad9a5320b4ad2191c8aeec01cc8240e0" title="initEventDevice" alt="" coords="222,5,337,32"/>
+<area shape="rect" id="node3" href="$a00035.html#a36a7a5c243539b3a04fa0ff1271c6204" title="pollingEventDevice" alt="" coords="212,56,347,83"/>
+<area shape="rect" id="node4" href="$a00035.html#a20d8b9178a57ee6b94df80ba718f058d" title="handle_events" alt="" coords="395,56,501,83"/>
+</map>

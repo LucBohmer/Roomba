@@ -197,8 +197,8 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="a00050_source.html#l00007">7</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;               : <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;   <a class="code" href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4">ROOMBA_SLOW</a> = 19200,</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;   <a class="code" href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30">ROOMBA_DEFAULT</a> = 115200</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div><div class="ttc" id="a00050_html_a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4"><div class="ttname"><a href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4">Baud::ROOMBA_SLOW</a></div></div>
+<p>Definition at line <a class="el" href="a00050_source.html#l00010">10</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;               : <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   <a class="code" href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4">ROOMBA_SLOW</a> = 19200,</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <a class="code" href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30">ROOMBA_DEFAULT</a> = 115200</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div><div class="ttc" id="a00050_html_a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4"><div class="ttname"><a href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4">Baud::ROOMBA_SLOW</a></div></div>
 <div class="ttc" id="a00050_html_a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30"><div class="ttname"><a href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30">Baud::ROOMBA_DEFAULT</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -231,7 +231,7 @@ Variables</h2></td></tr>
 <p>Velocities in mm/sec. </p>
 
 <p>Definition at line <a class="el" href="a00049_source.html#l00010">10</a> of file <a class="el" href="a00049_source.html">OpenInterfaceConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <span class="keywordflow">return</span> {<a class="code" href="a00050.html#a4c205895bf8188bf524e63985acaeb74">DRIVE_DIRECT_4</a>,</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;           <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(rightVelocity &gt;&gt; 8),</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;           static_cast&lt;uint8_t&gt;(rightVelocity &amp; 0x00ff),</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;           <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(leftVelocity &gt;&gt; 8),</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;           static_cast&lt;uint8_t&gt;(leftVelocity &amp; 0x00ff)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   };</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}<div class="ttc" id="a00050_html_a4c205895bf8188bf524e63985acaeb74"><div class="ttname"><a href="a00050.html#a4c205895bf8188bf524e63985acaeb74">DRIVE_DIRECT_4</a></div><div class="ttdeci">const uint8_t DRIVE_DIRECT_4</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00021">OpenInterfaceConfig.h:21</a></div></div>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <span class="keywordflow">return</span> {<a class="code" href="a00050.html#a4c205895bf8188bf524e63985acaeb74">DRIVE_DIRECT_4</a>,</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;           <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(rightVelocity &gt;&gt; 8),</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;           static_cast&lt;uint8_t&gt;(rightVelocity &amp; 0x00ff),</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;           <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(leftVelocity &gt;&gt; 8),</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;           static_cast&lt;uint8_t&gt;(leftVelocity &amp; 0x00ff)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   };</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}<div class="ttc" id="a00050_html_a4c205895bf8188bf524e63985acaeb74"><div class="ttname"><a href="a00050.html#a4c205895bf8188bf524e63985acaeb74">DRIVE_DIRECT_4</a></div><div class="ttdeci">const uint8_t DRIVE_DIRECT_4</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00024">OpenInterfaceConfig.h:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -249,8 +249,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="a00049_source.html#l00004">4</a> of file <a class="el" href="a00049_source.html">OpenInterfaceConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;   <span class="keywordflow">return</span> {<a class="code" href="a00050.html#af4b453d3fecbaec0103c2e474273a2c6">START</a>, <a class="code" href="a00050.html#a6d6b650c639863b30deed333921b1e9b">MODE_SAFE</a>};</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="ttc" id="a00050_html_af4b453d3fecbaec0103c2e474273a2c6"><div class="ttname"><a href="a00050.html#af4b453d3fecbaec0103c2e474273a2c6">START</a></div><div class="ttdeci">const uint8_t START</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00013">OpenInterfaceConfig.h:13</a></div></div>
-<div class="ttc" id="a00050_html_a6d6b650c639863b30deed333921b1e9b"><div class="ttname"><a href="a00050.html#a6d6b650c639863b30deed333921b1e9b">MODE_SAFE</a></div><div class="ttdeci">const uint8_t MODE_SAFE</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00017">OpenInterfaceConfig.h:17</a></div></div>
+<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;   <span class="keywordflow">return</span> {<a class="code" href="a00050.html#af4b453d3fecbaec0103c2e474273a2c6">START</a>, <a class="code" href="a00050.html#a6d6b650c639863b30deed333921b1e9b">MODE_SAFE</a>};</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="ttc" id="a00050_html_af4b453d3fecbaec0103c2e474273a2c6"><div class="ttname"><a href="a00050.html#af4b453d3fecbaec0103c2e474273a2c6">START</a></div><div class="ttdeci">const uint8_t START</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00016">OpenInterfaceConfig.h:16</a></div></div>
+<div class="ttc" id="a00050_html_a6d6b650c639863b30deed333921b1e9b"><div class="ttname"><a href="a00050.html#a6d6b650c639863b30deed333921b1e9b">MODE_SAFE</a></div><div class="ttdeci">const uint8_t MODE_SAFE</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00020">OpenInterfaceConfig.h:20</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -265,7 +265,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00050_source.html#l00014">14</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
+<p>Definition at line <a class="el" href="a00050_source.html#l00017">17</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00050_source.html#l00021">21</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
+<p>Definition at line <a class="el" href="a00050_source.html#l00024">24</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00050_source.html#l00018">18</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
+<p>Definition at line <a class="el" href="a00050_source.html#l00021">21</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00050_source.html#l00017">17</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
+<p>Definition at line <a class="el" href="a00050_source.html#l00020">20</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
 
 </div>
 </div>
@@ -321,7 +321,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00050_source.html#l00013">13</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
+<p>Definition at line <a class="el" href="a00050_source.html#l00016">16</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
 
 </div>
 </div>

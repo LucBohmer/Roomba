@@ -1,4 +1,4 @@
 <map id="SenseHAT" name="SenseHAT">
-<area shape="rect" id="node2" href="$a00009.html" title="Joystick" alt="" coords="5,5,76,32"/>
-<area shape="rect" id="node3" href="$a00010.html" title="LedMatrix" alt="" coords="100,5,179,32"/>
+<area shape="rect" id="node2" href="$a00008.html" title="Controls senseHAT joystick. Joystick reacts to senseHAT joystick events received in a loop executed i..." alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node3" href="$a00009.html" title="LedMatrix" alt="" coords="100,5,179,32"/>
 </map>

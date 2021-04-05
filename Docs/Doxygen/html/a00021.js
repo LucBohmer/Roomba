@@ -1,13 +1,11 @@
 var a00021 =
 [
-    [ "SerialCommand", "a00021.html#a8e168dfa7af733d5bd2818f670fb9fab", null ],
-    [ "ButtonSpot", "a00021.html#a5df816d778a10c798af237ec952654d0", null ],
-    [ "Clean", "a00021.html#a32af8865495cc6f233b57706a9c815ae", null ],
-    [ "Dock", "a00021.html#a8dfe0ebaea19eab82083434068bc14df", null ],
-    [ "Drive", "a00021.html#a159e3998d96b74caa77025740a26e395", null ],
-    [ "isCollision", "a00021.html#af6749fdc554a59fee32ce6df76da9674", null ],
-    [ "LedSpotGreen", "a00021.html#a54ea85b75b8478e8feda12a6bc62c6a9", null ],
-    [ "Spot", "a00021.html#a12277d5ef016e6f28debf16ee3e93598", null ],
-    [ "start_safe", "a00021.html#a30f54181d6e33e968b48e74c781ec2e4", null ],
-    [ "Vacuum", "a00021.html#a4e08e3c36644f4af624a1e8ca53a23fa", null ]
+    [ "SerialLink", "a00021.html#a8789d0d7102d78c83a3c76e2b1a8e1e9", null ],
+    [ "SerialLink", "a00021.html#a96aca1c125f24688b57b6fde3fbc4f6d", null ],
+    [ "~SerialLink", "a00021.html#af9a3c0d7518e7f554f49c198411e1521", null ],
+    [ "getBaud", "a00021.html#a8611ff8959587b5b629be657f71ac15c", null ],
+    [ "getComPort", "a00021.html#a6c6d0211ec68d41c613d92c27da9679a", null ],
+    [ "read", "a00021.html#a72e3bc4cbecf4909a9df216f4393075a", null ],
+    [ "write", "a00021.html#af0e94df5c46bb1b89f2b79eda8312fde", null ],
+    [ "writeRead", "a00021.html#a0931b11edd0b82764f1e538ac08b96bb", null ]
 ];

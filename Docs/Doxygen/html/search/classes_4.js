@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joystick',['Joystick',['../a00009.html',1,'']]]
+  ['joystick',['Joystick',['../a00008.html',1,'']]]
 ];
