@@ -1,0 +1,150 @@
+@startuml
+title BestRoombaNA classdiagram
+
+package "mosqpp" #DDDD00 {
+class mosquittopp 
+} 
+
+class BestRoombaNA{
+  .. Public ..
+    +BestRoombaNA()
+    +~BestRoombaNA()
+    +startApplication()
+  .. Private ..
+    -MQTTClient mqttClient
+    -showAppInfo()
+    -string mqttBroker()
+    -int mqttBrokerPort()
+}
+
+class RoombaMQTTClient{
+  .. Public ..
+    +MQTTClient()
+    +startClient()
+    +SenseHAT senseHAT_
+    +IOhandler ioHandler_
+  .. Private ..
+    -double pi_
+    -bool happy_
+    -std::string name_
+    -std::vector<int> list_
+    -json jsonData_
+    -void data2json()
+  .. Protected ..
+    #clean()
+    #spot()
+    #dock()
+    #clear()
+    #blank()
+    #invert()
+    #setPixel()
+    #getPixel()
+    #invertPixel()
+    #cylonPar()
+    #cylon()
+    #sendHeartBeat
+    #handleSensorData
+    #const std::string mqttID_
+    #int x_
+    #int y_
+    #const int min_x_
+    #const int min_y_
+    #const int max_x_
+    #const int max_y_
+    #ParLoop publishSensorData_
+    #ParLoop heartbeatPar_
+}
+
+class IOhandler{
+  .. Public ..
+    +IOhandler()
+    +void start()
+    +void stop()
+    +void moveForward()
+    +void moveBackward()
+    +void rotateLeft()
+    +void rotateRight()
+    +void standStill()
+    +void startVacuum()
+    +void stopVacuum()
+    +bool isCollision()
+    +bool isButtonSpot()
+    +void Clean()
+    +void Spot()
+    +void Dock()
+  .. Private ..
+    -SerialCommand SL
+    -Motor motors
+    -Vacuum vacuum
+    -int motorSpeed
+}
+
+class motor {
+  .. Public ..
+    +Motor()
+    +start()
+    +stop()
+    +setDrive()
+  .. Private ..
+    -SerialCommand& SL_
+    -int speedL_
+    -int speedR_
+    -bool enable_
+}
+
+class vacuum{
+  .. Public ..
+    +Vacuum()
+    +start()
+    +stop()
+    +setOnOff()
+  .. Private ..
+    -SerialCommand &SL_
+    -bool enable_
+}
+
+class sensors {
+  .. Public ..
+    +sensors()
+  .. Private ..
+    -SerialCommand& SL_
+}
+
+class SerialCommand{
+  .. Public ..
+    +SerialCommand()
+    +start_safe()
+    +Drive()
+    +Spot()
+    +Clean()
+    +Dock()
+    +Vacuum()
+    +isCollision()
+    +ButtonSpot()
+    +LedSpotGreen()
+  .. Private ..
+    -SerialLink sl
+}
+
+class CommandProcessor <<abstract>>{
+{abstract}
+}
+
+class mosquittopp <<abstract>>{
+{abstract}
+}
+
+mosquittopp <|-- CommandProcessor
+CommandProcessor <|-- RoombaMQTTClient
+
+BestRoombaNA*--- RoombaMQTTClient
+
+RoombaMQTTClient*--- IOhandler
+
+IOhandler*--- vacuum
+IOhandler*--- sensors 
+IOhandler*--- motor
+IOhandler*--- SerialCommand
+
+SerialCommand*--- SerialLink
+@enduml
