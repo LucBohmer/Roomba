@@ -7,14 +7,17 @@
 #include "sensors.h"
 #include "SerialCommand.h"
 
-// Handles all the IO. Gets a commando from AI and controls the right acuators
+/*! @brief Handles the IO of the Roomba. 
+ *  Functions in #IOhandler can be called to let the Roomba execute movements. 
+ */
+ 
 class IOhandler
 {
   private:
     SerialCommand SL;
     Motor motors;
     Vacuum vacuum;
-    int motorSpeed = 150;
+    int motorSpeed = 150;  /// Default motorspeed = 150
 
   public:
     IOhandler():SL(), motors(SL), vacuum(SL)

@@ -1,0 +1,4 @@
+<map id="SerialCommand::start_safe" name="SerialCommand::start_safe">
+<area shape="rect" id="node2" href="$a00022.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="235,5,349,32"/>
+<area shape="rect" id="node3" href="$a00049.html#a5087cc2366b2f09d85c156f869e59ea3" title="startSafe" alt="" coords="255,56,329,83"/>
+</map>

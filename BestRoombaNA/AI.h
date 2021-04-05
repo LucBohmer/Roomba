@@ -5,9 +5,12 @@
 #include <chrono>
 #include <thread>
 
-// AI holds the cleaning stratagy. holds diffecent programms 
-class AI
-{
+/**
+ *  @brief Holds the cleaning strategies and different programs.
+ *  AI inherits IOh class.
+ */ 
+class AI{
+
     private:
     IOhandler IOh;
 

@@ -13,7 +13,9 @@
 #define UNUSED(x) (void)(x)
 
 using namespace std;
-
+/**
+ *  @brief Constructor.
+ */ 
 MQTTClient::MQTTClient(const std::string &appname,
                        const std::string &clientname,
                        const std::string &host,
@@ -128,7 +130,9 @@ void MQTTClient::startClient()
 	     << endl << endl;
    mosqpp::lib_cleanup();
 }
-
+/**
+ *  @brief Destructor.
+ */ 
 MQTTClient::~MQTTClient()
 {
     senseHAT_.leds.clear(Pixel{50, 0, 0});

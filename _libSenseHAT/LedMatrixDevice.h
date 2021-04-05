@@ -6,7 +6,9 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
+/**
+ *  @brief Control senseHAT ledmatrix.
+ */ 
 int init_fb(void);
 int blank(void);
 int clear(uint8_t r, uint8_t g, uint8_t b);

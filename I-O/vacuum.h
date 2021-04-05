@@ -2,12 +2,12 @@
 #define VACUUM_H
 
 #include "SerialCommand.h"
-
 /*!
-* \brief Vacuum class for controlling the vacuum. It sends the right signals to the seriallink with the serialCommand class.
+*\brief Class to control the vacuum. 
+*\brief Sends the correct signals to the Seriallink instance. 
+*\brief Checks if the application is started.
 */
 
-// Class to controll the vacuum. Sends the right signals to the seriallink with the serialCommand class. Checks if the appclication is started.
 class Vacuum
 {
   private:
@@ -19,19 +19,27 @@ class Vacuum
     {
     }
     ~Vacuum() {}
-
+	
+	/*! \fn Start vacuuming. 
+	 *  @par enable_ is set to true;
+	 */  
     void start()
     {
         enable_ = true;
     }
-
+	
+	/*! \fn Stop vacuuming. 
+	 *  @par enable_ is set to true;
+	 */
     void stop()
     {
         enable_ = false;
         SL_.Vacuum(false);
         
     }
-
+	/*! \fn Turn vacuum ON or OFF. 
+	 *  @par state Boolean to turn vacuum ON or OFF. Valid values: true or false.
+	 */
     void setOnOff(bool state)
     {
         if (enable_ == true)

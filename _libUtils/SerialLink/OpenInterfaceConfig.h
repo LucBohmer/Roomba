@@ -3,7 +3,10 @@
 
 #include <cstdint>
 #include <vector>
-
+/**
+ *  \class The baud class contains two baud rate enumerators: slow and default
+ *  \note The default baudrate is 115200. Slow baudrate is 19200
+ **/
 enum class Baud: unsigned int {
    ROOMBA_SLOW = 19200,
    ROOMBA_DEFAULT = 115200

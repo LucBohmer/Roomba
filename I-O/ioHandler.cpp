@@ -102,7 +102,7 @@ bool IOhandler::isButtonSpot()
 }
 
 /*!
-* \brief Starts a normal cleaning cycle
+* \brief Starts Roomba in Clean mode. When called again the Roomba wil stop this action.
 */
 void IOhandler::Clean()
 {
@@ -110,7 +110,7 @@ void IOhandler::Clean()
 }
 
 /*!
-* \brief Starts a spot cleaning cycle
+* \brief Starts Roomba in Spot mode. When called again the Roomba wil stop this action.
 */
 void IOhandler::Spot()
 {
@@ -118,7 +118,7 @@ void IOhandler::Spot()
 }
 
 /*!
-* \brief Starts the dock-seeking
+* \brief Starts Roomba in Dock mode. When called again the Roomba wil stop this action.
 */
 void IOhandler::Dock()
 {

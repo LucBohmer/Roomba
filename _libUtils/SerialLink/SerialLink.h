@@ -10,7 +10,8 @@
 #include <boost/asio/serial_port.hpp>
 
 /**
- *  \class SerialLink established a connection with an external serial device
+ *  @brief Connect external serial device
+ *  SerialLink establishes a connection with an external serial device
  *  \note The serial link class uses the Asio library from Boost to write/read data
  **/
 class SerialLink {
