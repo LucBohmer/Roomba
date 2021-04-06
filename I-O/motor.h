@@ -3,14 +3,7 @@
 
 #include "SerialCommand.h"
 
-/*! @brief Control of Roomba motors.
- *  Functions in #Motor can be called to let the Roomba execute movements. 
- *  @param speedL_ Private variable which holds left motorspeed.
- *  @param speedR_ Private variable which holds left motorspeed.
- *  @param enable_ Boolean variable which enables motorspeed to be changed.
- *  @fn start() Enable motorspeed to be changed.
- *  @fn stop() Disable motorspeed to be changed.
- *  @fn setDrive(int speedL, int speedR) Set motorspeed.
+/*! \brief Control of Roomba motors. Functions in #Motor can be called to let the Roomba execute movements. 
  */
 class Motor
 {
