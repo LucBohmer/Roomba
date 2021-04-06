@@ -12,7 +12,7 @@ class CommandProcessor;
 
 using commandfunction =
    std::function<void(const std::vector<std::string>& commmandParameters)>;
-
+/*! \brief CommandProcessor is a base class for connecting a command name to a related member function in the derived class by calling the registerCommand function.
 /// CommandProcessor is a base class for connecting a command name to a
 /// related member function in the derived class by calling the #registerCommand
 /// function.
@@ -29,6 +29,7 @@ using commandfunction =
 /// The receiving client (derived class) is responsible for
 /// checking the number of parameters and the conversion of the strings to
 /// the correct type (int, double, etc.).
+*/
 class CommandProcessor: public mosqpp::mosquittopp
 {
 public:
