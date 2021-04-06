@@ -13,6 +13,8 @@ class CommandProcessor;
 using commandfunction =
    std::function<void(const std::vector<std::string>& commmandParameters)>;
 /*! \brief CommandProcessor is a base class for connecting a command name to a related member function in the derived class by calling the registerCommand function.
+
+
 /// CommandProcessor is a base class for connecting a command name to a
 /// related member function in the derived class by calling the #registerCommand
 /// function.
