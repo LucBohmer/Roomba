@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: nlohmann::detail::from_json_fn Struct Reference</title>
+<title>BestRoombaNA: /home/iot/Roomba/_libUtils/ParExe.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,9 +49,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -72,10 +71,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -109,86 +106,40 @@ $(document).ready(function(){initNavTree('a00044.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00854.html">List of all members</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">nlohmann::detail::from_json_fn Struct Reference</div>  </div>
+<div class="title">ParExe.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &quot;<a class="el" href="a00419_source.html">json.hpp</a>&quot;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a40459b61e3df80076963f37055348a86"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename T &gt; </td></tr>
-<tr class="memitem:a40459b61e3df80076963f37055348a86"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00044.html#a40459b61e3df80076963f37055348a86">operator()</a> (const BasicJsonType &amp;j, T &amp;val) const noexcept(noexcept(std::declval&lt; <a class="el" href="a00044.html">from_json_fn</a> &gt;().call(j, val, <a class="el" href="a00116.html">priority_tag</a>&lt; 1 &gt;{})))</td></tr>
-<tr class="separator:a40459b61e3df80076963f37055348a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="a00419_source.html#l01187">1187</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a40459b61e3df80076963f37055348a86"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType , typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nlohmann::detail::from_json_fn::operator() </td>
-          <td>(</td>
-          <td class="paramtype">const BasicJsonType &amp;&#160;</td>
-          <td class="paramname"><em>j</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00419_source.html#l01213">1213</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;                                                                              {})))</div><div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;    {</div><div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;        <span class="keywordflow">return</span> call(j, val, priority_tag&lt;1&gt; {});</div><div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;    }</div></div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
+<div class="textblock"><code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;sys/wait.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for ParExe.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00044_a40459b61e3df80076963f37055348a86_cgraph.png" border="0" usemap="#a00044_a40459b61e3df80076963f37055348a86_cgraph" alt=""/></div>
-<map name="a00044_a40459b61e3df80076963f37055348a86_cgraph" id="a00044_a40459b61e3df80076963f37055348a86_cgraph">
-<area shape="rect" id="node2" href="a00529.html#a58117f225f43d03e3a0a4a6f3d77c9d9" title="nlohmann::detail::from_json" alt="" coords="204,13,387,39"/>
-<area shape="rect" id="node3" href="a00130.html#aecc083aea4b698c33d042670ba50c10f" title="nlohmann::detail::type\l_error::create" alt="" coords="435,5,585,47"/>
-<area shape="rect" id="node4" href="a00035.html#abf41a7e9178356314082284e6cfea278" title="nlohmann::detail::exception\l::name" alt="" coords="633,5,815,47"/>
-<area shape="rect" id="node5" href="a00525.html#a5a92e92a5162db1c03fc73e51596a28d" title="mosq_test.to_string" alt="" coords="863,13,1000,39"/>
-<area shape="rect" id="node6" href="a00525.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="1048,5,1191,47"/>
+<div class="center"><img src="a00105.png" border="0" usemap="#_2home_2iot_2_roomba_2__lib_utils_2_par_exe_8h" alt=""/></div>
+<map name="_2home_2iot_2_roomba_2__lib_utils_2_par_exe_8h" id="_2home_2iot_2_roomba_2__lib_utils_2_par_exe_8h">
 </map>
 </div>
-</p>
-
 </div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00419_source.html">json.hpp</a></li>
-</ul>
+<p><a href="a00044_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html">ParExe</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00526.html">nlohmann</a></li><li class="navelem"><a class="el" href="a00528.html">detail</a></li><li class="navelem"><a class="el" href="a00044.html">from_json_fn</a></li>
+    <li class="navelem"><a class="el" href="dir_e62331f6ef9e5b4fb9d3d5b7795cfd4f.html">_libUtils</a></li><li class="navelem"><a class="el" href="a00044.html">ParExe.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

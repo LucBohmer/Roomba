@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: _mqtt3_listener Struct Reference</title>
+<title>BestRoombaNA: RoombaMQTTClient Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -109,191 +108,1253 @@ $(document).ready(function(){initNavTree('a00017.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00765.html">List of all members</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="a00159.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">_mqtt3_listener Struct Reference</div>  </div>
+<div class="title">RoombaMQTTClient Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="a00196_source.html">mosquitto_broker.h</a>&quot;</code></p>
+<p>Handle Mosquitto functionalities. Set up broker and client, make connection, subscribtion and publish. Contains functions for controlling senseHat functionalities and Roomba IO.  
+ <a href="a00017.html#details">More...</a></p>
+
+<p><code>#include &quot;<a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>&quot;</code></p>
+<div class="dynheader">
+Inheritance diagram for RoombaMQTTClient:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00160.png" border="0" usemap="#_roomba_m_q_t_t_client_inherit__map" alt="Inheritance graph"/></div>
+<map name="_roomba_m_q_t_t_client_inherit__map" id="_roomba_m_q_t_t_client_inherit__map">
+<area shape="rect" id="node2" href="a00006.html" title="CommandProcessor" alt="" coords="8,80,149,107"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for RoombaMQTTClient:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00161.png" border="0" usemap="#_roomba_m_q_t_t_client_coll__map" alt="Collaboration graph"/></div>
+<map name="_roomba_m_q_t_t_client_coll__map" id="_roomba_m_q_t_t_client_coll__map">
+<area shape="rect" id="node2" href="a00006.html" title="CommandProcessor" alt="" coords="71,109,212,136"/>
+<area shape="rect" id="node4" href="a00022.html" title="The class Topic represents a MQTT topic string. A topic string consists of text tokens separated by a..." alt="" coords="177,5,231,32"/>
+<area shape="rect" id="node5" href="a00007.html" title="Handles the IO of the Roomba. Functions in IOhandler can be called to let the Roomba execute movement..." alt="" coords="237,109,315,136"/>
+<area shape="rect" id="node6" href="a00012.html" title="ParLoop" alt="" coords="339,109,410,136"/>
+<area shape="rect" id="node7" href="a00018.html" title="Contains functionalities of RPi senseHAT. Functionalities: " alt="" coords="482,109,569,136"/>
+<area shape="rect" id="node8" href="a00008.html" title="Controls senseHAT joystick. Joystick reacts to senseHAT joystick events received in a loop executed i..." alt="" coords="441,5,511,32"/>
+<area shape="rect" id="node9" href="a00009.html" title="LedMatrix" alt="" coords="535,5,614,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6dd482433082bce13771d39769259fe0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a6dd482433082bce13771d39769259fe0">RoombaMQTTClient</a> (const std::string &amp;appname, const std::string &amp;clientname, const std::string &amp;host, int port)</td></tr>
+<tr class="memdesc:a6dd482433082bce13771d39769259fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a6dd482433082bce13771d39769259fe0">More...</a><br /></td></tr>
+<tr class="separator:a6dd482433082bce13771d39769259fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec3633e3b0c315a265435d9f67725f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#adec3633e3b0c315a265435d9f67725f1">RoombaMQTTClient</a> ()=delete</td></tr>
+<tr class="separator:adec3633e3b0c315a265435d9f67725f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28501075932f0eb8043f992c0d16f692"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a28501075932f0eb8043f992c0d16f692">RoombaMQTTClient</a> (const <a class="el" href="a00017.html">RoombaMQTTClient</a> &amp;other)=delete</td></tr>
+<tr class="separator:a28501075932f0eb8043f992c0d16f692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4faa8c910dbeb5ff48c1c5cb927d8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00017.html">RoombaMQTTClient</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aed4faa8c910dbeb5ff48c1c5cb927d8e">operator=</a> (const <a class="el" href="a00017.html">RoombaMQTTClient</a> &amp;other)=delete</td></tr>
+<tr class="separator:aed4faa8c910dbeb5ff48c1c5cb927d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e40774c307dee9e4bba3f99a0458fd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a2e40774c307dee9e4bba3f99a0458fd3">startClient</a> ()</td></tr>
+<tr class="separator:a2e40774c307dee9e4bba3f99a0458fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2afc843828bc60c99b1908551836ccd1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a2afc843828bc60c99b1908551836ccd1">~RoombaMQTTClient</a> ()</td></tr>
+<tr class="memdesc:a2afc843828bc60c99b1908551836ccd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a2afc843828bc60c99b1908551836ccd1">More...</a><br /></td></tr>
+<tr class="separator:a2afc843828bc60c99b1908551836ccd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00006"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00006')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a00006.html">CommandProcessor</a></td></tr>
+<tr class="memitem:a053c5d39a7c42ddaeeab11467a052e98 inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a053c5d39a7c42ddaeeab11467a052e98">CommandProcessor</a> (const std::string &amp;appname, const std::string &amp;clientname, const std::string &amp;host, int port)</td></tr>
+<tr class="separator:a053c5d39a7c42ddaeeab11467a052e98 inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ed59d0f22d979f2010a541a08c1ee3 inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ad3ed59d0f22d979f2010a541a08c1ee3">CommandProcessor</a> (const <a class="el" href="a00006.html">CommandProcessor</a> &amp;other)=delete</td></tr>
+<tr class="separator:ad3ed59d0f22d979f2010a541a08c1ee3 inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1068633e1f6af69a67de06f10d8dba3a inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00006.html">CommandProcessor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a1068633e1f6af69a67de06f10d8dba3a">operator=</a> (const <a class="el" href="a00006.html">CommandProcessor</a> &amp;other)=delete</td></tr>
+<tr class="separator:a1068633e1f6af69a67de06f10d8dba3a inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b975af12657aab33323c1b6c5bb2961 inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a8b975af12657aab33323c1b6c5bb2961">~CommandProcessor</a> ()</td></tr>
+<tr class="separator:a8b975af12657aab33323c1b6c5bb2961 inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e15bc0082d628bd05aacedd5aa7ee0 inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a> (const std::string &amp;command, <a class="el" href="a00025.html#a28db7178a71eff1027c055c9b19f6215">commandfunction</a> cfunction)</td></tr>
+<tr class="separator:a72e15bc0082d628bd05aacedd5aa7ee0 inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a830f1939e458f31f0cd2d42855609f inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a3a830f1939e458f31f0cd2d42855609f">executeCommand</a> (const std::string &amp;command)</td></tr>
+<tr class="separator:a3a830f1939e458f31f0cd2d42855609f inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c23c88fe12e643092993a8bb2aa0528 inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a9c23c88fe12e643092993a8bb2aa0528">executeCommands</a> (const std::vector&lt; std::string &gt; &amp;commands)</td></tr>
+<tr class="separator:a9c23c88fe12e643092993a8bb2aa0528 inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c9458174f6909a46b20d26bc489f68 inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a11c9458174f6909a46b20d26bc489f68">commandIsRegistered</a> (const std::string &amp;command) const </td></tr>
+<tr class="separator:a11c9458174f6909a46b20d26bc489f68 inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ad204c02a79887698c6abc93729a2d inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a88ad204c02a79887698c6abc93729a2d">publishAddition</a> (const std::string &amp;topicAddition, const std::string &amp;message)</td></tr>
+<tr class="separator:a88ad204c02a79887698c6abc93729a2d inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97c2e58deecce8bd6dac0d081d73f03 inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ae97c2e58deecce8bd6dac0d081d73f03">publishReturn</a> (const std::string &amp;command, const std::string &amp;message)</td></tr>
+<tr class="separator:ae97c2e58deecce8bd6dac0d081d73f03 inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f5c17ab23203abee8a48c82f3338a28 inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a0f5c17ab23203abee8a48c82f3338a28">publishInfo</a> (const std::string &amp;command, const std::string &amp;message)</td></tr>
+<tr class="separator:a0f5c17ab23203abee8a48c82f3338a28 inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0691a985030ebb0cef833aa779bedeab inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a0691a985030ebb0cef833aa779bedeab">publishWarning</a> (const std::string &amp;command, const std::string &amp;message)</td></tr>
+<tr class="separator:a0691a985030ebb0cef833aa779bedeab inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e3fda8d03c8f5aea99a442ebdb0050 inherit pub_methods_a00006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">publishError</a> (const std::string &amp;command, const std::string &amp;message)</td></tr>
+<tr class="separator:a81e3fda8d03c8f5aea99a442ebdb0050 inherit pub_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6625c6bd922e847caf58e0d969ce3e60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a6625c6bd922e847caf58e0d969ce3e60">fd</a></td></tr>
-<tr class="separator:a6625c6bd922e847caf58e0d969ce3e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f3e15dab6e5bae10bb2d930034f4d9f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a8f3e15dab6e5bae10bb2d930034f4d9f">host</a></td></tr>
-<tr class="separator:a8f3e15dab6e5bae10bb2d930034f4d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae260347bb57e825c09097bff30b69c88"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ae260347bb57e825c09097bff30b69c88">port</a></td></tr>
-<tr class="separator:ae260347bb57e825c09097bff30b69c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a802f0208ed0cc099a4e3cbaa5383b44e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a802f0208ed0cc099a4e3cbaa5383b44e">max_connections</a></td></tr>
-<tr class="separator:a802f0208ed0cc099a4e3cbaa5383b44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a8cd1be8f3eb14461532b260c78d1a8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a0a8cd1be8f3eb14461532b260c78d1a8">mount_point</a></td></tr>
-<tr class="separator:a0a8cd1be8f3eb14461532b260c78d1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a8b4323b336b3033ebcf904716fe09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00160.html#ae9ecb8ae965b1d3af4bebd2cc031998e">mosq_sock_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a60a8b4323b336b3033ebcf904716fe09">socks</a></td></tr>
-<tr class="separator:a60a8b4323b336b3033ebcf904716fe09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac74fcfd0ef8ab1775b8e8292b9a5b95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aac74fcfd0ef8ab1775b8e8292b9a5b95">sock_count</a></td></tr>
-<tr class="separator:aac74fcfd0ef8ab1775b8e8292b9a5b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5d4b8710a09924861317deac08472fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ad5d4b8710a09924861317deac08472fb">client_count</a></td></tr>
-<tr class="separator:ad5d4b8710a09924861317deac08472fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d78649594bccaac148977ebfbc7e367"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="a00196.html#a2016ca244d8a59290552cd83840faa17">mosquitto_protocol</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a7d78649594bccaac148977ebfbc7e367">protocol</a></td></tr>
-<tr class="separator:a7d78649594bccaac148977ebfbc7e367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa90c9af6612aaf612ecd5917989a423c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aa90c9af6612aaf612ecd5917989a423c">use_username_as_clientid</a></td></tr>
-<tr class="separator:aa90c9af6612aaf612ecd5917989a423c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3cfe65bc1d0d6cc386814894fd73ed9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00018.html">SenseHAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a></td></tr>
+<tr class="separator:ac3cfe65bc1d0d6cc386814894fd73ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f29f0b7a826e2453e817316e45854e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">IOhandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a1f29f0b7a826e2453e817316e45854e2">ioHandler_</a></td></tr>
+<tr class="separator:a1f29f0b7a826e2453e817316e45854e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0d74e4a5547058c2df115fd4eb3746fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a0d74e4a5547058c2df115fd4eb3746fa">clear</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:a0d74e4a5547058c2df115fd4eb3746fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5436ba636ef4f1b1441d1d6ab6dc508"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#af5436ba636ef4f1b1441d1d6ab6dc508">blank</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:af5436ba636ef4f1b1441d1d6ab6dc508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac429deb3c9fe3acb5a55d4ef09117b33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ac429deb3c9fe3acb5a55d4ef09117b33">invert</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:ac429deb3c9fe3acb5a55d4ef09117b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da99affbcb2b7fd8bc4a6545500db9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a0da99affbcb2b7fd8bc4a6545500db9e">setPixel</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:a0da99affbcb2b7fd8bc4a6545500db9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f07765bf027797c82f5133c055e4996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a4f07765bf027797c82f5133c055e4996">getPixel</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:a4f07765bf027797c82f5133c055e4996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae48b84d1c5fd197c6ca7108117d7ae27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ae48b84d1c5fd197c6ca7108117d7ae27">invertPixel</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:ae48b84d1c5fd197c6ca7108117d7ae27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9f9242f0623f530fc4323c43fe05eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ace9f9242f0623f530fc4323c43fe05eb">cylonPar</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:ace9f9242f0623f530fc4323c43fe05eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82331be845fa4168f4f73c389dc0f86b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a82331be845fa4168f4f73c389dc0f86b">cylon</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:a82331be845fa4168f4f73c389dc0f86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983ef2d5ef0bb7e948af0642d6f679b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a983ef2d5ef0bb7e948af0642d6f679b5">sendHeartbeat</a> ()</td></tr>
+<tr class="separator:a983ef2d5ef0bb7e948af0642d6f679b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1897b8ec23ad132be4fbd3faee376c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aec1897b8ec23ad132be4fbd3faee376c">handleSensorData</a> ()</td></tr>
+<tr class="separator:aec1897b8ec23ad132be4fbd3faee376c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fde2c41ac80eb38adc159543a6e2a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a46fde2c41ac80eb38adc159543a6e2a2">clean</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:a46fde2c41ac80eb38adc159543a6e2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7514f053bd21c284712096e05c6bd00b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a7514f053bd21c284712096e05c6bd00b">spot</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:a7514f053bd21c284712096e05c6bd00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5665062c02c2edb06aa12dadb148a178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a5665062c02c2edb06aa12dadb148a178">dock</a> (const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;commandParameters)</td></tr>
+<tr class="separator:a5665062c02c2edb06aa12dadb148a178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_a00006"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a00006')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="a00006.html">CommandProcessor</a></td></tr>
+<tr class="memitem:ab1a2cf5d74c8bbd9bbcf57c7a4b14c66 inherit pro_methods_a00006"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ab1a2cf5d74c8bbd9bbcf57c7a4b14c66">on_message</a> (const mosquitto_message *message) override</td></tr>
+<tr class="separator:ab1a2cf5d74c8bbd9bbcf57c7a4b14c66 inherit pro_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242db95796f5dd1b17a139ed19d6ecfa inherit pro_methods_a00006"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a242db95796f5dd1b17a139ed19d6ecfa">on_connect</a> (int rc) override</td></tr>
+<tr class="separator:a242db95796f5dd1b17a139ed19d6ecfa inherit pro_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7300ca2e9cd0237f17ce82f64123e553 inherit pro_methods_a00006"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a7300ca2e9cd0237f17ce82f64123e553">on_log</a> (int level, const char *str) override</td></tr>
+<tr class="separator:a7300ca2e9cd0237f17ce82f64123e553 inherit pro_methods_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ad719608d3f63586e51e3c599b6c5bf97"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ad719608d3f63586e51e3c599b6c5bf97">mqttID_</a></td></tr>
+<tr class="separator:ad719608d3f63586e51e3c599b6c5bf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e9921cb2e1f472c7da749dea886499"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a24e9921cb2e1f472c7da749dea886499">x_</a></td></tr>
+<tr class="separator:a24e9921cb2e1f472c7da749dea886499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5f30019ee42c5b2ba0016dbbcc4ae8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aee5f30019ee42c5b2ba0016dbbcc4ae8">y_</a></td></tr>
+<tr class="separator:aee5f30019ee42c5b2ba0016dbbcc4ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b046bca88352d07b551da9b8d31a61"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a92b046bca88352d07b551da9b8d31a61">min_x_</a> = 0</td></tr>
+<tr class="separator:a92b046bca88352d07b551da9b8d31a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8dd449c7bec9783c955b0efa405c9a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a2f8dd449c7bec9783c955b0efa405c9a">min_y_</a> = 0</td></tr>
+<tr class="separator:a2f8dd449c7bec9783c955b0efa405c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e4bb6db1c5ede4ab0a77a7748adb56"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a58e4bb6db1c5ede4ab0a77a7748adb56">max_x_</a> = 7</td></tr>
+<tr class="separator:a58e4bb6db1c5ede4ab0a77a7748adb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8ccf1b6b09865738066dee4e398bf3"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a7d8ccf1b6b09865738066dee4e398bf3">max_y_</a> = 7</td></tr>
+<tr class="separator:a7d8ccf1b6b09865738066dee4e398bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096e9e9a59ee7fc1fa7a74d440019a6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00012.html">ParLoop</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a096e9e9a59ee7fc1fa7a74d440019a6c">publishSensorData_</a></td></tr>
+<tr class="separator:a096e9e9a59ee7fc1fa7a74d440019a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1da370000b37a8a83ef2ce5a6228cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00012.html">ParLoop</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a8c1da370000b37a8a83ef2ce5a6228cc">heartbeatPar_</a></td></tr>
+<tr class="separator:a8c1da370000b37a8a83ef2ce5a6228cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_a00006"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_a00006')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="a00006.html">CommandProcessor</a></td></tr>
+<tr class="memitem:aab13edb02dbcc123e831e1cce20695a0 inherit pro_attribs_a00006"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#aab13edb02dbcc123e831e1cce20695a0">appname_</a></td></tr>
+<tr class="separator:aab13edb02dbcc123e831e1cce20695a0 inherit pro_attribs_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3922d658643297c47765181a251b10d3 inherit pro_attribs_a00006"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a3922d658643297c47765181a251b10d3">clientname_</a></td></tr>
+<tr class="separator:a3922d658643297c47765181a251b10d3 inherit pro_attribs_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f0d615c62c8c7e1712522c4577ea53 inherit pro_attribs_a00006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00022.html">Topic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a97f0d615c62c8c7e1712522c4577ea53">topicRoot_</a></td></tr>
+<tr class="separator:a97f0d615c62c8c7e1712522c4577ea53 inherit pro_attribs_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac695d4ff50c2dd91b25c8079b22170e4 inherit pro_attribs_a00006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00022.html">Topic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac695d4ff50c2dd91b25c8079b22170e4">topicCommandRoot_</a></td></tr>
+<tr class="separator:ac695d4ff50c2dd91b25c8079b22170e4 inherit pro_attribs_a00006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="a00196_source.html#l00072">72</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ad5d4b8710a09924861317deac08472fb"></a>
+<div class="textblock"><p>Handle Mosquitto functionalities. Set up broker and client, make connection, subscribtion and publish. Contains functions for controlling senseHat functionalities and Roomba IO. </p>
+
+<p>Definition at line <a class="el" href="a00071_source.html#l00028">28</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6dd482433082bce13771d39769259fe0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int _mqtt3_listener::client_count</td>
+          <td class="memname">RoombaMQTTClient::RoombaMQTTClient </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>appname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>clientname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00080">80</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Constructor. </p>
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00019">19</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                 : <a class="code" href="a00006.html#a053c5d39a7c42ddaeeab11467a052e98">CommandProcessor</a>(appname, clientname, host, port),</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                   <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>{},</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                   <a class="code" href="a00017.html#a1f29f0b7a826e2453e817316e45854e2">ioHandler_</a>{},</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                   pi_{0},</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                   happy_{0},</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                   name_{0},</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                   list_{0},</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                   jsonData_{},</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                   <a class="code" href="a00017.html#ad719608d3f63586e51e3c599b6c5bf97">mqttID_</a>{<a class="code" href="a00027.html#af57d20ffe5b67241eeaa3f90e44e62c1">HOSTNAME</a> + appname + clientname},</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                   <a class="code" href="a00017.html#a24e9921cb2e1f472c7da749dea886499">x_</a>{0},</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                   <a class="code" href="a00017.html#aee5f30019ee42c5b2ba0016dbbcc4ae8">y_</a>{0},</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                   <a class="code" href="a00017.html#a096e9e9a59ee7fc1fa7a74d440019a6c">publishSensorData_</a>(std::bind(&amp;<a class="code" href="a00017.html#aec1897b8ec23ad132be4fbd3faee376c">RoombaMQTTClient::handleSensorData</a>, <span class="keyword">this</span>), 60),</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                   <a class="code" href="a00017.html#a8c1da370000b37a8a83ef2ce5a6228cc">heartbeatPar_</a>(std::bind(&amp;<a class="code" href="a00017.html#a983ef2d5ef0bb7e948af0642d6f679b5">RoombaMQTTClient::sendHeartbeat</a>, <span class="keyword">this</span>), 10)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;---- CTOR MQTTsenseHAT host = &#39;&quot;</span> &lt;&lt; host</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;&#39;  port = &quot;</span> &lt;&lt; port</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;  id = &quot;</span> &lt;&lt; <a class="code" href="a00017.html#ad719608d3f63586e51e3c599b6c5bf97">mqttID_</a></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;  topic root = &quot;</span> &lt;&lt; <a class="code" href="a00027.html#a60fee359301005c276b7df20454f9a94">MQTT_TOPIC_ROOT</a> &lt;&lt; std::endl;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a2737d95498692cc098be8edc8937ada6">clear</a>(<a class="code" href="a00015.html">Pixel</a>{0, 50, 0});</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// LEDs display commands</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a>(<span class="stringliteral">&quot;clear&quot;</span>, bind(&amp;<a class="code" href="a00017.html#a0d74e4a5547058c2df115fd4eb3746fa">RoombaMQTTClient::clear</a>, <span class="keyword">this</span>,</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                  placeholders::_1));</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a>(<span class="stringliteral">&quot;blank&quot;</span>, bind(&amp;<a class="code" href="a00017.html#af5436ba636ef4f1b1441d1d6ab6dc508">RoombaMQTTClient::blank</a>, <span class="keyword">this</span>,</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                  placeholders::_1));</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a>(<span class="stringliteral">&quot;invert&quot;</span>, bind(&amp;<a class="code" href="a00017.html#ac429deb3c9fe3acb5a55d4ef09117b33">RoombaMQTTClient::invert</a>, <span class="keyword">this</span>,</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                   placeholders::_1));</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a>(<span class="stringliteral">&quot;setPixel&quot;</span>, bind(&amp;<a class="code" href="a00017.html#a0da99affbcb2b7fd8bc4a6545500db9e">RoombaMQTTClient::setPixel</a>, <span class="keyword">this</span>,</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                     placeholders::_1));</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a>(<span class="stringliteral">&quot;getPixel&quot;</span>, bind(&amp;<a class="code" href="a00017.html#a4f07765bf027797c82f5133c055e4996">RoombaMQTTClient::getPixel</a>, <span class="keyword">this</span>,</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                     placeholders::_1));</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a>(<span class="stringliteral">&quot;invertPixel&quot;</span>, bind(&amp;<a class="code" href="a00017.html#ae48b84d1c5fd197c6ca7108117d7ae27">RoombaMQTTClient::invertPixel</a>, <span class="keyword">this</span>,</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                        placeholders::_1));</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a>(<span class="stringliteral">&quot;cylon&quot;</span>, bind(&amp;<a class="code" href="a00017.html#a82331be845fa4168f4f73c389dc0f86b">RoombaMQTTClient::cylon</a>, <span class="keyword">this</span>,</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                  placeholders::_1));</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Roomba buttons                             </span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a>(<span class="stringliteral">&quot;clean&quot;</span>, bind(&amp;<a class="code" href="a00017.html#a46fde2c41ac80eb38adc159543a6e2a2">RoombaMQTTClient::clean</a>, <span class="keyword">this</span>,</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                  placeholders::_1));</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a>(<span class="stringliteral">&quot;spot&quot;</span>, bind(&amp;<a class="code" href="a00017.html#a7514f053bd21c284712096e05c6bd00b">RoombaMQTTClient::spot</a>, <span class="keyword">this</span>,</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                  placeholders::_1));</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">registerCommand</a>(<span class="stringliteral">&quot;dock&quot;</span>, bind(&amp;<a class="code" href="a00017.html#a5665062c02c2edb06aa12dadb148a178">RoombaMQTTClient::dock</a>, <span class="keyword">this</span>,</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                  placeholders::_1));</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">setPixel</a>(<a class="code" href="a00017.html#a24e9921cb2e1f472c7da749dea886499">x_</a>, <a class="code" href="a00017.html#aee5f30019ee42c5b2ba0016dbbcc4ae8">y_</a>, <a class="code" href="a00015.html">Pixel</a>{200, 100, 100});</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    data2json();</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;Data in json format = &quot;</span> &lt;&lt; jsonData_ &lt;&lt; std::endl;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div><div class="ttc" id="a00017_html_ac429deb3c9fe3acb5a55d4ef09117b33"><div class="ttname"><a href="a00017.html#ac429deb3c9fe3acb5a55d4ef09117b33">RoombaMQTTClient::invert</a></div><div class="ttdeci">void invert(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00168">RoombaMQTTClient.cpp:168</a></div></div>
+<div class="ttc" id="a00017_html_a0d74e4a5547058c2df115fd4eb3746fa"><div class="ttname"><a href="a00017.html#a0d74e4a5547058c2df115fd4eb3746fa">RoombaMQTTClient::clear</a></div><div class="ttdeci">void clear(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00153">RoombaMQTTClient.cpp:153</a></div></div>
+<div class="ttc" id="a00017_html_a1f29f0b7a826e2453e817316e45854e2"><div class="ttname"><a href="a00017.html#a1f29f0b7a826e2453e817316e45854e2">RoombaMQTTClient::ioHandler_</a></div><div class="ttdeci">IOhandler ioHandler_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00043">RoombaMQTTClient.h:43</a></div></div>
+<div class="ttc" id="a00017_html_ae48b84d1c5fd197c6ca7108117d7ae27"><div class="ttname"><a href="a00017.html#ae48b84d1c5fd197c6ca7108117d7ae27">RoombaMQTTClient::invertPixel</a></div><div class="ttdeci">void invertPixel(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00212">RoombaMQTTClient.cpp:212</a></div></div>
+<div class="ttc" id="a00017_html_a983ef2d5ef0bb7e948af0642d6f679b5"><div class="ttname"><a href="a00017.html#a983ef2d5ef0bb7e948af0642d6f679b5">RoombaMQTTClient::sendHeartbeat</a></div><div class="ttdeci">void sendHeartbeat()</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00287">RoombaMQTTClient.cpp:287</a></div></div>
+<div class="ttc" id="a00015_html"><div class="ttname"><a href="a00015.html">Pixel</a></div><div class="ttdef"><b>Definition:</b> <a href="a00041_source.html#l00006">Pixel.h:6</a></div></div>
+<div class="ttc" id="a00017_html_a7514f053bd21c284712096e05c6bd00b"><div class="ttname"><a href="a00017.html#a7514f053bd21c284712096e05c6bd00b">RoombaMQTTClient::spot</a></div><div class="ttdeci">void spot(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00304">RoombaMQTTClient.cpp:304</a></div></div>
+<div class="ttc" id="a00017_html_ad719608d3f63586e51e3c599b6c5bf97"><div class="ttname"><a href="a00017.html#ad719608d3f63586e51e3c599b6c5bf97">RoombaMQTTClient::mqttID_</a></div><div class="ttdeci">const std::string mqttID_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00057">RoombaMQTTClient.h:57</a></div></div>
+<div class="ttc" id="a00027_html_a60fee359301005c276b7df20454f9a94"><div class="ttname"><a href="a00027.html#a60fee359301005c276b7df20454f9a94">MQTT_TOPIC_ROOT</a></div><div class="ttdeci">const std::string MQTT_TOPIC_ROOT</div><div class="ttdef"><b>Definition:</b> <a href="a00027_source.html#l00021">MQTTconfig.h:21</a></div></div>
+<div class="ttc" id="a00006_html_a72e15bc0082d628bd05aacedd5aa7ee0"><div class="ttname"><a href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0">CommandProcessor::registerCommand</a></div><div class="ttdeci">void registerCommand(const std::string &amp;command, commandfunction cfunction)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00049">CommandProcessor.cpp:49</a></div></div>
+<div class="ttc" id="a00017_html_a8c1da370000b37a8a83ef2ce5a6228cc"><div class="ttname"><a href="a00017.html#a8c1da370000b37a8a83ef2ce5a6228cc">RoombaMQTTClient::heartbeatPar_</a></div><div class="ttdeci">ParLoop heartbeatPar_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00066">RoombaMQTTClient.h:66</a></div></div>
+<div class="ttc" id="a00009_html_a00eb3db37486902ee8509a95c1ac09fe"><div class="ttname"><a href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">LedMatrix::setPixel</a></div><div class="ttdeci">int setPixel(uint8_t x, uint8_t y, const Pixel &amp;pixel)</div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00036">LedMatrix.cpp:36</a></div></div>
+<div class="ttc" id="a00018_html_a09557e42b20ddddc1763917bd36f36a7"><div class="ttname"><a href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">SenseHAT::leds</a></div><div class="ttdeci">LedMatrix leds</div><div class="ttdef"><b>Definition:</b> <a href="a00043_source.html#l00035">SenseHAT.h:35</a></div></div>
+<div class="ttc" id="a00017_html_a4f07765bf027797c82f5133c055e4996"><div class="ttname"><a href="a00017.html#a4f07765bf027797c82f5133c055e4996">RoombaMQTTClient::getPixel</a></div><div class="ttdeci">void getPixel(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00197">RoombaMQTTClient.cpp:197</a></div></div>
+<div class="ttc" id="a00017_html_a5665062c02c2edb06aa12dadb148a178"><div class="ttname"><a href="a00017.html#a5665062c02c2edb06aa12dadb148a178">RoombaMQTTClient::dock</a></div><div class="ttdeci">void dock(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00316">RoombaMQTTClient.cpp:316</a></div></div>
+<div class="ttc" id="a00017_html_a46fde2c41ac80eb38adc159543a6e2a2"><div class="ttname"><a href="a00017.html#a46fde2c41ac80eb38adc159543a6e2a2">RoombaMQTTClient::clean</a></div><div class="ttdeci">void clean(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00292">RoombaMQTTClient.cpp:292</a></div></div>
+<div class="ttc" id="a00017_html_ac3cfe65bc1d0d6cc386814894fd73ed9"><div class="ttname"><a href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">RoombaMQTTClient::senseHAT_</a></div><div class="ttdeci">SenseHAT senseHAT_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00041">RoombaMQTTClient.h:41</a></div></div>
+<div class="ttc" id="a00017_html_af5436ba636ef4f1b1441d1d6ab6dc508"><div class="ttname"><a href="a00017.html#af5436ba636ef4f1b1441d1d6ab6dc508">RoombaMQTTClient::blank</a></div><div class="ttdeci">void blank(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00141">RoombaMQTTClient.cpp:141</a></div></div>
+<div class="ttc" id="a00017_html_a0da99affbcb2b7fd8bc4a6545500db9e"><div class="ttname"><a href="a00017.html#a0da99affbcb2b7fd8bc4a6545500db9e">RoombaMQTTClient::setPixel</a></div><div class="ttdeci">void setPixel(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00180">RoombaMQTTClient.cpp:180</a></div></div>
+<div class="ttc" id="a00017_html_aec1897b8ec23ad132be4fbd3faee376c"><div class="ttname"><a href="a00017.html#aec1897b8ec23ad132be4fbd3faee376c">RoombaMQTTClient::handleSensorData</a></div><div class="ttdeci">void handleSensorData()</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00272">RoombaMQTTClient.cpp:272</a></div></div>
+<div class="ttc" id="a00017_html_aee5f30019ee42c5b2ba0016dbbcc4ae8"><div class="ttname"><a href="a00017.html#aee5f30019ee42c5b2ba0016dbbcc4ae8">RoombaMQTTClient::y_</a></div><div class="ttdeci">int y_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00059">RoombaMQTTClient.h:59</a></div></div>
+<div class="ttc" id="a00017_html_a24e9921cb2e1f472c7da749dea886499"><div class="ttname"><a href="a00017.html#a24e9921cb2e1f472c7da749dea886499">RoombaMQTTClient::x_</a></div><div class="ttdeci">int x_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00058">RoombaMQTTClient.h:58</a></div></div>
+<div class="ttc" id="a00017_html_a82331be845fa4168f4f73c389dc0f86b"><div class="ttname"><a href="a00017.html#a82331be845fa4168f4f73c389dc0f86b">RoombaMQTTClient::cylon</a></div><div class="ttdeci">void cylon(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00267">RoombaMQTTClient.cpp:267</a></div></div>
+<div class="ttc" id="a00009_html_a2737d95498692cc098be8edc8937ada6"><div class="ttname"><a href="a00009.html#a2737d95498692cc098be8edc8937ada6">LedMatrix::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00021">LedMatrix.cpp:21</a></div></div>
+<div class="ttc" id="a00006_html_a053c5d39a7c42ddaeeab11467a052e98"><div class="ttname"><a href="a00006.html#a053c5d39a7c42ddaeeab11467a052e98">CommandProcessor::CommandProcessor</a></div><div class="ttdeci">CommandProcessor(const std::string &amp;appname, const std::string &amp;clientname, const std::string &amp;host, int port)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00007">CommandProcessor.cpp:7</a></div></div>
+<div class="ttc" id="a00027_html_af57d20ffe5b67241eeaa3f90e44e62c1"><div class="ttname"><a href="a00027.html#af57d20ffe5b67241eeaa3f90e44e62c1">HOSTNAME</a></div><div class="ttdeci">const std::string HOSTNAME</div><div class="ttdef"><b>Definition:</b> <a href="a00027_source.html#l00007">MQTTconfig.h:7</a></div></div>
+<div class="ttc" id="a00017_html_a096e9e9a59ee7fc1fa7a74d440019a6c"><div class="ttname"><a href="a00017.html#a096e9e9a59ee7fc1fa7a74d440019a6c">RoombaMQTTClient::publishSensorData_</a></div><div class="ttdeci">ParLoop publishSensorData_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00065">RoombaMQTTClient.h:65</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a6dd482433082bce13771d39769259fe0_cgraph.png" border="0" usemap="#a00017_a6dd482433082bce13771d39769259fe0_cgraph" alt=""/></div>
+<map name="a00017_a6dd482433082bce13771d39769259fe0_cgraph" id="a00017_a6dd482433082bce13771d39769259fe0_cgraph">
+<area shape="rect" id="node2" href="a00017.html#aec1897b8ec23ad132be4fbd3faee376c" title="RoombaMQTTClient::handle\lSensorData" alt="" coords="275,48,463,90"/>
+<area shape="rect" id="node3" href="a00017.html#a983ef2d5ef0bb7e948af0642d6f679b5" title="RoombaMQTTClient::sendHeartbeat" alt="" coords="252,114,487,141"/>
+<area shape="rect" id="node8" href="a00009.html#a2737d95498692cc098be8edc8937ada6" title="LedMatrix::clear" alt="" coords="583,282,698,309"/>
+<area shape="rect" id="node11" href="a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0" title="CommandProcessor::register\lCommand" alt="" coords="273,166,465,207"/>
+<area shape="rect" id="node15" href="a00017.html#a0d74e4a5547058c2df115fd4eb3746fa" title="RoombaMQTTClient::clear" alt="" coords="280,333,459,360"/>
+<area shape="rect" id="node17" href="a00017.html#af5436ba636ef4f1b1441d1d6ab6dc508" title="RoombaMQTTClient::blank" alt="" coords="279,384,460,410"/>
+<area shape="rect" id="node18" href="a00017.html#ac429deb3c9fe3acb5a55d4ef09117b33" title="RoombaMQTTClient::invert" alt="" coords="278,232,461,258"/>
+<area shape="rect" id="node20" href="a00017.html#a0da99affbcb2b7fd8bc4a6545500db9e" title="RoombaMQTTClient::setPixel" alt="" coords="271,637,468,664"/>
+<area shape="rect" id="node21" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe" title="LedMatrix::setPixel" alt="" coords="823,718,957,745"/>
+<area shape="rect" id="node23" href="a00017.html#a4f07765bf027797c82f5133c055e4996" title="RoombaMQTTClient::getPixel" alt="" coords="271,434,468,461"/>
+<area shape="rect" id="node27" href="a00017.html#ae48b84d1c5fd197c6ca7108117d7ae27" title="RoombaMQTTClient::invert\lPixel" alt="" coords="278,688,461,730"/>
+<area shape="rect" id="node29" href="a00017.html#a82331be845fa4168f4f73c389dc0f86b" title="RoombaMQTTClient::cylon" alt="" coords="279,870,460,897"/>
+<area shape="rect" id="node31" href="a00017.html#a46fde2c41ac80eb38adc159543a6e2a2" title="RoombaMQTTClient::clean" alt="" coords="279,536,460,562"/>
+<area shape="rect" id="node35" href="a00017.html#a7514f053bd21c284712096e05c6bd00b" title="RoombaMQTTClient::spot" alt="" coords="282,586,457,613"/>
+<area shape="rect" id="node38" href="a00017.html#a5665062c02c2edb06aa12dadb148a178" title="RoombaMQTTClient::dock" alt="" coords="280,485,459,512"/>
+<area shape="rect" id="node4" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="795,166,985,207"/>
+<area shape="rect" id="node5" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="1049,173,1132,200"/>
+<area shape="rect" id="node6" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="1229,198,1275,225"/>
+<area shape="rect" id="node7" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="1196,148,1308,174"/>
+<area shape="rect" id="node9" href="a00038.html#ae694f5385199541875c04d6498eda356" title="blank" alt="" coords="1064,381,1117,408"/>
+<area shape="rect" id="node10" href="a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="1223,465,1281,492"/>
+<area shape="rect" id="node12" href="a00006.html#a11c9458174f6909a46b20d26bc489f68" title="CommandProcessor::command\lIsRegistered" alt="" coords="537,48,744,90"/>
+<area shape="rect" id="node13" href="a00006.html#a0f5c17ab23203abee8a48c82f3338a28" title="CommandProcessor::publishInfo" alt="" coords="535,114,747,141"/>
+<area shape="rect" id="node14" href="a00006.html#a0691a985030ebb0cef833aa779bedeab" title="CommandProcessor::publish\lWarning" alt="" coords="545,166,736,207"/>
+<area shape="rect" id="node16" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="545,399,736,440"/>
+<area shape="rect" id="node19" href="a00009.html#af1e9e51216169ec51398b259129de5e1" title="LedMatrix::invert" alt="" coords="581,232,700,258"/>
+<area shape="rect" id="node22" href="a00038.html#a80e57b8e92455ad8851540f2a348f009" title="set_pixel" alt="" coords="1053,668,1128,694"/>
+<area shape="rect" id="node24" href="a00009.html#a7f46ff6f7d413db5ac77225d47219397" title="LedMatrix::getPixel" alt="" coords="573,465,708,492"/>
+<area shape="rect" id="node26" href="a00006.html#ae97c2e58deecce8bd6dac0d081d73f03" title="CommandProcessor::publish\lReturn" alt="" coords="545,334,736,375"/>
+<area shape="rect" id="node25" href="a00038.html#ae6094a71213cd0ae1172a64c8140b0a4" title="get_pixel" alt="" coords="1053,465,1128,492"/>
+<area shape="rect" id="node28" href="a00015.html#a1159eae28181f9bd41ac10833122a7d2" title="Pixel::invert" alt="" coords="595,769,686,796"/>
+<area shape="rect" id="node30" href="a00017.html#ace9f9242f0623f530fc4323c43fe05eb" title="RoombaMQTTClient::cylonPar" alt="" coords="540,870,741,897"/>
+<area shape="rect" id="node32" href="a00007.html#a9f30920955fcdf96547cf4e15ee41b4d" title="Starts Roomba in Clean mode. When called again the Roomba wil stop this action. " alt="" coords="581,566,701,593"/>
+<area shape="rect" id="node33" href="a00020.html#a32af8865495cc6f233b57706a9c815ae" title="Writes serial Clean command Roomba is started in Clean mode. When called again the Roomba exit Clean ..." alt="" coords="811,566,969,593"/>
+<area shape="rect" id="node34" href="a00021.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="1033,566,1148,593"/>
+<area shape="rect" id="node36" href="a00007.html#af9177167f3363d45781b427d50816c17" title="Starts Roomba in Spot mode. When called again the Roomba wil stop this action. " alt="" coords="584,617,697,644"/>
+<area shape="rect" id="node37" href="a00020.html#a12277d5ef016e6f28debf16ee3e93598" title="Writes serial Spot command Roomba is started in Spot mode. When called again the Roomba exit Spot mod..." alt="" coords="815,617,965,644"/>
+<area shape="rect" id="node39" href="a00007.html#aa50ed3f49aa0bf54b7b626b7dd0c904d" title="Starts Roomba in Dock mode. When called again the Roomba wil stop this action. " alt="" coords="582,516,699,542"/>
+<area shape="rect" id="node40" href="a00020.html#a8dfe0ebaea19eab82083434068bc14df" title="Writes serial Dock command Roomba is started in Force Dock Seeking mode. When called again the Roomba..." alt="" coords="813,516,967,542"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a6625c6bd922e847caf58e0d969ce3e60"></a>
+<a class="anchor" id="adec3633e3b0c315a265435d9f67725f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RoombaMQTTClient::RoombaMQTTClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a28501075932f0eb8043f992c0d16f692"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RoombaMQTTClient::RoombaMQTTClient </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00017.html">RoombaMQTTClient</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2afc843828bc60c99b1908551836ccd1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RoombaMQTTClient::~RoombaMQTTClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00136">136</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a2737d95498692cc098be8edc8937ada6">clear</a>(<a class="code" href="a00015.html">Pixel</a>{50, 0, 0});</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div><div class="ttc" id="a00015_html"><div class="ttname"><a href="a00015.html">Pixel</a></div><div class="ttdef"><b>Definition:</b> <a href="a00041_source.html#l00006">Pixel.h:6</a></div></div>
+<div class="ttc" id="a00018_html_a09557e42b20ddddc1763917bd36f36a7"><div class="ttname"><a href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">SenseHAT::leds</a></div><div class="ttdeci">LedMatrix leds</div><div class="ttdef"><b>Definition:</b> <a href="a00043_source.html#l00035">SenseHAT.h:35</a></div></div>
+<div class="ttc" id="a00017_html_ac3cfe65bc1d0d6cc386814894fd73ed9"><div class="ttname"><a href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">RoombaMQTTClient::senseHAT_</a></div><div class="ttdeci">SenseHAT senseHAT_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00041">RoombaMQTTClient.h:41</a></div></div>
+<div class="ttc" id="a00009_html_a2737d95498692cc098be8edc8937ada6"><div class="ttname"><a href="a00009.html#a2737d95498692cc098be8edc8937ada6">LedMatrix::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00021">LedMatrix.cpp:21</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a2afc843828bc60c99b1908551836ccd1_cgraph.png" border="0" usemap="#a00017_a2afc843828bc60c99b1908551836ccd1_cgraph" alt=""/></div>
+<map name="a00017_a2afc843828bc60c99b1908551836ccd1_cgraph" id="a00017_a2afc843828bc60c99b1908551836ccd1_cgraph">
+<area shape="rect" id="node2" href="a00009.html#a2737d95498692cc098be8edc8937ada6" title="LedMatrix::clear" alt="" coords="204,13,319,39"/>
+<area shape="rect" id="node3" href="a00038.html#ae694f5385199541875c04d6498eda356" title="blank" alt="" coords="367,13,420,39"/>
+<area shape="rect" id="node4" href="a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="468,13,525,39"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af5436ba636ef4f1b1441d1d6ab6dc508"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::blank </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00141">141</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">if</span> (commandParameters.size() != 0)</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">publishError</a>(<span class="stringliteral">&quot;setPixel&quot;</span>, <span class="stringliteral">&quot;number of parameters != 0&quot;</span>);</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    {</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a2737d95498692cc098be8edc8937ada6">clear</a>();</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div><div class="ttc" id="a00018_html_a09557e42b20ddddc1763917bd36f36a7"><div class="ttname"><a href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">SenseHAT::leds</a></div><div class="ttdeci">LedMatrix leds</div><div class="ttdef"><b>Definition:</b> <a href="a00043_source.html#l00035">SenseHAT.h:35</a></div></div>
+<div class="ttc" id="a00017_html_ac3cfe65bc1d0d6cc386814894fd73ed9"><div class="ttname"><a href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">RoombaMQTTClient::senseHAT_</a></div><div class="ttdeci">SenseHAT senseHAT_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00041">RoombaMQTTClient.h:41</a></div></div>
+<div class="ttc" id="a00009_html_a2737d95498692cc098be8edc8937ada6"><div class="ttname"><a href="a00009.html#a2737d95498692cc098be8edc8937ada6">LedMatrix::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00021">LedMatrix.cpp:21</a></div></div>
+<div class="ttc" id="a00006_html_a81e3fda8d03c8f5aea99a442ebdb0050"><div class="ttname"><a href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">CommandProcessor::publishError</a></div><div class="ttdeci">void publishError(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00119">CommandProcessor.cpp:119</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_af5436ba636ef4f1b1441d1d6ab6dc508_cgraph.png" border="0" usemap="#a00017_af5436ba636ef4f1b1441d1d6ab6dc508_cgraph" alt=""/></div>
+<map name="a00017_af5436ba636ef4f1b1441d1d6ab6dc508_cgraph" id="a00017_af5436ba636ef4f1b1441d1d6ab6dc508_cgraph">
+<area shape="rect" id="node2" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="235,23,425,65"/>
+<area shape="rect" id="node7" href="a00009.html#a2737d95498692cc098be8edc8937ada6" title="LedMatrix::clear" alt="" coords="273,89,387,116"/>
+<area shape="rect" id="node3" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="473,23,664,65"/>
+<area shape="rect" id="node4" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="712,31,795,57"/>
+<area shape="rect" id="node5" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="875,5,922,32"/>
+<area shape="rect" id="node6" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="843,56,955,83"/>
+<area shape="rect" id="node8" href="a00038.html#ae694f5385199541875c04d6498eda356" title="blank" alt="" coords="542,89,595,116"/>
+<area shape="rect" id="node9" href="a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="725,89,782,116"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a46fde2c41ac80eb38adc159543a6e2a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::clean </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00292">292</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">if</span> (commandParameters.size() != 0)</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    {</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <a class="code" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">publishError</a>(<span class="stringliteral">&quot;clean&quot;</span>, <span class="stringliteral">&quot;number of parameters != 0&quot;</span>);</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    {</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <a class="code" href="a00017.html#a1f29f0b7a826e2453e817316e45854e2">ioHandler_</a>.<a class="code" href="a00007.html#a9f30920955fcdf96547cf4e15ee41b4d">Clean</a>();</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div><div class="ttc" id="a00017_html_a1f29f0b7a826e2453e817316e45854e2"><div class="ttname"><a href="a00017.html#a1f29f0b7a826e2453e817316e45854e2">RoombaMQTTClient::ioHandler_</a></div><div class="ttdeci">IOhandler ioHandler_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00043">RoombaMQTTClient.h:43</a></div></div>
+<div class="ttc" id="a00007_html_a9f30920955fcdf96547cf4e15ee41b4d"><div class="ttname"><a href="a00007.html#a9f30920955fcdf96547cf4e15ee41b4d">IOhandler::Clean</a></div><div class="ttdeci">void Clean()</div><div class="ttdoc">Starts Roomba in Clean mode. When called again the Roomba wil stop this action. </div><div class="ttdef"><b>Definition:</b> <a href="a00061_source.html#l00107">ioHandler.cpp:107</a></div></div>
+<div class="ttc" id="a00006_html_a81e3fda8d03c8f5aea99a442ebdb0050"><div class="ttname"><a href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">CommandProcessor::publishError</a></div><div class="ttdeci">void publishError(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00119">CommandProcessor.cpp:119</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a46fde2c41ac80eb38adc159543a6e2a2_cgraph.png" border="0" usemap="#a00017_a46fde2c41ac80eb38adc159543a6e2a2_cgraph" alt=""/></div>
+<map name="a00017_a46fde2c41ac80eb38adc159543a6e2a2_cgraph" id="a00017_a46fde2c41ac80eb38adc159543a6e2a2_cgraph">
+<area shape="rect" id="node2" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="235,23,425,65"/>
+<area shape="rect" id="node7" href="a00007.html#a9f30920955fcdf96547cf4e15ee41b4d" title="Starts Roomba in Clean mode. When called again the Roomba wil stop this action. " alt="" coords="270,89,390,116"/>
+<area shape="rect" id="node3" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="473,23,664,65"/>
+<area shape="rect" id="node4" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="728,31,811,57"/>
+<area shape="rect" id="node5" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="907,5,954,32"/>
+<area shape="rect" id="node6" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="875,56,987,83"/>
+<area shape="rect" id="node8" href="a00020.html#a32af8865495cc6f233b57706a9c815ae" title="Writes serial Clean command Roomba is started in Clean mode. When called again the Roomba exit Clean ..." alt="" coords="490,89,647,116"/>
+<area shape="rect" id="node9" href="a00021.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="712,89,827,116"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d74e4a5547058c2df115fd4eb3746fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::clear </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00153">153</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">if</span> (commandParameters.size() != 3)</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">publishError</a>(<span class="stringliteral">&quot;clear&quot;</span>, <span class="stringliteral">&quot;number of parameters != 3&quot;</span>);</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keyword">auto</span> r = stoi(commandParameters[0]);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keyword">auto</span> g = stoi(commandParameters[1]);</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keyword">auto</span> b = stoi(commandParameters[2]);</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a2737d95498692cc098be8edc8937ada6">clear</a>(<a class="code" href="a00015.html">Pixel</a>(r, g, b));</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div><div class="ttc" id="a00015_html"><div class="ttname"><a href="a00015.html">Pixel</a></div><div class="ttdef"><b>Definition:</b> <a href="a00041_source.html#l00006">Pixel.h:6</a></div></div>
+<div class="ttc" id="a00018_html_a09557e42b20ddddc1763917bd36f36a7"><div class="ttname"><a href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">SenseHAT::leds</a></div><div class="ttdeci">LedMatrix leds</div><div class="ttdef"><b>Definition:</b> <a href="a00043_source.html#l00035">SenseHAT.h:35</a></div></div>
+<div class="ttc" id="a00017_html_ac3cfe65bc1d0d6cc386814894fd73ed9"><div class="ttname"><a href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">RoombaMQTTClient::senseHAT_</a></div><div class="ttdeci">SenseHAT senseHAT_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00041">RoombaMQTTClient.h:41</a></div></div>
+<div class="ttc" id="a00009_html_a2737d95498692cc098be8edc8937ada6"><div class="ttname"><a href="a00009.html#a2737d95498692cc098be8edc8937ada6">LedMatrix::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00021">LedMatrix.cpp:21</a></div></div>
+<div class="ttc" id="a00006_html_a81e3fda8d03c8f5aea99a442ebdb0050"><div class="ttname"><a href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">CommandProcessor::publishError</a></div><div class="ttdeci">void publishError(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00119">CommandProcessor.cpp:119</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a0d74e4a5547058c2df115fd4eb3746fa_cgraph.png" border="0" usemap="#a00017_a0d74e4a5547058c2df115fd4eb3746fa_cgraph" alt=""/></div>
+<map name="a00017_a0d74e4a5547058c2df115fd4eb3746fa_cgraph" id="a00017_a0d74e4a5547058c2df115fd4eb3746fa_cgraph">
+<area shape="rect" id="node2" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="232,23,423,65"/>
+<area shape="rect" id="node7" href="a00009.html#a2737d95498692cc098be8edc8937ada6" title="LedMatrix::clear" alt="" coords="270,89,385,116"/>
+<area shape="rect" id="node3" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="471,23,661,65"/>
+<area shape="rect" id="node4" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="709,31,792,57"/>
+<area shape="rect" id="node5" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="873,5,919,32"/>
+<area shape="rect" id="node6" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="840,56,952,83"/>
+<area shape="rect" id="node8" href="a00038.html#ae694f5385199541875c04d6498eda356" title="blank" alt="" coords="539,89,593,116"/>
+<area shape="rect" id="node9" href="a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="722,89,779,116"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a82331be845fa4168f4f73c389dc0f86b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::cylon </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00267">267</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;{</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">new</span> <a class="code" href="a00014.html">ParWait</a>{std::bind(&amp;<a class="code" href="a00017.html#ace9f9242f0623f530fc4323c43fe05eb">RoombaMQTTClient::cylonPar</a>, <span class="keyword">this</span>, commandParameters)};</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div><div class="ttc" id="a00014_html"><div class="ttname"><a href="a00014.html">ParWait</a></div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00014">ParWait.h:14</a></div></div>
+<div class="ttc" id="a00017_html_ace9f9242f0623f530fc4323c43fe05eb"><div class="ttname"><a href="a00017.html#ace9f9242f0623f530fc4323c43fe05eb">RoombaMQTTClient::cylonPar</a></div><div class="ttdeci">void cylonPar(const parameters_t &amp;commandParameters)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00229">RoombaMQTTClient.cpp:229</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a82331be845fa4168f4f73c389dc0f86b_cgraph.png" border="0" usemap="#a00017_a82331be845fa4168f4f73c389dc0f86b_cgraph" alt=""/></div>
+<map name="a00017_a82331be845fa4168f4f73c389dc0f86b_cgraph" id="a00017_a82331be845fa4168f4f73c389dc0f86b_cgraph">
+<area shape="rect" id="node2" href="a00017.html#ace9f9242f0623f530fc4323c43fe05eb" title="RoombaMQTTClient::cylonPar" alt="" coords="235,5,436,32"/>
+<area shape="rect" id="node3" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe" title="LedMatrix::setPixel" alt="" coords="484,5,619,32"/>
+<area shape="rect" id="node4" href="a00038.html#a80e57b8e92455ad8851540f2a348f009" title="set_pixel" alt="" coords="667,5,741,32"/>
+<area shape="rect" id="node5" href="a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="789,5,847,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ace9f9242f0623f530fc4323c43fe05eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::cylonPar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00229">229</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;{</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="a00070.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(commandParameters);</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keyword">auto</span> putDot = [<span class="keyword">this</span>](<span class="keywordtype">int</span> x, <span class="keyword">const</span> <a class="code" href="a00015.html">Pixel</a> &amp;pixel) {</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">setPixel</a>(x, 3, pixel);</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">setPixel</a>(x, 4, pixel);</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">setPixel</a>(x + 1, 3, pixel);</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">setPixel</a>(x + 1, 4, pixel);</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    };</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">auto</span> show = [putDot] {</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordtype">int</span> x{0};</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordtype">int</span> i{1};</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordtype">int</span> count{13};</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">while</span> (count &gt; 0)</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        {</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            putDot(x, <a class="code" href="a00015.html#a0873aef3100f5b2400ee7ca185bf263a">Pixel::RED</a>);</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            std::this_thread::sleep_for(std::chrono::milliseconds{200});</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            putDot(x, <a class="code" href="a00015.html#a77c8aab7dad0995df6fdc8ccf65e92ee">Pixel::BLANK</a>);</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            x += i;</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="keywordflow">if</span> (x &lt; 0)</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            {</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                i = 1;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                x = 1;</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            }</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keywordflow">if</span> (x &gt; 6)</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            {</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                i = -1;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                x = 5;</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            }</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            --count;</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    };</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    show();</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div><div class="ttc" id="a00015_html"><div class="ttname"><a href="a00015.html">Pixel</a></div><div class="ttdef"><b>Definition:</b> <a href="a00041_source.html#l00006">Pixel.h:6</a></div></div>
+<div class="ttc" id="a00015_html_a0873aef3100f5b2400ee7ca185bf263a"><div class="ttname"><a href="a00015.html#a0873aef3100f5b2400ee7ca185bf263a">Pixel::RED</a></div><div class="ttdeci">static const Pixel RED</div><div class="ttdef"><b>Definition:</b> <a href="a00041_source.html#l00014">Pixel.h:14</a></div></div>
+<div class="ttc" id="a00070_html_a86d500a34c624c2cae56bc25a31b12f3"><div class="ttname"><a href="a00070.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a></div><div class="ttdeci">#define UNUSED(x)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00013">RoombaMQTTClient.cpp:13</a></div></div>
+<div class="ttc" id="a00009_html_a00eb3db37486902ee8509a95c1ac09fe"><div class="ttname"><a href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">LedMatrix::setPixel</a></div><div class="ttdeci">int setPixel(uint8_t x, uint8_t y, const Pixel &amp;pixel)</div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00036">LedMatrix.cpp:36</a></div></div>
+<div class="ttc" id="a00018_html_a09557e42b20ddddc1763917bd36f36a7"><div class="ttname"><a href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">SenseHAT::leds</a></div><div class="ttdeci">LedMatrix leds</div><div class="ttdef"><b>Definition:</b> <a href="a00043_source.html#l00035">SenseHAT.h:35</a></div></div>
+<div class="ttc" id="a00017_html_ac3cfe65bc1d0d6cc386814894fd73ed9"><div class="ttname"><a href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">RoombaMQTTClient::senseHAT_</a></div><div class="ttdeci">SenseHAT senseHAT_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00041">RoombaMQTTClient.h:41</a></div></div>
+<div class="ttc" id="a00015_html_a77c8aab7dad0995df6fdc8ccf65e92ee"><div class="ttname"><a href="a00015.html#a77c8aab7dad0995df6fdc8ccf65e92ee">Pixel::BLANK</a></div><div class="ttdeci">static const Pixel BLANK</div><div class="ttdef"><b>Definition:</b> <a href="a00041_source.html#l00019">Pixel.h:19</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_ace9f9242f0623f530fc4323c43fe05eb_cgraph.png" border="0" usemap="#a00017_ace9f9242f0623f530fc4323c43fe05eb_cgraph" alt=""/></div>
+<map name="a00017_ace9f9242f0623f530fc4323c43fe05eb_cgraph" id="a00017_ace9f9242f0623f530fc4323c43fe05eb_cgraph">
+<area shape="rect" id="node2" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe" title="LedMatrix::setPixel" alt="" coords="255,5,389,32"/>
+<area shape="rect" id="node3" href="a00038.html#a80e57b8e92455ad8851540f2a348f009" title="set_pixel" alt="" coords="437,5,512,32"/>
+<area shape="rect" id="node4" href="a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="560,5,617,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5665062c02c2edb06aa12dadb148a178"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::dock </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00316">316</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;{</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">if</span> (commandParameters.size() != 0)</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    {</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <a class="code" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">publishError</a>(<span class="stringliteral">&quot;dock&quot;</span>, <span class="stringliteral">&quot;number of parameters != 0&quot;</span>);</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    {</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <a class="code" href="a00017.html#a1f29f0b7a826e2453e817316e45854e2">ioHandler_</a>.<a class="code" href="a00007.html#aa50ed3f49aa0bf54b7b626b7dd0c904d">Dock</a>();</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div><div class="ttc" id="a00017_html_a1f29f0b7a826e2453e817316e45854e2"><div class="ttname"><a href="a00017.html#a1f29f0b7a826e2453e817316e45854e2">RoombaMQTTClient::ioHandler_</a></div><div class="ttdeci">IOhandler ioHandler_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00043">RoombaMQTTClient.h:43</a></div></div>
+<div class="ttc" id="a00007_html_aa50ed3f49aa0bf54b7b626b7dd0c904d"><div class="ttname"><a href="a00007.html#aa50ed3f49aa0bf54b7b626b7dd0c904d">IOhandler::Dock</a></div><div class="ttdeci">void Dock()</div><div class="ttdoc">Starts Roomba in Dock mode. When called again the Roomba wil stop this action. </div><div class="ttdef"><b>Definition:</b> <a href="a00061_source.html#l00123">ioHandler.cpp:123</a></div></div>
+<div class="ttc" id="a00006_html_a81e3fda8d03c8f5aea99a442ebdb0050"><div class="ttname"><a href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">CommandProcessor::publishError</a></div><div class="ttdeci">void publishError(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00119">CommandProcessor.cpp:119</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a5665062c02c2edb06aa12dadb148a178_cgraph.png" border="0" usemap="#a00017_a5665062c02c2edb06aa12dadb148a178_cgraph" alt=""/></div>
+<map name="a00017_a5665062c02c2edb06aa12dadb148a178_cgraph" id="a00017_a5665062c02c2edb06aa12dadb148a178_cgraph">
+<area shape="rect" id="node2" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="232,23,423,65"/>
+<area shape="rect" id="node7" href="a00007.html#aa50ed3f49aa0bf54b7b626b7dd0c904d" title="Starts Roomba in Dock mode. When called again the Roomba wil stop this action. " alt="" coords="269,89,386,116"/>
+<area shape="rect" id="node3" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="471,23,661,65"/>
+<area shape="rect" id="node4" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="725,31,808,57"/>
+<area shape="rect" id="node5" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="905,5,951,32"/>
+<area shape="rect" id="node6" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="872,56,984,83"/>
+<area shape="rect" id="node8" href="a00020.html#a8dfe0ebaea19eab82083434068bc14df" title="Writes serial Dock command Roomba is started in Force Dock Seeking mode. When called again the Roomba..." alt="" coords="489,89,643,116"/>
+<area shape="rect" id="node9" href="a00021.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="709,89,824,116"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f07765bf027797c82f5133c055e4996"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::getPixel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00197">197</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;{</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">if</span> (commandParameters.size() != 2)</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    {</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <a class="code" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">publishError</a>(<span class="stringliteral">&quot;getPixel&quot;</span>, <span class="stringliteral">&quot;number of parameters != 2&quot;</span>);</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    {</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keyword">auto</span> y = stoi(commandParameters[0]);</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keyword">auto</span> x = stoi(commandParameters[1]);</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <a class="code" href="a00015.html">Pixel</a> pixel = <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a7f46ff6f7d413db5ac77225d47219397">getPixel</a>(x, y);</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="a00006.html#ae97c2e58deecce8bd6dac0d081d73f03">publishReturn</a>(<span class="stringliteral">&quot;getPixel&quot;</span>, std::to_string(pixel[<a class="code" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6">Pixel::RGB::R</a>]) + <span class="stringliteral">&quot; &quot;</span> + std::to_string(pixel[<a class="code" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf">Pixel::RGB::G</a>]) + <span class="stringliteral">&quot; &quot;</span> + std::to_string(pixel[<a class="code" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571">Pixel::RGB::B</a>]));</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div><div class="ttc" id="a00015_html_ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571"><div class="ttname"><a href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571">Pixel::RGB::B</a></div></div>
+<div class="ttc" id="a00015_html"><div class="ttname"><a href="a00015.html">Pixel</a></div><div class="ttdef"><b>Definition:</b> <a href="a00041_source.html#l00006">Pixel.h:6</a></div></div>
+<div class="ttc" id="a00009_html_a7f46ff6f7d413db5ac77225d47219397"><div class="ttname"><a href="a00009.html#a7f46ff6f7d413db5ac77225d47219397">LedMatrix::getPixel</a></div><div class="ttdeci">Pixel getPixel(uint8_t x, uint8_t y) const </div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00044">LedMatrix.cpp:44</a></div></div>
+<div class="ttc" id="a00018_html_a09557e42b20ddddc1763917bd36f36a7"><div class="ttname"><a href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">SenseHAT::leds</a></div><div class="ttdeci">LedMatrix leds</div><div class="ttdef"><b>Definition:</b> <a href="a00043_source.html#l00035">SenseHAT.h:35</a></div></div>
+<div class="ttc" id="a00015_html_ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf"><div class="ttname"><a href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf">Pixel::RGB::G</a></div></div>
+<div class="ttc" id="a00017_html_ac3cfe65bc1d0d6cc386814894fd73ed9"><div class="ttname"><a href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">RoombaMQTTClient::senseHAT_</a></div><div class="ttdeci">SenseHAT senseHAT_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00041">RoombaMQTTClient.h:41</a></div></div>
+<div class="ttc" id="a00015_html_ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6"><div class="ttname"><a href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6">Pixel::RGB::R</a></div></div>
+<div class="ttc" id="a00006_html_a81e3fda8d03c8f5aea99a442ebdb0050"><div class="ttname"><a href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">CommandProcessor::publishError</a></div><div class="ttdeci">void publishError(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00119">CommandProcessor.cpp:119</a></div></div>
+<div class="ttc" id="a00006_html_ae97c2e58deecce8bd6dac0d081d73f03"><div class="ttname"><a href="a00006.html#ae97c2e58deecce8bd6dac0d081d73f03">CommandProcessor::publishReturn</a></div><div class="ttdeci">void publishReturn(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00101">CommandProcessor.cpp:101</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a4f07765bf027797c82f5133c055e4996_cgraph.png" border="0" usemap="#a00017_a4f07765bf027797c82f5133c055e4996_cgraph" alt=""/></div>
+<map name="a00017_a4f07765bf027797c82f5133c055e4996_cgraph" id="a00017_a4f07765bf027797c82f5133c055e4996_cgraph">
+<area shape="rect" id="node2" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="251,5,441,47"/>
+<area shape="rect" id="node7" href="a00009.html#a7f46ff6f7d413db5ac77225d47219397" title="LedMatrix::getPixel" alt="" coords="279,137,413,163"/>
+<area shape="rect" id="node10" href="a00006.html#ae97c2e58deecce8bd6dac0d081d73f03" title="CommandProcessor::publish\lReturn" alt="" coords="251,71,441,112"/>
+<area shape="rect" id="node3" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="489,39,680,80"/>
+<area shape="rect" id="node4" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="728,46,811,73"/>
+<area shape="rect" id="node5" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="891,21,938,47"/>
+<area shape="rect" id="node6" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="859,71,971,98"/>
+<area shape="rect" id="node8" href="a00038.html#ae6094a71213cd0ae1172a64c8140b0a4" title="get_pixel" alt="" coords="547,137,622,163"/>
+<area shape="rect" id="node9" href="a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="741,137,798,163"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aec1897b8ec23ad132be4fbd3faee376c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::handleSensorData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00272">272</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">//    std::string message{</span></div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="comment">//       std::to_string(static_cast&lt;int&gt;(senseHAT_.get_humidity()))};</span></div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="comment">//publishAddition(&quot;json&quot;, jsonData_.dump());</span></div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac429deb3c9fe3acb5a55d4ef09117b33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::invert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00168">168</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span> (commandParameters.size() != 0)</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">publishError</a>(<span class="stringliteral">&quot;clear&quot;</span>, <span class="stringliteral">&quot;number of parameters != 0&quot;</span>);</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    {</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#af1e9e51216169ec51398b259129de5e1">invert</a>();</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div><div class="ttc" id="a00009_html_af1e9e51216169ec51398b259129de5e1"><div class="ttname"><a href="a00009.html#af1e9e51216169ec51398b259129de5e1">LedMatrix::invert</a></div><div class="ttdeci">void invert()</div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00031">LedMatrix.cpp:31</a></div></div>
+<div class="ttc" id="a00018_html_a09557e42b20ddddc1763917bd36f36a7"><div class="ttname"><a href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">SenseHAT::leds</a></div><div class="ttdeci">LedMatrix leds</div><div class="ttdef"><b>Definition:</b> <a href="a00043_source.html#l00035">SenseHAT.h:35</a></div></div>
+<div class="ttc" id="a00017_html_ac3cfe65bc1d0d6cc386814894fd73ed9"><div class="ttname"><a href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">RoombaMQTTClient::senseHAT_</a></div><div class="ttdeci">SenseHAT senseHAT_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00041">RoombaMQTTClient.h:41</a></div></div>
+<div class="ttc" id="a00006_html_a81e3fda8d03c8f5aea99a442ebdb0050"><div class="ttname"><a href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">CommandProcessor::publishError</a></div><div class="ttdeci">void publishError(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00119">CommandProcessor.cpp:119</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_ac429deb3c9fe3acb5a55d4ef09117b33_cgraph.png" border="0" usemap="#a00017_ac429deb3c9fe3acb5a55d4ef09117b33_cgraph" alt=""/></div>
+<map name="a00017_ac429deb3c9fe3acb5a55d4ef09117b33_cgraph" id="a00017_ac429deb3c9fe3acb5a55d4ef09117b33_cgraph">
+<area shape="rect" id="node2" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="236,23,427,65"/>
+<area shape="rect" id="node7" href="a00009.html#af1e9e51216169ec51398b259129de5e1" title="LedMatrix::invert" alt="" coords="272,89,391,116"/>
+<area shape="rect" id="node3" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="475,23,665,65"/>
+<area shape="rect" id="node4" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="713,31,796,57"/>
+<area shape="rect" id="node5" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="877,5,923,32"/>
+<area shape="rect" id="node6" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="844,56,956,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae48b84d1c5fd197c6ca7108117d7ae27"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::invertPixel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00212">212</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;{</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">if</span> (commandParameters.size() != 2)</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    {</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <a class="code" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">publishError</a>(<span class="stringliteral">&quot;invertPixel&quot;</span>, <span class="stringliteral">&quot;number of parameters != 2&quot;</span>);</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    {</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keyword">auto</span> y = stoi(commandParameters[0]);</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keyword">auto</span> x = stoi(commandParameters[1]);</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="a00015.html">Pixel</a> pixel{<a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a7f46ff6f7d413db5ac77225d47219397">getPixel</a>(x, y)};</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        pixel.<a class="code" href="a00015.html#a1159eae28181f9bd41ac10833122a7d2">invert</a>();</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">setPixel</a>(x, y, pixel);</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div><div class="ttc" id="a00015_html"><div class="ttname"><a href="a00015.html">Pixel</a></div><div class="ttdef"><b>Definition:</b> <a href="a00041_source.html#l00006">Pixel.h:6</a></div></div>
+<div class="ttc" id="a00009_html_a7f46ff6f7d413db5ac77225d47219397"><div class="ttname"><a href="a00009.html#a7f46ff6f7d413db5ac77225d47219397">LedMatrix::getPixel</a></div><div class="ttdeci">Pixel getPixel(uint8_t x, uint8_t y) const </div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00044">LedMatrix.cpp:44</a></div></div>
+<div class="ttc" id="a00009_html_a00eb3db37486902ee8509a95c1ac09fe"><div class="ttname"><a href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">LedMatrix::setPixel</a></div><div class="ttdeci">int setPixel(uint8_t x, uint8_t y, const Pixel &amp;pixel)</div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00036">LedMatrix.cpp:36</a></div></div>
+<div class="ttc" id="a00018_html_a09557e42b20ddddc1763917bd36f36a7"><div class="ttname"><a href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">SenseHAT::leds</a></div><div class="ttdeci">LedMatrix leds</div><div class="ttdef"><b>Definition:</b> <a href="a00043_source.html#l00035">SenseHAT.h:35</a></div></div>
+<div class="ttc" id="a00017_html_ac3cfe65bc1d0d6cc386814894fd73ed9"><div class="ttname"><a href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">RoombaMQTTClient::senseHAT_</a></div><div class="ttdeci">SenseHAT senseHAT_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00041">RoombaMQTTClient.h:41</a></div></div>
+<div class="ttc" id="a00015_html_a1159eae28181f9bd41ac10833122a7d2"><div class="ttname"><a href="a00015.html#a1159eae28181f9bd41ac10833122a7d2">Pixel::invert</a></div><div class="ttdeci">void invert()</div><div class="ttdef"><b>Definition:</b> <a href="a00040_source.html#l00066">Pixel.cpp:66</a></div></div>
+<div class="ttc" id="a00006_html_a81e3fda8d03c8f5aea99a442ebdb0050"><div class="ttname"><a href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">CommandProcessor::publishError</a></div><div class="ttdeci">void publishError(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00119">CommandProcessor.cpp:119</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_ae48b84d1c5fd197c6ca7108117d7ae27_cgraph.png" border="0" usemap="#a00017_ae48b84d1c5fd197c6ca7108117d7ae27_cgraph" alt=""/></div>
+<map name="a00017_ae48b84d1c5fd197c6ca7108117d7ae27_cgraph" id="a00017_ae48b84d1c5fd197c6ca7108117d7ae27_cgraph">
+<area shape="rect" id="node2" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="236,23,427,65"/>
+<area shape="rect" id="node7" href="a00009.html#a7f46ff6f7d413db5ac77225d47219397" title="LedMatrix::getPixel" alt="" coords="264,89,399,116"/>
+<area shape="rect" id="node10" href="a00015.html#a1159eae28181f9bd41ac10833122a7d2" title="Pixel::invert" alt="" coords="286,140,377,167"/>
+<area shape="rect" id="node11" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe" title="LedMatrix::setPixel" alt="" coords="264,191,399,217"/>
+<area shape="rect" id="node3" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="475,23,665,65"/>
+<area shape="rect" id="node4" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="713,31,796,57"/>
+<area shape="rect" id="node5" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="877,5,923,32"/>
+<area shape="rect" id="node6" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="844,56,956,83"/>
+<area shape="rect" id="node8" href="a00038.html#ae6094a71213cd0ae1172a64c8140b0a4" title="get_pixel" alt="" coords="533,101,607,128"/>
+<area shape="rect" id="node9" href="a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="726,139,783,165"/>
+<area shape="rect" id="node12" href="a00038.html#a80e57b8e92455ad8851540f2a348f009" title="set_pixel" alt="" coords="533,177,607,204"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aed4faa8c910dbeb5ff48c1c5cb927d8e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00017.html">RoombaMQTTClient</a>&amp; RoombaMQTTClient::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00017.html">RoombaMQTTClient</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a983ef2d5ef0bb7e948af0642d6f679b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::sendHeartbeat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00287">287</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="a00006.html#a88ad204c02a79887698c6abc93729a2d">publishAddition</a>(<span class="stringliteral">&quot;heartbeat&quot;</span> , <span class="stringliteral">&quot;json data heartbeat: &quot;</span> + jsonData_.dump());</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div><div class="ttc" id="a00006_html_a88ad204c02a79887698c6abc93729a2d"><div class="ttname"><a href="a00006.html#a88ad204c02a79887698c6abc93729a2d">CommandProcessor::publishAddition</a></div><div class="ttdeci">void publishAddition(const std::string &amp;topicAddition, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00093">CommandProcessor.cpp:93</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a983ef2d5ef0bb7e948af0642d6f679b5_cgraph.png" border="0" usemap="#a00017_a983ef2d5ef0bb7e948af0642d6f679b5_cgraph" alt=""/></div>
+<map name="a00017_a983ef2d5ef0bb7e948af0642d6f679b5_cgraph" id="a00017_a983ef2d5ef0bb7e948af0642d6f679b5_cgraph">
+<area shape="rect" id="node2" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="288,23,479,65"/>
+<area shape="rect" id="node3" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="527,31,609,57"/>
+<area shape="rect" id="node4" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="690,5,737,32"/>
+<area shape="rect" id="node5" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="657,56,769,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0da99affbcb2b7fd8bc4a6545500db9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::setPixel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00180">180</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">if</span> (commandParameters.size() != 5)</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <a class="code" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">publishError</a>(<span class="stringliteral">&quot;setPixel&quot;</span>, <span class="stringliteral">&quot;number of parameters != 5&quot;</span>);</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    {</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keyword">auto</span> y = stoi(commandParameters[0]);</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keyword">auto</span> x = stoi(commandParameters[1]);</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keyword">auto</span> r = stoi(commandParameters[2]);</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keyword">auto</span> g = stoi(commandParameters[3]);</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keyword">auto</span> b = stoi(commandParameters[4]);</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">senseHAT_</a>.<a class="code" href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">leds</a>.<a class="code" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">setPixel</a>(x, y, <a class="code" href="a00015.html">Pixel</a>(r, g, b));</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div><div class="ttc" id="a00015_html"><div class="ttname"><a href="a00015.html">Pixel</a></div><div class="ttdef"><b>Definition:</b> <a href="a00041_source.html#l00006">Pixel.h:6</a></div></div>
+<div class="ttc" id="a00009_html_a00eb3db37486902ee8509a95c1ac09fe"><div class="ttname"><a href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">LedMatrix::setPixel</a></div><div class="ttdeci">int setPixel(uint8_t x, uint8_t y, const Pixel &amp;pixel)</div><div class="ttdef"><b>Definition:</b> <a href="a00036_source.html#l00036">LedMatrix.cpp:36</a></div></div>
+<div class="ttc" id="a00018_html_a09557e42b20ddddc1763917bd36f36a7"><div class="ttname"><a href="a00018.html#a09557e42b20ddddc1763917bd36f36a7">SenseHAT::leds</a></div><div class="ttdeci">LedMatrix leds</div><div class="ttdef"><b>Definition:</b> <a href="a00043_source.html#l00035">SenseHAT.h:35</a></div></div>
+<div class="ttc" id="a00017_html_ac3cfe65bc1d0d6cc386814894fd73ed9"><div class="ttname"><a href="a00017.html#ac3cfe65bc1d0d6cc386814894fd73ed9">RoombaMQTTClient::senseHAT_</a></div><div class="ttdeci">SenseHAT senseHAT_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00041">RoombaMQTTClient.h:41</a></div></div>
+<div class="ttc" id="a00006_html_a81e3fda8d03c8f5aea99a442ebdb0050"><div class="ttname"><a href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">CommandProcessor::publishError</a></div><div class="ttdeci">void publishError(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00119">CommandProcessor.cpp:119</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a0da99affbcb2b7fd8bc4a6545500db9e_cgraph.png" border="0" usemap="#a00017_a0da99affbcb2b7fd8bc4a6545500db9e_cgraph" alt=""/></div>
+<map name="a00017_a0da99affbcb2b7fd8bc4a6545500db9e_cgraph" id="a00017_a0da99affbcb2b7fd8bc4a6545500db9e_cgraph">
+<area shape="rect" id="node2" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="251,23,441,65"/>
+<area shape="rect" id="node7" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe" title="LedMatrix::setPixel" alt="" coords="279,89,413,116"/>
+<area shape="rect" id="node3" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="489,23,680,65"/>
+<area shape="rect" id="node4" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="728,31,811,57"/>
+<area shape="rect" id="node5" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="891,5,938,32"/>
+<area shape="rect" id="node6" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="859,56,971,83"/>
+<area shape="rect" id="node8" href="a00038.html#a80e57b8e92455ad8851540f2a348f009" title="set_pixel" alt="" coords="547,89,622,116"/>
+<area shape="rect" id="node9" href="a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="741,89,798,116"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7514f053bd21c284712096e05c6bd00b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoombaMQTTClient::spot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>commandParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00304">304</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> (commandParameters.size() != 0)</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    {</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <a class="code" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">publishError</a>(<span class="stringliteral">&quot;spot&quot;</span>, <span class="stringliteral">&quot;number of parameters != 0&quot;</span>);</div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    {</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <a class="code" href="a00017.html#a1f29f0b7a826e2453e817316e45854e2">ioHandler_</a>.<a class="code" href="a00007.html#af9177167f3363d45781b427d50816c17">Spot</a>();</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div><div class="ttc" id="a00017_html_a1f29f0b7a826e2453e817316e45854e2"><div class="ttname"><a href="a00017.html#a1f29f0b7a826e2453e817316e45854e2">RoombaMQTTClient::ioHandler_</a></div><div class="ttdeci">IOhandler ioHandler_</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00043">RoombaMQTTClient.h:43</a></div></div>
+<div class="ttc" id="a00006_html_a81e3fda8d03c8f5aea99a442ebdb0050"><div class="ttname"><a href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050">CommandProcessor::publishError</a></div><div class="ttdeci">void publishError(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00119">CommandProcessor.cpp:119</a></div></div>
+<div class="ttc" id="a00007_html_af9177167f3363d45781b427d50816c17"><div class="ttname"><a href="a00007.html#af9177167f3363d45781b427d50816c17">IOhandler::Spot</a></div><div class="ttdeci">void Spot()</div><div class="ttdoc">Starts Roomba in Spot mode. When called again the Roomba wil stop this action. </div><div class="ttdef"><b>Definition:</b> <a href="a00061_source.html#l00115">ioHandler.cpp:115</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a7514f053bd21c284712096e05c6bd00b_cgraph.png" border="0" usemap="#a00017_a7514f053bd21c284712096e05c6bd00b_cgraph" alt=""/></div>
+<map name="a00017_a7514f053bd21c284712096e05c6bd00b_cgraph" id="a00017_a7514f053bd21c284712096e05c6bd00b_cgraph">
+<area shape="rect" id="node2" href="a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="228,23,419,65"/>
+<area shape="rect" id="node7" href="a00007.html#af9177167f3363d45781b427d50816c17" title="Starts Roomba in Spot mode. When called again the Roomba wil stop this action. " alt="" coords="267,89,380,116"/>
+<area shape="rect" id="node3" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="467,23,657,65"/>
+<area shape="rect" id="node4" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="721,31,804,57"/>
+<area shape="rect" id="node5" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="901,5,947,32"/>
+<area shape="rect" id="node6" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="868,56,980,83"/>
+<area shape="rect" id="node8" href="a00020.html#a12277d5ef016e6f28debf16ee3e93598" title="Writes serial Spot command Roomba is started in Spot mode. When called again the Roomba exit Spot mod..." alt="" coords="487,89,637,116"/>
+<area shape="rect" id="node9" href="a00021.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="705,89,820,116"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e40774c307dee9e4bba3f99a0458fd3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int _mqtt3_listener::fd</td>
+          <td class="memname">void RoombaMQTTClient::startClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00073">73</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00070_source.html#l00079">79</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="a00072.html">std</a>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;   <span class="keywordtype">int</span> majorMosquitto{0};</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;   <span class="keywordtype">int</span> minorMosquitto{0};</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;   <span class="keywordtype">int</span> revisionMosquitto{0};</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">try</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;     </div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            signal(SIGINT, <a class="code" href="a00070.html#a8ca2c21a24d42bf2f7d235f70c434a7e">handleSIGINT</a>);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;-- MQTT application: &quot;</span> &lt;&lt; <a class="code" href="a00054.html#a32c3415d71d867f7f979c5f60a0c4f5d">APPNAME_VERSION</a> &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      mosqpp::lib_init();</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      mosqpp::lib_version(&amp;majorMosquitto, &amp;minorMosquitto, &amp;revisionMosquitto);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;uses Mosquitto lib version &quot;</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;           &lt;&lt; majorMosquitto</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;           &lt;&lt; <span class="charliteral">&#39;.&#39;</span> &lt;&lt; minorMosquitto</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;           &lt;&lt; <span class="charliteral">&#39;.&#39;</span> &lt;&lt; revisionMosquitto &lt;&lt; endl;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="a00006.html#a0f5c17ab23203abee8a48c82f3338a28">publishInfo</a>(<span class="stringliteral">&quot;main()&quot;</span>,</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                               <span class="stringliteral">&quot;--------- Hello &quot;</span> <span class="stringliteral">&quot;APPNAME_VERSION&quot;</span> <span class="stringliteral">&quot; ---------&quot;</span>);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="comment">//RandomWalk rw{mqttSenseHAT.senseHAT_.leds};</span></div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="comment">// Checking rc for reconnection, &#39;clients&#39; is an initializer_list</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;       <span class="keyword">auto</span> clients = {<span class="keyword">static_cast&lt;</span>mosqpp::mosquittopp*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)};</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;       cout &lt;&lt; <span class="stringliteral">&quot;-- MQTT and SenseHAT are ready&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;       <span class="keywordflow">while</span> (!<a class="code" href="a00070.html#a32f027fe39b12720913f97490e543111">receivedSIGINT</a>)</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;       {</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;           <span class="keywordflow">for</span> (<span class="keyword">auto</span> client: clients)</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;           {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;               <span class="keywordtype">int</span> rc = client-&gt;loop();</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;               <span class="keywordflow">if</span> (rc)</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;               {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                   cerr &lt;&lt; <span class="stringliteral">&quot;-- MQTT reconnect&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                   client-&gt;reconnect();</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;               }</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;           }</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;       }</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;   }</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;   <span class="keywordflow">catch</span>(exception&amp; e)</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;   {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;       cerr &lt;&lt; <span class="stringliteral">&quot;-- Exception &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;   }</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;   <span class="keywordflow">catch</span>(...)</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;   {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;       cerr &lt;&lt; <span class="stringliteral">&quot;-- UNKNOWN EXCEPTION\n&quot;</span>;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;   }</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;   cout &lt;&lt; <span class="stringliteral">&quot;\n-- MQTT application: &quot;</span> &lt;&lt; <span class="stringliteral">&quot;APPNAME_VERSION&quot;</span> &lt;&lt; <span class="stringliteral">&quot; stopped&quot;</span></div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;         &lt;&lt; endl &lt;&lt; endl;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;   mosqpp::lib_cleanup();</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div><div class="ttc" id="a00070_html_a8ca2c21a24d42bf2f7d235f70c434a7e"><div class="ttname"><a href="a00070.html#a8ca2c21a24d42bf2f7d235f70c434a7e">handleSIGINT</a></div><div class="ttdeci">void handleSIGINT(int)</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00074">RoombaMQTTClient.cpp:74</a></div></div>
+<div class="ttc" id="a00006_html_a0f5c17ab23203abee8a48c82f3338a28"><div class="ttname"><a href="a00006.html#a0f5c17ab23203abee8a48c82f3338a28">CommandProcessor::publishInfo</a></div><div class="ttdeci">void publishInfo(const std::string &amp;command, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="a00024_source.html#l00107">CommandProcessor.cpp:107</a></div></div>
+<div class="ttc" id="a00054_html_a32c3415d71d867f7f979c5f60a0c4f5d"><div class="ttname"><a href="a00054.html#a32c3415d71d867f7f979c5f60a0c4f5d">APPNAME_VERSION</a></div><div class="ttdeci">#define APPNAME_VERSION</div><div class="ttdef"><b>Definition:</b> <a href="a00054_source.html#l00012">AppInfo.h:12</a></div></div>
+<div class="ttc" id="a00072_html"><div class="ttname"><a href="a00072.html">std</a></div></div>
+<div class="ttc" id="a00070_html_a32f027fe39b12720913f97490e543111"><div class="ttname"><a href="a00070.html#a32f027fe39b12720913f97490e543111">receivedSIGINT</a></div><div class="ttdeci">volatile sig_atomic_t receivedSIGINT</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00072">RoombaMQTTClient.cpp:72</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00017_a2e40774c307dee9e4bba3f99a0458fd3_cgraph.png" border="0" usemap="#a00017_a2e40774c307dee9e4bba3f99a0458fd3_cgraph" alt=""/></div>
+<map name="a00017_a2e40774c307dee9e4bba3f99a0458fd3_cgraph" id="a00017_a2e40774c307dee9e4bba3f99a0458fd3_cgraph">
+<area shape="rect" id="node2" href="a00070.html#a8ca2c21a24d42bf2f7d235f70c434a7e" title="handleSIGINT" alt="" coords="317,5,423,32"/>
+<area shape="rect" id="node3" href="a00006.html#a0f5c17ab23203abee8a48c82f3338a28" title="CommandProcessor::publishInfo" alt="" coords="264,56,476,83"/>
+<area shape="rect" id="node4" href="a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="524,49,715,90"/>
+<area shape="rect" id="node5" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="763,56,845,83"/>
+<area shape="rect" id="node6" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="926,31,973,57"/>
+<area shape="rect" id="node7" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="893,81,1005,108"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a8f3e15dab6e5bae10bb2d930034f4d9f"></a>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a8c1da370000b37a8a83ef2ce5a6228cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00012.html">ParLoop</a> RoombaMQTTClient::heartbeatPar_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00071_source.html#l00066">66</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f29f0b7a826e2453e817316e45854e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* _mqtt3_listener::host</td>
+          <td class="memname"><a class="el" href="a00007.html">IOhandler</a> RoombaMQTTClient::ioHandler_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00074">74</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00071_source.html#l00043">43</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a802f0208ed0cc099a4e3cbaa5383b44e"></a>
+<a class="anchor" id="a58e4bb6db1c5ede4ab0a77a7748adb56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int RoombaMQTTClient::max_x_ = 7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00071_source.html#l00062">62</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d8ccf1b6b09865738066dee4e398bf3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int RoombaMQTTClient::max_y_ = 7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00071_source.html#l00063">63</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92b046bca88352d07b551da9b8d31a61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int RoombaMQTTClient::min_x_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00071_source.html#l00060">60</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f8dd449c7bec9783c955b0efa405c9a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int RoombaMQTTClient::min_y_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00071_source.html#l00061">61</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad719608d3f63586e51e3c599b6c5bf97"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string RoombaMQTTClient::mqttID_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00071_source.html#l00057">57</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a096e9e9a59ee7fc1fa7a74d440019a6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00012.html">ParLoop</a> RoombaMQTTClient::publishSensorData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00071_source.html#l00065">65</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3cfe65bc1d0d6cc386814894fd73ed9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int _mqtt3_listener::max_connections</td>
+          <td class="memname"><a class="el" href="a00018.html">SenseHAT</a> RoombaMQTTClient::senseHAT_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00076">76</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00071_source.html#l00041">41</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0a8cd1be8f3eb14461532b260c78d1a8"></a>
+<a class="anchor" id="a24e9921cb2e1f472c7da749dea886499"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* _mqtt3_listener::mount_point</td>
+          <td class="memname">int RoombaMQTTClient::x_</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00077">77</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00071_source.html#l00058">58</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae260347bb57e825c09097bff30b69c88"></a>
+<a class="anchor" id="aee5f30019ee42c5b2ba0016dbbcc4ae8"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t _mqtt3_listener::port</td>
+          <td class="memname">int RoombaMQTTClient::y_</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00075">75</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00071_source.html#l00059">59</a> of file <a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7d78649594bccaac148977ebfbc7e367"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00196.html#a2016ca244d8a59290552cd83840faa17">mosquitto_protocol</a> _mqtt3_listener::protocol</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00081">81</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aac74fcfd0ef8ab1775b8e8292b9a5b95"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _mqtt3_listener::sock_count</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00079">79</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a60a8b4323b336b3033ebcf904716fe09"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00160.html#ae9ecb8ae965b1d3af4bebd2cc031998e">mosq_sock_t</a>* _mqtt3_listener::socks</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00078">78</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa90c9af6612aaf612ecd5917989a423c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool _mqtt3_listener::use_username_as_clientid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00082">82</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/iot/Downloads/mosquitto-1.4.14/src/<a class="el" href="a00196_source.html">mosquitto_broker.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00071_source.html">RoombaMQTTClient.h</a></li>
+<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00017.html">_mqtt3_listener</a></li>
+    <li class="navelem"><a class="el" href="a00017.html">RoombaMQTTClient</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

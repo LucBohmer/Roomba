@@ -1,29 +1,4 @@
 var searchData=
 [
-  ['pack_5fremaining_5flength',['pack_remaining_length',['../a00524.html#accdf4b0d84200895b849e7fa20a958bf',1,'mosq_test']]],
-  ['packed',['packed',['../a00114.html#a3fb07455636711f0be6bcc293e244482',1,'Pixel']]],
-  ['packet_5fmatches',['packet_matches',['../a00524.html#a1704cf8fdaa7545664ae16eb41e39e58',1,'mosq_test']]],
-  ['parexe',['ParExe',['../a00108.html#a8cc79409b6f5cdb1bd98d595618e245e',1,'ParExe::ParExe(const std::string &amp;command, const std::string &amp;args, const std::string &amp;input=&quot;&quot;)'],['../a00108.html#a78f0aa6a835dbb958fc29abd3457d414',1,'ParExe::ParExe(const ParExe &amp;other)=delete']]],
-  ['parloop',['ParLoop',['../a00109.html#a78f2321aed1f6b23a7c1c96c9af657c8',1,'ParLoop::ParLoop(callbackFunction_t cbf, int loopTimeSeconds)'],['../a00109.html#ace74578d6a178d281c088404c3e3c5c3',1,'ParLoop::ParLoop(const ParLoop &amp;other)=delete']]],
-  ['parqueue',['ParQueue',['../a00110.html#a73a919e4b58f1220a6f3a52af625b616',1,'ParQueue::ParQueue(std::function&lt; void(const D &amp;)&gt; handleData)'],['../a00110.html#a4ea9ecbf02398dbf4862f07bf33b8504',1,'ParQueue::ParQueue(const ParQueue &amp;other)=delete']]],
-  ['parse',['parse',['../a00112.html#a14338d8f3174601c0b2b7ef28752ab17',1,'nlohmann::detail::parser::parse()'],['../a00021.html#aa9676414f2e36383c4b181fe856aa3c0',1,'nlohmann::basic_json::parse(detail::input_adapter i, const parser_callback_t cb=nullptr, const bool allow_exceptions=true)'],['../a00021.html#af3501e04d3c7a824bffb05a5a45ba884',1,'nlohmann::basic_json::parse(detail::input_adapter &amp;i, const parser_callback_t cb=nullptr, const bool allow_exceptions=true)'],['../a00021.html#ab330c13ba254ea41fbc1c52c5c610f45',1,'nlohmann::basic_json::parse(IteratorType first, IteratorType last, const parser_callback_t cb=nullptr, const bool allow_exceptions=true)']]],
-  ['parse_5fcbor',['parse_cbor',['../a00023.html#a04bcdc8f55b26fafa9775a2f89e48fc2',1,'nlohmann::detail::binary_reader']]],
-  ['parse_5fmsgpack',['parse_msgpack',['../a00023.html#ab4a4a6f5ab3cc77aac374c9c889e580e',1,'nlohmann::detail::binary_reader']]],
-  ['parse_5fubjson',['parse_ubjson',['../a00023.html#ad0be02d1df4ba4fbe601b0985f5300ac',1,'nlohmann::detail::binary_reader']]],
-  ['parser',['parser',['../a00112.html#a693aa2a6c0cc665e0e45bacf055460e6',1,'nlohmann::detail::parser']]],
-  ['parwait',['ParWait',['../a00113.html#ab369159efc089a70d7be3b5c7cb12d74',1,'ParWait::ParWait(callbackFunction_t cbf, int waitTimeSeconds=0)'],['../a00113.html#a63da26de5c61e94edf72df63b85bb577',1,'ParWait::ParWait(const ParWait &amp;other)=delete']]],
-  ['patch',['patch',['../a00021.html#ad87518a27b13f886b836bb93213e6515',1,'nlohmann::basic_json']]],
-  ['pattern_5ftest',['pattern_test',['../a00453.html#ab00581e8e677136b53dabba9869ce2b2',1,'03-pattern-matching']]],
-  ['pixel',['Pixel',['../a00114.html#a27ad99a2f705e635c42d242d530d4756',1,'Pixel::Pixel()'],['../a00114.html#acfc5df218e6b318edcb09cdf6727c529',1,'Pixel::Pixel(uint8_t r, uint8_t g, uint8_t b)'],['../a00114.html#a787fa2f52c2c61b3ad51a0ffe80b6a25',1,'Pixel::Pixel(const Pixel &amp;other)=default']]],
-  ['pollingeventdevice',['pollingEventDevice',['../a00386.html#a36a7a5c243539b3a04fa0ff1271c6204',1,'pollingEventDevice(void):&#160;JoystickDevice.c'],['../a00387.html#a36a7a5c243539b3a04fa0ff1271c6204',1,'pollingEventDevice(void):&#160;JoystickDevice.c']]],
-  ['print_5ferror',['print_error',['../a00341.html#aa6a50aa128ad0fb1ab343b42605a063f',1,'print_error(const char *topic, char **topics, int topic_count):&#160;09-util-topic-tokenise.c'],['../a00368.html#aa6a50aa128ad0fb1ab343b42605a063f',1,'print_error(const char *topic, char **topics, int topic_count):&#160;09-util-topic-tokenise.cpp']]],
-  ['print_5fusage',['print_usage',['../a00139.html#aa1187b70998f73cdb598833d6afaa30a',1,'print_usage(void):&#160;pub_client.c'],['../a00140.html#aa1187b70998f73cdb598833d6afaa30a',1,'print_usage(void):&#160;sub_client.c'],['../a00197.html#aa1187b70998f73cdb598833d6afaa30a',1,'print_usage(void):&#160;mosquitto_passwd.c']]],
-  ['provide',['provide',['../a00110.html#ae91d6ba584f537b85a8f1024d72128b5',1,'ParQueue']]],
-  ['publish',['publish',['../a00094.html#a88289556134e3f3530400abc249219d7',1,'mosqpp::mosquittopp']]],
-  ['publishaddition',['publishAddition',['../a00028.html#a88ad204c02a79887698c6abc93729a2d',1,'CommandProcessor']]],
-  ['publisherror',['publishError',['../a00028.html#a81e3fda8d03c8f5aea99a442ebdb0050',1,'CommandProcessor']]],
-  ['publishinfo',['publishInfo',['../a00028.html#a0f5c17ab23203abee8a48c82f3338a28',1,'CommandProcessor']]],
-  ['publishreturn',['publishReturn',['../a00028.html#ae97c2e58deecce8bd6dac0d081d73f03',1,'CommandProcessor']]],
-  ['publishwarning',['publishWarning',['../a00028.html#a0691a985030ebb0cef833aa779bedeab',1,'CommandProcessor']]],
-  ['push_5fback',['push_back',['../a00021.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7',1,'nlohmann::basic_json::push_back(basic_json &amp;&amp;val)'],['../a00021.html#ab4384af330b79de0e5f279576803a2c7',1,'nlohmann::basic_json::push_back(const basic_json &amp;val)'],['../a00021.html#ae11a3a51782c058fff2f6550cdfb9b3c',1,'nlohmann::basic_json::push_back(const typename object_t::value_type &amp;val)'],['../a00021.html#a1be31ef2d2934d37a818083a4af44f99',1,'nlohmann::basic_json::push_back(initializer_list_t init)']]]
+  ['vacuum',['Vacuum',['../a00020.html#a4e08e3c36644f4af624a1e8ca53a23fa',1,'SerialCommand::Vacuum()'],['../a00023.html#a4fb79de03f603b993a5b7cd3e2c2bfda',1,'Vacuum::Vacuum()']]]
 ];

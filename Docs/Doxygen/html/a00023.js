@@ -1,7 +1,8 @@
 var a00023 =
 [
-    [ "binary_reader", "a00023.html#a7e643baadaf4c31718cd74833bdd542f", null ],
-    [ "parse_cbor", "a00023.html#a04bcdc8f55b26fafa9775a2f89e48fc2", null ],
-    [ "parse_msgpack", "a00023.html#ab4a4a6f5ab3cc77aac374c9c889e580e", null ],
-    [ "parse_ubjson", "a00023.html#ad0be02d1df4ba4fbe601b0985f5300ac", null ]
+    [ "Vacuum", "a00023.html#a4fb79de03f603b993a5b7cd3e2c2bfda", null ],
+    [ "~Vacuum", "a00023.html#a4ee42dfa1bb599d67ee1584173f5a715", null ],
+    [ "setOnOff", "a00023.html#aea55938cbaba7800040d17f15d676275", null ],
+    [ "start", "a00023.html#a54ec5e56215e32d1c3c537ff4794915e", null ],
+    [ "stop", "a00023.html#ab2ec5d94d77af106451046e67aa78a62", null ]
 ];

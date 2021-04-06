@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: /home/iot/Downloads/mosquitto-1.4.14/src/read_handle_client.c File Reference</title>
+<title>BestRoombaNA: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,9 +49,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -72,8 +71,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -88,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00168.html','');});
+$(document).ready(function(){initNavTree('a00023.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -106,169 +107,23 @@ $(document).ready(function(){initNavTree('a00168.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">read_handle_client.c File Reference</div>  </div>
+<div class="title">Vacuum Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00141_source.html">config.h</a>&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00196_source.html">mosquitto_broker.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00154_source.html">memory_mosq.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00161_source.html">mqtt3_protocol.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00172_source.html">send_mosq.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00182_source.html">util_mosq.h</a>&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for read_handle_client.c:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00574.png" border="0" usemap="#_2home_2iot_2_downloads_2mosquitto-1_84_814_2src_2read__handle__client_8c" alt=""/></div>
-<map name="_2home_2iot_2_downloads_2mosquitto-1_84_814_2src_2read__handle__client_8c" id="_2home_2iot_2_downloads_2mosquitto-1_84_814_2src_2read__handle__client_8c">
-<area shape="rect" id="node2" href="a00141.html" title="config.h" alt="" coords="5,333,73,360"/>
-<area shape="rect" id="node5" href="a00196.html" title="mosquitto_broker.h" alt="" coords="427,109,561,136"/>
-<area shape="rect" id="node21" href="a00154.html" title="memory_mosq.h" alt="" coords="909,109,1028,136"/>
-<area shape="rect" id="node23" href="a00161.html" title="mqtt3_protocol.h" alt="" coords="767,109,885,136"/>
-<area shape="rect" id="node24" href="a00172.html" title="send_mosq.h" alt="" coords="1052,109,1152,136"/>
-<area shape="rect" id="node25" href="a00182.html" title="util_mosq.h" alt="" coords="601,109,691,136"/>
-<area shape="rect" id="node6" href="a00160.html" title="mosquitto_internal.h" alt="" coords="507,259,646,285"/>
-<area shape="rect" id="node11" href="a00159.html" title="mosquitto.h" alt="" coords="745,333,835,360"/>
-<area shape="rect" id="node14" href="a00198.html" title="mosquitto_plugin.h" alt="" coords="147,184,278,211"/>
-<area shape="rect" id="node15" href="a00180.html" title="tls_mosq.h" alt="" coords="615,184,701,211"/>
-<area shape="rect" id="node16" href="a00209.html" title="uthash.h" alt="" coords="302,184,374,211"/>
-<area shape="rect" id="node19" href="a00163.html" title="net_mosq.h" alt="" coords="449,184,539,211"/>
-<area shape="rect" id="node9" href="a00150.html" title="dummypthread.h" alt="" coords="601,333,720,360"/>
-<area shape="rect" id="node13" href="a00178.html" title="time_mosq.h" alt="" coords="397,333,495,360"/>
-</map>
-</div>
-</div>
-<p><a href="a00168_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ad6b09e9305be77b254fbff1759f3c7c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#ad6b09e9305be77b254fbff1759f3c7c7">mqtt3_handle_connack</a> (struct <a class="el" href="a00089.html">mosquitto_db</a> *db, struct <a class="el" href="a00086.html">mosquitto</a> *context)</td></tr>
-<tr class="separator:ad6b09e9305be77b254fbff1759f3c7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ad6b09e9305be77b254fbff1759f3c7c7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mqtt3_handle_connack </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="a00089.html">mosquitto_db</a> *&#160;</td>
-          <td class="paramname"><em>db</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="a00086.html">mosquitto</a> *&#160;</td>
-          <td class="paramname"><em>context</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00168_source.html#l00027">27</a> of file <a class="el" href="a00168_source.html">read_handle_client.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    uint8_t byte;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    uint8_t <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">char</span> *notification_topic;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> notification_topic_len;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">char</span> notification_payload;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span>(!context){</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9fc59ed2d318deb411d268ef7087518a">MOSQ_ERR_INVAL</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Received CONNACK on connection %s.&quot;</span>, context-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="a00162.html#aa0425b094c40c000e3bdcef6c2766fc1">_mosquitto_read_byte</a>(&amp;context-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>, &amp;byte)) <span class="keywordflow">return</span> 1; <span class="comment">// Reserved byte, not used</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="a00162.html#aa0425b094c40c000e3bdcef6c2766fc1">_mosquitto_read_byte</a>(&amp;context-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>, &amp;rc)) <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">switch</span>(rc){</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="a00161.html#af091bde70bed3c1da6b8d03eafea7f5d">CONNACK_ACCEPTED</a>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">if</span>(context-&gt;bridge){</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">if</span>(context-&gt;bridge-&gt;notifications){</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    notification_payload = <span class="charliteral">&#39;1&#39;</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <span class="keywordflow">if</span>(context-&gt;bridge-&gt;notification_topic){</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                        <span class="keywordflow">if</span>(<a class="code" href="a00171.html#aec1dbc12b0482663fdfbc95c13124bf3">_mosquitto_send_real_publish</a>(context, <a class="code" href="a00181.html#a6c57944aa63895ebcf0edc405e08a92b">_mosquitto_mid_generate</a>(context),</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                context-&gt;bridge-&gt;notification_topic, 1, &amp;notification_payload, 1, <span class="keyword">true</span>, 0)){</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                        }</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        <a class="code" href="a00191.html#abe58c783467b8953116641c9a2eb81a9">mqtt3_db_messages_easy_queue</a>(db, context, context-&gt;bridge-&gt;notification_topic, 1, 1, &amp;notification_payload, 1);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        notification_topic_len = strlen(context-&gt;bridge-&gt;remote_clientid)+strlen(<span class="stringliteral">&quot;$SYS/broker/connection//state&quot;</span>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        notification_topic = <a class="code" href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e">_mosquitto_malloc</a>(<span class="keyword">sizeof</span>(<span class="keywordtype">char</span>)*(notification_topic_len+1));</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        <span class="keywordflow">if</span>(!notification_topic) <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a5a7098f2f59ec49126110b033c934ba6">MOSQ_ERR_NOMEM</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        snprintf(notification_topic, notification_topic_len+1, <span class="stringliteral">&quot;$SYS/broker/connection/%s/state&quot;</span>, context-&gt;bridge-&gt;remote_clientid);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        notification_payload = <span class="charliteral">&#39;1&#39;</span>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        <span class="keywordflow">if</span>(<a class="code" href="a00171.html#aec1dbc12b0482663fdfbc95c13124bf3">_mosquitto_send_real_publish</a>(context, <a class="code" href="a00181.html#a6c57944aa63895ebcf0edc405e08a92b">_mosquitto_mid_generate</a>(context),</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                notification_topic, 1, &amp;notification_payload, 1, <span class="keyword">true</span>, 0)){</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                            <a class="code" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae">_mosquitto_free</a>(notification_topic);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        }</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        <a class="code" href="a00191.html#abe58c783467b8953116641c9a2eb81a9">mqtt3_db_messages_easy_queue</a>(db, context, notification_topic, 1, 1, &amp;notification_payload, 1);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        <a class="code" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae">_mosquitto_free</a>(notification_topic);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    }</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">for</span>(i=0; i&lt;context-&gt;bridge-&gt;topic_count; i++){</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <span class="keywordflow">if</span>(context-&gt;bridge-&gt;topics[i].direction == <a class="code" href="a00196.html#a0c9951678faa52bd7a1c19be5f175689a75a8ca294459d4875531640b769852b8">bd_in</a> || context-&gt;bridge-&gt;topics[i].direction == <a class="code" href="a00196.html#a0c9951678faa52bd7a1c19be5f175689a6726bee8759240b307cd94963c469b75">bd_both</a>){</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                        <span class="keywordflow">if</span>(<a class="code" href="a00170.html#a58e27cf831dfbfa8582f782a9107894a">_mosquitto_send_subscribe</a>(context, NULL, context-&gt;bridge-&gt;topics[i].remote_topic, context-&gt;bridge-&gt;topics[i].qos)){</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                        }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        <span class="keywordflow">if</span>(context-&gt;bridge-&gt;attempt_unsubscribe){</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                            <span class="keywordflow">if</span>(<a class="code" href="a00170.html#a8b306352802e55aaeb9263c4575f3b48">_mosquitto_send_unsubscribe</a>(context, NULL, context-&gt;bridge-&gt;topics[i].remote_topic)){</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                <span class="comment">/* direction = inwards only. This means we should not be subscribed</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">                                * to the topic. It is possible that we used to be subscribed to</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">                                * this topic so unsubscribe. */</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                            }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                        }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    }</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                }</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            context-&gt;<a class="code" href="a00086.html#a26a90a9bba5628b617203725c220aca5">state</a> = <a class="code" href="a00160.html#ae88f365ea35936854748d46b06557732ab1d5422d5d96716b73af1c11c4891e2d">mosq_cs_connected</a>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="a00161.html#a8150907b0b3117ce6b043218046d4679">CONNACK_REFUSED_PROTOCOL_VERSION</a>:</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">if</span>(context-&gt;bridge){</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                context-&gt;bridge-&gt;try_private_accepted = <span class="keyword">false</span>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a5ba508d1cafe32cffa0c8a1ef2fa9bd8">MOSQ_LOG_ERR</a>, <span class="stringliteral">&quot;Connection Refused: unacceptable protocol version&quot;</span>);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="a00161.html#a5d9f8225f090dd49b45ea8e91e826118">CONNACK_REFUSED_IDENTIFIER_REJECTED</a>:</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a5ba508d1cafe32cffa0c8a1ef2fa9bd8">MOSQ_LOG_ERR</a>, <span class="stringliteral">&quot;Connection Refused: identifier rejected&quot;</span>);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="a00161.html#a05a8e27298d7943dfef752f03f71a54c">CONNACK_REFUSED_SERVER_UNAVAILABLE</a>:</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a5ba508d1cafe32cffa0c8a1ef2fa9bd8">MOSQ_LOG_ERR</a>, <span class="stringliteral">&quot;Connection Refused: broker unavailable&quot;</span>);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="a00161.html#aced9e444e25ec0c595487ca671984f85">CONNACK_REFUSED_BAD_USERNAME_PASSWORD</a>:</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a5ba508d1cafe32cffa0c8a1ef2fa9bd8">MOSQ_LOG_ERR</a>, <span class="stringliteral">&quot;Connection Refused: broker unavailable&quot;</span>);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="a00161.html#a4b5a062bd031b6f494ede27ca7b7e528">CONNACK_REFUSED_NOT_AUTHORIZED</a>:</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a5ba508d1cafe32cffa0c8a1ef2fa9bd8">MOSQ_LOG_ERR</a>, <span class="stringliteral">&quot;Connection Refused: not authorised&quot;</span>);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">default</span>:</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a5ba508d1cafe32cffa0c8a1ef2fa9bd8">MOSQ_LOG_ERR</a>, <span class="stringliteral">&quot;Connection Refused: unknown reason&quot;</span>);</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div><div class="ttc" id="a00171_html_aec1dbc12b0482663fdfbc95c13124bf3"><div class="ttname"><a href="a00171.html#aec1dbc12b0482663fdfbc95c13124bf3">_mosquitto_send_real_publish</a></div><div class="ttdeci">int _mosquitto_send_real_publish(struct mosquitto *mosq, uint16_t mid, const char *topic, uint32_t payloadlen, const void *payload, int qos, bool retain, bool dup)</div><div class="ttdef"><b>Definition:</b> <a href="a00171_source.html#l00248">send_mosq.c:248</a></div></div>
-<div class="ttc" id="a00191_html_abe58c783467b8953116641c9a2eb81a9"><div class="ttname"><a href="a00191.html#abe58c783467b8953116641c9a2eb81a9">mqtt3_db_messages_easy_queue</a></div><div class="ttdeci">int mqtt3_db_messages_easy_queue(struct mosquitto_db *db, struct mosquitto *context, const char *topic, int qos, uint32_t payloadlen, const void *payload, int retain)</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00507">database.c:507</a></div></div>
-<div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00067">mosquitto.h:67</a></div></div>
-<div class="ttc" id="a00160_html_ae88f365ea35936854748d46b06557732ab1d5422d5d96716b73af1c11c4891e2d"><div class="ttname"><a href="a00160.html#ae88f365ea35936854748d46b06557732ab1d5422d5d96716b73af1c11c4891e2d">mosq_cs_connected</a></div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00094">mosquitto_internal.h:94</a></div></div>
-<div class="ttc" id="a00161_html_aced9e444e25ec0c595487ca671984f85"><div class="ttname"><a href="a00161.html#aced9e444e25ec0c595487ca671984f85">CONNACK_REFUSED_BAD_USERNAME_PASSWORD</a></div><div class="ttdeci">#define CONNACK_REFUSED_BAD_USERNAME_PASSWORD</div><div class="ttdef"><b>Definition:</b> <a href="a00161_source.html#l00048">mqtt3_protocol.h:48</a></div></div>
-<div class="ttc" id="a00153_html_a1d3fe4692d190d384133af9cfb8019ae"><div class="ttname"><a href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae">_mosquitto_free</a></div><div class="ttdeci">void _mosquitto_free(void *mem)</div><div class="ttdef"><b>Definition:</b> <a href="a00153_source.html#l00054">memory_mosq.c:54</a></div></div>
-<div class="ttc" id="a00162_html_aa0425b094c40c000e3bdcef6c2766fc1"><div class="ttname"><a href="a00162.html#aa0425b094c40c000e3bdcef6c2766fc1">_mosquitto_read_byte</a></div><div class="ttdeci">int _mosquitto_read_byte(struct _mosquitto_packet *packet, uint8_t *byte)</div><div class="ttdef"><b>Definition:</b> <a href="a00162_source.html#l00661">net_mosq.c:661</a></div></div>
-<div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a5a7098f2f59ec49126110b033c934ba6"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a5a7098f2f59ec49126110b033c934ba6">MOSQ_ERR_NOMEM</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00068">mosquitto.h:68</a></div></div>
-<div class="ttc" id="a00196_html_a0c9951678faa52bd7a1c19be5f175689a6726bee8759240b307cd94963c469b75"><div class="ttname"><a href="a00196.html#a0c9951678faa52bd7a1c19be5f175689a6726bee8759240b307cd94963c469b75">bd_both</a></div><div class="ttdef"><b>Definition:</b> <a href="a00196_source.html#l00276">mosquitto_broker.h:276</a></div></div>
-<div class="ttc" id="a00086_html_a6c7e54cb56bc80a99cc96f4005166dcd"><div class="ttname"><a href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">mosquitto::id</a></div><div class="ttdeci">char * id</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00163">mosquitto_internal.h:163</a></div></div>
-<div class="ttc" id="a00427_html_a64b6ff859f6938c4b3c1d92ba0abe053"><div class="ttname"><a href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">01-connect-anon-denied.rc</a></div><div class="ttdeci">int rc</div><div class="ttdef"><b>Definition:</b> <a href="a00211_source.html#l00013">01-connect-anon-denied.py:13</a></div></div>
-<div class="ttc" id="a00161_html_a4b5a062bd031b6f494ede27ca7b7e528"><div class="ttname"><a href="a00161.html#a4b5a062bd031b6f494ede27ca7b7e528">CONNACK_REFUSED_NOT_AUTHORIZED</a></div><div class="ttdeci">#define CONNACK_REFUSED_NOT_AUTHORIZED</div><div class="ttdef"><b>Definition:</b> <a href="a00161_source.html#l00049">mqtt3_protocol.h:49</a></div></div>
-<div class="ttc" id="a00086_html_a26a90a9bba5628b617203725c220aca5"><div class="ttname"><a href="a00086.html#a26a90a9bba5628b617203725c220aca5">mosquitto::state</a></div><div class="ttdeci">enum mosquitto_client_state state</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00168">mosquitto_internal.h:168</a></div></div>
-<div class="ttc" id="a00161_html_a8150907b0b3117ce6b043218046d4679"><div class="ttname"><a href="a00161.html#a8150907b0b3117ce6b043218046d4679">CONNACK_REFUSED_PROTOCOL_VERSION</a></div><div class="ttdeci">#define CONNACK_REFUSED_PROTOCOL_VERSION</div><div class="ttdef"><b>Definition:</b> <a href="a00161_source.html#l00045">mqtt3_protocol.h:45</a></div></div>
-<div class="ttc" id="a00159_html_a9a0714eb912755e4dc621c1e902c0bcf"><div class="ttname"><a href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a></div><div class="ttdeci">#define MOSQ_LOG_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00058">mosquitto.h:58</a></div></div>
-<div class="ttc" id="a00159_html_a5ba508d1cafe32cffa0c8a1ef2fa9bd8"><div class="ttname"><a href="a00159.html#a5ba508d1cafe32cffa0c8a1ef2fa9bd8">MOSQ_LOG_ERR</a></div><div class="ttdeci">#define MOSQ_LOG_ERR</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00057">mosquitto.h:57</a></div></div>
-<div class="ttc" id="a00161_html_a05a8e27298d7943dfef752f03f71a54c"><div class="ttname"><a href="a00161.html#a05a8e27298d7943dfef752f03f71a54c">CONNACK_REFUSED_SERVER_UNAVAILABLE</a></div><div class="ttdeci">#define CONNACK_REFUSED_SERVER_UNAVAILABLE</div><div class="ttdef"><b>Definition:</b> <a href="a00161_source.html#l00047">mqtt3_protocol.h:47</a></div></div>
-<div class="ttc" id="a00170_html_a8b306352802e55aaeb9263c4575f3b48"><div class="ttname"><a href="a00170.html#a8b306352802e55aaeb9263c4575f3b48">_mosquitto_send_unsubscribe</a></div><div class="ttdeci">int _mosquitto_send_unsubscribe(struct mosquitto *mosq, int *mid, const char *topic)</div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00205">send_client_mosq.c:205</a></div></div>
-<div class="ttc" id="a00153_html_af77494a3afe6d474b2cedb3b9a99283e"><div class="ttname"><a href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e">_mosquitto_malloc</a></div><div class="ttdeci">void * _mosquitto_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="a00153_source.html#l00065">memory_mosq.c:65</a></div></div>
-<div class="ttc" id="a00161_html_a5d9f8225f090dd49b45ea8e91e826118"><div class="ttname"><a href="a00161.html#a5d9f8225f090dd49b45ea8e91e826118">CONNACK_REFUSED_IDENTIFIER_REJECTED</a></div><div class="ttdeci">#define CONNACK_REFUSED_IDENTIFIER_REJECTED</div><div class="ttdef"><b>Definition:</b> <a href="a00161_source.html#l00046">mqtt3_protocol.h:46</a></div></div>
-<div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a9fc59ed2d318deb411d268ef7087518a"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9fc59ed2d318deb411d268ef7087518a">MOSQ_ERR_INVAL</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00070">mosquitto.h:70</a></div></div>
-<div class="ttc" id="a00181_html_a6c57944aa63895ebcf0edc405e08a92b"><div class="ttname"><a href="a00181.html#a6c57944aa63895ebcf0edc405e08a92b">_mosquitto_mid_generate</a></div><div class="ttdeci">uint16_t _mosquitto_mid_generate(struct mosquitto *mosq)</div><div class="ttdef"><b>Definition:</b> <a href="a00181_source.html#l00153">util_mosq.c:153</a></div></div>
-<div class="ttc" id="a00170_html_a58e27cf831dfbfa8582f782a9107894a"><div class="ttname"><a href="a00170.html#a58e27cf831dfbfa8582f782a9107894a">_mosquitto_send_subscribe</a></div><div class="ttdeci">int _mosquitto_send_subscribe(struct mosquitto *mosq, int *mid, const char *topic, uint8_t topic_qos)</div><div class="ttdef"><b>Definition:</b> <a href="a00170_source.html#l00160">send_client_mosq.c:160</a></div></div>
-<div class="ttc" id="a00151_html_ab88a2fffe8ac34ae60e449e2e6ec506a"><div class="ttname"><a href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a></div><div class="ttdeci">int _mosquitto_log_printf(struct mosquitto *mosq, int priority, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="a00151_source.html#l00025">logging_mosq.c:25</a></div></div>
-<div class="ttc" id="a00086_html_a369673718987016a39c5e8ea6fdb3b95"><div class="ttname"><a href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">mosquitto::in_packet</a></div><div class="ttdeci">struct _mosquitto_packet in_packet</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00172">mosquitto_internal.h:172</a></div></div>
-<div class="ttc" id="a00196_html_a0c9951678faa52bd7a1c19be5f175689a75a8ca294459d4875531640b769852b8"><div class="ttname"><a href="a00196.html#a0c9951678faa52bd7a1c19be5f175689a75a8ca294459d4875531640b769852b8">bd_in</a></div><div class="ttdef"><b>Definition:</b> <a href="a00196_source.html#l00275">mosquitto_broker.h:275</a></div></div>
-<div class="ttc" id="a00161_html_af091bde70bed3c1da6b8d03eafea7f5d"><div class="ttname"><a href="a00161.html#af091bde70bed3c1da6b8d03eafea7f5d">CONNACK_ACCEPTED</a></div><div class="ttdeci">#define CONNACK_ACCEPTED</div><div class="ttdef"><b>Definition:</b> <a href="a00161_source.html#l00044">mqtt3_protocol.h:44</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00168_ad6b09e9305be77b254fbff1759f3c7c7_cgraph.png" border="0" usemap="#a00168_ad6b09e9305be77b254fbff1759f3c7c7_cgraph" alt=""/></div>
-<map name="a00168_ad6b09e9305be77b254fbff1759f3c7c7_cgraph" id="a00168_ad6b09e9305be77b254fbff1759f3c7c7_cgraph">
-<area shape="rect" id="node2" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="2956,1281,3103,1308"/>
-<area shape="rect" id="node3" href="a00162.html#aa0425b094c40c000e3bdcef6c2766fc1" title="_mosquitto_read_byte" alt="" coords="2712,1712,2863,1739"/>
-<area shape="rect" id="node4" href="a00171.html#aec1dbc12b0482663fdfbc95c13124bf3" title="_mosquitto_send_real\l_publish" alt="" coords="209,526,359,567"/>
-<area shape="rect" id="node8" href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="2964,2345,3095,2372"/>
-<area shape="rect" id="node13" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="3401,1813,3516,1840"/>
-<area shape="rect" id="node42" href="a00181.html#a6c57944aa63895ebcf0edc405e08a92b" title="_mosquitto_mid_generate" alt="" coords="2702,600,2873,627"/>
-<area shape="rect" id="node43" href="a00191.html#abe58c783467b8953116641c9a2eb81a9" title="mqtt3_db_messages_easy\l_queue" alt="" coords="2458,2058,2637,2099"/>
-<area shape="rect" id="node44" href="a00170.html#a58e27cf831dfbfa8582f782a9107894a" title="_mosquitto_send_subscribe" alt="" coords="2455,296,2639,323"/>
-<area shape="rect" id="node49" href="a00170.html#a8b306352802e55aaeb9263c4575f3b48" title="_mosquitto_send_unsubscribe" alt="" coords="2448,472,2647,499"/>
-<area shape="rect" id="node5" href="a00153.html#a1ecbcb0ab8e51c000672d9d2bdf8172c" title="_mosquitto_calloc" alt="" coords="2724,701,2851,728"/>
-<area shape="rect" id="node6" href="a00181.html#a3c897feee454d60aec163e3bd0eab52e" title="_mosquitto_packet_alloc" alt="" coords="407,533,573,560"/>
-<area shape="rect" id="node18" href="a00162.html#ae1643651ecb33c5a8d5138851bcfd986" title="_mosquitto_packet_queue" alt="" coords="1293,508,1468,535"/>
-<area shape="rect" id="node45" href="a00162.html#a73189d0cf764846d8b74fe2d4a55d79f" title="_mosquitto_write_uint16" alt="" coords="2948,245,3111,272"/>
-<area shape="rect" id="node47" href="a00162.html#a74c4a3cbe02bca478cb9621cca8191e8" title="_mosquitto_write_string" alt="" coords="2707,296,2867,323"/>
-<area shape="rect" id="node48" href="a00162.html#a307413f45257069e76295c70a6d899d8" title="_mosquitto_write_bytes" alt="" coords="2949,321,3109,348"/>
-<area shape="rect" id="node7" href="a00524.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="645,499,788,541"/>
-<area shape="rect" id="node9" href="a00181.html#ae8314371001e5cbc7ed7f9c03efb3ca8" title="_mosquitto_check_keepalive" alt="" coords="621,925,812,952"/>
-<area shape="rect" id="node10" href="a00177.html#a9fb48d8f8ce208443e2e7bae489770fe" title="mosquitto_time" alt="" coords="1989,991,2100,1017"/>
-<area shape="rect" id="node11" href="a00162.html#af8fce1657e21306ca1e448b75774ccfb" title="_mosquitto_socket_close" alt="" coords="1731,735,1901,761"/>
-<area shape="rect" id="node16" href="a00171.html#add1543fe2a0a0f158610a8e9f83c91bf" title="_mosquitto_send_pingreq" alt="" coords="860,925,1031,952"/>
-<area shape="rect" id="node12" href="a00163.html#aba710f8004a961fbbc7b9a47952ca49a" title="_mosquitto_try_connect\l_step1" alt="" coords="1964,651,2125,693"/>
-<area shape="rect" id="node14" href="a00163.html#a6c7a52047909e92de2f75c334923500d" title="_mosquitto_try_connect\l_step2" alt="" coords="1964,717,2125,758"/>
-<area shape="rect" id="node15" href="a00162.html#a09dc43fbc8f662dd7f71b56937af5253" title="_mosquitto_socket_nonblock" alt="" coords="1949,783,2140,809"/>
-<area shape="rect" id="node17" href="a00171.html#a271c30997be399041e068b2ea604c6ec" title="_mosquitto_send_simple\l_command" alt="" coords="1079,554,1245,595"/>
-<area shape="rect" id="node19" href="a00162.html#a7554da94994edf7f11886ba9bd042e2f" title="_mosquitto_packet_write" alt="" coords="1516,1027,1683,1053"/>
-<area shape="rect" id="node20" href="a00162.html#ac25f5eedd4fdb5e35e32e9d0eaf7351f" title="_mosquitto_net_write" alt="" coords="1743,1280,1889,1307"/>
-<area shape="rect" id="node21" href="a00162.html#a1f5ae38a1ad0ff58a7c7aba084282cb5" title="_mosquitto_packet_cleanup" alt="" coords="1953,1051,2137,1077"/>
-<area shape="rect" id="node22" href="a00162.html#afab51e299ec6bfa4fcf4c9fb4860d2e0" title="_mosquitto_packet_read" alt="" coords="1734,1179,1898,1205"/>
-<area shape="rect" id="node23" href="a00162.html#a2c3799cccb12ac4785061599ff18e153" title="_mosquitto_net_read" alt="" coords="2223,1205,2365,1232"/>
-<area shape="rect" id="node24" href="a00196.html#a09d1e4a05c245369c22ecae0e8a42bfb" title="mqtt3_packet_handle" alt="" coords="1971,1256,2118,1283"/>
-<area shape="rect" id="node50" href="a00164.html#a907a402de77d5cd171278a02d026afc7" title="_mosquitto_packet_handle" alt="" coords="1956,1152,2133,1179"/>
-<area shape="rect" id="node25" href="a00166.html#a9d1c01afbdb0b171d789389b04285dae" title="_mosquitto_handle_pingreq" alt="" coords="2204,1003,2384,1029"/>
-<area shape="rect" id="node26" href="a00166.html#a8b0332f54846d87207a9f5c0b7c5213a" title="_mosquitto_handle_pingresp" alt="" coords="2201,1053,2387,1080"/>
-<area shape="rect" id="node27" href="a00166.html#a7d98465bd0a71f82092b31ff17cbad24" title="_mosquitto_handle_pubackcomp" alt="" coords="2188,1104,2400,1131"/>
-<area shape="rect" id="node28" href="a00165.html#ab73094667db8b9226ef81e7895b934f6" title="mqtt3_handle_publish" alt="" coords="2473,1987,2621,2013"/>
-<area shape="rect" id="node35" href="a00166.html#ad23085c99d7e0c4b83d3f0c3c95b6046" title="_mosquitto_handle_pubrec" alt="" coords="2205,1155,2383,1181"/>
-<area shape="rect" id="node36" href="a00166.html#a467343261ece717bef7eea433f48ee0d" title="_mosquitto_handle_pubrel" alt="" coords="2207,1256,2381,1283"/>
-<area shape="rect" id="node37" href="a00196.html#ab7f0afc1ca9700b58f5e6a817687d081" title="mqtt3_handle_connect" alt="" coords="2471,1815,2624,1841"/>
-<area shape="rect" id="node38" href="a00196.html#a1e6ad6e84cfeebd256ba58cd2553aca2" title="mqtt3_handle_disconnect" alt="" coords="2462,1307,2633,1333"/>
-<area shape="rect" id="node39" href="a00196.html#ad028e30a6047ea57b94d503668d6ea80" title="mqtt3_handle_subscribe" alt="" coords="2466,1560,2629,1587"/>
-<area shape="rect" id="node40" href="a00196.html#a2fb8082975605cecae2cd5e0a5789a13" title="mqtt3_handle_unsubscribe" alt="" coords="2699,1661,2876,1688"/>
-<area shape="rect" id="node41" href="a00196.html#ad6b09e9305be77b254fbff1759f3c7c7" title="mqtt3_handle_connack" alt="" coords="2216,1661,2372,1688"/>
-<area shape="rect" id="node29" href="a00153.html#ae6550bff1e45b4c074746b31f29ef537" title="_mosquitto_strdup" alt="" coords="2965,1956,3094,1983"/>
-<area shape="rect" id="node30" href="a00191.html#a36e4902f860237756538cc4a58e1321b" title="mqtt3_db_message_store" alt="" coords="2701,2067,2873,2093"/>
-<area shape="rect" id="node32" href="a00196.html#a7a90d0b3b46b09f07e3fa99074e80eca" title="mqtt3_db_messages_queue" alt="" coords="2695,2269,2880,2296"/>
-<area shape="rect" id="node31" href="a00191.html#a838cff02f4134c5c060e16009cc7254c" title="mosquitto__db_msg_store_add" alt="" coords="2928,2057,3131,2084"/>
-<area shape="rect" id="node33" href="a00191.html#af19cbc47cd971cdb22e9f48566bb3e68" title="mosquitto__db_msg_store\l_deref" alt="" coords="2942,2190,3117,2231"/>
-<area shape="rect" id="node34" href="a00191.html#a0cdc24cdccc64a0e398b093e2a1bf1b3" title="mosquitto__db_msg_store\l_remove" alt="" coords="3179,2203,3353,2245"/>
-<area shape="rect" id="node46" href="a00162.html#adc64d22375628582aa20cb1f8e9435a3" title="_mosquitto_write_byte" alt="" coords="3189,220,3343,247"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a00023.html">Vacuum</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a00023.html#aea55938cbaba7800040d17f15d676275">setOnOff</a>(bool state)</td><td class="entry"><a class="el" href="a00023.html">Vacuum</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00023.html#a54ec5e56215e32d1c3c537ff4794915e">start</a>()</td><td class="entry"><a class="el" href="a00023.html">Vacuum</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00023.html#ab2ec5d94d77af106451046e67aa78a62">stop</a>()</td><td class="entry"><a class="el" href="a00023.html">Vacuum</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00023.html#a4fb79de03f603b993a5b7cd3e2c2bfda">Vacuum</a>(SerialCommand &amp;SL)</td><td class="entry"><a class="el" href="a00023.html">Vacuum</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00023.html#a4ee42dfa1bb599d67ee1584173f5a715">~Vacuum</a>()</td><td class="entry"><a class="el" href="a00023.html">Vacuum</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2c12105386bcc5c3935feab96f296a41.html">Downloads</a></li><li class="navelem"><a class="el" href="dir_fc335ca7d1193ba7b396ec7f5696994c.html">mosquitto-1.4.14</a></li><li class="navelem"><a class="el" href="dir_421886cf52001fe71666e068384a3838.html">src</a></li><li class="navelem"><a class="el" href="a00168.html">read_handle_client.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

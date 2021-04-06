@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['end_5farray',['end_array',['../a00079.html#a3f313cdbe187cababfc5e06f0b69b098a2f3e68e7f111a1e5c7728742b3ca2b7f',1,'nlohmann::detail::lexer']]],
-  ['end_5fobject',['end_object',['../a00079.html#a3f313cdbe187cababfc5e06f0b69b098a7d5b4427866814de4d8f132721d59c87',1,'nlohmann::detail::lexer']]],
-  ['end_5fof_5finput',['end_of_input',['../a00079.html#a3f313cdbe187cababfc5e06f0b69b098aca11f56dd477c09e06583dbdcda0985f',1,'nlohmann::detail::lexer']]]
+  ['r',['R',['../a00015.html#ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6',1,'Pixel']]],
+  ['roomba_5fdefault',['ROOMBA_DEFAULT',['../a00049.html#a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30',1,'OpenInterfaceConfig.h']]],
+  ['roomba_5fslow',['ROOMBA_SLOW',['../a00049.html#a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4',1,'OpenInterfaceConfig.h']]]
 ];

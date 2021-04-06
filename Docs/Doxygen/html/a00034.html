@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: nlohmann::detail::dtoa_impl::diyfp Struct Reference</title>
+<title>BestRoombaNA: /home/iot/Roomba/_libSenseHAT/JoystickDevice.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,9 +49,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -72,10 +71,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -109,332 +106,170 @@ $(document).ready(function(){initNavTree('a00034.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a00946.html">List of all members</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">nlohmann::detail::dtoa_impl::diyfp Struct Reference</div>  </div>
+<div class="title">JoystickDevice.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &quot;<a class="el" href="a00419_source.html">json.hpp</a>&quot;</code></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="a00035_source.html">JoystickDevice.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
+<code>#include &lt;linux/fb.h&gt;</code><br />
+<code>#include &lt;sys/mman.h&gt;</code><br />
+<code>#include &lt;sys/ioctl.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;poll.h&gt;</code><br />
+<code>#include &lt;dirent.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for JoystickDevice.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00090.png" border="0" usemap="#_2home_2iot_2_roomba_2__lib_sense_h_a_t_2_joystick_device_8c" alt=""/></div>
+<map name="_2home_2iot_2_roomba_2__lib_sense_h_a_t_2_joystick_device_8c" id="_2home_2iot_2_roomba_2__lib_sense_h_a_t_2_joystick_device_8c">
+<area shape="rect" id="node2" href="a00035.html" title="JoystickDevice.h" alt="" coords="5,95,128,121"/>
+</map>
+</div>
+</div>
+<p><a href="a00034_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a23d25b3ad4527270a6e3f2a0bcca11e6"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a23d25b3ad4527270a6e3f2a0bcca11e6">diyfp</a> () noexcept</td></tr>
-<tr class="separator:a23d25b3ad4527270a6e3f2a0bcca11e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a332ba792e67dd40cd99a23f6dceb7792"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a332ba792e67dd40cd99a23f6dceb7792">diyfp</a> (uint64_t f_, int e_) noexcept</td></tr>
-<tr class="separator:a332ba792e67dd40cd99a23f6dceb7792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a369266c24eacffb87046522897a570d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a369266c24eacffb87046522897a570d5">_GNU_SOURCE</a></td></tr>
+<tr class="separator:a369266c24eacffb87046522897a570d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a477188d9f90b56f0ab2d13020495a9b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a477188d9f90b56f0ab2d13020495a9b6">DEV_INPUT_EVENT</a>&#160;&#160;&#160;&quot;/dev/input&quot;</td></tr>
+<tr class="separator:a477188d9f90b56f0ab2d13020495a9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985f060b1ceec122b9560e92d000f01e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a985f060b1ceec122b9560e92d000f01e">EVENT_DEV_NAME</a>&#160;&#160;&#160;&quot;event&quot;</td></tr>
+<tr class="separator:a985f060b1ceec122b9560e92d000f01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeb26771af54ad73598c1a0430d65d884"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00034.html">diyfp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#aeb26771af54ad73598c1a0430d65d884">sub</a> (const <a class="el" href="a00034.html">diyfp</a> &amp;x, const <a class="el" href="a00034.html">diyfp</a> &amp;y) noexcept</td></tr>
-<tr class="memdesc:aeb26771af54ad73598c1a0430d65d884"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns x - y  <a href="#aeb26771af54ad73598c1a0430d65d884">More...</a><br /></td></tr>
-<tr class="separator:aeb26771af54ad73598c1a0430d65d884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f250d12ce89c81fdb08900c6a823e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00034.html">diyfp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#aa5f250d12ce89c81fdb08900c6a823e8">mul</a> (const <a class="el" href="a00034.html">diyfp</a> &amp;x, const <a class="el" href="a00034.html">diyfp</a> &amp;y) noexcept</td></tr>
-<tr class="memdesc:aa5f250d12ce89c81fdb08900c6a823e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns x * y  <a href="#aa5f250d12ce89c81fdb08900c6a823e8">More...</a><br /></td></tr>
-<tr class="separator:aa5f250d12ce89c81fdb08900c6a823e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2246b5b40c7c6992153ef174063d6aa6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00034.html">diyfp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a2246b5b40c7c6992153ef174063d6aa6">normalize</a> (<a class="el" href="a00034.html">diyfp</a> x) noexcept</td></tr>
-<tr class="memdesc:a2246b5b40c7c6992153ef174063d6aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">normalize x such that the significand is &gt;= 2^(q-1)  <a href="#a2246b5b40c7c6992153ef174063d6aa6">More...</a><br /></td></tr>
-<tr class="separator:a2246b5b40c7c6992153ef174063d6aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b6665e467ebabe0c0f7418d3fe4b118"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00034.html">diyfp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a6b6665e467ebabe0c0f7418d3fe4b118">normalize_to</a> (const <a class="el" href="a00034.html">diyfp</a> &amp;x, const int target_exponent) noexcept</td></tr>
-<tr class="memdesc:a6b6665e467ebabe0c0f7418d3fe4b118"><td class="mdescLeft">&#160;</td><td class="mdescRight">normalize x such that the result has the exponent E  <a href="#a6b6665e467ebabe0c0f7418d3fe4b118">More...</a><br /></td></tr>
-<tr class="separator:a6b6665e467ebabe0c0f7418d3fe4b118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a90f04c892ac1e707fdb50b0e1eb59030"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a90f04c892ac1e707fdb50b0e1eb59030">f</a></td></tr>
-<tr class="separator:a90f04c892ac1e707fdb50b0e1eb59030"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae22e170815983961447c429f324c944d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ae22e170815983961447c429f324c944d">e</a></td></tr>
-<tr class="separator:ae22e170815983961447c429f324c944d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a03682754b06ed4f30b263119eecc2d52"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a03682754b06ed4f30b263119eecc2d52">kPrecision</a> = 64</td></tr>
-<tr class="separator:a03682754b06ed4f30b263119eecc2d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aad9a5320b4ad2191c8aeec01cc8240e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#aad9a5320b4ad2191c8aeec01cc8240e0">initEventDevice</a> (void)</td></tr>
+<tr class="separator:aad9a5320b4ad2191c8aeec01cc8240e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a7a5c243539b3a04fa0ff1271c6204"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00035.html#a6d88fe27d924f4c0e50fc7f5a38da242">input_event_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a36a7a5c243539b3a04fa0ff1271c6204">pollingEventDevice</a> (void)</td></tr>
+<tr class="separator:a36a7a5c243539b3a04fa0ff1271c6204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d8b9178a57ee6b94df80ba718f058d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00035.html#a6d88fe27d924f4c0e50fc7f5a38da242">input_event_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a20d8b9178a57ee6b94df80ba718f058d">handle_events</a> (int evfd)</td></tr>
+<tr class="separator:a20d8b9178a57ee6b94df80ba718f058d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="a00419_source.html#l07196">7196</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a23d25b3ad4527270a6e3f2a0bcca11e6"></a>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a369266c24eacffb87046522897a570d5"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr nlohmann::detail::dtoa_impl::diyfp::diyfp </td>
+          <td class="memname">#define _GNU_SOURCE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00034_source.html#l00001">1</a> of file <a class="el" href="a00034_source.html">JoystickDevice.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a477188d9f90b56f0ab2d13020495a9b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEV_INPUT_EVENT&#160;&#160;&#160;&quot;/dev/input&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00034_source.html#l00017">17</a> of file <a class="el" href="a00034_source.html">JoystickDevice.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a985f060b1ceec122b9560e92d000f01e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EVENT_DEV_NAME&#160;&#160;&#160;&quot;event&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00034_source.html#l00018">18</a> of file <a class="el" href="a00034_source.html">JoystickDevice.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a20d8b9178a57ee6b94df80ba718f058d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00035.html#a6d88fe27d924f4c0e50fc7f5a38da242">input_event_t</a> handle_events </td>
           <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>evfd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00034_source.html#l00081">81</a> of file <a class="el" href="a00034_source.html">JoystickDevice.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="a00035.html#a6d88fe27d924f4c0e50fc7f5a38da242">input_event_t</a> ev[64] = {{0,0,0,0,0}};</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">int</span> i = 0;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> rd = read(evfd, ev, <span class="keyword">sizeof</span>(<a class="code" href="a00035.html#a6d88fe27d924f4c0e50fc7f5a38da242">input_event_t</a>) * 64);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">/* printf(&quot;rd = %d type = %d value = %d code = %d\n&quot;, rd,</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">           ev-&gt;type, ev-&gt;value, ev-&gt;code); */</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (rd &lt; (<span class="keywordtype">int</span>)<span class="keyword">sizeof</span>(<a class="code" href="a00035.html#a6d88fe27d924f4c0e50fc7f5a38da242">input_event_t</a>)) {</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        fprintf(stderr, <span class="stringliteral">&quot;expected %d bytes, got %d\n&quot;</span>,</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                (<span class="keywordtype">int</span>) <span class="keyword">sizeof</span>(<span class="keyword">struct</span> input_event), rd);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> ev[0];</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; rd / (int)<span class="keyword">sizeof</span>(<span class="keyword">struct</span> input_event); i++)</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span> (ev-&gt;type != EV_KEY) {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span> (ev-&gt;value != 1) {</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">switch</span> (ev-&gt;code)</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">case</span> KEY_ENTER:</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">return</span> ev[0];</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">default</span>:</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">return</span> ev[0];</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;   <span class="keywordflow">return</span> ev[0];</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div><div class="ttc" id="a00035_html_a6d88fe27d924f4c0e50fc7f5a38da242"><div class="ttname"><a href="a00035.html#a6d88fe27d924f4c0e50fc7f5a38da242">input_event_t</a></div><div class="ttdeci">#define input_event_t</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00010">JoystickDevice.h:10</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aad9a5320b4ad2191c8aeec01cc8240e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int initEventDevice </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00419_source.html#l07203">7203</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l07203"></a><span class="lineno"> 7203</span>&#160;: <a class="code" href="a00034.html#a90f04c892ac1e707fdb50b0e1eb59030">f</a>(0), <a class="code" href="a00034.html#ae22e170815983961447c429f324c944d">e</a>(0) {}</div><div class="ttc" id="a00034_html_ae22e170815983961447c429f324c944d"><div class="ttname"><a href="a00034.html#ae22e170815983961447c429f324c944d">nlohmann::detail::dtoa_impl::diyfp::e</a></div><div class="ttdeci">int e</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l07201">json.hpp:7201</a></div></div>
-<div class="ttc" id="a00034_html_a90f04c892ac1e707fdb50b0e1eb59030"><div class="ttname"><a href="a00034.html#a90f04c892ac1e707fdb50b0e1eb59030">nlohmann::detail::dtoa_impl::diyfp::f</a></div><div class="ttdeci">uint64_t f</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l07200">json.hpp:7200</a></div></div>
-</div><!-- fragment -->
+<p>Definition at line <a class="el" href="a00034_source.html#l00063">63</a> of file <a class="el" href="a00034_source.html">JoystickDevice.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   evpoll.events = POLLIN;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   evpoll.fd = open_evdev(<span class="stringliteral">&quot;Raspberry Pi Sense HAT Joystick&quot;</span>);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;   <span class="keywordflow">if</span> (evpoll.fd &lt; 0) {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      fprintf(stderr, <span class="stringliteral">&quot;Event device Sense HAT Joystick not found.\n&quot;</span>);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;   }</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   <span class="keywordflow">return</span> evpoll.fd;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a332ba792e67dd40cd99a23f6dceb7792"></a>
+<a class="anchor" id="a36a7a5c243539b3a04fa0ff1271c6204"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr nlohmann::detail::dtoa_impl::diyfp::diyfp </td>
+          <td class="memname"><a class="el" href="a00035.html#a6d88fe27d924f4c0e50fc7f5a38da242">input_event_t</a> pollingEventDevice </td>
           <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>f_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>e_</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00419_source.html#l07204">7204</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l07204"></a><span class="lineno"> 7204</span>&#160;: <a class="code" href="a00034.html#a90f04c892ac1e707fdb50b0e1eb59030">f</a>(f_), <a class="code" href="a00034.html#ae22e170815983961447c429f324c944d">e</a>(e_) {}</div><div class="ttc" id="a00034_html_ae22e170815983961447c429f324c944d"><div class="ttname"><a href="a00034.html#ae22e170815983961447c429f324c944d">nlohmann::detail::dtoa_impl::diyfp::e</a></div><div class="ttdeci">int e</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l07201">json.hpp:7201</a></div></div>
-<div class="ttc" id="a00034_html_a90f04c892ac1e707fdb50b0e1eb59030"><div class="ttname"><a href="a00034.html#a90f04c892ac1e707fdb50b0e1eb59030">nlohmann::detail::dtoa_impl::diyfp::f</a></div><div class="ttdeci">uint64_t f</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l07200">json.hpp:7200</a></div></div>
+<p>Definition at line <a class="el" href="a00034_source.html#l00073">73</a> of file <a class="el" href="a00034_source.html">JoystickDevice.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;   <span class="keyword">struct </span>input_event event = {0,0,0,0,0};</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;   <span class="keywordflow">while</span> (poll(&amp;evpoll, 1, 0) &gt; 0)</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keyword">event</span> = <a class="code" href="a00034.html#a20d8b9178a57ee6b94df80ba718f058d">handle_events</a>(evpoll.fd);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;   <span class="keywordflow">return</span> event;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="ttc" id="a00034_html_a20d8b9178a57ee6b94df80ba718f058d"><div class="ttname"><a href="a00034.html#a20d8b9178a57ee6b94df80ba718f058d">handle_events</a></div><div class="ttdeci">input_event_t handle_events(int evfd)</div><div class="ttdef"><b>Definition:</b> <a href="a00034_source.html#l00081">JoystickDevice.c:81</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a36a7a5c243539b3a04fa0ff1271c6204_cgraph.png" border="0" usemap="#a00034_a36a7a5c243539b3a04fa0ff1271c6204_cgraph" alt=""/></div>
+<map name="a00034_a36a7a5c243539b3a04fa0ff1271c6204_cgraph" id="a00034_a36a7a5c243539b3a04fa0ff1271c6204_cgraph">
+<area shape="rect" id="node2" href="a00034.html#a20d8b9178a57ee6b94df80ba718f058d" title="handle_events" alt="" coords="188,5,295,32"/>
+</map>
 </div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa5f250d12ce89c81fdb08900c6a823e8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a00034.html">diyfp</a> nlohmann::detail::dtoa_impl::diyfp::mul </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00034.html">diyfp</a> &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00034.html">diyfp</a> &amp;&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns x * y </p>
-<dl class="section note"><dt>Note</dt><dd>The result is rounded. (Only the upper q bits are returned.) </dd></dl>
-
-<p>Definition at line <a class="el" href="a00419_source.html#l07222">7222</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l07223"></a><span class="lineno"> 7223</span>&#160;    {</div><div class="line"><a name="l07224"></a><span class="lineno"> 7224</span>&#160;        static_assert(<a class="code" href="a00034.html#a03682754b06ed4f30b263119eecc2d52">kPrecision</a> == 64, <span class="stringliteral">&quot;internal error&quot;</span>);</div><div class="line"><a name="l07225"></a><span class="lineno"> 7225</span>&#160;</div><div class="line"><a name="l07226"></a><span class="lineno"> 7226</span>&#160;        <span class="comment">// Computes:</span></div><div class="line"><a name="l07227"></a><span class="lineno"> 7227</span>&#160;        <span class="comment">//  f = round((x.f * y.f) / 2^q)</span></div><div class="line"><a name="l07228"></a><span class="lineno"> 7228</span>&#160;        <span class="comment">//  e = x.e + y.e + q</span></div><div class="line"><a name="l07229"></a><span class="lineno"> 7229</span>&#160;</div><div class="line"><a name="l07230"></a><span class="lineno"> 7230</span>&#160;        <span class="comment">// Emulate the 64-bit * 64-bit multiplication:</span></div><div class="line"><a name="l07231"></a><span class="lineno"> 7231</span>&#160;        <span class="comment">//</span></div><div class="line"><a name="l07232"></a><span class="lineno"> 7232</span>&#160;        <span class="comment">// p = u * v</span></div><div class="line"><a name="l07233"></a><span class="lineno"> 7233</span>&#160;        <span class="comment">//   = (u_lo + 2^32 u_hi) (v_lo + 2^32 v_hi)</span></div><div class="line"><a name="l07234"></a><span class="lineno"> 7234</span>&#160;        <span class="comment">//   = (u_lo v_lo         ) + 2^32 ((u_lo v_hi         ) + (u_hi v_lo         )) + 2^64 (u_hi v_hi         )</span></div><div class="line"><a name="l07235"></a><span class="lineno"> 7235</span>&#160;        <span class="comment">//   = (p0                ) + 2^32 ((p1                ) + (p2                )) + 2^64 (p3                )</span></div><div class="line"><a name="l07236"></a><span class="lineno"> 7236</span>&#160;        <span class="comment">//   = (p0_lo + 2^32 p0_hi) + 2^32 ((p1_lo + 2^32 p1_hi) + (p2_lo + 2^32 p2_hi)) + 2^64 (p3                )</span></div><div class="line"><a name="l07237"></a><span class="lineno"> 7237</span>&#160;        <span class="comment">//   = (p0_lo             ) + 2^32 (p0_hi + p1_lo + p2_lo                      ) + 2^64 (p1_hi + p2_hi + p3)</span></div><div class="line"><a name="l07238"></a><span class="lineno"> 7238</span>&#160;        <span class="comment">//   = (p0_lo             ) + 2^32 (Q                                          ) + 2^64 (H                 )</span></div><div class="line"><a name="l07239"></a><span class="lineno"> 7239</span>&#160;        <span class="comment">//   = (p0_lo             ) + 2^32 (Q_lo + 2^32 Q_hi                           ) + 2^64 (H                 )</span></div><div class="line"><a name="l07240"></a><span class="lineno"> 7240</span>&#160;        <span class="comment">//</span></div><div class="line"><a name="l07241"></a><span class="lineno"> 7241</span>&#160;        <span class="comment">// (Since Q might be larger than 2^32 - 1)</span></div><div class="line"><a name="l07242"></a><span class="lineno"> 7242</span>&#160;        <span class="comment">//</span></div><div class="line"><a name="l07243"></a><span class="lineno"> 7243</span>&#160;        <span class="comment">//   = (p0_lo + 2^32 Q_lo) + 2^64 (Q_hi + H)</span></div><div class="line"><a name="l07244"></a><span class="lineno"> 7244</span>&#160;        <span class="comment">//</span></div><div class="line"><a name="l07245"></a><span class="lineno"> 7245</span>&#160;        <span class="comment">// (Q_hi + H does not overflow a 64-bit int)</span></div><div class="line"><a name="l07246"></a><span class="lineno"> 7246</span>&#160;        <span class="comment">//</span></div><div class="line"><a name="l07247"></a><span class="lineno"> 7247</span>&#160;        <span class="comment">//   = p_lo + 2^64 p_hi</span></div><div class="line"><a name="l07248"></a><span class="lineno"> 7248</span>&#160;</div><div class="line"><a name="l07249"></a><span class="lineno"> 7249</span>&#160;        <span class="keyword">const</span> uint64_t u_lo = x.f &amp; 0xFFFFFFFF;</div><div class="line"><a name="l07250"></a><span class="lineno"> 7250</span>&#160;        <span class="keyword">const</span> uint64_t u_hi = x.f &gt;&gt; 32;</div><div class="line"><a name="l07251"></a><span class="lineno"> 7251</span>&#160;        <span class="keyword">const</span> uint64_t v_lo = y.f &amp; 0xFFFFFFFF;</div><div class="line"><a name="l07252"></a><span class="lineno"> 7252</span>&#160;        <span class="keyword">const</span> uint64_t v_hi = y.f &gt;&gt; 32;</div><div class="line"><a name="l07253"></a><span class="lineno"> 7253</span>&#160;</div><div class="line"><a name="l07254"></a><span class="lineno"> 7254</span>&#160;        <span class="keyword">const</span> uint64_t p0 = u_lo * v_lo;</div><div class="line"><a name="l07255"></a><span class="lineno"> 7255</span>&#160;        <span class="keyword">const</span> uint64_t p1 = u_lo * v_hi;</div><div class="line"><a name="l07256"></a><span class="lineno"> 7256</span>&#160;        <span class="keyword">const</span> uint64_t p2 = u_hi * v_lo;</div><div class="line"><a name="l07257"></a><span class="lineno"> 7257</span>&#160;        <span class="keyword">const</span> uint64_t p3 = u_hi * v_hi;</div><div class="line"><a name="l07258"></a><span class="lineno"> 7258</span>&#160;</div><div class="line"><a name="l07259"></a><span class="lineno"> 7259</span>&#160;        <span class="keyword">const</span> uint64_t p0_hi = p0 &gt;&gt; 32;</div><div class="line"><a name="l07260"></a><span class="lineno"> 7260</span>&#160;        <span class="keyword">const</span> uint64_t p1_lo = p1 &amp; 0xFFFFFFFF;</div><div class="line"><a name="l07261"></a><span class="lineno"> 7261</span>&#160;        <span class="keyword">const</span> uint64_t p1_hi = p1 &gt;&gt; 32;</div><div class="line"><a name="l07262"></a><span class="lineno"> 7262</span>&#160;        <span class="keyword">const</span> uint64_t p2_lo = p2 &amp; 0xFFFFFFFF;</div><div class="line"><a name="l07263"></a><span class="lineno"> 7263</span>&#160;        <span class="keyword">const</span> uint64_t p2_hi = p2 &gt;&gt; 32;</div><div class="line"><a name="l07264"></a><span class="lineno"> 7264</span>&#160;</div><div class="line"><a name="l07265"></a><span class="lineno"> 7265</span>&#160;        uint64_t Q = p0_hi + p1_lo + p2_lo;</div><div class="line"><a name="l07266"></a><span class="lineno"> 7266</span>&#160;</div><div class="line"><a name="l07267"></a><span class="lineno"> 7267</span>&#160;        <span class="comment">// The full product might now be computed as</span></div><div class="line"><a name="l07268"></a><span class="lineno"> 7268</span>&#160;        <span class="comment">//</span></div><div class="line"><a name="l07269"></a><span class="lineno"> 7269</span>&#160;        <span class="comment">// p_hi = p3 + p2_hi + p1_hi + (Q &gt;&gt; 32)</span></div><div class="line"><a name="l07270"></a><span class="lineno"> 7270</span>&#160;        <span class="comment">// p_lo = p0_lo + (Q &lt;&lt; 32)</span></div><div class="line"><a name="l07271"></a><span class="lineno"> 7271</span>&#160;        <span class="comment">//</span></div><div class="line"><a name="l07272"></a><span class="lineno"> 7272</span>&#160;        <span class="comment">// But in this particular case here, the full p_lo is not required.</span></div><div class="line"><a name="l07273"></a><span class="lineno"> 7273</span>&#160;        <span class="comment">// Effectively we only need to add the highest bit in p_lo to p_hi (and</span></div><div class="line"><a name="l07274"></a><span class="lineno"> 7274</span>&#160;        <span class="comment">// Q_hi + 1 does not overflow).</span></div><div class="line"><a name="l07275"></a><span class="lineno"> 7275</span>&#160;</div><div class="line"><a name="l07276"></a><span class="lineno"> 7276</span>&#160;        Q += uint64_t{1} &lt;&lt; (64 - 32 - 1); <span class="comment">// round, ties up</span></div><div class="line"><a name="l07277"></a><span class="lineno"> 7277</span>&#160;</div><div class="line"><a name="l07278"></a><span class="lineno"> 7278</span>&#160;        <span class="keyword">const</span> uint64_t h = p3 + p2_hi + p1_hi + (Q &gt;&gt; 32);</div><div class="line"><a name="l07279"></a><span class="lineno"> 7279</span>&#160;</div><div class="line"><a name="l07280"></a><span class="lineno"> 7280</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00034.html#a23d25b3ad4527270a6e3f2a0bcca11e6">diyfp</a>(h, x.e + y.e + 64);</div><div class="line"><a name="l07281"></a><span class="lineno"> 7281</span>&#160;    }</div><div class="ttc" id="a00034_html_a03682754b06ed4f30b263119eecc2d52"><div class="ttname"><a href="a00034.html#a03682754b06ed4f30b263119eecc2d52">nlohmann::detail::dtoa_impl::diyfp::kPrecision</a></div><div class="ttdeci">static constexpr int kPrecision</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l07198">json.hpp:7198</a></div></div>
-<div class="ttc" id="a00034_html_a23d25b3ad4527270a6e3f2a0bcca11e6"><div class="ttname"><a href="a00034.html#a23d25b3ad4527270a6e3f2a0bcca11e6">nlohmann::detail::dtoa_impl::diyfp::diyfp</a></div><div class="ttdeci">constexpr diyfp() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l07203">json.hpp:7203</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a2246b5b40c7c6992153ef174063d6aa6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a00034.html">diyfp</a> nlohmann::detail::dtoa_impl::diyfp::normalize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00034.html">diyfp</a>&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>normalize x such that the significand is &gt;= 2^(q-1) </p>
-<dl class="section pre"><dt>Precondition</dt><dd>x.f != 0 </dd></dl>
-
-<p>Definition at line <a class="el" href="a00419_source.html#l07287">7287</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l07288"></a><span class="lineno"> 7288</span>&#160;    {</div><div class="line"><a name="l07289"></a><span class="lineno"> 7289</span>&#160;        assert(x.f != 0);</div><div class="line"><a name="l07290"></a><span class="lineno"> 7290</span>&#160;</div><div class="line"><a name="l07291"></a><span class="lineno"> 7291</span>&#160;        <span class="keywordflow">while</span> ((x.f &gt;&gt; 63) == 0)</div><div class="line"><a name="l07292"></a><span class="lineno"> 7292</span>&#160;        {</div><div class="line"><a name="l07293"></a><span class="lineno"> 7293</span>&#160;            x.f &lt;&lt;= 1;</div><div class="line"><a name="l07294"></a><span class="lineno"> 7294</span>&#160;            x.e--;</div><div class="line"><a name="l07295"></a><span class="lineno"> 7295</span>&#160;        }</div><div class="line"><a name="l07296"></a><span class="lineno"> 7296</span>&#160;</div><div class="line"><a name="l07297"></a><span class="lineno"> 7297</span>&#160;        <span class="keywordflow">return</span> x;</div><div class="line"><a name="l07298"></a><span class="lineno"> 7298</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a6b6665e467ebabe0c0f7418d3fe4b118"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a00034.html">diyfp</a> nlohmann::detail::dtoa_impl::diyfp::normalize_to </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00034.html">diyfp</a> &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>target_exponent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>normalize x such that the result has the exponent E </p>
-<dl class="section pre"><dt>Precondition</dt><dd>e &gt;= x.e and the upper e - x.e bits of x.f must be zero. </dd></dl>
-
-<p>Definition at line <a class="el" href="a00419_source.html#l07304">7304</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l07305"></a><span class="lineno"> 7305</span>&#160;    {</div><div class="line"><a name="l07306"></a><span class="lineno"> 7306</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> delta = x.e - target_exponent;</div><div class="line"><a name="l07307"></a><span class="lineno"> 7307</span>&#160;</div><div class="line"><a name="l07308"></a><span class="lineno"> 7308</span>&#160;        assert(delta &gt;= 0);</div><div class="line"><a name="l07309"></a><span class="lineno"> 7309</span>&#160;        assert(((x.f &lt;&lt; delta) &gt;&gt; delta) == x.f);</div><div class="line"><a name="l07310"></a><span class="lineno"> 7310</span>&#160;</div><div class="line"><a name="l07311"></a><span class="lineno"> 7311</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00034.html#a23d25b3ad4527270a6e3f2a0bcca11e6">diyfp</a>(x.f &lt;&lt; delta, target_exponent);</div><div class="line"><a name="l07312"></a><span class="lineno"> 7312</span>&#160;    }</div><div class="ttc" id="a00034_html_a23d25b3ad4527270a6e3f2a0bcca11e6"><div class="ttname"><a href="a00034.html#a23d25b3ad4527270a6e3f2a0bcca11e6">nlohmann::detail::dtoa_impl::diyfp::diyfp</a></div><div class="ttdeci">constexpr diyfp() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l07203">json.hpp:7203</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="aeb26771af54ad73598c1a0430d65d884"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a00034.html">diyfp</a> nlohmann::detail::dtoa_impl::diyfp::sub </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00034.html">diyfp</a> &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00034.html">diyfp</a> &amp;&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns x - y </p>
-<dl class="section pre"><dt>Precondition</dt><dd>x.e == y.e and x.f &gt;= y.f </dd></dl>
-
-<p>Definition at line <a class="el" href="a00419_source.html#l07210">7210</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l07211"></a><span class="lineno"> 7211</span>&#160;    {</div><div class="line"><a name="l07212"></a><span class="lineno"> 7212</span>&#160;        assert(x.e == y.e);</div><div class="line"><a name="l07213"></a><span class="lineno"> 7213</span>&#160;        assert(x.f &gt;= y.f);</div><div class="line"><a name="l07214"></a><span class="lineno"> 7214</span>&#160;</div><div class="line"><a name="l07215"></a><span class="lineno"> 7215</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00034.html#a23d25b3ad4527270a6e3f2a0bcca11e6">diyfp</a>(x.f - y.f, x.e);</div><div class="line"><a name="l07216"></a><span class="lineno"> 7216</span>&#160;    }</div><div class="ttc" id="a00034_html_a23d25b3ad4527270a6e3f2a0bcca11e6"><div class="ttname"><a href="a00034.html#a23d25b3ad4527270a6e3f2a0bcca11e6">nlohmann::detail::dtoa_impl::diyfp::diyfp</a></div><div class="ttdeci">constexpr diyfp() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l07203">json.hpp:7203</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae22e170815983961447c429f324c944d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int nlohmann::detail::dtoa_impl::diyfp::e</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00419_source.html#l07201">7201</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a90f04c892ac1e707fdb50b0e1eb59030"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t nlohmann::detail::dtoa_impl::diyfp::f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00419_source.html#l07200">7200</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a03682754b06ed4f30b263119eecc2d52"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int nlohmann::detail::dtoa_impl::diyfp::kPrecision = 64</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00419_source.html#l07198">7198</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00419_source.html">json.hpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00526.html">nlohmann</a></li><li class="navelem"><a class="el" href="a00528.html">detail</a></li><li class="navelem"><a class="el" href="a00529.html">dtoa_impl</a></li><li class="navelem"><a class="el" href="a00034.html">diyfp</a></li>
+    <li class="navelem"><a class="el" href="dir_6962922d364457ce5be257373ea069ae.html">_libSenseHAT</a></li><li class="navelem"><a class="el" href="a00034.html">JoystickDevice.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

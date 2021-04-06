@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: nlohmann::detail::is_complete_type&lt; T, decltype(void(sizeof(T)))&gt; Struct Template Reference</title>
+<title>BestRoombaNA: /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,9 +49,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -72,10 +71,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -108,37 +105,128 @@ $(document).ready(function(){initNavTree('a00070.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">nlohmann::detail::is_complete_type&lt; T, decltype(void(sizeof(T)))&gt; Struct Template Reference</div>  </div>
+<div class="title">RoombaMQTTClient.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &quot;<a class="el" href="a00419_source.html">json.hpp</a>&quot;</code></p>
-<div class="dynheader">
-Inheritance diagram for nlohmann::detail::is_complete_type&lt; T, decltype(void(sizeof(T)))&gt;:</div>
+<div class="textblock"><code>#include &quot;<a class="el" href="a00071_source.html">RoombaMQTTClient.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00027_source.html">/home/iot/Roomba/_libMQTT/MQTTconfig.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00047_source.html">/home/iot/Roomba/_libUtils/ParWait.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00045_source.html">/home/iot/Roomba/_libUtils/ParLoop.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00041_source.html">/home/iot/Roomba/_libSenseHAT/Pixel.h</a>&quot;</code><br />
+<code>#include &lt;csignal&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for RoombaMQTTClient.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00892.png" border="0" usemap="#nlohmann_1_1detail_1_1is__complete__type_3_01_t_00_01decltype_07void_07sizeof_07_t_08_08_08_4_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for nlohmann::detail::is_complete_type&lt; T, decltype(void(sizeof(T)))&gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00893.png" border="0" usemap="#nlohmann_1_1detail_1_1is__complete__type_3_01_t_00_01decltype_07void_07sizeof_07_t_08_08_08_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
-struct nlohmann::detail::is_complete_type&lt; T, decltype(void(sizeof(T)))&gt;</h3>
+<div class="center"><img src="a00140.png" border="0" usemap="#_2home_2iot_2_roomba_2_roomba_m_q_t_t_2_roomba_m_q_t_t_client_8cpp" alt=""/></div>
+<map name="_2home_2iot_2_roomba_2_roomba_m_q_t_t_2_roomba_m_q_t_t_client_8cpp" id="_2home_2iot_2_roomba_2_roomba_m_q_t_t_2_roomba_m_q_t_t_client_8cpp">
+<area shape="rect" id="node2" href="a00071.html" title="RoombaMQTTClient.h" alt="" coords="1037,102,1191,129"/>
+<area shape="rect" id="node10" href="a00045.html" title="/home/iot/Roomba/_libUtils\l/ParLoop.h" alt="" coords="1536,273,1716,315"/>
+<area shape="rect" id="node32" href="a00027.html" title="/home/iot/Roomba/_libMQTT\l/MQTTconfig.h" alt="" coords="272,184,463,225"/>
+<area shape="rect" id="node35" href="a00047.html" title="/home/iot/Roomba/_libUtils\l/ParWait.h" alt="" coords="1740,273,1920,315"/>
+<area shape="rect" id="node36" href="a00041.html" title="/home/iot/Roomba/_libSense\lHAT/Pixel.h" alt="" coords="5,95,196,136"/>
+<area shape="rect" id="node3" href="a00025.html" title="/home/iot/Roomba/_libMQTT\l/CommandProcessor.h" alt="" coords="539,184,729,225"/>
+<area shape="rect" id="node15" href="a00043.html" title="/home/iot/Roomba/_libSense\lHAT/SenseHAT.h" alt="" coords="1112,184,1303,225"/>
+<area shape="rect" id="node20" href="a00062.html" title="/home/iot/Roomba/I\l&#45;O/ioHandler.h" alt="" coords="951,184,1088,225"/>
+<area shape="rect" id="node31" href="a00055.html" title="AppInfo.h" alt="" coords="848,191,927,218"/>
+<area shape="rect" id="node4" href="a00031.html" title="Topic.h" alt="" coords="471,281,536,307"/>
+<area shape="rect" id="node16" href="a00033.html" title="Joystick.h" alt="" coords="1429,281,1511,307"/>
+<area shape="rect" id="node17" href="a00037.html" title="LedMatrix.h" alt="" coords="1154,445,1245,471"/>
+<area shape="rect" id="node21" href="a00063.html" title="motor.h" alt="" coords="1015,281,1082,307"/>
+<area shape="rect" id="node22" href="a00065.html" title="SerialCommand.h" alt="" coords="895,363,1021,389"/>
+<area shape="rect" id="node29" href="a00066.html" title="vacuum.h" alt="" coords="1107,281,1185,307"/>
+<area shape="rect" id="node30" href="a00064.html" title="sensors.h" alt="" coords="811,281,889,307"/>
+<area shape="rect" id="node23" href="a00051.html" title="/home/iot/Roomba/_libUtils\l/SerialLink/SerialLink.h" alt="" coords="893,437,1073,479"/>
+<area shape="rect" id="node28" href="a00049.html" title="/home/iot/Roomba/_libUtils\l/SerialLink/OpenInterfaceConfig.h" alt="" coords="650,437,869,479"/>
+</map>
+</div>
+</div>
+<p><a href="a00070_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a86d500a34c624c2cae56bc25a31b12f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(x)&#160;&#160;&#160;(void)(x)</td></tr>
+<tr class="separator:a86d500a34c624c2cae56bc25a31b12f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8ca2c21a24d42bf2f7d235f70c434a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#a8ca2c21a24d42bf2f7d235f70c434a7e">handleSIGINT</a> (int)</td></tr>
+<tr class="separator:a8ca2c21a24d42bf2f7d235f70c434a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a32f027fe39b12720913f97490e543111"><td class="memItemLeft" align="right" valign="top">volatile sig_atomic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#a32f027fe39b12720913f97490e543111">receivedSIGINT</a> {false}</td></tr>
+<tr class="separator:a32f027fe39b12720913f97490e543111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a86d500a34c624c2cae56bc25a31b12f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNUSED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(void)(x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="a00070_source.html#l00013">13</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
 
-<p>Definition at line <a class="el" href="a00419_source.html#l00338">338</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00419_source.html">json.hpp</a></li>
-</ul>
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a8ca2c21a24d42bf2f7d235f70c434a7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleSIGINT </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00074">74</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;   <a class="code" href="a00070.html#a32f027fe39b12720913f97490e543111">receivedSIGINT</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div><div class="ttc" id="a00070_html_a32f027fe39b12720913f97490e543111"><div class="ttname"><a href="a00070.html#a32f027fe39b12720913f97490e543111">receivedSIGINT</a></div><div class="ttdeci">volatile sig_atomic_t receivedSIGINT</div><div class="ttdef"><b>Definition:</b> <a href="a00070_source.html#l00072">RoombaMQTTClient.cpp:72</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a32f027fe39b12720913f97490e543111"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile sig_atomic_t receivedSIGINT {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00070_source.html#l00072">72</a> of file <a class="el" href="a00070_source.html">RoombaMQTTClient.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00526.html">nlohmann</a></li><li class="navelem"><a class="el" href="a00528.html">detail</a></li><li class="navelem"><a class="el" href="a00070.html">is_complete_type&lt; T, decltype(void(sizeof(T)))&gt;</a></li>
+    <li class="navelem"><a class="el" href="dir_abff4b1f2f4f8e46b21b755d237028f6.html">RoombaMQTT</a></li><li class="navelem"><a class="el" href="a00070.html">RoombaMQTTClient.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

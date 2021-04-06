@@ -1,7 +1,8 @@
 var a00013 =
 [
-    [ "context", "a00013.html#a942cc8378e37d1c3426cd0a11d6ef29d", null ],
-    [ "next", "a00013.html#ac3373712c2cf873c9d806f8c071f44a6", null ],
-    [ "prev", "a00013.html#a6f15edc3cd0e2ccb224ac10aa8eb945c", null ],
-    [ "qos", "a00013.html#aa1ddfac26492a4103cf0a20509eb4395", null ]
+    [ "ParQueue", "a00013.html#a73a919e4b58f1220a6f3a52af625b616", null ],
+    [ "ParQueue", "a00013.html#a4ea9ecbf02398dbf4862f07bf33b8504", null ],
+    [ "~ParQueue", "a00013.html#a737d7f14e46d3144b3a9a51499e3079d", null ],
+    [ "operator=", "a00013.html#aedef197ecfe9a5625d8501b25b262504", null ],
+    [ "provide", "a00013.html#ae91d6ba584f537b85a8f1024d72128b5", null ]
 ];

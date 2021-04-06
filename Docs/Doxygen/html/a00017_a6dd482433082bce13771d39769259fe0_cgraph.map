@@ -1,0 +1,41 @@
+<map id="RoombaMQTTClient::RoombaMQTTClient" name="RoombaMQTTClient::RoombaMQTTClient">
+<area shape="rect" id="node2" href="$a00017.html#aec1897b8ec23ad132be4fbd3faee376c" title="RoombaMQTTClient::handle\lSensorData" alt="" coords="275,48,463,90"/>
+<area shape="rect" id="node3" href="$a00017.html#a983ef2d5ef0bb7e948af0642d6f679b5" title="RoombaMQTTClient::sendHeartbeat" alt="" coords="252,114,487,141"/>
+<area shape="rect" id="node8" href="$a00009.html#a2737d95498692cc098be8edc8937ada6" title="LedMatrix::clear" alt="" coords="583,282,698,309"/>
+<area shape="rect" id="node11" href="$a00006.html#a72e15bc0082d628bd05aacedd5aa7ee0" title="CommandProcessor::register\lCommand" alt="" coords="273,166,465,207"/>
+<area shape="rect" id="node15" href="$a00017.html#a0d74e4a5547058c2df115fd4eb3746fa" title="RoombaMQTTClient::clear" alt="" coords="280,333,459,360"/>
+<area shape="rect" id="node17" href="$a00017.html#af5436ba636ef4f1b1441d1d6ab6dc508" title="RoombaMQTTClient::blank" alt="" coords="279,384,460,410"/>
+<area shape="rect" id="node18" href="$a00017.html#ac429deb3c9fe3acb5a55d4ef09117b33" title="RoombaMQTTClient::invert" alt="" coords="278,232,461,258"/>
+<area shape="rect" id="node20" href="$a00017.html#a0da99affbcb2b7fd8bc4a6545500db9e" title="RoombaMQTTClient::setPixel" alt="" coords="271,637,468,664"/>
+<area shape="rect" id="node21" href="$a00009.html#a00eb3db37486902ee8509a95c1ac09fe" title="LedMatrix::setPixel" alt="" coords="823,718,957,745"/>
+<area shape="rect" id="node23" href="$a00017.html#a4f07765bf027797c82f5133c055e4996" title="RoombaMQTTClient::getPixel" alt="" coords="271,434,468,461"/>
+<area shape="rect" id="node27" href="$a00017.html#ae48b84d1c5fd197c6ca7108117d7ae27" title="RoombaMQTTClient::invert\lPixel" alt="" coords="278,688,461,730"/>
+<area shape="rect" id="node29" href="$a00017.html#a82331be845fa4168f4f73c389dc0f86b" title="RoombaMQTTClient::cylon" alt="" coords="279,870,460,897"/>
+<area shape="rect" id="node31" href="$a00017.html#a46fde2c41ac80eb38adc159543a6e2a2" title="RoombaMQTTClient::clean" alt="" coords="279,536,460,562"/>
+<area shape="rect" id="node35" href="$a00017.html#a7514f053bd21c284712096e05c6bd00b" title="RoombaMQTTClient::spot" alt="" coords="282,586,457,613"/>
+<area shape="rect" id="node38" href="$a00017.html#a5665062c02c2edb06aa12dadb148a178" title="RoombaMQTTClient::dock" alt="" coords="280,485,459,512"/>
+<area shape="rect" id="node4" href="$a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="795,166,985,207"/>
+<area shape="rect" id="node5" href="$a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="1049,173,1132,200"/>
+<area shape="rect" id="node6" href="$a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="1229,198,1275,225"/>
+<area shape="rect" id="node7" href="$a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="1196,148,1308,174"/>
+<area shape="rect" id="node9" href="$a00038.html#ae694f5385199541875c04d6498eda356" title="blank" alt="" coords="1064,381,1117,408"/>
+<area shape="rect" id="node10" href="$a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="1223,465,1281,492"/>
+<area shape="rect" id="node12" href="$a00006.html#a11c9458174f6909a46b20d26bc489f68" title="CommandProcessor::command\lIsRegistered" alt="" coords="537,48,744,90"/>
+<area shape="rect" id="node13" href="$a00006.html#a0f5c17ab23203abee8a48c82f3338a28" title="CommandProcessor::publishInfo" alt="" coords="535,114,747,141"/>
+<area shape="rect" id="node14" href="$a00006.html#a0691a985030ebb0cef833aa779bedeab" title="CommandProcessor::publish\lWarning" alt="" coords="545,166,736,207"/>
+<area shape="rect" id="node16" href="$a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="545,399,736,440"/>
+<area shape="rect" id="node19" href="$a00009.html#af1e9e51216169ec51398b259129de5e1" title="LedMatrix::invert" alt="" coords="581,232,700,258"/>
+<area shape="rect" id="node22" href="$a00038.html#a80e57b8e92455ad8851540f2a348f009" title="set_pixel" alt="" coords="1053,668,1128,694"/>
+<area shape="rect" id="node24" href="$a00009.html#a7f46ff6f7d413db5ac77225d47219397" title="LedMatrix::getPixel" alt="" coords="573,465,708,492"/>
+<area shape="rect" id="node26" href="$a00006.html#ae97c2e58deecce8bd6dac0d081d73f03" title="CommandProcessor::publish\lReturn" alt="" coords="545,334,736,375"/>
+<area shape="rect" id="node25" href="$a00038.html#ae6094a71213cd0ae1172a64c8140b0a4" title="get_pixel" alt="" coords="1053,465,1128,492"/>
+<area shape="rect" id="node28" href="$a00015.html#a1159eae28181f9bd41ac10833122a7d2" title="Pixel::invert" alt="" coords="595,769,686,796"/>
+<area shape="rect" id="node30" href="$a00017.html#ace9f9242f0623f530fc4323c43fe05eb" title="RoombaMQTTClient::cylonPar" alt="" coords="540,870,741,897"/>
+<area shape="rect" id="node32" href="$a00007.html#a9f30920955fcdf96547cf4e15ee41b4d" title="Starts Roomba in Clean mode. When called again the Roomba wil stop this action. " alt="" coords="581,566,701,593"/>
+<area shape="rect" id="node33" href="$a00020.html#a32af8865495cc6f233b57706a9c815ae" title="Writes serial Clean command Roomba is started in Clean mode. When called again the Roomba exit Clean ..." alt="" coords="811,566,969,593"/>
+<area shape="rect" id="node34" href="$a00021.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="1033,566,1148,593"/>
+<area shape="rect" id="node36" href="$a00007.html#af9177167f3363d45781b427d50816c17" title="Starts Roomba in Spot mode. When called again the Roomba wil stop this action. " alt="" coords="584,617,697,644"/>
+<area shape="rect" id="node37" href="$a00020.html#a12277d5ef016e6f28debf16ee3e93598" title="Writes serial Spot command Roomba is started in Spot mode. When called again the Roomba exit Spot mod..." alt="" coords="815,617,965,644"/>
+<area shape="rect" id="node39" href="$a00007.html#aa50ed3f49aa0bf54b7b626b7dd0c904d" title="Starts Roomba in Dock mode. When called again the Roomba wil stop this action. " alt="" coords="582,516,699,542"/>
+<area shape="rect" id="node40" href="$a00020.html#a8dfe0ebaea19eab82083434068bc14df" title="Writes serial Dock command Roomba is started in Force Dock Seeking mode. When called again the Roomba..." alt="" coords="813,516,967,542"/>
+</map>

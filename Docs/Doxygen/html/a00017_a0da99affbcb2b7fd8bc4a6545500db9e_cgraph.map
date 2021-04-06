@@ -1,0 +1,10 @@
+<map id="RoombaMQTTClient::setPixel" name="RoombaMQTTClient::setPixel">
+<area shape="rect" id="node2" href="$a00006.html#a81e3fda8d03c8f5aea99a442ebdb0050" title="CommandProcessor::publish\lError" alt="" coords="251,23,441,65"/>
+<area shape="rect" id="node7" href="$a00009.html#a00eb3db37486902ee8509a95c1ac09fe" title="LedMatrix::setPixel" alt="" coords="279,89,413,116"/>
+<area shape="rect" id="node3" href="$a00006.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="489,23,680,65"/>
+<area shape="rect" id="node4" href="$a00022.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="728,31,811,57"/>
+<area shape="rect" id="node5" href="$a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="891,5,938,32"/>
+<area shape="rect" id="node6" href="$a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="859,56,971,83"/>
+<area shape="rect" id="node8" href="$a00038.html#a80e57b8e92455ad8851540f2a348f009" title="set_pixel" alt="" coords="547,89,622,116"/>
+<area shape="rect" id="node9" href="$a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="741,89,798,116"/>
+</map>

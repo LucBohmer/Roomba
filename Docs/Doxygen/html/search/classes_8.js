@@ -1,31 +1,5 @@
 var searchData=
 [
-  ['index_5fsequence',['index_sequence',['../a00049.html',1,'nlohmann::detail']]],
-  ['index_5fsequence_3c_200_20_3e',['index_sequence&lt; 0 &gt;',['../a00049.html',1,'nlohmann::detail']]],
-  ['index_5fsequence_3c_20i1_2e_2e_2e_2c_28sizeof_2e_2e_2e_28i1_29_2bi2_29_2e_2e_2e_20_3e',['index_sequence&lt; I1...,(sizeof...(I1)+I2)... &gt;',['../a00049.html',1,'nlohmann::detail']]],
-  ['index_5fsequence_3c_3e',['index_sequence&lt;&gt;',['../a00049.html',1,'nlohmann::detail']]],
-  ['input_5fadapter',['input_adapter',['../a00050.html',1,'nlohmann::detail']]],
-  ['input_5fadapter_5fprotocol',['input_adapter_protocol',['../a00051.html',1,'nlohmann::detail']]],
-  ['input_5fbuffer_5fadapter',['input_buffer_adapter',['../a00052.html',1,'nlohmann::detail']]],
-  ['input_5fstream_5fadapter',['input_stream_adapter',['../a00053.html',1,'nlohmann::detail']]],
-  ['internal_5fiterator',['internal_iterator',['../a00054.html',1,'nlohmann::detail']]],
-  ['internal_5fiterator_3c_20typename_20std_3a_3aremove_5fconst_3c_20basicjsontype_20_3e_3a_3atype_20_3e',['internal_iterator&lt; typename std::remove_const&lt; BasicJsonType &gt;::type &gt;',['../a00054.html',1,'nlohmann::detail']]],
-  ['invalid_5fiterator',['invalid_iterator',['../a00055.html',1,'nlohmann::detail']]],
-  ['iohandler',['IOhandler',['../a00056.html',1,'']]],
-  ['is_5fbasic_5fjson',['is_basic_json',['../a00057.html',1,'nlohmann::detail']]],
-  ['is_5fbasic_5fjson_3c_20nlohmann_5fbasic_5fjson_5ftpl_20_3e',['is_basic_json&lt; NLOHMANN_BASIC_JSON_TPL &gt;',['../a00058.html',1,'nlohmann::detail']]],
-  ['is_5fbasic_5fjson_5fnested_5ftype',['is_basic_json_nested_type',['../a00059.html',1,'nlohmann::detail']]],
-  ['is_5fcompatible_5farray_5ftype',['is_compatible_array_type',['../a00060.html',1,'nlohmann::detail']]],
-  ['is_5fcompatible_5fcomplete_5ftype',['is_compatible_complete_type',['../a00061.html',1,'nlohmann::detail']]],
-  ['is_5fcompatible_5finteger_5ftype',['is_compatible_integer_type',['../a00062.html',1,'nlohmann::detail']]],
-  ['is_5fcompatible_5finteger_5ftype_5fimpl',['is_compatible_integer_type_impl',['../a00063.html',1,'nlohmann::detail']]],
-  ['is_5fcompatible_5finteger_5ftype_5fimpl_3c_20true_2c_20realintegertype_2c_20compatiblenumberintegertype_20_3e',['is_compatible_integer_type_impl&lt; true, RealIntegerType, CompatibleNumberIntegerType &gt;',['../a00064.html',1,'nlohmann::detail']]],
-  ['is_5fcompatible_5fobject_5ftype',['is_compatible_object_type',['../a00065.html',1,'nlohmann::detail']]],
-  ['is_5fcompatible_5fobject_5ftype_5fimpl',['is_compatible_object_type_impl',['../a00066.html',1,'nlohmann::detail']]],
-  ['is_5fcompatible_5fobject_5ftype_5fimpl_3c_20true_2c_20realtype_2c_20compatibleobjecttype_20_3e',['is_compatible_object_type_impl&lt; true, RealType, CompatibleObjectType &gt;',['../a00067.html',1,'nlohmann::detail']]],
-  ['is_5fcompatible_5ftype',['is_compatible_type',['../a00068.html',1,'nlohmann::detail']]],
-  ['is_5fcomplete_5ftype',['is_complete_type',['../a00069.html',1,'nlohmann::detail']]],
-  ['is_5fcomplete_5ftype_3c_20t_2c_20decltype_28void_28sizeof_28t_29_29_29_3e',['is_complete_type&lt; T, decltype(void(sizeof(T)))&gt;',['../a00070.html',1,'nlohmann::detail']]],
-  ['iter_5fimpl',['iter_impl',['../a00071.html',1,'nlohmann::detail']]],
-  ['iteration_5fproxy',['iteration_proxy',['../a00072.html',1,'nlohmann::detail']]]
+  ['randomwalk',['RandomWalk',['../a00016.html',1,'']]],
+  ['roombamqttclient',['RoombaMQTTClient',['../a00017.html',1,'']]]
 ];

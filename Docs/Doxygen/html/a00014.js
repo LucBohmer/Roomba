@@ -1,6 +1,7 @@
 var a00014 =
 [
-    [ "hh", "a00014.html#ae163ee245d5f34c71a964b5203a8ebfa", null ],
-    [ "password", "a00014.html#adb5bda8b38774bd4b0f3796c9f612e57", null ],
-    [ "username", "a00014.html#a7c0d15b77b2dd20fa6c147b563c9143b", null ]
+    [ "ParWait", "a00014.html#ab369159efc089a70d7be3b5c7cb12d74", null ],
+    [ "ParWait", "a00014.html#a63da26de5c61e94edf72df63b85bb577", null ],
+    [ "~ParWait", "a00014.html#aaa41f17a8348d1901ed2e75359383b56", null ],
+    [ "operator=", "a00014.html#aaf6876b1f496bc44eb7f305aac839e5d", null ]
 ];

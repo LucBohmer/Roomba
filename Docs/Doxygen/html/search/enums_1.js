@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['baud',['Baud',['../a00401.html#a131c4cecbe4f0fff8d6e5d8229f576bb',1,'OpenInterfaceConfig.h']]]
+  ['rgb',['RGB',['../a00015.html#ac2ab5194684b31a50d429b26a0569ed9',1,'Pixel']]]
 ];

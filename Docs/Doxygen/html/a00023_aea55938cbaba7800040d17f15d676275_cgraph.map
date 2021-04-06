@@ -1,0 +1,4 @@
+<map id="Vacuum::setOnOff" name="Vacuum::setOnOff">
+<area shape="rect" id="node2" href="$a00020.html#a4e08e3c36644f4af624a1e8ca53a23fa" title="Turns Roomba vacuum ON or OFF;. " alt="" coords="184,5,355,32"/>
+<area shape="rect" id="node3" href="$a00021.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="403,5,517,32"/>
+</map>

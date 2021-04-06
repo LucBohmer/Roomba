@@ -1,19 +1,4 @@
 var searchData=
 [
-  ['db_5fchunk_5fcfg',['DB_CHUNK_CFG',['../a00201.html#a134fb5c107eba5ec3a0591e8b34e0500',1,'persist.h']]],
-  ['db_5fchunk_5fclient',['DB_CHUNK_CLIENT',['../a00201.html#a67eb63dd1fe440d8a0191cfa7bacd643',1,'persist.h']]],
-  ['db_5fchunk_5fclient_5fmsg',['DB_CHUNK_CLIENT_MSG',['../a00201.html#ad88167f3a9e9d8e1cee9081e534e12c1',1,'persist.h']]],
-  ['db_5fchunk_5fmsg_5fstore',['DB_CHUNK_MSG_STORE',['../a00201.html#a166b361a4b43546e1f58062a6a82892f',1,'persist.h']]],
-  ['db_5fchunk_5fretain',['DB_CHUNK_RETAIN',['../a00201.html#a30ba085d62327654249ee914a073ed5e',1,'persist.h']]],
-  ['db_5fchunk_5fsub',['DB_CHUNK_SUB',['../a00201.html#a416359135e90043470fd06f74858daa9',1,'persist.h']]],
-  ['db_5fdatabase',['db_database',['../a00143.html#aa3d389083474bc79bcc36d01a01b23f2',1,'mysql_log.c']]],
-  ['db_5fhost',['db_host',['../a00143.html#a70dcc9d968878557293e6a787d04cf37',1,'mysql_log.c']]],
-  ['db_5fpassword',['db_password',['../a00143.html#a1846b467d91e1b9daf9c5201ed8b2edb',1,'mysql_log.c']]],
-  ['db_5fport',['db_port',['../a00143.html#a52bf4e38f9b97904ee0ff05bd2baa670',1,'mysql_log.c']]],
-  ['db_5fquery',['db_query',['../a00143.html#a183a4ec113bbd4c22296264fffa0723b',1,'mysql_log.c']]],
-  ['db_5fusername',['db_username',['../a00143.html#aee793fcf0dcfaa264d0daf9fe416b4e8',1,'mysql_log.c']]],
-  ['decltype',['DECLTYPE',['../a00209.html#a716ba290563c2d955cb0c90d85874073',1,'uthash.h']]],
-  ['decltype_5fassign',['DECLTYPE_ASSIGN',['../a00209.html#a3c736f2f2dd643f2987b2bc323e269ba',1,'uthash.h']]],
-  ['dev_5finput_5fevent',['DEV_INPUT_EVENT',['../a00386.html#a477188d9f90b56f0ab2d13020495a9b6',1,'JoystickDevice.c']]],
-  ['disconnect',['DISCONNECT',['../a00161.html#a587604e6f3570c0fc32794384d4d0d1f',1,'mqtt3_protocol.h']]]
+  ['event_5fdev_5fname',['EVENT_DEV_NAME',['../a00034.html#a985f060b1ceec122b9560e92d000f01e',1,'JoystickDevice.c']]]
 ];

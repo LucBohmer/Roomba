@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: __Admin log RaspberryPi 3__</title>
+<title>BestRoombaNA: BestRoombaNA</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -101,76 +100,11 @@ $(document).ready(function(){initNavTree('a00002.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">__Admin log RaspberryPi 3__ </div>  </div>
+<div class="title"><a class="el" href="a00005.html" title="Main application to control Roomba. ">BestRoombaNA</a> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Markdown</h2>
-<p>This document is created using Markdown <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code">Markdown cheatsheet</a></p>
-<h2>Bash commands</h2>
-<p>Important Bash commands </p><pre>
-cd
-mkdir
-deldir
-ls
-cp
-mv
-touch
-whereis</pre><p> Most commands have a number of options, use manual pages to find out. Examples: </p><pre>
-man ls
-man cp</pre><h2>Finding IP address RaspberryPi on network</h2>
-<p>Using <b>nmap</b> </p><pre>
-sudo nmap -sn 192.168.123.* | grep -B 2 Raspberry </pre><h2>System information</h2>
-<p>Use next command for getting some system information </p><pre>hostnamectl</pre><p> Output example </p><pre>
-   Static hostname: RBP0010
-         Icon name: computer
-        Machine ID: e681737c469c48459b15d0a1a6893f39
-           Boot ID: 439ebccff3c24cedbf33d92d9a4086c8
-  Operating System: Ubuntu 16.04.2 LTS
-            Kernel: Linux 4.4.38-v7+
-      Architecture: arm</pre><h2>Set hostname <em>RPB0010</em></h2>
-<p>Set hostname, update the next two files as root </p><pre>/etc/hostname
-/etc/hosts</pre><p>These will both need administrative access, so use an editor (for example gedit) </p><pre>sudo gedit /etc/hostname
-sudo gedit /etc/hosts</pre><p>Replace any instances of the existing computer name with your new one. When complete run </p><pre>sudo service hostname restart</pre><p> or restart your computer and the name will have been changed.&lt;br &gt;&lt;br &gt; Seccond approach </p><pre>sudo hostnamectl set-hostname 'RSP0010' </pre><h2>Configure SSH</h2>
-<p>Install openssh-server </p><pre>sudo apt-get install openssh-server</pre><pre>sudo /etc/init.d/ssh restart</pre><pre>sudo systemctl start ssh
-sudo systemctl enable ssh
-</pre><p>For headless setup, SSH can be enabled by placing a file named <b>ssh</b>, without any extension, onto the boot partition of the SD card. When the Pi boots, it looks for the ssh file. If it is found, SSH is enabled, and the file is deleted. The content of the file does not matter: it could contain text, or nothing at all.</p>
-<p>Link <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/">SSH remote access</a></p>
-<h1>Some commands</h1>
-<p>Show hostname and IP address </p><pre>hostname
-hostname -I</pre><h1>Bash Install script</h1>
-<p>For compiling MQTT clients in C en C++ we need several libraries and related include files. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#!/bin/bash</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;# File: installRBP.sh</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;version=&quot;0.1&quot;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;# Getting hostname from /etc/hostname</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;if [ -f /etc/hostname ]; then</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;   host=$(&lt;/etc/hostname)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;else</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   host=&quot;???&quot;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;fi</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;ipaddress=$(hostname -I)</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;# Make sure only root can run this script</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;echo &quot;-- Installing tooling and libs v$version&quot;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;echo &quot;-- Hostname $host  $ipaddress&quot;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;echo</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;if [[ $EUID -ne 0 ]]; then</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   echo &quot;** This script must be run as root&quot; 1&gt;&amp;2</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   exit 1</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;fi</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;#apt-get update</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;apt-get install gedit tmux nmap -y</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;# SSH support</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;apt-get install openssh-server -y</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;/etc/init.d/ssh restart</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;# Libs necessary for MQTT: mosquitto</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;apt-get install libssl-dev libc-ares-dev uuid-dev -y</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;ldconfig</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;echo</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;echo &quot;-- Installing tooling and libs v$version is ready&quot;</div></div><!-- fragment --> <h2>Compiling and installing MQTT <b>mosquitto</b></h2>
-<p>The following libs must be installed:</p><ol type="1">
-<li>libssl-dev</li>
-<li>libc-ares-dev</li>
-<li>uuid-dev</li>
-<li>libwebsockets-dev</li>
-</ol>
-<p>Steps after dowloading mosquitto from <a href="https://mosquitto.org/download/8/">Mosquitto download</a>.</p>
-<p>Websockets provide full-duplex communication channels over a single TCP connection. For enabling websocket communication we must edit the <b>config.mk</b> file: the websockets option must be set to "yes"</p>
-<pre>WITH_WEBSOCKETS:=yes</pre><p>Go to the directory containing the <b>mosquitto</b> code. Compile and configure commands:</p>
-<pre>
-sudo make
-sudo make install
-sudo ldconfig</pre><p>Copy as root <b>mosquitto.conf.example</b> to <b>mosquitto.conf</b>. Update <b>mosquitto.conf</b> for enabling websockets using port 9001 </p><pre>
-# Port to use for the default listener.
-port 1883
-listener 9001
-protocol websockets</pre><p>Mosquitto must be started as daemon with the <b>mosquitto.conf</b> file </p><pre>mosquitto -c /etc/mosquitto/mosquitto.conf -d</pre><h2>Connecting to an MQTT broker by its IP address</h2>
-<p>Use the next URL format for Mosquiitto websockets connection: </p><pre>
-ws://192.168.123.100:9001/ws</pre><h1>__systemd__</h1>
-<p>A unit file contains configuration directives that describe the unit and define its behavior. Several systemctl commands work with unit files in the background. <a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/sect-Managing_Services_with_systemd-Unit_Files.html">systemd</a></p>
-<pre>
-sudo touch /etc/systemd/system/mosquitto.service
-sudo chmod 664 /etc/systemd/system/mosquitto.service</pre><p>Notify systemd that a new name.service file exists by executing the following command as root: </p><pre>
-systemctl daemon-reload
-systemctl start mosquitto.service</pre><p>Start Mosquitto broker at boot time. Create as root __/etc/init/mosquitto.conf__</p>
-<pre>
-description "Mosquitto broker"
-start on net-device-up
-respawn
-exec /usr/local/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf</pre><p>Persist after reboot</p>
-<pre>
-systemctl enable mosquitto</pre> </div></div><!-- contents -->
+<div class="textblock"><p>Roomba </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

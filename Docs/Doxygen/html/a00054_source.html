@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: /home/iot/Roomba/BestRoombaNA/AI.h Source File</title>
+<title>BestRoombaNA: /home/iot/Roomba/BestRoombaNA/AppInfo.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BestRoombaNA
-   &#160;<span id="projectnumber">1.2.1</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Roomba Project voor SEL2</div>
   </td>
@@ -106,20 +106,15 @@ $(document).ready(function(){initNavTree('a00054_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">AI.h</div>  </div>
+<div class="title">AppInfo.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00054.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AI_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AI_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00063.html">/home/iot/Roomba/I-O/ioHandler.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00004.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00004.html">AI</a>{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="a00007.html">IOhandler</a> IOh;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00004.html#a64ec60281e9eb8496f16525615db54b7">   18</a></span>&#160;    <a class="code" href="a00004.html#a64ec60281e9eb8496f16525615db54b7">AI</a>(): IOh()</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {}</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00004.html#aa881b9ee68540c5f595343c9f8906edf">startup</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="a00063_html"><div class="ttname"><a href="a00063.html">ioHandler.h</a></div></div>
-<div class="ttc" id="a00004_html_aa881b9ee68540c5f595343c9f8906edf"><div class="ttname"><a href="a00004.html#aa881b9ee68540c5f595343c9f8906edf">AI::startup</a></div><div class="ttdeci">void startup()</div><div class="ttdoc">Start instance of AI. Calls function start() of IOh instance to start Motor and Vacuum object and ope...</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00009">AI.cpp:9</a></div></div>
-<div class="ttc" id="a00004_html_a64ec60281e9eb8496f16525615db54b7"><div class="ttname"><a href="a00004.html#a64ec60281e9eb8496f16525615db54b7">AI::AI</a></div><div class="ttdeci">AI()</div><div class="ttdef"><b>Definition:</b> <a href="a00054_source.html#l00018">AI.h:18</a></div></div>
-<div class="ttc" id="a00004_html"><div class="ttname"><a href="a00004.html">AI</a></div><div class="ttdoc">Holds the cleaning strategies and different programs. AI inherits IOh class. </div><div class="ttdef"><b>Definition:</b> <a href="a00054_source.html#l00012">AI.h:12</a></div></div>
-<div class="ttc" id="a00007_html"><div class="ttname"><a href="a00007.html">IOhandler</a></div><div class="ttdoc">Handles the IO of the Roomba. Functions in IOhandler can be called to let the Roomba execute movement...</div><div class="ttdef"><b>Definition:</b> <a href="a00063_source.html#l00014">ioHandler.h:14</a></div></div>
-</div><!-- fragment --></div><!-- contents -->
+<a href="a00054.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef APPINFO_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define APPINFO_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="a00054.html#a237e4d19d7046d08c4cc00a45808feaf">    7</a></span>&#160;<span class="preprocessor">#define APPNAME &quot;BestRoombaNA&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="a00054.html#aa9e8f3bb466bb421d13913df7aeaa20c">    9</a></span>&#160;<span class="preprocessor">#define MAJOR_VERSION &quot;3&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="a00054.html#a320988aa2655ee094f3a34a52da10831">   10</a></span>&#160;<span class="preprocessor">#define MINOR_VERSION &quot;0&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="a00054.html#a1c6d5de492ac61ad29aec7aa9a436bbf">   11</a></span>&#160;<span class="preprocessor">#define VERSION MAJOR_VERSION &quot;.&quot; MINOR_VERSION</span></div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00054.html#a32c3415d71d867f7f979c5f60a0c4f5d">   12</a></span>&#160;<span class="preprocessor">#define APPNAME_VERSION APPNAME &quot; v&quot; VERSION</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_9fe2050aca82a0c1828a61e40bfce781.html">BestRoombaNA</a></li><li class="navelem"><a class="el" href="a00054.html">AI.h</a></li>
+    <li class="navelem"><a class="el" href="dir_9fe2050aca82a0c1828a61e40bfce781.html">BestRoombaNA</a></li><li class="navelem"><a class="el" href="a00054.html">AppInfo.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

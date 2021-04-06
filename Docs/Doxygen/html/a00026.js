@@ -1,5 +1,4 @@
 var a00026 =
 [
-    [ "address", "a00026.html#a69e437835539f6e43c8085bb65daeeeb", null ],
-    [ "port", "a00026.html#a335523cccca2b850fa25c738cefdd0d2", null ]
+    [ "getHostname", "a00026.html#af37bb2d14e7f040bff03c191dff380a0", null ]
 ];

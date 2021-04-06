@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: _mosquitto_unpwd Struct Reference</title>
+<title>BestRoombaNA: ParWait Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -109,86 +108,148 @@ $(document).ready(function(){initNavTree('a00014.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00760.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00155.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">_mosquitto_unpwd Struct Reference</div>  </div>
+<div class="title">ParWait Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="a00196_source.html">mosquitto_broker.h</a>&quot;</code></p>
-<div class="dynheader">
-Collaboration diagram for _mosquitto_unpwd:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00761.png" border="0" usemap="#__mosquitto__unpwd_coll__map" alt="Collaboration graph"/></div>
-<map name="__mosquitto__unpwd_coll__map" id="__mosquitto__unpwd_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<p><code>#include &quot;<a class="el" href="a00047_source.html">ParWait.h</a>&quot;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a7c0d15b77b2dd20fa6c147b563c9143b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a7c0d15b77b2dd20fa6c147b563c9143b">username</a></td></tr>
-<tr class="separator:a7c0d15b77b2dd20fa6c147b563c9143b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb5bda8b38774bd4b0f3796c9f612e57"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#adb5bda8b38774bd4b0f3796c9f612e57">password</a></td></tr>
-<tr class="separator:adb5bda8b38774bd4b0f3796c9f612e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae163ee245d5f34c71a964b5203a8ebfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00131.html">UT_hash_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#ae163ee245d5f34c71a964b5203a8ebfa">hh</a></td></tr>
-<tr class="separator:ae163ee245d5f34c71a964b5203a8ebfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab369159efc089a70d7be3b5c7cb12d74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#ab369159efc089a70d7be3b5c7cb12d74">ParWait</a> (<a class="el" href="a00045.html#ad9a38d817d817f5985696d016c3e4f04">callbackFunction_t</a> cbf, int waitTimeSeconds=0)</td></tr>
+<tr class="separator:ab369159efc089a70d7be3b5c7cb12d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63da26de5c61e94edf72df63b85bb577"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a63da26de5c61e94edf72df63b85bb577">ParWait</a> (const <a class="el" href="a00014.html">ParWait</a> &amp;other)=delete</td></tr>
+<tr class="separator:a63da26de5c61e94edf72df63b85bb577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6876b1f496bc44eb7f305aac839e5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">ParWait</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#aaf6876b1f496bc44eb7f305aac839e5d">operator=</a> (const <a class="el" href="a00014.html">ParWait</a> &amp;other)=delete</td></tr>
+<tr class="separator:aaf6876b1f496bc44eb7f305aac839e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa41f17a8348d1901ed2e75359383b56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#aaa41f17a8348d1901ed2e75359383b56">~ParWait</a> ()=default</td></tr>
+<tr class="separator:aaa41f17a8348d1901ed2e75359383b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="a00196_source.html#l00205">205</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae163ee245d5f34c71a964b5203a8ebfa"></a>
+<div class="textblock"><p>Always instantiate <a class="el" href="a00014.html">ParWait</a> objects dynamiccaly. A <a class="el" href="a00014.html">ParWait</a> object will deallocate it-self! </p>
+
+<p>Definition at line <a class="el" href="a00047_source.html#l00014">14</a> of file <a class="el" href="a00047_source.html">ParWait.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab369159efc089a70d7be3b5c7cb12d74"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00131.html">UT_hash_handle</a> _mosquitto_unpwd::hh</td>
+          <td class="memname">ParWait::ParWait </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00045.html#ad9a38d817d817f5985696d016c3e4f04">callbackFunction_t</a>&#160;</td>
+          <td class="paramname"><em>cbf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>waitTimeSeconds</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00213">213</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
+<p>Definition at line <a class="el" href="a00047_source.html#l00017">17</a> of file <a class="el" href="a00047_source.html">ParWait.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                           :</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      waitTimeSeconds_{waitTimeSeconds},</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      cbf_{cbf},</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      par_{&amp;ParWait::parWaitf, <span class="keyword">this</span>}</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      par_.detach();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   }</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="adb5bda8b38774bd4b0f3796c9f612e57"></a>
+<a class="anchor" id="a63da26de5c61e94edf72df63b85bb577"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* _mosquitto_unpwd::password</td>
+          <td class="memname">ParWait::ParWait </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00014.html">ParWait</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00207">207</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a7c0d15b77b2dd20fa6c147b563c9143b"></a>
+<a class="anchor" id="aaa41f17a8348d1901ed2e75359383b56"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* _mosquitto_unpwd::username</td>
+          <td class="memname">ParWait::~ParWait </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00206">206</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aaf6876b1f496bc44eb7f305aac839e5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00014.html">ParWait</a>&amp; ParWait::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00014.html">ParWait</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/iot/Downloads/mosquitto-1.4.14/src/<a class="el" href="a00196_source.html">mosquitto_broker.h</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/iot/Roomba/_libUtils/<a class="el" href="a00047_source.html">ParWait.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00014.html">_mosquitto_unpwd</a></li>
+    <li class="navelem"><a class="el" href="a00014.html">ParWait</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

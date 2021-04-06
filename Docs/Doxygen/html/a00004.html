@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: Eclipse Mosquitto</title>
+<title>BestRoombaNA: AI Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -48,9 +48,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -68,6 +67,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -100,52 +107,119 @@ $(document).ready(function(){initNavTree('a00004.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00143.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Eclipse Mosquitto </div>  </div>
+<div class="title">AI Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Mosquitto is an open source implementation of a server for version 3.1 and 3.1.1 of the MQTT protocol. It also includes a C and C++ client library, and the <code>mosquitto_pub</code> and <code>mosquitto_sub</code> utilities for publishing and subscribing.</p>
-<h2>Links</h2>
-<p>See the following links for more information on MQTT:</p>
-<ul>
-<li>Community page: <a href="http://mqtt.org/">http://mqtt.org/</a></li>
-<li>MQTT v3.1.1 standard: <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html">http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html</a></li>
+
+<p>Holds the cleaning strategies and different programs. <a class="el" href="a00004.html" title="Holds the cleaning strategies and different programs. AI inherits IOh class. ">AI</a> inherits IOh class.  
+ <a href="a00004.html#details">More...</a></p>
+
+<p><code>#include &quot;<a class="el" href="a00053_source.html">AI.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a64ec60281e9eb8496f16525615db54b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a64ec60281e9eb8496f16525615db54b7">AI</a> ()</td></tr>
+<tr class="separator:a64ec60281e9eb8496f16525615db54b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa881b9ee68540c5f595343c9f8906edf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aa881b9ee68540c5f595343c9f8906edf">startup</a> ()</td></tr>
+<tr class="memdesc:aa881b9ee68540c5f595343c9f8906edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start instance of <a class="el" href="a00004.html" title="Holds the cleaning strategies and different programs. AI inherits IOh class. ">AI</a>. Calls function start() of IOh instance to start <a class="el" href="a00010.html">Motor</a> and <a class="el" href="a00023.html" title="Class to control the vacuum. ">Vacuum</a> object and opens interface to start Roomba in Safe Mode.  <a href="#aa881b9ee68540c5f595343c9f8906edf">More...</a><br /></td></tr>
+<tr class="separator:aa881b9ee68540c5f595343c9f8906edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Holds the cleaning strategies and different programs. <a class="el" href="a00004.html" title="Holds the cleaning strategies and different programs. AI inherits IOh class. ">AI</a> inherits IOh class. </p>
+
+<p>Definition at line <a class="el" href="a00053_source.html#l00012">12</a> of file <a class="el" href="a00053_source.html">AI.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a64ec60281e9eb8496f16525615db54b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AI::AI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00053_source.html#l00018">18</a> of file <a class="el" href="a00053_source.html">AI.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        : IOh()</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {}</div></div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00004_a64ec60281e9eb8496f16525615db54b7_cgraph.png" border="0" usemap="#a00004_a64ec60281e9eb8496f16525615db54b7_cgraph" alt=""/></div>
+<map name="a00004_a64ec60281e9eb8496f16525615db54b7_cgraph" id="a00004_a64ec60281e9eb8496f16525615db54b7_cgraph">
+<area shape="rect" id="node2" href="a00004.html#aa881b9ee68540c5f595343c9f8906edf" title="Start instance of AI. Calls function start() of IOh instance to start Motor and Vacuum object and ope..." alt="" coords="109,56,192,83"/>
+<area shape="rect" id="node3" href="a00007.html#ac70cba066f4fa2c826145ea504e318a9" title="Starts all the actuators and sends safeMode signal. " alt="" coords="240,56,352,83"/>
+<area shape="rect" id="node4" href="a00010.html#a4611645742488ec6e915e555b6468a27" title="Motor start. Enables motorspeed to be changed. " alt="" coords="446,5,535,32"/>
+<area shape="rect" id="node5" href="a00023.html#a54ec5e56215e32d1c3c537ff4794915e" title="Vacuum::start" alt="" coords="439,56,543,83"/>
+<area shape="rect" id="node6" href="a00020.html#a30f54181d6e33e968b48e74c781ec2e4" title="Writes serial command to turn Roomba on in Safe mode. " alt="" coords="400,107,581,133"/>
+<area shape="rect" id="node7" href="a00021.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="629,81,744,108"/>
+<area shape="rect" id="node8" href="a00048.html#a5087cc2366b2f09d85c156f869e59ea3" title="startSafe" alt="" coords="649,132,724,159"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa881b9ee68540c5f595343c9f8906edf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AI::startup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start instance of <a class="el" href="a00004.html" title="Holds the cleaning strategies and different programs. AI inherits IOh class. ">AI</a>. Calls function start() of IOh instance to start <a class="el" href="a00010.html">Motor</a> and <a class="el" href="a00023.html" title="Class to control the vacuum. ">Vacuum</a> object and opens interface to start Roomba in Safe Mode. </p>
+
+<p>Definition at line <a class="el" href="a00052_source.html#l00009">9</a> of file <a class="el" href="a00052_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    IOh.<a class="code" href="a00007.html#ac70cba066f4fa2c826145ea504e318a9">start</a>();</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div><div class="ttc" id="a00007_html_ac70cba066f4fa2c826145ea504e318a9"><div class="ttname"><a href="a00007.html#ac70cba066f4fa2c826145ea504e318a9">IOhandler::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">Starts all the actuators and sends safeMode signal. </div><div class="ttdef"><b>Definition:</b> <a href="a00061_source.html#l00005">ioHandler.cpp:5</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00004_aa881b9ee68540c5f595343c9f8906edf_cgraph.png" border="0" usemap="#a00004_aa881b9ee68540c5f595343c9f8906edf_cgraph" alt=""/></div>
+<map name="a00004_aa881b9ee68540c5f595343c9f8906edf_cgraph" id="a00004_aa881b9ee68540c5f595343c9f8906edf_cgraph">
+<area shape="rect" id="node2" href="a00007.html#ac70cba066f4fa2c826145ea504e318a9" title="Starts all the actuators and sends safeMode signal. " alt="" coords="136,56,248,83"/>
+<area shape="rect" id="node3" href="a00010.html#a4611645742488ec6e915e555b6468a27" title="Motor start. Enables motorspeed to be changed. " alt="" coords="342,5,431,32"/>
+<area shape="rect" id="node4" href="a00023.html#a54ec5e56215e32d1c3c537ff4794915e" title="Vacuum::start" alt="" coords="335,56,439,83"/>
+<area shape="rect" id="node5" href="a00020.html#a30f54181d6e33e968b48e74c781ec2e4" title="Writes serial command to turn Roomba on in Safe mode. " alt="" coords="296,107,477,133"/>
+<area shape="rect" id="node6" href="a00021.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="525,81,640,108"/>
+<area shape="rect" id="node7" href="a00048.html#a5087cc2366b2f09d85c156f869e59ea3" title="startSafe" alt="" coords="545,132,620,159"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/iot/Roomba/BestRoombaNA/<a class="el" href="a00053_source.html">AI.h</a></li>
+<li>/home/iot/Roomba/BestRoombaNA/<a class="el" href="a00052_source.html">AI.cpp</a></li>
 </ul>
-<p>Mosquitto project information is available at the following locations:</p>
-<ul>
-<li>Main homepage: <a href="http://mosquitto.org/">http://mosquitto.org/</a></li>
-<li>Find existing bugs or submit a new bug: <a href="https://github.com/eclipse/mosquitto/issues">https://github.com/eclipse/mosquitto/issues</a></li>
-<li>Source code repository: <a href="https://github.com/eclipse/mosquitto">https://github.com/eclipse/mosquitto</a></li>
-</ul>
-<p>There is also a public test server available at <a href="http://test.mosquitto.org/">http://test.mosquitto.org/</a></p>
-<h2>Installing</h2>
-<p>See <a href="http://mosquitto.org/download/">http://mosquitto.org/download/</a> for details on installing binaries for various platforms.</p>
-<h2>Quick start</h2>
-<p>If you have installed a binary package the broker should have been started automatically. If not, it can be started with a basic configuration: </p><pre class="fragment">mosquitto
-</pre><p>Then use <code>mosquitto_sub</code> to subscribe to a topic: </p><pre class="fragment">mosquitto_sub -t 'test/topic' -v
-</pre><p>And to publish a message: </p><pre class="fragment">mosquitto_pub -t 'test/topic' -m 'hello world'
-</pre><h2>Documentation</h2>
-<p>Documentation for the broker, clients and client library API can be found in the man pages, which are available online at <a href="http://mosquitto.org/man/">http://mosquitto.org/man/</a>. There are also pages with an introduction to the features of MQTT, the <code>mosquitto_passwd</code> utility for dealing with username/passwords, and a description of the configuration file options available for the broker.</p>
-<p>Detailed client library API documentation can be found at <a href="http://mosquitto.org/api/">http://mosquitto.org/api/</a></p>
-<h2>Building from source</h2>
-<p>To build from source the recommended route for end users is to download the archive from <a href="http://mosquitto.org/download/">http://mosquitto.org/download/</a>.</p>
-<p>On Windows and Mac, use <code>cmake</code> to build. On other platforms, just run <code>make</code> to build. For Windows, see also <code>readme-windows.md</code>.</p>
-<p>If you are building from the git repository then the documentation will not already be built. Use <code>make binary</code> to skip building the man pages, or install <code>docbook-xsl</code> on Debian/Ubuntu systems.</p>
-<h3>Build Dependencies</h3>
-<ul>
-<li>c-ares (libc-ares-dev on Debian based systems) - disable with <code>make WITH_SRV=no</code></li>
-<li>libuuid (uuid-dev) - disable with <code>make WITH_UUID=no</code></li>
-<li>libwebsockets (libwebsockets-dev) - enable with <code>make WITH_WEBSOCKETS=yes</code></li>
-<li>openssl (libssl-dev on Debian based systems) - disable with <code>make WITH_TLS=no</code></li>
-</ul>
-<h2>Credits</h2>
-<p>Mosquitto was written by Roger Light <a href="#" onclick="location.href='mai'+'lto:'+'rog'+'er'+'@at'+'ch'+'oo.'+'or'+'g'; return false;">roger<span style="display: none;">.nosp@m.</span>@atc<span style="display: none;">.nosp@m.</span>hoo.o<span style="display: none;">.nosp@m.</span>rg</a></p>
-<p>Master: <a href="https://travis-ci.org/eclipse/mosquitto"></a> Develop: <a href="https://travis-ci.org/eclipse/mosquitto"></a> Fixes: <a href="https://travis-ci.org/eclipse/mosquitto"></a> </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a00004.html">AI</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

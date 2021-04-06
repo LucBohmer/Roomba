@@ -1,6 +1,4 @@
-<map id="/home/iot/Roomba/_libSenseHAT/SenseHAT.cpp" name="/home/iot/Roomba/_libSenseHAT/SenseHAT.cpp">
-<area shape="rect" id="node2" href="$a00044.html" title="SenseHAT.h" alt="" coords="197,95,294,121"/>
-<area shape="rect" id="node9" href="$a00040.html" title="LedMatrixDevice.h" alt="" coords="325,95,456,121"/>
-<area shape="rect" id="node3" href="$a00034.html" title="Joystick.h" alt="" coords="89,169,172,196"/>
-<area shape="rect" id="node7" href="$a00038.html" title="LedMatrix.h" alt="" coords="196,169,287,196"/>
+<map id="/home/iot/Roomba/_libSenseHAT/SenseHAT.h" name="/home/iot/Roomba/_libSenseHAT/SenseHAT.h">
+<area shape="rect" id="node2" href="$a00033.html" title="Joystick.h" alt="" coords="89,95,172,121"/>
+<area shape="rect" id="node6" href="$a00037.html" title="LedMatrix.h" alt="" coords="196,95,287,121"/>
 </map>

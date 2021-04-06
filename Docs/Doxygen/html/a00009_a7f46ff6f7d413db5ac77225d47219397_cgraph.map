@@ -1,4 +1,4 @@
 <map id="LedMatrix::getPixel" name="LedMatrix::getPixel">
-<area shape="rect" id="node2" href="$a00039.html#ae6094a71213cd0ae1172a64c8140b0a4" title="get_pixel" alt="" coords="188,5,263,32"/>
-<area shape="rect" id="node3" href="$a00039.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="311,5,368,32"/>
+<area shape="rect" id="node2" href="$a00038.html#ae6094a71213cd0ae1172a64c8140b0a4" title="get_pixel" alt="" coords="188,5,263,32"/>
+<area shape="rect" id="node3" href="$a00038.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="311,5,368,32"/>
 </map>

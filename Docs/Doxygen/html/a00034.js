@@ -1,7 +1,9 @@
 var a00034 =
 [
-    [ "diyfp", "a00034.html#a23d25b3ad4527270a6e3f2a0bcca11e6", null ],
-    [ "diyfp", "a00034.html#a332ba792e67dd40cd99a23f6dceb7792", null ],
-    [ "e", "a00034.html#ae22e170815983961447c429f324c944d", null ],
-    [ "f", "a00034.html#a90f04c892ac1e707fdb50b0e1eb59030", null ]
+    [ "_GNU_SOURCE", "a00034.html#a369266c24eacffb87046522897a570d5", null ],
+    [ "DEV_INPUT_EVENT", "a00034.html#a477188d9f90b56f0ab2d13020495a9b6", null ],
+    [ "EVENT_DEV_NAME", "a00034.html#a985f060b1ceec122b9560e92d000f01e", null ],
+    [ "handle_events", "a00034.html#a20d8b9178a57ee6b94df80ba718f058d", null ],
+    [ "initEventDevice", "a00034.html#aad9a5320b4ad2191c8aeec01cc8240e0", null ],
+    [ "pollingEventDevice", "a00034.html#a36a7a5c243539b3a04fa0ff1271c6204", null ]
 ];

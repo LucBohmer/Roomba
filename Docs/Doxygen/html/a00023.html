@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: nlohmann::detail::binary_reader&lt; BasicJsonType &gt; Class Template Reference</title>
+<title>BestRoombaNA: Vacuum Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -110,144 +109,137 @@ $(document).ready(function(){initNavTree('a00023.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00836.html">List of all members</a>  </div>
+<a href="a00168.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">nlohmann::detail::binary_reader&lt; BasicJsonType &gt; Class Template Reference</div>  </div>
+<div class="title">Vacuum Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>deserialization of CBOR and MessagePack values  
+<p>Class to control the vacuum.  
  <a href="a00023.html#details">More...</a></p>
 
-<p><code>#include &quot;<a class="el" href="a00419_source.html">json.hpp</a>&quot;</code></p>
+<p><code>#include &quot;<a class="el" href="a00066_source.html">vacuum.h</a>&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7e643baadaf4c31718cd74833bdd542f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a7e643baadaf4c31718cd74833bdd542f">binary_reader</a> (<a class="el" href="a00528.html#ae132f8cd5bb24c5e9b40ad0eafedf1c2">input_adapter_t</a> adapter)</td></tr>
-<tr class="memdesc:a7e643baadaf4c31718cd74833bdd542f"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a binary reader  <a href="#a7e643baadaf4c31718cd74833bdd542f">More...</a><br /></td></tr>
-<tr class="separator:a7e643baadaf4c31718cd74833bdd542f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04bcdc8f55b26fafa9775a2f89e48fc2"><td class="memItemLeft" align="right" valign="top">BasicJsonType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a04bcdc8f55b26fafa9775a2f89e48fc2">parse_cbor</a> (const bool strict)</td></tr>
-<tr class="memdesc:a04bcdc8f55b26fafa9775a2f89e48fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a JSON value from CBOR input  <a href="#a04bcdc8f55b26fafa9775a2f89e48fc2">More...</a><br /></td></tr>
-<tr class="separator:a04bcdc8f55b26fafa9775a2f89e48fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4a4a6f5ab3cc77aac374c9c889e580e"><td class="memItemLeft" align="right" valign="top">BasicJsonType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ab4a4a6f5ab3cc77aac374c9c889e580e">parse_msgpack</a> (const bool strict)</td></tr>
-<tr class="memdesc:ab4a4a6f5ab3cc77aac374c9c889e580e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a JSON value from MessagePack input  <a href="#ab4a4a6f5ab3cc77aac374c9c889e580e">More...</a><br /></td></tr>
-<tr class="separator:ab4a4a6f5ab3cc77aac374c9c889e580e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0be02d1df4ba4fbe601b0985f5300ac"><td class="memItemLeft" align="right" valign="top">BasicJsonType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ad0be02d1df4ba4fbe601b0985f5300ac">parse_ubjson</a> (const bool strict)</td></tr>
-<tr class="memdesc:ad0be02d1df4ba4fbe601b0985f5300ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a JSON value from UBJSON input  <a href="#ad0be02d1df4ba4fbe601b0985f5300ac">More...</a><br /></td></tr>
-<tr class="separator:ad0be02d1df4ba4fbe601b0985f5300ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1d8f70f95d241354f86a0b9ae711c1c3"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a1d8f70f95d241354f86a0b9ae711c1c3">little_endianess</a> (int num=1) noexcept</td></tr>
-<tr class="memdesc:a1d8f70f95d241354f86a0b9ae711c1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine system byte order  <a href="#a1d8f70f95d241354f86a0b9ae711c1c3">More...</a><br /></td></tr>
-<tr class="separator:a1d8f70f95d241354f86a0b9ae711c1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb79de03f603b993a5b7cd3e2c2bfda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a4fb79de03f603b993a5b7cd3e2c2bfda">Vacuum</a> (<a class="el" href="a00020.html">SerialCommand</a> &amp;SL)</td></tr>
+<tr class="separator:a4fb79de03f603b993a5b7cd3e2c2bfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee42dfa1bb599d67ee1584173f5a715"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a4ee42dfa1bb599d67ee1584173f5a715">~Vacuum</a> ()</td></tr>
+<tr class="separator:a4ee42dfa1bb599d67ee1584173f5a715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ec5e56215e32d1c3c537ff4794915e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a54ec5e56215e32d1c3c537ff4794915e">start</a> ()</td></tr>
+<tr class="separator:a54ec5e56215e32d1c3c537ff4794915e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2ec5d94d77af106451046e67aa78a62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ab2ec5d94d77af106451046e67aa78a62">stop</a> ()</td></tr>
+<tr class="separator:ab2ec5d94d77af106451046e67aa78a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea55938cbaba7800040d17f15d676275"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aea55938cbaba7800040d17f15d676275">setOnOff</a> (bool state)</td></tr>
+<tr class="separator:aea55938cbaba7800040d17f15d676275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename BasicJsonType&gt;<br />
-class nlohmann::detail::binary_reader&lt; BasicJsonType &gt;</h3>
+<div class="textblock"><p>Class to control the vacuum. </p>
+<p>Sends the correct signals to the Seriallink instance. Checks if the application is started. </p>
 
-<p>deserialization of CBOR and MessagePack values </p>
-
-<p>Definition at line <a class="el" href="a00419_source.html#l04865">4865</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<p>Definition at line <a class="el" href="a00066_source.html#l00011">11</a> of file <a class="el" href="a00066_source.html">vacuum.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7e643baadaf4c31718cd74833bdd542f"></a>
+<a class="anchor" id="a4fb79de03f603b993a5b7cd3e2c2bfda"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html">nlohmann::detail::binary_reader</a>&lt; BasicJsonType &gt;::<a class="el" href="a00023.html">binary_reader</a> </td>
+          <td class="memname">Vacuum::Vacuum </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00528.html#ae132f8cd5bb24c5e9b40ad0eafedf1c2">input_adapter_t</a>&#160;</td>
-          <td class="paramname"><em>adapter</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00020.html">SerialCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>SL</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>create a binary reader </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adapter</td><td>input adapter to read from </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Definition at line <a class="el" href="a00066_source.html#l00018">18</a> of file <a class="el" href="a00066_source.html">vacuum.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                              : enable_(<span class="keyword">false</span>), SL_(SL)</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4ee42dfa1bb599d67ee1584173f5a715"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vacuum::~Vacuum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00419_source.html#l04877">4877</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l04877"></a><span class="lineno"> 4877</span>&#160;                                                    : ia(std::move(adapter))</div><div class="line"><a name="l04878"></a><span class="lineno"> 4878</span>&#160;    {</div><div class="line"><a name="l04879"></a><span class="lineno"> 4879</span>&#160;        assert(ia);</div><div class="line"><a name="l04880"></a><span class="lineno"> 4880</span>&#160;    }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="a00066_source.html#l00021">21</a> of file <a class="el" href="a00066_source.html">vacuum.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a1d8f70f95d241354f86a0b9ae711c1c3"></a>
+<a class="anchor" id="aea55938cbaba7800040d17f15d676275"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr bool <a class="el" href="a00023.html">nlohmann::detail::binary_reader</a>&lt; BasicJsonType &gt;::little_endianess </td>
+          <td class="memname">void Vacuum::setOnOff </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num</em> = <code>1</code></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>determine system byte order </p>
-<dl class="section return"><dt>Returns</dt><dd>true if and only if system's byte order is little endian</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>from <a href="http://stackoverflow.com/a/1001328/266378">http://stackoverflow.com/a/1001328/266378</a> </dd></dl>
-
-<p>Definition at line <a class="el" href="a00419_source.html#l04952">4952</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l04953"></a><span class="lineno"> 4953</span>&#160;    {</div><div class="line"><a name="l04954"></a><span class="lineno"> 4954</span>&#160;        <span class="keywordflow">return</span> (*reinterpret_cast&lt;char*&gt;(&amp;num) == 1);</div><div class="line"><a name="l04955"></a><span class="lineno"> 4955</span>&#160;    }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="a00066_source.html#l00043">43</a> of file <a class="el" href="a00066_source.html">vacuum.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (enable_ == <span class="keyword">true</span>)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            SL_.<a class="code" href="a00020.html#a4e08e3c36644f4af624a1e8ca53a23fa">Vacuum</a>(state);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="ttc" id="a00020_html_a4e08e3c36644f4af624a1e8ca53a23fa"><div class="ttname"><a href="a00020.html#a4e08e3c36644f4af624a1e8ca53a23fa">SerialCommand::Vacuum</a></div><div class="ttdeci">void Vacuum(bool state)</div><div class="ttdoc">Turns Roomba vacuum ON or OFF;. </div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00065">SerialCommand.h:65</a></div></div>
+</div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00023_a1d8f70f95d241354f86a0b9ae711c1c3_cgraph.png" border="0" usemap="#a00023_a1d8f70f95d241354f86a0b9ae711c1c3_cgraph" alt=""/></div>
-<map name="a00023_a1d8f70f95d241354f86a0b9ae711c1c3_cgraph" id="a00023_a1d8f70f95d241354f86a0b9ae711c1c3_cgraph">
-<area shape="rect" id="node2" href="a00112.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception " alt="" coords="216,71,373,112"/>
-<area shape="rect" id="node4" href="a00525.html#a5a92e92a5162db1c03fc73e51596a28d" title="mosq_test.to_string" alt="" coords="651,82,788,109"/>
-<area shape="rect" id="node6" href="a00103.html#a3f6d82a6f967c4728a1ec735a7867073" title="nlohmann::detail::out\l_of_range::create" alt="" coords="223,5,366,47"/>
-<area shape="rect" id="node3" href="a00035.html#abf41a7e9178356314082284e6cfea278" title="nlohmann::detail::exception\l::name" alt="" coords="421,16,603,57"/>
-<area shape="rect" id="node5" href="a00525.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="836,75,979,116"/>
+<div class="center"><img src="a00023_aea55938cbaba7800040d17f15d676275_cgraph.png" border="0" usemap="#a00023_aea55938cbaba7800040d17f15d676275_cgraph" alt=""/></div>
+<map name="a00023_aea55938cbaba7800040d17f15d676275_cgraph" id="a00023_aea55938cbaba7800040d17f15d676275_cgraph">
+<area shape="rect" id="node2" href="a00020.html#a4e08e3c36644f4af624a1e8ca53a23fa" title="Turns Roomba vacuum ON or OFF;. " alt="" coords="184,5,355,32"/>
+<area shape="rect" id="node3" href="a00021.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="403,5,517,32"/>
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a04bcdc8f55b26fafa9775a2f89e48fc2"></a>
+<a class="anchor" id="a54ec5e56215e32d1c3c537ff4794915e"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">BasicJsonType <a class="el" href="a00023.html">nlohmann::detail::binary_reader</a>&lt; BasicJsonType &gt;::parse_cbor </td>
+          <td class="memname">void Vacuum::start </td>
           <td>(</td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>strict</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -258,40 +250,21 @@ template&lt;typename BasicJsonType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>create a JSON value from CBOR input </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">strict</td><td>whether to expect the input to be consumed completed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON value created from CBOR input</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">parse_error.110</td><td>if input ended unexpectedly or the end of file was not reached when <em>strict</em> was set to true </td></tr>
-    <tr><td class="paramname">parse_error.112</td><td>if unsupported byte was read </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="a00419_source.html#l04892">4892</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l04893"></a><span class="lineno"> 4893</span>&#160;    {</div><div class="line"><a name="l04894"></a><span class="lineno"> 4894</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> res = parse_cbor_internal();</div><div class="line"><a name="l04895"></a><span class="lineno"> 4895</span>&#160;        <span class="keywordflow">if</span> (strict)</div><div class="line"><a name="l04896"></a><span class="lineno"> 4896</span>&#160;        {</div><div class="line"><a name="l04897"></a><span class="lineno"> 4897</span>&#160;            <span class="keyword">get</span>();</div><div class="line"><a name="l04898"></a><span class="lineno"> 4898</span>&#160;            expect_eof();</div><div class="line"><a name="l04899"></a><span class="lineno"> 4899</span>&#160;        }</div><div class="line"><a name="l04900"></a><span class="lineno"> 4900</span>&#160;        <span class="keywordflow">return</span> res;</div><div class="line"><a name="l04901"></a><span class="lineno"> 4901</span>&#160;    }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="a00066_source.html#l00026">26</a> of file <a class="el" href="a00066_source.html">vacuum.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        enable_ = <span class="keyword">true</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="ab4a4a6f5ab3cc77aac374c9c889e580e"></a>
+<a class="anchor" id="ab2ec5d94d77af106451046e67aa78a62"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">BasicJsonType <a class="el" href="a00023.html">nlohmann::detail::binary_reader</a>&lt; BasicJsonType &gt;::parse_msgpack </td>
+          <td class="memname">void Vacuum::stop </td>
           <td>(</td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>strict</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -302,79 +275,31 @@ template&lt;typename BasicJsonType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>create a JSON value from MessagePack input </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">strict</td><td>whether to expect the input to be consumed completed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON value created from MessagePack input</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">parse_error.110</td><td>if input ended unexpectedly or the end of file was not reached when <em>strict</em> was set to true </td></tr>
-    <tr><td class="paramname">parse_error.112</td><td>if unsupported byte was read </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="a00419_source.html#l04913">4913</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l04914"></a><span class="lineno"> 4914</span>&#160;    {</div><div class="line"><a name="l04915"></a><span class="lineno"> 4915</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> res = parse_msgpack_internal();</div><div class="line"><a name="l04916"></a><span class="lineno"> 4916</span>&#160;        <span class="keywordflow">if</span> (strict)</div><div class="line"><a name="l04917"></a><span class="lineno"> 4917</span>&#160;        {</div><div class="line"><a name="l04918"></a><span class="lineno"> 4918</span>&#160;            <span class="keyword">get</span>();</div><div class="line"><a name="l04919"></a><span class="lineno"> 4919</span>&#160;            expect_eof();</div><div class="line"><a name="l04920"></a><span class="lineno"> 4920</span>&#160;        }</div><div class="line"><a name="l04921"></a><span class="lineno"> 4921</span>&#160;        <span class="keywordflow">return</span> res;</div><div class="line"><a name="l04922"></a><span class="lineno"> 4922</span>&#160;    }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="a00066_source.html#l00034">34</a> of file <a class="el" href="a00066_source.html">vacuum.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        enable_ = <span class="keyword">false</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        SL_.<a class="code" href="a00020.html#a4e08e3c36644f4af624a1e8ca53a23fa">Vacuum</a>(<span class="keyword">false</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div><div class="ttc" id="a00020_html_a4e08e3c36644f4af624a1e8ca53a23fa"><div class="ttname"><a href="a00020.html#a4e08e3c36644f4af624a1e8ca53a23fa">SerialCommand::Vacuum</a></div><div class="ttdeci">void Vacuum(bool state)</div><div class="ttdoc">Turns Roomba vacuum ON or OFF;. </div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00065">SerialCommand.h:65</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00023_ab2ec5d94d77af106451046e67aa78a62_cgraph.png" border="0" usemap="#a00023_ab2ec5d94d77af106451046e67aa78a62_cgraph" alt=""/></div>
+<map name="a00023_ab2ec5d94d77af106451046e67aa78a62_cgraph" id="a00023_ab2ec5d94d77af106451046e67aa78a62_cgraph">
+<area shape="rect" id="node2" href="a00020.html#a4e08e3c36644f4af624a1e8ca53a23fa" title="Turns Roomba vacuum ON or OFF;. " alt="" coords="156,5,327,32"/>
+<area shape="rect" id="node3" href="a00021.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="375,5,489,32"/>
+</map>
 </div>
-</div>
-<a class="anchor" id="ad0be02d1df4ba4fbe601b0985f5300ac"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">BasicJsonType <a class="el" href="a00023.html">nlohmann::detail::binary_reader</a>&lt; BasicJsonType &gt;::parse_ubjson </td>
-          <td>(</td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>strict</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+</p>
 
-<p>create a JSON value from UBJSON input </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">strict</td><td>whether to expect the input to be consumed completed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON value created from UBJSON input</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">parse_error.110</td><td>if input ended unexpectedly or the end of file was not reached when <em>strict</em> was set to true </td></tr>
-    <tr><td class="paramname">parse_error.112</td><td>if unsupported byte was read </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="a00419_source.html#l04934">4934</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l04935"></a><span class="lineno"> 4935</span>&#160;    {</div><div class="line"><a name="l04936"></a><span class="lineno"> 4936</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> res = parse_ubjson_internal();</div><div class="line"><a name="l04937"></a><span class="lineno"> 4937</span>&#160;        <span class="keywordflow">if</span> (strict)</div><div class="line"><a name="l04938"></a><span class="lineno"> 4938</span>&#160;        {</div><div class="line"><a name="l04939"></a><span class="lineno"> 4939</span>&#160;            get_ignore_noop();</div><div class="line"><a name="l04940"></a><span class="lineno"> 4940</span>&#160;            expect_eof();</div><div class="line"><a name="l04941"></a><span class="lineno"> 4941</span>&#160;        }</div><div class="line"><a name="l04942"></a><span class="lineno"> 4942</span>&#160;        <span class="keywordflow">return</span> res;</div><div class="line"><a name="l04943"></a><span class="lineno"> 4943</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00419_source.html">json.hpp</a></li>
+<li>/home/iot/Roomba/I-O/<a class="el" href="a00066_source.html">vacuum.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00526.html">nlohmann</a></li><li class="navelem"><a class="el" href="a00528.html">detail</a></li><li class="navelem"><a class="el" href="a00023.html">binary_reader</a></li>
+    <li class="navelem"><a class="el" href="a00023.html">Vacuum</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: _mqtt3_bridge Struct Reference</title>
+<title>BestRoombaNA: Pixel Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -109,518 +108,527 @@ $(document).ready(function(){initNavTree('a00015.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00762.html">List of all members</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="a00156.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">_mqtt3_bridge Struct Reference</div>  </div>
+<div class="title">Pixel Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="a00196_source.html">mosquitto_broker.h</a>&quot;</code></p>
+<p><code>#include &quot;<a class="el" href="a00041_source.html">Pixel.h</a>&quot;</code></p>
 <div class="dynheader">
-Collaboration diagram for _mqtt3_bridge:</div>
+Collaboration diagram for Pixel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00763.png" border="0" usemap="#__mqtt3__bridge_coll__map" alt="Collaboration graph"/></div>
-<map name="__mqtt3__bridge_coll__map" id="__mqtt3__bridge_coll__map">
+<div class="center"><img src="a00157.png" border="0" usemap="#_pixel_coll__map" alt="Collaboration graph"/></div>
+<map name="_pixel_coll__map" id="_pixel_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a47863dadb773d72374ee83fd5d473869"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a47863dadb773d72374ee83fd5d473869">name</a></td></tr>
-<tr class="separator:a47863dadb773d72374ee83fd5d473869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b124ce33bc1e5dc9a7ff79a2ce1a98d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="a00026.html">bridge_address</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a8b124ce33bc1e5dc9a7ff79a2ce1a98d">addresses</a></td></tr>
-<tr class="separator:a8b124ce33bc1e5dc9a7ff79a2ce1a98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47322bf3cabdb80ce6872af866372ebe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a47322bf3cabdb80ce6872af866372ebe">cur_address</a></td></tr>
-<tr class="separator:a47322bf3cabdb80ce6872af866372ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22b8ff13f81a86b1e2730e5e8d03df27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a22b8ff13f81a86b1e2730e5e8d03df27">address_count</a></td></tr>
-<tr class="separator:a22b8ff13f81a86b1e2730e5e8d03df27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca5b3e7c35243f7c888750b0415c9b3d"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aca5b3e7c35243f7c888750b0415c9b3d">primary_retry</a></td></tr>
-<tr class="separator:aca5b3e7c35243f7c888750b0415c9b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94ef901a95ff53399007be03f7686f28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a94ef901a95ff53399007be03f7686f28">round_robin</a></td></tr>
-<tr class="separator:a94ef901a95ff53399007be03f7686f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a521b1accae3e30f526daaaa4f4a8ed27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a521b1accae3e30f526daaaa4f4a8ed27">try_private</a></td></tr>
-<tr class="separator:a521b1accae3e30f526daaaa4f4a8ed27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a9977ae7747686faff1d726bfe12b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ac5a9977ae7747686faff1d726bfe12b6">try_private_accepted</a></td></tr>
-<tr class="separator:ac5a9977ae7747686faff1d726bfe12b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bde4fb48cb90d316fcd7a49ed753a2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a7bde4fb48cb90d316fcd7a49ed753a2a">clean_session</a></td></tr>
-<tr class="separator:a7bde4fb48cb90d316fcd7a49ed753a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68917f92a9f3beb704820c9b2ac096f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a68917f92a9f3beb704820c9b2ac096f1">keepalive</a></td></tr>
-<tr class="separator:a68917f92a9f3beb704820c9b2ac096f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2257d526095f9c33e5e962bf1731f164"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="a00016.html">_mqtt3_bridge_topic</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a2257d526095f9c33e5e962bf1731f164">topics</a></td></tr>
-<tr class="separator:a2257d526095f9c33e5e962bf1731f164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3222f81422cc941eea5ac280bec36de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aa3222f81422cc941eea5ac280bec36de">topic_count</a></td></tr>
-<tr class="separator:aa3222f81422cc941eea5ac280bec36de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20519d651ecb30dff447e7a02b352b2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a20519d651ecb30dff447e7a02b352b2d">topic_remapping</a></td></tr>
-<tr class="separator:a20519d651ecb30dff447e7a02b352b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e92ea0b7d0fbb750aa01b3d0328850f"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="a00160.html#a157834b9c1df5876b0fd037d3765807b">_mosquitto_protocol</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a6e92ea0b7d0fbb750aa01b3d0328850f">protocol_version</a></td></tr>
-<tr class="separator:a6e92ea0b7d0fbb750aa01b3d0328850f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5129e78538b9238d1c585c5241f66bdc"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a5129e78538b9238d1c585c5241f66bdc">restart_t</a></td></tr>
-<tr class="separator:a5129e78538b9238d1c585c5241f66bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbc28fb2adb384fdb84b65eab33c2fad"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#afbc28fb2adb384fdb84b65eab33c2fad">remote_clientid</a></td></tr>
-<tr class="separator:afbc28fb2adb384fdb84b65eab33c2fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c9074207bd3ab92c0f6975f86583deb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a4c9074207bd3ab92c0f6975f86583deb">remote_username</a></td></tr>
-<tr class="separator:a4c9074207bd3ab92c0f6975f86583deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ba1de6abed10010991cc1f7679ce7c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a23ba1de6abed10010991cc1f7679ce7c">remote_password</a></td></tr>
-<tr class="separator:a23ba1de6abed10010991cc1f7679ce7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0af634292aca18b6a27e368558e55a95"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a0af634292aca18b6a27e368558e55a95">local_clientid</a></td></tr>
-<tr class="separator:a0af634292aca18b6a27e368558e55a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29eb3937ab3ded7ce2cfbc71153703e9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a29eb3937ab3ded7ce2cfbc71153703e9">local_username</a></td></tr>
-<tr class="separator:a29eb3937ab3ded7ce2cfbc71153703e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc133ffcf28acb2f36dc7b1cf9bd1e7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a6bc133ffcf28acb2f36dc7b1cf9bd1e7">local_password</a></td></tr>
-<tr class="separator:a6bc133ffcf28acb2f36dc7b1cf9bd1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6663afa082d1855ad94bd6394130e30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#af6663afa082d1855ad94bd6394130e30">notifications</a></td></tr>
-<tr class="separator:af6663afa082d1855ad94bd6394130e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a4a2bc8f5f9f1ca695383d5debd485d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a9a4a2bc8f5f9f1ca695383d5debd485d">notification_topic</a></td></tr>
-<tr class="separator:a9a4a2bc8f5f9f1ca695383d5debd485d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e59fa31c96a2ec919de9b57fbc27da7"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="a00196.html#a31e03d23fb1912cb7983c4b123417e53">mosquitto_bridge_start_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a4e59fa31c96a2ec919de9b57fbc27da7">start_type</a></td></tr>
-<tr class="separator:a4e59fa31c96a2ec919de9b57fbc27da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba5a24221311cbaa6cf1dd24b1557547"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aba5a24221311cbaa6cf1dd24b1557547">idle_timeout</a></td></tr>
-<tr class="separator:aba5a24221311cbaa6cf1dd24b1557547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47cd0af97398ef603a46eaf362ef7242"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a47cd0af97398ef603a46eaf362ef7242">restart_timeout</a></td></tr>
-<tr class="separator:a47cd0af97398ef603a46eaf362ef7242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04d07f4fdc148639720e3913cf905aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ab04d07f4fdc148639720e3913cf905aa">threshold</a></td></tr>
-<tr class="separator:ab04d07f4fdc148639720e3913cf905aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe3023c8007994d29c901a5f4be27093"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#abe3023c8007994d29c901a5f4be27093">lazy_reconnect</a></td></tr>
-<tr class="separator:abe3023c8007994d29c901a5f4be27093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36857cc01ad72de3ff8d62bc0ca9d601"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a36857cc01ad72de3ff8d62bc0ca9d601">attempt_unsubscribe</a></td></tr>
-<tr class="separator:a36857cc01ad72de3ff8d62bc0ca9d601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae149a74be60e40ed676b2084b2531f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aae149a74be60e40ed676b2084b2531f6">initial_notification_done</a></td></tr>
-<tr class="separator:aae149a74be60e40ed676b2084b2531f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac2ab5194684b31a50d429b26a0569ed9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9">RGB</a> { <a class="el" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6">RGB::R</a>, 
+<a class="el" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf">RGB::G</a>, 
+<a class="el" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571">RGB::B</a>
+ }</td></tr>
+<tr class="separator:ac2ab5194684b31a50d429b26a0569ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a27ad99a2f705e635c42d242d530d4756"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a27ad99a2f705e635c42d242d530d4756">Pixel</a> ()</td></tr>
+<tr class="separator:a27ad99a2f705e635c42d242d530d4756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc5df218e6b318edcb09cdf6727c529"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#acfc5df218e6b318edcb09cdf6727c529">Pixel</a> (uint8_t r, uint8_t g, uint8_t b)</td></tr>
+<tr class="separator:acfc5df218e6b318edcb09cdf6727c529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787fa2f52c2c61b3ad51a0ffe80b6a25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a787fa2f52c2c61b3ad51a0ffe80b6a25">Pixel</a> (const <a class="el" href="a00015.html">Pixel</a> &amp;other)=default</td></tr>
+<tr class="separator:a787fa2f52c2c61b3ad51a0ffe80b6a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac00753b6afb5bf23405c18f1be0ba7b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html">Pixel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ac00753b6afb5bf23405c18f1be0ba7b8">operator=</a> (const <a class="el" href="a00015.html">Pixel</a> &amp;other)=default</td></tr>
+<tr class="separator:ac00753b6afb5bf23405c18f1be0ba7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e61f60b067f67b75eda2b31bdb7331b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a7e61f60b067f67b75eda2b31bdb7331b">~Pixel</a> ()=default</td></tr>
+<tr class="separator:a7e61f60b067f67b75eda2b31bdb7331b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53aaf31ca813603015645ed426c0e773"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a53aaf31ca813603015645ed426c0e773">operator[]</a> (const <a class="el" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9">RGB</a> &amp;c) const </td></tr>
+<tr class="separator:a53aaf31ca813603015645ed426c0e773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee26e313f33828aad54775818acb7f4e"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aee26e313f33828aad54775818acb7f4e">operator[]</a> (const <a class="el" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9">RGB</a> &amp;c)</td></tr>
+<tr class="separator:aee26e313f33828aad54775818acb7f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb07455636711f0be6bcc293e244482"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a3fb07455636711f0be6bcc293e244482">packed</a> () const </td></tr>
+<tr class="separator:a3fb07455636711f0be6bcc293e244482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1159eae28181f9bd41ac10833122a7d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a1159eae28181f9bd41ac10833122a7d2">invert</a> ()</td></tr>
+<tr class="separator:a1159eae28181f9bd41ac10833122a7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a0873aef3100f5b2400ee7ca185bf263a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00015.html">Pixel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a0873aef3100f5b2400ee7ca185bf263a">RED</a> {255, 0, 0}</td></tr>
+<tr class="separator:a0873aef3100f5b2400ee7ca185bf263a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e95f87b82dedb916c81f427b3eb68a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00015.html">Pixel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#af1e95f87b82dedb916c81f427b3eb68a">GREEN</a> {0, 255, 0}</td></tr>
+<tr class="separator:af1e95f87b82dedb916c81f427b3eb68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e919862b4e618715e6d6dba7671112"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00015.html">Pixel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a64e919862b4e618715e6d6dba7671112">BLUE</a> {0, 0, 255}</td></tr>
+<tr class="separator:a64e919862b4e618715e6d6dba7671112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c08beec64c8d57bdd9ef3b49244aa3"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00015.html">Pixel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a12c08beec64c8d57bdd9ef3b49244aa3">WHITE</a> {255, 255, 255}</td></tr>
+<tr class="separator:a12c08beec64c8d57bdd9ef3b49244aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67edde6c97818a595235295f750b50fd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00015.html">Pixel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a67edde6c97818a595235295f750b50fd">GREY</a> {128, 128, 128}</td></tr>
+<tr class="separator:a67edde6c97818a595235295f750b50fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c8aab7dad0995df6fdc8ccf65e92ee"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00015.html">Pixel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a77c8aab7dad0995df6fdc8ccf65e92ee">BLANK</a> {0, 0, 0}</td></tr>
+<tr class="separator:a77c8aab7dad0995df6fdc8ccf65e92ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aacd4ab1e37e7b6507b3580d2a3cd0fd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aacd4ab1e37e7b6507b3580d2a3cd0fd9">operator==</a> (const <a class="el" href="a00015.html">Pixel</a> &amp;lhs, const <a class="el" href="a00015.html">Pixel</a> &amp;rhs)</td></tr>
+<tr class="separator:aacd4ab1e37e7b6507b3580d2a3cd0fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c765b304a1ef8aad3e454b02d21de5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a96c765b304a1ef8aad3e454b02d21de5">operator!=</a> (const <a class="el" href="a00015.html">Pixel</a> &amp;lhs, const <a class="el" href="a00015.html">Pixel</a> &amp;rhs)</td></tr>
+<tr class="separator:a96c765b304a1ef8aad3e454b02d21de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="a00196_source.html#l00301">301</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a22b8ff13f81a86b1e2730e5e8d03df27"></a>
+<p>Definition at line <a class="el" href="a00041_source.html#l00006">6</a> of file <a class="el" href="a00041_source.html">Pixel.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ac2ab5194684b31a50d429b26a0569ed9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9">Pixel::RGB</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6"></a>R&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf"></a>G&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571"></a>B&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="a00041_source.html#l00012">12</a> of file <a class="el" href="a00041_source.html">Pixel.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{R, G, B};</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a27ad99a2f705e635c42d242d530d4756"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int _mqtt3_bridge::address_count</td>
+          <td class="memname">Pixel::Pixel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00305">305</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
+<p>Definition at line <a class="el" href="a00040_source.html#l00022">22</a> of file <a class="el" href="a00040_source.html">Pixel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            :</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   <a class="code" href="a00015.html#a27ad99a2f705e635c42d242d530d4756">Pixel</a>(0, 0, 0)</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{}</div><div class="ttc" id="a00015_html_a27ad99a2f705e635c42d242d530d4756"><div class="ttname"><a href="a00015.html#a27ad99a2f705e635c42d242d530d4756">Pixel::Pixel</a></div><div class="ttdeci">Pixel()</div><div class="ttdef"><b>Definition:</b> <a href="a00040_source.html#l00022">Pixel.cpp:22</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a8b124ce33bc1e5dc9a7ff79a2ce1a98d"></a>
+<a class="anchor" id="acfc5df218e6b318edcb09cdf6727c529"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="a00026.html">bridge_address</a>* _mqtt3_bridge::addresses</td>
+          <td class="memname">Pixel::Pixel </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00303">303</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00040_source.html#l00026">26</a> of file <a class="el" href="a00040_source.html">Pixel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                           :</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;   r_{r},</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   g_{g},</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   b_{b}</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a787fa2f52c2c61b3ad51a0ffe80b6a25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Pixel::Pixel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html">Pixel</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a36857cc01ad72de3ff8d62bc0ca9d601"></a>
+<a class="anchor" id="a7e61f60b067f67b75eda2b31bdb7331b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Pixel::~Pixel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a1159eae28181f9bd41ac10833122a7d2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool _mqtt3_bridge::attempt_unsubscribe</td>
+          <td class="memname">void Pixel::invert </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00330">330</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00040_source.html#l00066">66</a> of file <a class="el" href="a00040_source.html">Pixel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   r_ = ~r_;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;   g_ = ~g_;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   b_ = ~b_;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac00753b6afb5bf23405c18f1be0ba7b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html">Pixel</a>&amp; Pixel::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html">Pixel</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a7bde4fb48cb90d316fcd7a49ed753a2a"></a>
+<a class="anchor" id="a53aaf31ca813603015645ed426c0e773"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool _mqtt3_bridge::clean_session</td>
+          <td class="memname">uint8_t Pixel::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9">RGB</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00310">310</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
+<p>Definition at line <a class="el" href="a00040_source.html#l00032">32</a> of file <a class="el" href="a00040_source.html">Pixel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   <span class="keywordflow">switch</span> (c) {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6">RGB::R</a>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;         <span class="keywordflow">return</span> r_;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf">RGB::G</a>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;         <span class="keywordflow">return</span> g_;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571">RGB::B</a>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;         <span class="keywordflow">break</span>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   <span class="keywordflow">return</span> b_;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="ttc" id="a00015_html_ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571"><div class="ttname"><a href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571">Pixel::RGB::B</a></div></div>
+<div class="ttc" id="a00015_html_ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf"><div class="ttname"><a href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf">Pixel::RGB::G</a></div></div>
+<div class="ttc" id="a00015_html_ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6"><div class="ttname"><a href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6">Pixel::RGB::R</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a47322bf3cabdb80ce6872af866372ebe"></a>
+<a class="anchor" id="aee26e313f33828aad54775818acb7f4e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int _mqtt3_bridge::cur_address</td>
+          <td class="memname">uint8_t &amp; Pixel::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9">RGB</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00304">304</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
+<p>Definition at line <a class="el" href="a00040_source.html#l00045">45</a> of file <a class="el" href="a00040_source.html">Pixel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;   <span class="keywordflow">switch</span> (c) {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6">RGB::R</a>:</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;         <span class="keywordflow">return</span> r_;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf">RGB::G</a>:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;         <span class="keywordflow">return</span> g_;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571">RGB::B</a>:</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;         <span class="keywordflow">break</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;   }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;   <span class="keywordflow">return</span> b_;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="ttc" id="a00015_html_ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571"><div class="ttname"><a href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571">Pixel::RGB::B</a></div></div>
+<div class="ttc" id="a00015_html_ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf"><div class="ttname"><a href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf">Pixel::RGB::G</a></div></div>
+<div class="ttc" id="a00015_html_ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6"><div class="ttname"><a href="a00015.html#ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6">Pixel::RGB::R</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="aba5a24221311cbaa6cf1dd24b1557547"></a>
+<a class="anchor" id="a3fb07455636711f0be6bcc293e244482"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int _mqtt3_bridge::idle_timeout</td>
+          <td class="memname">uint16_t Pixel::packed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00326">326</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
+<p>Definition at line <a class="el" href="a00040_source.html#l00058">58</a> of file <a class="el" href="a00040_source.html">Pixel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;   uint16_t r16 = (r_ &gt;&gt; 3) &amp; 0x1F;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    uint16_t g16 = (g_ &gt;&gt; 2) &amp; 0x3F;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    uint16_t b16 = (b_ &gt;&gt; 3) &amp; 0x1F;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> (r16 &lt;&lt; 11) + (g16 &lt;&lt; 5) + b16;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="aae149a74be60e40ed676b2084b2531f6"></a>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a96c765b304a1ef8aad3e454b02d21de5"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool _mqtt3_bridge::initial_notification_done</td>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html">Pixel</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00015.html">Pixel</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00331">331</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
+<p>Definition at line <a class="el" href="a00040_source.html#l00010">10</a> of file <a class="el" href="a00040_source.html">Pixel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <span class="keywordflow">return</span> not (lhs == rhs);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a68917f92a9f3beb704820c9b2ac096f1"></a>
+<a class="anchor" id="aacd4ab1e37e7b6507b3580d2a3cd0fd9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int _mqtt3_bridge::keepalive</td>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html">Pixel</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00015.html">Pixel</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00311">311</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
+<p>Definition at line <a class="el" href="a00040_source.html#l00005">5</a> of file <a class="el" href="a00040_source.html">Pixel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;   <span class="keywordflow">return</span> (lhs.r_ == rhs.r_) and (lhs.g_ == rhs.g_) and (lhs.b_ == rhs.b_); </div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="abe3023c8007994d29c901a5f4be27093"></a>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a77c8aab7dad0995df6fdc8ccf65e92ee"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool _mqtt3_bridge::lazy_reconnect</td>
+          <td class="memname">const <a class="el" href="a00015.html">Pixel</a> Pixel::BLANK {0, 0, 0}</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00329">329</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00041_source.html#l00019">19</a> of file <a class="el" href="a00041_source.html">Pixel.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0af634292aca18b6a27e368558e55a95"></a>
+<a class="anchor" id="a64e919862b4e618715e6d6dba7671112"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* _mqtt3_bridge::local_clientid</td>
+          <td class="memname">const <a class="el" href="a00015.html">Pixel</a> Pixel::BLUE {0, 0, 255}</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00320">320</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00041_source.html#l00016">16</a> of file <a class="el" href="a00041_source.html">Pixel.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6bc133ffcf28acb2f36dc7b1cf9bd1e7"></a>
+<a class="anchor" id="af1e95f87b82dedb916c81f427b3eb68a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* _mqtt3_bridge::local_password</td>
+          <td class="memname">const <a class="el" href="a00015.html">Pixel</a> Pixel::GREEN {0, 255, 0}</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00322">322</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00041_source.html#l00015">15</a> of file <a class="el" href="a00041_source.html">Pixel.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a29eb3937ab3ded7ce2cfbc71153703e9"></a>
+<a class="anchor" id="a67edde6c97818a595235295f750b50fd"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* _mqtt3_bridge::local_username</td>
+          <td class="memname">const <a class="el" href="a00015.html">Pixel</a> Pixel::GREY {128, 128, 128}</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00321">321</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00041_source.html#l00018">18</a> of file <a class="el" href="a00041_source.html">Pixel.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a47863dadb773d72374ee83fd5d473869"></a>
+<a class="anchor" id="a0873aef3100f5b2400ee7ca185bf263a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* _mqtt3_bridge::name</td>
+          <td class="memname">const <a class="el" href="a00015.html">Pixel</a> Pixel::RED {255, 0, 0}</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00302">302</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00041_source.html#l00014">14</a> of file <a class="el" href="a00041_source.html">Pixel.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9a4a2bc8f5f9f1ca695383d5debd485d"></a>
+<a class="anchor" id="a12c08beec64c8d57bdd9ef3b49244aa3"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* _mqtt3_bridge::notification_topic</td>
+          <td class="memname">const <a class="el" href="a00015.html">Pixel</a> Pixel::WHITE {255, 255, 255}</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00196_source.html#l00324">324</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+<p>Definition at line <a class="el" href="a00041_source.html#l00017">17</a> of file <a class="el" href="a00041_source.html">Pixel.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af6663afa082d1855ad94bd6394130e30"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool _mqtt3_bridge::notifications</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00323">323</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aca5b3e7c35243f7c888750b0415c9b3d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t _mqtt3_bridge::primary_retry</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00306">306</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6e92ea0b7d0fbb750aa01b3d0328850f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00160.html#a157834b9c1df5876b0fd037d3765807b">_mosquitto_protocol</a> _mqtt3_bridge::protocol_version</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00315">315</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afbc28fb2adb384fdb84b65eab33c2fad"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* _mqtt3_bridge::remote_clientid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00317">317</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a23ba1de6abed10010991cc1f7679ce7c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* _mqtt3_bridge::remote_password</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00319">319</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4c9074207bd3ab92c0f6975f86583deb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* _mqtt3_bridge::remote_username</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00318">318</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5129e78538b9238d1c585c5241f66bdc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t _mqtt3_bridge::restart_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00316">316</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a47cd0af97398ef603a46eaf362ef7242"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _mqtt3_bridge::restart_timeout</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00327">327</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a94ef901a95ff53399007be03f7686f28"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool _mqtt3_bridge::round_robin</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00307">307</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4e59fa31c96a2ec919de9b57fbc27da7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00196.html#a31e03d23fb1912cb7983c4b123417e53">mosquitto_bridge_start_type</a> _mqtt3_bridge::start_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00325">325</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab04d07f4fdc148639720e3913cf905aa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _mqtt3_bridge::threshold</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00328">328</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa3222f81422cc941eea5ac280bec36de"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _mqtt3_bridge::topic_count</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00313">313</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a20519d651ecb30dff447e7a02b352b2d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool _mqtt3_bridge::topic_remapping</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00314">314</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2257d526095f9c33e5e962bf1731f164"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="a00016.html">_mqtt3_bridge_topic</a>* _mqtt3_bridge::topics</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00312">312</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a521b1accae3e30f526daaaa4f4a8ed27"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool _mqtt3_bridge::try_private</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00308">308</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac5a9977ae7747686faff1d726bfe12b6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool _mqtt3_bridge::try_private_accepted</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00196_source.html#l00309">309</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/iot/Downloads/mosquitto-1.4.14/src/<a class="el" href="a00196_source.html">mosquitto_broker.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/iot/Roomba/_libSenseHAT/<a class="el" href="a00041_source.html">Pixel.h</a></li>
+<li>/home/iot/Roomba/_libSenseHAT/<a class="el" href="a00040_source.html">Pixel.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00015.html">_mqtt3_bridge</a></li>
+    <li class="navelem"><a class="el" href="a00015.html">Pixel</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

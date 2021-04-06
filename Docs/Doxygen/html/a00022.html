@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: BestRoombaNA Class Reference</title>
+<title>BestRoombaNA: Topic Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -110,40 +109,49 @@ $(document).ready(function(){initNavTree('a00022.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00769.html">List of all members</a>  </div>
+<a href="a00167.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BestRoombaNA Class Reference</div>  </div>
+<div class="title">Topic Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Main application to control Roomba.  
+<p>The class <a class="el" href="a00022.html" title="The class Topic represents a MQTT topic string. A topic string consists of text tokens separated by a...">Topic</a> represents a MQTT topic string. A topic string consists of text tokens separated by a foreward slash. <a class="el" href="a00022.html" title="The class Topic represents a MQTT topic string. A topic string consists of text tokens separated by a...">Topic</a> objects are copyable. Strings can be added to the contained #topic_ string. A forward slash is automacicalley added as a seperator. Every topic token is readable by the array index operator. If the index value is out of range an empty string will be returned.  
  <a href="a00022.html#details">More...</a></p>
 
-<p><code>#include &quot;<a class="el" href="a00409_source.html">BestRoombaNA.h</a>&quot;</code></p>
+<p><code>#include &quot;<a class="el" href="a00031_source.html">Topic.h</a>&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6b45868404de2f6b6bfdbf7a025f6636"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#a6b45868404de2f6b6bfdbf7a025f6636">BestRoombaNA</a> ()</td></tr>
-<tr class="memdesc:a6b45868404de2f6b6bfdbf7a025f6636"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00022.html" title="Main application to control Roomba. ">BestRoombaNA</a> Class Constructor.  <a href="#a6b45868404de2f6b6bfdbf7a025f6636">More...</a><br /></td></tr>
-<tr class="separator:a6b45868404de2f6b6bfdbf7a025f6636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf92a90e32d70fd6dcee1d454b5f3b9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#aaf92a90e32d70fd6dcee1d454b5f3b9a">~BestRoombaNA</a> ()</td></tr>
-<tr class="memdesc:aaf92a90e32d70fd6dcee1d454b5f3b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00022.html" title="Main application to control Roomba. ">BestRoombaNA</a> Class Destructor.  <a href="#aaf92a90e32d70fd6dcee1d454b5f3b9a">More...</a><br /></td></tr>
-<tr class="separator:aaf92a90e32d70fd6dcee1d454b5f3b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7167730cbe0a48d437defc8f401db1f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#a7167730cbe0a48d437defc8f401db1f2">startApplication</a> ()</td></tr>
-<tr class="memdesc:a7167730cbe0a48d437defc8f401db1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts <a class="el" href="a00022.html" title="Main application to control Roomba. ">BestRoombaNA</a> Application. Print application info to console, startup <a class="el" href="a00020.html" title="Holds the cleaning strategies and different programs. AI inherits IOh class. ">AI</a> and mqttClient instances.  <a href="#a7167730cbe0a48d437defc8f401db1f2">More...</a><br /></td></tr>
-<tr class="separator:a7167730cbe0a48d437defc8f401db1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3301cb0d535eb066a3ea4ed54e28414"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#af3301cb0d535eb066a3ea4ed54e28414">Topic</a> ()</td></tr>
+<tr class="separator:af3301cb0d535eb066a3ea4ed54e28414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e2b337c972d1766c80b48e4981eb47f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#a4e2b337c972d1766c80b48e4981eb47f">Topic</a> (const std::string &amp;root)</td></tr>
+<tr class="separator:a4e2b337c972d1766c80b48e4981eb47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5650ccda9f2d99bfd54e90e1f92bc7b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#a5650ccda9f2d99bfd54e90e1f92bc7b2">Topic</a> (const <a class="el" href="a00022.html">Topic</a> &amp;other)=default</td></tr>
+<tr class="separator:a5650ccda9f2d99bfd54e90e1f92bc7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744c65ee1c771c392945fe1eba061b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00022.html">Topic</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#a744c65ee1c771c392945fe1eba061b7d">operator=</a> (const <a class="el" href="a00022.html">Topic</a> &amp;other)=default</td></tr>
+<tr class="separator:a744c65ee1c771c392945fe1eba061b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad87e9349bbd468750670205498a5417a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#ad87e9349bbd468750670205498a5417a">~Topic</a> ()=default</td></tr>
+<tr class="separator:ad87e9349bbd468750670205498a5417a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce06cc663933929b9636f9c3f1e3a39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00022.html">Topic</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#abce06cc663933929b9636f9c3f1e3a39">add</a> (const std::string &amp;item)</td></tr>
+<tr class="separator:abce06cc663933929b9636f9c3f1e3a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340aa8d9fa92ad882f72f3fdb333a62a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00022.html">Topic</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#a340aa8d9fa92ad882f72f3fdb333a62a">add</a> (const char *pItem)</td></tr>
+<tr class="separator:a340aa8d9fa92ad882f72f3fdb333a62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f11bba4553f3294cc6c88b5608965a8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#a8f11bba4553f3294cc6c88b5608965a8">c_str</a> () const </td></tr>
+<tr class="separator:a8f11bba4553f3294cc6c88b5608965a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86750eb909dff0a6970dd05ee7e9b8e0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html#a86750eb909dff0a6970dd05ee7e9b8e0">operator[]</a> (const int nIndex) const </td></tr>
+<tr class="separator:a86750eb909dff0a6970dd05ee7e9b8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Main application to control Roomba. </p>
+<div class="textblock"><p>The class <a class="el" href="a00022.html" title="The class Topic represents a MQTT topic string. A topic string consists of text tokens separated by a...">Topic</a> represents a MQTT topic string. A topic string consists of text tokens separated by a foreward slash. <a class="el" href="a00022.html" title="The class Topic represents a MQTT topic string. A topic string consists of text tokens separated by a...">Topic</a> objects are copyable. Strings can be added to the contained #topic_ string. A forward slash is automacicalley added as a seperator. Every topic token is readable by the array index operator. If the index value is out of range an empty string will be returned. </p>
 
-<p>Definition at line <a class="el" href="a00409_source.html#l00015">15</a> of file <a class="el" href="a00409_source.html">BestRoombaNA.h</a>.</p>
+<p>Definition at line <a class="el" href="a00031_source.html#l00014">14</a> of file <a class="el" href="a00031_source.html">Topic.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6b45868404de2f6b6bfdbf7a025f6636"></a>
+<a class="anchor" id="af3301cb0d535eb066a3ea4ed54e28414"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BestRoombaNA::BestRoombaNA </td>
+          <td class="memname">Topic::Topic </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -151,121 +159,238 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="a00022.html" title="Main application to control Roomba. ">BestRoombaNA</a> Class Constructor. </p>
-
-<p>Definition at line <a class="el" href="a00408_source.html#l00005">5</a> of file <a class="el" href="a00408_source.html">BestRoombaNA.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="a00030_source.html#l00004">4</a> of file <a class="el" href="a00030_source.html">Topic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;            :</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;   topic_{<span class="stringliteral">&quot;&quot;</span>},</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;   cachedSplit_{}</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="aaf92a90e32d70fd6dcee1d454b5f3b9a"></a>
+<a class="anchor" id="a4e2b337c972d1766c80b48e4981eb47f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BestRoombaNA::~BestRoombaNA </td>
+          <td class="memname">Topic::Topic </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="a00022.html" title="Main application to control Roomba. ">BestRoombaNA</a> Class Destructor. </p>
-
-<p>Definition at line <a class="el" href="a00408_source.html#l00012">12</a> of file <a class="el" href="a00408_source.html">BestRoombaNA.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7167730cbe0a48d437defc8f401db1f2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BestRoombaNA::startApplication </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Starts <a class="el" href="a00022.html" title="Main application to control Roomba. ">BestRoombaNA</a> Application. Print application info to console, startup <a class="el" href="a00020.html" title="Holds the cleaning strategies and different programs. AI inherits IOh class. ">AI</a> and mqttClient instances. </p>
-
-<p>Definition at line <a class="el" href="a00408_source.html#l00020">20</a> of file <a class="el" href="a00408_source.html">BestRoombaNA.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    showAppInfo();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ai.<a class="code" href="a00020.html#aa881b9ee68540c5f595343c9f8906edf">startup</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    mqttClient.<a class="code" href="a00119.html#a2e40774c307dee9e4bba3f99a0458fd3">startClient</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="ttc" id="a00119_html_a2e40774c307dee9e4bba3f99a0458fd3"><div class="ttname"><a href="a00119.html#a2e40774c307dee9e4bba3f99a0458fd3">RoombaMQTTClient::startClient</a></div><div class="ttdeci">void startClient()</div><div class="ttdef"><b>Definition:</b> <a href="a00422_source.html#l00079">RoombaMQTTClient.cpp:79</a></div></div>
-<div class="ttc" id="a00020_html_aa881b9ee68540c5f595343c9f8906edf"><div class="ttname"><a href="a00020.html#aa881b9ee68540c5f595343c9f8906edf">AI::startup</a></div><div class="ttdeci">void startup()</div><div class="ttdoc">Start instance of AI. Calls function start() of IOh instance to start Motor and Vacuum object and ope...</div><div class="ttdef"><b>Definition:</b> <a href="a00404_source.html#l00009">AI.cpp:9</a></div></div>
+<p>Definition at line <a class="el" href="a00030_source.html#l00009">9</a> of file <a class="el" href="a00030_source.html">Topic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                                 :</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   topic_{root},</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   cachedSplit_{<a class="code" href="a00028.html#a579c0397e8020701433bd794ecfae723">split</a>(topic_, <a class="code" href="a00028.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a>)}</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{}</div><div class="ttc" id="a00028_html_ae29e5e7625dfee577f7816851113d327"><div class="ttname"><a href="a00028.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a></div><div class="ttdeci">int isForwardSlash(int c)</div><div class="ttdef"><b>Definition:</b> <a href="a00028_source.html#l00010">Tokenizer.cpp:10</a></div></div>
+<div class="ttc" id="a00028_html_a579c0397e8020701433bd794ecfae723"><div class="ttname"><a href="a00028.html#a579c0397e8020701433bd794ecfae723">split</a></div><div class="ttdeci">vector&lt; string &gt; split(const string &amp;str, int delimiter(int))</div><div class="ttdef"><b>Definition:</b> <a href="a00028_source.html#l00016">Tokenizer.cpp:16</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00022_a7167730cbe0a48d437defc8f401db1f2_cgraph.png" border="0" usemap="#a00022_a7167730cbe0a48d437defc8f401db1f2_cgraph" alt=""/></div>
-<map name="a00022_a7167730cbe0a48d437defc8f401db1f2_cgraph" id="a00022_a7167730cbe0a48d437defc8f401db1f2_cgraph">
-<area shape="rect" id="node2" href="a00020.html#aa881b9ee68540c5f595343c9f8906edf" title="Start instance of AI. Calls function start() of IOh instance to start Motor and Vacuum object and ope..." alt="" coords="307,127,390,154"/>
-<area shape="rect" id="node9" href="a00099.html#abfbb338deea843e53ee2c2783d994bad" title="MQTTClient::startClient" alt="" coords="268,229,429,255"/>
-<area shape="rect" id="node3" href="a00056.html#ac70cba066f4fa2c826145ea504e318a9" title="Starts all the actuators and sends safeMode signal. " alt="" coords="527,102,639,129"/>
-<area shape="rect" id="node4" href="a00096.html#a4611645742488ec6e915e555b6468a27" title="Motor start. Enables motorspeed to be changed. " alt="" coords="788,26,877,53"/>
-<area shape="rect" id="node5" href="a00134.html#a54ec5e56215e32d1c3c537ff4794915e" title="Vacuum::start" alt="" coords="781,77,885,103"/>
-<area shape="rect" id="node6" href="a00122.html#a30f54181d6e33e968b48e74c781ec2e4" title="Writes serial command to turn Roomba on in Safe mode. " alt="" coords="742,127,923,154"/>
-<area shape="rect" id="node7" href="a00124.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="1000,77,1115,103"/>
-<area shape="rect" id="node8" href="a00401.html#a5087cc2366b2f09d85c156f869e59ea3" title="startSafe" alt="" coords="1020,127,1095,154"/>
-<area shape="rect" id="node10" href="a00423.html#a8ca2c21a24d42bf2f7d235f70c434a7e" title="handleSIGINT" alt="" coords="531,203,636,230"/>
-<area shape="rect" id="node11" href="a00526.html#a5666627424e2c9fdc2f9ba9b1670427a" title="mosqpp::lib_init" alt="" coords="527,254,640,281"/>
-<area shape="rect" id="node14" href="a00526.html#ada72c3240dc8d7358dd7ad3c68bceb85" title="mosqpp::lib_version" alt="" coords="514,305,653,331"/>
-<area shape="rect" id="node15" href="a00028.html#a0f5c17ab23203abee8a48c82f3338a28" title="CommandProcessor::publishInfo" alt="" coords="477,355,689,382"/>
-<area shape="rect" id="node48" href="a00526.html#a0db5d2e1c25438bc543918917d84e665" title="mosqpp::lib_cleanup" alt="" coords="513,153,654,179"/>
-<area shape="rect" id="node12" href="a00158.html#a238fa786f3c3f615ea287ab51182e4b7" title="mosquitto_lib_init" alt="" coords="771,254,894,281"/>
-<area shape="rect" id="node13" href="a00163.html#ace7d850145b6799a18b06f56c31f428f" title="_mosquitto_net_init" alt="" coords="990,254,1125,281"/>
-<area shape="rect" id="node16" href="a00028.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="737,348,928,389"/>
-<area shape="rect" id="node17" href="a00129.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="1016,393,1099,419"/>
-<area shape="rect" id="node20" href="a00094.html#a88289556134e3f3530400abc249219d7" title="mosqpp::mosquittopp\l::publish" alt="" coords="984,327,1131,368"/>
-<area shape="rect" id="node18" href="a00381.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="1227,389,1273,415"/>
-<area shape="rect" id="node19" href="a00381.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="1194,439,1306,466"/>
-<area shape="rect" id="node21" href="a00158.html#a8eec3e9047a98daab8d42f8b5c493c18" title="mosquitto_publish" alt="" coords="1187,334,1313,361"/>
-<area shape="rect" id="node22" href="a00160.html#a37608453ba85c5b8f9f15cff802a8319" title="mosquitto_pub_topic\l_check" alt="" coords="1375,116,1518,157"/>
-<area shape="rect" id="node23" href="a00182.html#a6c57944aa63895ebcf0edc405e08a92b" title="_mosquitto_mid_generate" alt="" coords="1361,182,1532,209"/>
-<area shape="rect" id="node24" href="a00172.html#a7b111a5ceccb7bbc5fdadab085a33c03" title="_mosquitto_send_publish" alt="" coords="1362,334,1531,361"/>
-<area shape="rect" id="node26" href="a00154.html#ae6550bff1e45b4c074746b31f29ef537" title="_mosquitto_strdup" alt="" coords="1615,105,1744,131"/>
-<area shape="rect" id="node28" href="a00154.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="2079,685,2210,711"/>
-<area shape="rect" id="node31" href="a00154.html#a1ecbcb0ab8e51c000672d9d2bdf8172c" title="_mosquitto_calloc" alt="" coords="2530,727,2657,754"/>
-<area shape="rect" id="node35" href="a00178.html#a9fb48d8f8ce208443e2e7bae489770fe" title="mosquitto_time" alt="" coords="2538,550,2649,577"/>
-<area shape="rect" id="node46" href="a00156.html#a6a97f20e0fac5e9ce65ce9bb207539ae" title="_mosquitto_message\l_cleanup" alt="" coords="1606,25,1753,67"/>
-<area shape="rect" id="node47" href="a00156.html#abf19f2cebcab94785a260a154f8dd0d2" title="_mosquitto_message\l_queue" alt="" coords="1373,837,1520,879"/>
-<area shape="rect" id="node25" href="a00160.html#abebbf4017c11827f1ac999082980cf2f" title="mosquitto_topic_matches_sub" alt="" coords="1580,155,1779,182"/>
-<area shape="rect" id="node27" href="a00154.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="2536,145,2651,171"/>
-<area shape="rect" id="node29" href="a00152.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="2520,398,2667,425"/>
-<area shape="rect" id="node30" href="a00172.html#aec1dbc12b0482663fdfbc95c13124bf3" title="_mosquitto_send_real\l_publish" alt="" coords="1605,399,1754,440"/>
-<area shape="rect" id="node32" href="a00182.html#a3c897feee454d60aec163e3bd0eab52e" title="_mosquitto_packet_alloc" alt="" coords="1831,381,1997,407"/>
-<area shape="rect" id="node38" href="a00163.html#a74c4a3cbe02bca478cb9621cca8191e8" title="_mosquitto_write_string" alt="" coords="1834,482,1994,509"/>
-<area shape="rect" id="node39" href="a00163.html#a73189d0cf764846d8b74fe2d4a55d79f" title="_mosquitto_write_uint16" alt="" coords="2063,583,2226,610"/>
-<area shape="rect" id="node41" href="a00163.html#a307413f45257069e76295c70a6d899d8" title="_mosquitto_write_bytes" alt="" coords="2065,533,2225,559"/>
-<area shape="rect" id="node42" href="a00163.html#ae1643651ecb33c5a8d5138851bcfd986" title="_mosquitto_packet_queue" alt="" coords="1827,330,2001,357"/>
-<area shape="rect" id="node33" href="a00525.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="2073,416,2216,457"/>
-<area shape="rect" id="node34" href="a00182.html#ae8314371001e5cbc7ed7f9c03efb3ca8" title="_mosquitto_check_keepalive" alt="" coords="2049,482,2240,509"/>
-<area shape="rect" id="node36" href="a00163.html#af8fce1657e21306ca1e448b75774ccfb" title="_mosquitto_socket_close" alt="" coords="2295,423,2465,450"/>
-<area shape="rect" id="node37" href="a00172.html#add1543fe2a0a0f158610a8e9f83c91bf" title="_mosquitto_send_pingreq" alt="" coords="2295,525,2465,551"/>
-<area shape="rect" id="node40" href="a00163.html#adc64d22375628582aa20cb1f8e9435a3" title="_mosquitto_write_byte" alt="" coords="2303,626,2457,653"/>
-<area shape="rect" id="node43" href="a00163.html#a7554da94994edf7f11886ba9bd042e2f" title="_mosquitto_packet_write" alt="" coords="2061,314,2228,341"/>
-<area shape="rect" id="node44" href="a00163.html#ac25f5eedd4fdb5e35e32e9d0eaf7351f" title="_mosquitto_net_write" alt="" coords="2307,322,2453,349"/>
-<area shape="rect" id="node45" href="a00163.html#a1f5ae38a1ad0ff58a7c7aba084282cb5" title="_mosquitto_packet_cleanup" alt="" coords="2288,221,2472,247"/>
-<area shape="rect" id="node49" href="a00158.html#af68f0637eb65e020072067ac8897043f" title="mosquitto_lib_cleanup" alt="" coords="757,178,908,205"/>
-<area shape="rect" id="node50" href="a00163.html#aa64d7dd65d855a86c26952fade52d4c5" title="_mosquitto_net_cleanup" alt="" coords="976,178,1139,205"/>
+<div class="center"><img src="a00022_a4e2b337c972d1766c80b48e4981eb47f_cgraph.png" border="0" usemap="#a00022_a4e2b337c972d1766c80b48e4981eb47f_cgraph" alt=""/></div>
+<map name="a00022_a4e2b337c972d1766c80b48e4981eb47f_cgraph" id="a00022_a4e2b337c972d1766c80b48e4981eb47f_cgraph">
+<area shape="rect" id="node2" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="181,5,227,32"/>
+<area shape="rect" id="node3" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="148,56,260,83"/>
 </map>
 </div>
 </p>
 
 </div>
 </div>
+<a class="anchor" id="a5650ccda9f2d99bfd54e90e1f92bc7b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Topic::Topic </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00022.html">Topic</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad87e9349bbd468750670205498a5417a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Topic::~Topic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abce06cc663933929b9636f9c3f1e3a39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00022.html">Topic</a> &amp; Topic::add </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00030_source.html#l00014">14</a> of file <a class="el" href="a00030_source.html">Topic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;   topic_ += <span class="stringliteral">&quot;/&quot;</span> + item;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   cachedSplit_ = <a class="code" href="a00028.html#a579c0397e8020701433bd794ecfae723">split</a>(topic_, <a class="code" href="a00028.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><div class="ttc" id="a00028_html_ae29e5e7625dfee577f7816851113d327"><div class="ttname"><a href="a00028.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a></div><div class="ttdeci">int isForwardSlash(int c)</div><div class="ttdef"><b>Definition:</b> <a href="a00028_source.html#l00010">Tokenizer.cpp:10</a></div></div>
+<div class="ttc" id="a00028_html_a579c0397e8020701433bd794ecfae723"><div class="ttname"><a href="a00028.html#a579c0397e8020701433bd794ecfae723">split</a></div><div class="ttdeci">vector&lt; string &gt; split(const string &amp;str, int delimiter(int))</div><div class="ttdef"><b>Definition:</b> <a href="a00028_source.html#l00016">Tokenizer.cpp:16</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00022_abce06cc663933929b9636f9c3f1e3a39_cgraph.png" border="0" usemap="#a00022_abce06cc663933929b9636f9c3f1e3a39_cgraph" alt=""/></div>
+<map name="a00022_abce06cc663933929b9636f9c3f1e3a39_cgraph" id="a00022_abce06cc663933929b9636f9c3f1e3a39_cgraph">
+<area shape="rect" id="node2" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="169,5,215,32"/>
+<area shape="rect" id="node3" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="136,56,248,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a340aa8d9fa92ad882f72f3fdb333a62a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00022.html">Topic</a> &amp; Topic::add </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pItem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00030_source.html#l00021">21</a> of file <a class="el" href="a00030_source.html">Topic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   topic_ += (<span class="stringliteral">&quot;/&quot;</span> + std::string(pItem));</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;   cachedSplit_ = <a class="code" href="a00028.html#a579c0397e8020701433bd794ecfae723">split</a>(topic_, <a class="code" href="a00028.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="ttc" id="a00028_html_ae29e5e7625dfee577f7816851113d327"><div class="ttname"><a href="a00028.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a></div><div class="ttdeci">int isForwardSlash(int c)</div><div class="ttdef"><b>Definition:</b> <a href="a00028_source.html#l00010">Tokenizer.cpp:10</a></div></div>
+<div class="ttc" id="a00028_html_a579c0397e8020701433bd794ecfae723"><div class="ttname"><a href="a00028.html#a579c0397e8020701433bd794ecfae723">split</a></div><div class="ttdeci">vector&lt; string &gt; split(const string &amp;str, int delimiter(int))</div><div class="ttdef"><b>Definition:</b> <a href="a00028_source.html#l00016">Tokenizer.cpp:16</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00022_a340aa8d9fa92ad882f72f3fdb333a62a_cgraph.png" border="0" usemap="#a00022_a340aa8d9fa92ad882f72f3fdb333a62a_cgraph" alt=""/></div>
+<map name="a00022_a340aa8d9fa92ad882f72f3fdb333a62a_cgraph" id="a00022_a340aa8d9fa92ad882f72f3fdb333a62a_cgraph">
+<area shape="rect" id="node2" href="a00028.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="169,5,215,32"/>
+<area shape="rect" id="node3" href="a00028.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="136,56,248,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f11bba4553f3294cc6c88b5608965a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Topic::c_str </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00031_source.html#l00025">25</a> of file <a class="el" href="a00031_source.html">Topic.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{ <span class="keywordflow">return</span> topic_.c_str(); }</div></div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00022_a8f11bba4553f3294cc6c88b5608965a8_cgraph.png" border="0" usemap="#a00022_a8f11bba4553f3294cc6c88b5608965a8_cgraph" alt=""/></div>
+<map name="a00022_a8f11bba4553f3294cc6c88b5608965a8_cgraph" id="a00022_a8f11bba4553f3294cc6c88b5608965a8_cgraph">
+<area shape="rect" id="node2" href="a00022.html#a86750eb909dff0a6970dd05ee7e9b8e0" title="Topic::operator[]" alt="" coords="144,5,261,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a744c65ee1c771c392945fe1eba061b7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00022.html">Topic</a>&amp; Topic::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00022.html">Topic</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86750eb909dff0a6970dd05ee7e9b8e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Topic::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00030_source.html#l00028">28</a> of file <a class="el" href="a00030_source.html">Topic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   <span class="keywordflow">if</span> (<span class="keywordtype">int</span>(nIndex) &lt; <span class="keywordtype">int</span>(cachedSplit_.size())) {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">return</span> cachedSplit_[nIndex];</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;   }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;   <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="a00409_source.html">BestRoombaNA.h</a></li>
-<li><a class="el" href="a00408_source.html">BestRoombaNA.cpp</a></li>
+<li>/home/iot/Roomba/_libMQTT/<a class="el" href="a00031_source.html">Topic.h</a></li>
+<li>/home/iot/Roomba/_libMQTT/<a class="el" href="a00030_source.html">Topic.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00022.html">BestRoombaNA</a></li>
+    <li class="navelem"><a class="el" href="a00022.html">Topic</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
