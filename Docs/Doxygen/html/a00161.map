@@ -1,5 +1,5 @@
 <map id="RoombaMQTTClient" name="RoombaMQTTClient">
-<area shape="rect" id="node2" href="$a00006.html" title="CommandProcessor" alt="" coords="71,109,212,136"/>
+<area shape="rect" id="node2" href="$a00006.html" title="CommandProcessor is a base class for connecting a command name to a related member function in the de..." alt="" coords="71,109,212,136"/>
 <area shape="rect" id="node4" href="$a00022.html" title="The class Topic represents a MQTT topic string. A topic string consists of text tokens separated by a..." alt="" coords="177,5,231,32"/>
 <area shape="rect" id="node5" href="$a00007.html" title="Handles the IO of the Roomba. Functions in IOhandler can be called to let the Roomba execute movement..." alt="" coords="237,109,315,136"/>
 <area shape="rect" id="node6" href="$a00012.html" title="ParLoop" alt="" coords="339,109,410,136"/>
