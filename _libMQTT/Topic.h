@@ -4,12 +4,13 @@
 #include <string>
 #include <vector>
 
-/// The class #Topic represents a MQTT topic string.
-/// A topic string consists of text tokens separated by a foreward slash.
-/// Topic objects are copyable. Strings can be added to the contained
-/// #topic_ string. A forward slash is automacicalley added as a seperator.
-/// Every topic token is readable by the array index operator.
-/// If the index value is out of range an empty string will be returned.
+/*! @brief The class #Topic represents a MQTT topic string.
+    A topic string consists of text tokens separated by a foreward slash.
+    Topic objects are copyable. Strings can be added to the contained
+    #topic_ string. A forward slash is automacicalley added as a seperator.
+    Every topic token is readable by the array index operator.
+    If the index value is out of range an empty string will be returned.
+*/
 class Topic
 {
 public:

@@ -24,6 +24,6 @@ class BestRoombaNA
         int mqttBrokerPort{MQTT_LOCAL_BROKER_PORT};
 	void showAppInfo();
 	AI ai{};
-	MQTTClient mqttClient{"MSH", "msh", mqttBroker, mqttBrokerPort};
+	RoombaMQTTClient mqttClient{"MSH", "msh", mqttBroker, mqttBrokerPort};
 };
 #endif

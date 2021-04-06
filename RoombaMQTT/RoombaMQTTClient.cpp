@@ -16,7 +16,7 @@ using namespace std;
 /**
  *  @brief Constructor.
  */ 
-MQTTClient::MQTTClient(const std::string &appname,
+RoombaMQTTClient::RoombaMQTTClient(const std::string &appname,
                        const std::string &clientname,
                        const std::string &host,
                        int port) : CommandProcessor(appname, clientname, host, port),
@@ -30,8 +30,8 @@ MQTTClient::MQTTClient(const std::string &appname,
                                    mqttID_{HOSTNAME + appname + clientname},
                                    x_{0},
                                    y_{0},
-                                   publishSensorData_(std::bind(&MQTTClient::handleSensorData, this), 60),
-                                   heartbeatPar_(std::bind(&MQTTClient::sendHeartbeat, this), 10)
+                                   publishSensorData_(std::bind(&RoombaMQTTClient::handleSensorData, this), 60),
+                                   heartbeatPar_(std::bind(&RoombaMQTTClient::sendHeartbeat, this), 10)
 {
     std::cerr << "---- CTOR MQTTsenseHAT host = '" << host
               << "'  port = " << port
@@ -41,26 +41,26 @@ MQTTClient::MQTTClient(const std::string &appname,
     senseHAT_.leds.clear(Pixel{0, 50, 0});
 
     // LEDs display commands
-    registerCommand("clear", bind(&MQTTClient::clear, this,
+    registerCommand("clear", bind(&RoombaMQTTClient::clear, this,
                                   placeholders::_1));
-    registerCommand("blank", bind(&MQTTClient::blank, this,
+    registerCommand("blank", bind(&RoombaMQTTClient::blank, this,
                                   placeholders::_1));
-    registerCommand("invert", bind(&MQTTClient::invert, this,
+    registerCommand("invert", bind(&RoombaMQTTClient::invert, this,
                                    placeholders::_1));
-    registerCommand("setPixel", bind(&MQTTClient::setPixel, this,
+    registerCommand("setPixel", bind(&RoombaMQTTClient::setPixel, this,
                                      placeholders::_1));
-    registerCommand("getPixel", bind(&MQTTClient::getPixel, this,
+    registerCommand("getPixel", bind(&RoombaMQTTClient::getPixel, this,
                                      placeholders::_1));
-    registerCommand("invertPixel", bind(&MQTTClient::invertPixel, this,
+    registerCommand("invertPixel", bind(&RoombaMQTTClient::invertPixel, this,
                                         placeholders::_1));
-    registerCommand("cylon", bind(&MQTTClient::cylon, this,
+    registerCommand("cylon", bind(&RoombaMQTTClient::cylon, this,
                                   placeholders::_1));
 	// Roomba buttons							  
-	registerCommand("clean", bind(&MQTTClient::clean, this,
+	registerCommand("clean", bind(&RoombaMQTTClient::clean, this,
                                   placeholders::_1));
-	registerCommand("spot", bind(&MQTTClient::spot, this,
+	registerCommand("spot", bind(&RoombaMQTTClient::spot, this,
                                   placeholders::_1));
-	registerCommand("dock", bind(&MQTTClient::dock, this,
+	registerCommand("dock", bind(&RoombaMQTTClient::dock, this,
                                   placeholders::_1));
 
     senseHAT_.leds.setPixel(x_, y_, Pixel{200, 100, 100});
@@ -76,7 +76,7 @@ void handleSIGINT(int /* s */)
    receivedSIGINT = true;
 }
 
-void MQTTClient::startClient()
+void RoombaMQTTClient::startClient()
 {
 	using namespace std;
 	
@@ -133,12 +133,12 @@ void MQTTClient::startClient()
 /**
  *  @brief Destructor.
  */ 
-MQTTClient::~MQTTClient()
+RoombaMQTTClient::~RoombaMQTTClient()
 {
     senseHAT_.leds.clear(Pixel{50, 0, 0});
 }
 
-void MQTTClient::blank(const parameters_t &commandParameters)
+void RoombaMQTTClient::blank(const parameters_t &commandParameters)
 {
     if (commandParameters.size() != 0)
     {
@@ -150,7 +150,7 @@ void MQTTClient::blank(const parameters_t &commandParameters)
     }
 }
 
-void MQTTClient::clear(const parameters_t &commandParameters)
+void RoombaMQTTClient::clear(const parameters_t &commandParameters)
 {
     if (commandParameters.size() != 3)
     {
@@ -165,7 +165,7 @@ void MQTTClient::clear(const parameters_t &commandParameters)
     }
 }
 
-void MQTTClient::invert(const parameters_t &commandParameters)
+void RoombaMQTTClient::invert(const parameters_t &commandParameters)
 {
     if (commandParameters.size() != 0)
     {
@@ -177,7 +177,7 @@ void MQTTClient::invert(const parameters_t &commandParameters)
     }
 }
 
-void MQTTClient::setPixel(const parameters_t &commandParameters)
+void RoombaMQTTClient::setPixel(const parameters_t &commandParameters)
 {
     if (commandParameters.size() != 5)
     {
@@ -194,7 +194,7 @@ void MQTTClient::setPixel(const parameters_t &commandParameters)
     }
 }
 
-void MQTTClient::getPixel(const parameters_t &commandParameters)
+void RoombaMQTTClient::getPixel(const parameters_t &commandParameters)
 {
     if (commandParameters.size() != 2)
     {
@@ -209,7 +209,7 @@ void MQTTClient::getPixel(const parameters_t &commandParameters)
     }
 }
 
-void MQTTClient::invertPixel(const parameters_t &commandParameters)
+void RoombaMQTTClient::invertPixel(const parameters_t &commandParameters)
 {
     if (commandParameters.size() != 2)
     {
@@ -226,7 +226,7 @@ void MQTTClient::invertPixel(const parameters_t &commandParameters)
     }
 }
 
-void MQTTClient::cylonPar(const parameters_t &commandParameters)
+void RoombaMQTTClient::cylonPar(const parameters_t &commandParameters)
 {
     UNUSED(commandParameters);
     auto putDot = [this](int x, const Pixel &pixel) {
@@ -264,19 +264,19 @@ void MQTTClient::cylonPar(const parameters_t &commandParameters)
     show();
 }
 
-void MQTTClient::cylon(const parameters_t &commandParameters)
+void RoombaMQTTClient::cylon(const parameters_t &commandParameters)
 {
-    new ParWait{std::bind(&MQTTClient::cylonPar, this, commandParameters)};
+    new ParWait{std::bind(&RoombaMQTTClient::cylonPar, this, commandParameters)};
 }
 
-void MQTTClient::handleSensorData()
+void RoombaMQTTClient::handleSensorData()
 {
     //    std::string message{
     //       std::to_string(static_cast<int>(senseHAT_.get_humidity()))};
         //publishAddition("json", jsonData_.dump());
 }
 
-void MQTTClient::data2json()
+void RoombaMQTTClient::data2json()
 {
    jsonData_["pi"] = pi_;
    jsonData_["happy"] = happy_;
@@ -284,12 +284,12 @@ void MQTTClient::data2json()
    jsonData_["list"] = list_;
 }
 
-void MQTTClient::sendHeartbeat()
+void RoombaMQTTClient::sendHeartbeat()
 {
     publishAddition("heartbeat" , "json data heartbeat: " + jsonData_.dump());
 }
 
-void MQTTClient::clean(const parameters_t &commandParameters)
+void RoombaMQTTClient::clean(const parameters_t &commandParameters)
 {
     if (commandParameters.size() != 0)
     {
@@ -301,7 +301,7 @@ void MQTTClient::clean(const parameters_t &commandParameters)
     }
 }
 
-void MQTTClient::spot(const parameters_t &commandParameters)
+void RoombaMQTTClient::spot(const parameters_t &commandParameters)
 {
     if (commandParameters.size() != 0)
     {
@@ -313,7 +313,7 @@ void MQTTClient::spot(const parameters_t &commandParameters)
     }
 }
 
-void MQTTClient::dock(const parameters_t &commandParameters)
+void RoombaMQTTClient::dock(const parameters_t &commandParameters)
 {
     if (commandParameters.size() != 0)
     {

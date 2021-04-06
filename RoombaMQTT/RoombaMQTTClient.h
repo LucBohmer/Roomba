@@ -25,18 +25,18 @@ using parameters_t = std::vector<std::string>;
   Contains functions for controlling senseHat functionalities and Roomba IO.
 
 */
-class MQTTClient : public CommandProcessor
+class RoombaMQTTClient : public CommandProcessor
 {
 public:
-  MQTTClient(const std::string &appname,
+  RoombaMQTTClient(const std::string &appname,
              const std::string &clientname,
              const std::string &host,
              int port);
-  MQTTClient() = delete;
-  MQTTClient(const MQTTClient &other) = delete;
-  MQTTClient &operator=(const MQTTClient &other) = delete;
+  RoombaMQTTClient() = delete;
+  RoombaMQTTClient(const RoombaMQTTClient &other) = delete;
+  RoombaMQTTClient &operator=(const RoombaMQTTClient &other) = delete;
   void startClient();
-  virtual ~MQTTClient();
+  virtual ~RoombaMQTTClient();
 
   SenseHAT senseHAT_;
   
