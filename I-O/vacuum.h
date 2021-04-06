@@ -21,7 +21,7 @@ class Vacuum
     ~Vacuum() {}
 	
 	/*! \fn Start vacuuming. 
-	 *  @par enable_ is set to true;
+	 *  @param enable_ is set to true;
 	 */  
     void start()
     {
@@ -29,7 +29,7 @@ class Vacuum
     }
 	
 	/*! \fn Stop vacuuming. 
-	 *  @par enable_ is set to true;
+	 *  @param enable_ is set to true;
 	 */
     void stop()
     {
@@ -38,7 +38,7 @@ class Vacuum
         
     }
 	/*! \fn Turn vacuum ON or OFF. 
-	 *  @par state Boolean to turn vacuum ON or OFF. Valid values: true or false.
+	 *  @param state Boolean to turn vacuum ON or OFF. Valid values: true or false.
 	 */
     void setOnOff(bool state)
     {

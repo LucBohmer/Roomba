@@ -27,8 +27,8 @@ class SerialCommand
     }
 
     /*!  @brief Writes serial command to let Roomba drive.
-	 *   @par speedL Integer to set left Roomba drive speed.
-	 *   @par speedR Integer to set right Roomba drive speed.
+	 *   @param speedL Integer to set left Roomba drive speed.
+	 *   @param speedR Integer to set right Roomba drive speed.
 	 */
 	void Drive(int speedL, int speedR)
     {
@@ -60,7 +60,7 @@ class SerialCommand
     }
 
 	/*! @brief Turns Roomba vacuum ON or OFF;
-	 *  @par state Boolean value (true | false) to turn vacuum on or off.
+	 *  @param state Boolean value (true | false) to turn vacuum on or off.
 	 */
     void Vacuum(bool state)
     {

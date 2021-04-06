@@ -5,9 +5,9 @@
 
 /*! @brief Control of Roomba motors.
  *  Functions in #Motor can be called to let the Roomba execute movements. 
- *  @par speedL_ Private variable which holds left motorspeed.
- *  @par speedR_ Private variable which holds left motorspeed.
- *  @par enable_ Boolean variable which enables motorspeed to be changed.
+ *  @param speedL_ Private variable which holds left motorspeed.
+ *  @param speedR_ Private variable which holds left motorspeed.
+ *  @param enable_ Boolean variable which enables motorspeed to be changed.
  *  @fn start() Enable motorspeed to be changed.
  *  @fn stop() Disable motorspeed to be changed.
  *  @fn setDrive(int speedL, int speedR) Set motorspeed.
@@ -44,8 +44,8 @@ class Motor
     }
 
 	/*! @brief Set motorspeed, range -255 to 255. 
-	*   @par speedL Integer that holds left motorspeed. Valid value: -255 to 255.
-	*   @par speedR Integer that holds right motorspeed. Valid value: -255 to 255.
+	*   @param speedL Integer that holds left motorspeed. Valid value: -255 to 255.
+	*   @param speedR Integer that holds right motorspeed. Valid value: -255 to 255.
 	*/
     void setDrive(int speedL, int speedR)
     {
