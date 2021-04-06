@@ -12,7 +12,6 @@
  *  @fn stop() Disable motorspeed to be changed.
  *  @fn setDrive(int speedL, int speedR) Set motorspeed.
  */
-
 class Motor
 {
   private:
