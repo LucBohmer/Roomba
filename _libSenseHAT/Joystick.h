@@ -13,7 +13,7 @@ using jshandler = std::function<void()>;
 /*! @brief Controls senseHAT joystick.
     Joystick reacts to senseHAT joystick events received in a loop
     executed in a thread.
-*/ Objects are not copyable by copy ctor and assignment.
+*/
 class Joystick
 {
 public:
