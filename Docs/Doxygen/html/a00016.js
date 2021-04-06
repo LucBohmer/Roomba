@@ -1,19 +1,10 @@
 var a00016 =
 [
-    [ "RGB", "a00016.html#ac2ab5194684b31a50d429b26a0569ed9", [
-      [ "R", "a00016.html#ac2ab5194684b31a50d429b26a0569ed9ae1e1d3d40573127e9ee0480caf1283d6", null ],
-      [ "G", "a00016.html#ac2ab5194684b31a50d429b26a0569ed9adfcf28d0734569a6a693bc8194de62bf", null ],
-      [ "B", "a00016.html#ac2ab5194684b31a50d429b26a0569ed9a9d5ed678fe57bcca610140957afab571", null ]
-    ] ],
-    [ "Pixel", "a00016.html#a27ad99a2f705e635c42d242d530d4756", null ],
-    [ "Pixel", "a00016.html#acfc5df218e6b318edcb09cdf6727c529", null ],
-    [ "Pixel", "a00016.html#a787fa2f52c2c61b3ad51a0ffe80b6a25", null ],
-    [ "~Pixel", "a00016.html#a7e61f60b067f67b75eda2b31bdb7331b", null ],
-    [ "invert", "a00016.html#a1159eae28181f9bd41ac10833122a7d2", null ],
-    [ "operator=", "a00016.html#ac00753b6afb5bf23405c18f1be0ba7b8", null ],
-    [ "operator[]", "a00016.html#a53aaf31ca813603015645ed426c0e773", null ],
-    [ "operator[]", "a00016.html#aee26e313f33828aad54775818acb7f4e", null ],
-    [ "packed", "a00016.html#a3fb07455636711f0be6bcc293e244482", null ],
-    [ "operator!=", "a00016.html#a96c765b304a1ef8aad3e454b02d21de5", null ],
-    [ "operator==", "a00016.html#aacd4ab1e37e7b6507b3580d2a3cd0fd9", null ]
+    [ "direction", "a00016.html#a88b23b4adfa1c1f7c019eb4b972f5d14", null ],
+    [ "local_prefix", "a00016.html#afd755fdffab432e79e32a2989e03baa2", null ],
+    [ "local_topic", "a00016.html#a8741dc957abd35347fe651845c5895d0", null ],
+    [ "qos", "a00016.html#ab8821eeb209c87b661b17d37a4e6d711", null ],
+    [ "remote_prefix", "a00016.html#aeed460cf6b45e2e993434395a1221e86", null ],
+    [ "remote_topic", "a00016.html#aebfc8793aee8b135c4c4d22f9160f0c1", null ],
+    [ "topic", "a00016.html#aee1f2ed86fcf264af721f0e6abe78834", null ]
 ];

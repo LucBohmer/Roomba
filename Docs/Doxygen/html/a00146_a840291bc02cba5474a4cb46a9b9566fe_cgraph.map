@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$a00022.html#a7167730cbe0a48d437defc8f401db1f2" title="Starts BestRoombaNA Application. Print application info to console, startup AI and mqttClient instanc..." alt="" coords="104,215,319,242"/>
+<area shape="rect" id="node3" href="$a00020.html#aa881b9ee68540c5f595343c9f8906edf" title="Start instance of AI. Calls function start() of IOh instance to start Motor and Vacuum object and ope..." alt="" coords="406,162,489,189"/>
+<area shape="rect" id="node10" href="$a00099.html#abfbb338deea843e53ee2c2783d994bad" title="MQTTClient::startClient" alt="" coords="367,267,528,294"/>
+<area shape="rect" id="node4" href="$a00056.html#ac70cba066f4fa2c826145ea504e318a9" title="Starts all the actuators and sends safeMode signal. " alt="" coords="626,133,738,159"/>
+<area shape="rect" id="node5" href="$a00096.html#a4611645742488ec6e915e555b6468a27" title="Motor start. Enables motorspeed to be changed. " alt="" coords="887,63,976,90"/>
+<area shape="rect" id="node6" href="$a00134.html#a54ec5e56215e32d1c3c537ff4794915e" title="Vacuum::start" alt="" coords="879,114,983,141"/>
+<area shape="rect" id="node7" href="$a00122.html#a30f54181d6e33e968b48e74c781ec2e4" title="Writes serial command to turn Roomba on in Safe mode. " alt="" coords="841,165,1022,191"/>
+<area shape="rect" id="node8" href="$a00124.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="1099,114,1213,141"/>
+<area shape="rect" id="node9" href="$a00401.html#a5087cc2366b2f09d85c156f869e59ea3" title="startSafe" alt="" coords="1119,165,1193,191"/>
+<area shape="rect" id="node11" href="$a00423.html#a8ca2c21a24d42bf2f7d235f70c434a7e" title="handleSIGINT" alt="" coords="629,343,735,370"/>
+<area shape="rect" id="node12" href="$a00526.html#a5666627424e2c9fdc2f9ba9b1670427a" title="mosqpp::lib_init" alt="" coords="625,394,739,421"/>
+<area shape="rect" id="node15" href="$a00526.html#ada72c3240dc8d7358dd7ad3c68bceb85" title="mosqpp::lib_version" alt="" coords="613,191,751,218"/>
+<area shape="rect" id="node16" href="$a00028.html#a0f5c17ab23203abee8a48c82f3338a28" title="CommandProcessor::publishInfo" alt="" coords="576,242,788,269"/>
+<area shape="rect" id="node48" href="$a00526.html#a0db5d2e1c25438bc543918917d84e665" title="mosqpp::lib_cleanup" alt="" coords="611,293,753,319"/>
+<area shape="rect" id="node13" href="$a00158.html#a238fa786f3c3f615ea287ab51182e4b7" title="mosquitto_lib_init" alt="" coords="870,394,993,421"/>
+<area shape="rect" id="node14" href="$a00163.html#ace7d850145b6799a18b06f56c31f428f" title="_mosquitto_net_init" alt="" coords="1089,394,1223,421"/>
+<area shape="rect" id="node17" href="$a00028.html#a88ad204c02a79887698c6abc93729a2d" title="CommandProcessor::publish\lAddition" alt="" coords="836,235,1027,276"/>
+<area shape="rect" id="node18" href="$a00129.html#abce06cc663933929b9636f9c3f1e3a39" title="Topic::add" alt="" coords="1115,282,1197,309"/>
+<area shape="rect" id="node21" href="$a00094.html#a88289556134e3f3530400abc249219d7" title="mosqpp::mosquittopp\l::publish" alt="" coords="1083,216,1229,257"/>
+<area shape="rect" id="node19" href="$a00381.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="1325,278,1372,305"/>
+<area shape="rect" id="node20" href="$a00381.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="1293,329,1405,355"/>
+<area shape="rect" id="node22" href="$a00158.html#a8eec3e9047a98daab8d42f8b5c493c18" title="mosquitto_publish" alt="" coords="1285,223,1412,250"/>
+<area shape="rect" id="node23" href="$a00160.html#a37608453ba85c5b8f9f15cff802a8319" title="mosquitto_pub_topic\l_check" alt="" coords="1474,5,1617,47"/>
+<area shape="rect" id="node24" href="$a00182.html#a6c57944aa63895ebcf0edc405e08a92b" title="_mosquitto_mid_generate" alt="" coords="1460,71,1631,98"/>
+<area shape="rect" id="node25" href="$a00172.html#a7b111a5ceccb7bbc5fdadab085a33c03" title="_mosquitto_send_publish" alt="" coords="1461,346,1630,373"/>
+<area shape="rect" id="node27" href="$a00154.html#ae6550bff1e45b4c074746b31f29ef537" title="_mosquitto_strdup" alt="" coords="1713,223,1843,250"/>
+<area shape="rect" id="node29" href="$a00154.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="2178,730,2309,757"/>
+<area shape="rect" id="node32" href="$a00154.html#a1ecbcb0ab8e51c000672d9d2bdf8172c" title="_mosquitto_calloc" alt="" coords="2615,679,2742,706"/>
+<area shape="rect" id="node36" href="$a00178.html#a9fb48d8f8ce208443e2e7bae489770fe" title="mosquitto_time" alt="" coords="2623,350,2734,377"/>
+<area shape="rect" id="node46" href="$a00156.html#a6a97f20e0fac5e9ce65ce9bb207539ae" title="_mosquitto_message\l_cleanup" alt="" coords="1705,60,1851,101"/>
+<area shape="rect" id="node47" href="$a00156.html#abf19f2cebcab94785a260a154f8dd0d2" title="_mosquitto_message\l_queue" alt="" coords="1472,832,1619,873"/>
+<area shape="rect" id="node26" href="$a00160.html#abebbf4017c11827f1ac999082980cf2f" title="mosquitto_topic_matches_sub" alt="" coords="1679,346,1877,373"/>
+<area shape="rect" id="node28" href="$a00154.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="2621,122,2736,149"/>
+<area shape="rect" id="node30" href="$a00152.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="2605,502,2752,529"/>
+<area shape="rect" id="node31" href="$a00172.html#aec1dbc12b0482663fdfbc95c13124bf3" title="_mosquitto_send_real\l_publish" alt="" coords="1703,408,1853,449"/>
+<area shape="rect" id="node33" href="$a00182.html#a3c897feee454d60aec163e3bd0eab52e" title="_mosquitto_packet_alloc" alt="" coords="1929,375,2096,402"/>
+<area shape="rect" id="node39" href="$a00163.html#a74c4a3cbe02bca478cb9621cca8191e8" title="_mosquitto_write_string" alt="" coords="1933,477,2093,503"/>
+<area shape="rect" id="node40" href="$a00163.html#a73189d0cf764846d8b74fe2d4a55d79f" title="_mosquitto_write_uint16" alt="" coords="2162,543,2325,570"/>
+<area shape="rect" id="node42" href="$a00163.html#a307413f45257069e76295c70a6d899d8" title="_mosquitto_write_bytes" alt="" coords="2163,493,2323,519"/>
+<area shape="rect" id="node43" href="$a00163.html#ae1643651ecb33c5a8d5138851bcfd986" title="_mosquitto_packet_queue" alt="" coords="1925,325,2100,351"/>
+<area shape="rect" id="node34" href="$a00525.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="2172,376,2315,417"/>
+<area shape="rect" id="node35" href="$a00182.html#ae8314371001e5cbc7ed7f9c03efb3ca8" title="_mosquitto_check_keepalive" alt="" coords="2148,442,2339,469"/>
+<area shape="rect" id="node37" href="$a00163.html#af8fce1657e21306ca1e448b75774ccfb" title="_mosquitto_socket_close" alt="" coords="2387,375,2557,402"/>
+<area shape="rect" id="node38" href="$a00172.html#add1543fe2a0a0f158610a8e9f83c91bf" title="_mosquitto_send_pingreq" alt="" coords="2387,477,2557,503"/>
+<area shape="rect" id="node41" href="$a00163.html#adc64d22375628582aa20cb1f8e9435a3" title="_mosquitto_write_byte" alt="" coords="2395,578,2549,605"/>
+<area shape="rect" id="node44" href="$a00163.html#a7554da94994edf7f11886ba9bd042e2f" title="_mosquitto_packet_write" alt="" coords="2160,274,2327,301"/>
+<area shape="rect" id="node45" href="$a00163.html#ac25f5eedd4fdb5e35e32e9d0eaf7351f" title="_mosquitto_net_write" alt="" coords="2399,325,2545,351"/>
+<area shape="rect" id="node49" href="$a00158.html#af68f0637eb65e020072067ac8897043f" title="mosquitto_lib_cleanup" alt="" coords="856,322,1007,349"/>
+<area shape="rect" id="node50" href="$a00163.html#aa64d7dd65d855a86c26952fade52d4c5" title="_mosquitto_net_cleanup" alt="" coords="1075,333,1237,359"/>
+</map>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: BestRoombaNA</title>
+<title>BestRoombaNA: Contributing to Mosquitto</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BestRoombaNA
-   &#160;<span id="projectnumber">1.2.1</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Roomba Project voor SEL2</div>
   </td>
@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -100,10 +101,54 @@ $(document).ready(function(){initNavTree('a00003.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="a00006.html">BestRoombaNA</a> </div>  </div>
+<div class="title">Contributing to Mosquitto </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Roomba </p>
+<div class="textblock"><p>Thank you for your interest in this project.</p>
+<h2>Project description: </h2>
+<p>The Mosquitto project has been created to provide a light weight, open-source implementation, of an MQTT broker to allow new, existing, and emerging applications for Machine-to-Machine (M2M) and Internet of Things (IoT).</p>
+<ul>
+<li><a href="http://mosquitto.org/">http://mosquitto.org/</a></li>
+<li><a href="https://projects.eclipse.org/projects/technology.mosquitto">https://projects.eclipse.org/projects/technology.mosquitto</a></li>
+</ul>
+<h2>Source </h2>
+<p>The Mosquitto code is stored in a git repository.</p>
+<ul>
+<li><a href="http://github.com/eclipse/mosquitto">http://github.com/eclipse/mosquitto</a></li>
+</ul>
+<p>You can contribute bugfixes and new features by sending pull requests through GitHub.</p>
+<h2>Legal</h2>
+<p>In order for your contribution to be accepted, it must comply with the Eclipse Foundation IP policy.</p>
+<p>Please read the <a href="http://wiki.eclipse.org/Development_Resources/Contributing_via_Git">Eclipse Foundation policy on accepting contributions via Git</a>.</p>
+<ol type="1">
+<li>Sign the <a href="http://www.eclipse.org/legal/CLA.php">Eclipse CLA</a><ol type="a">
+<li>Register for an Eclipse Foundation User ID. You can register <a href="https://dev.eclipse.org/site_login/createaccount.php">here</a>.</li>
+<li>Log into the <a href="https://projects.eclipse.org/">Projects Portal</a>, and click on the '<a href="https://projects.eclipse.org/user/sign/cla">Eclipse CLA</a>' link.</li>
+</ol>
+</li>
+<li>Go to your <a href="https://dev.eclipse.org/site_login/myaccount.php#open_tab_accountsettings">account settings</a> and add your GitHub username to your account.</li>
+<li>Make sure that you <em>sign-off</em> your Git commits in the following format: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;4. Ensure that the email address that you make your commits with is the same one you used to sign up to the Eclipse Foundation website with.</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;## Contributing a change</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;1. [Fork the repository on GitHub](https://github.com/eclipse/mosquitto/fork)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;2. Clone the forked repository onto your computer: ``` git clone</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;   https://github.com/&lt;your username&gt;/mosquitto.git</div></div><!-- fragment --></li>
+</ol>
+<ol type="1">
+<li>If you are adding a new feature, then create a new branch from the latest <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;{develop```}</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;   origin/develo</div></div><!-- fragment --></li>
+<li>If you are fixing a bug, then create a new branch from the latest <code>fixes</code> branch with <code>git checkout -b YOUR_BRANCH_NAME origin/fixes</code></li>
+<li>Make your changes</li>
+<li>Ensure that all new and existing tests pass.</li>
+<li>Commit the changes into the branch: <code>git commit -s</code> Make sure that your commit message is meaningful and describes your changes correctly.</li>
+<li>If you have a lot of commits for the change, squash them into a single / few commits.</li>
+<li>Push the changes in your branch to your forked repository.</li>
+<li>Finally, go to <a href="https://github.com/eclipse/mosquitto">https://github.com/eclipse/mosquitto</a> and create a pull request from your "YOUR_BRANCH_NAME" branch to the <code>develop</code> or <code>fixes</code> branch as appropriate to request review and merge of the commits in your pushed branch.</li>
+</ol>
+<p>What happens next depends on the content of the patch. If it is 100% authored by the contributor and is less than 1000 lines (and meets the needs of the project), then it can be pulled into the main repository. If not, more steps are required. These are detailed in the <a href="http://www.eclipse.org/legal/EclipseLegalProcessPoster.pdf">legal process poster</a>.</p>
+<h2>Contact: </h2>
+<p>Contact the project developers via the project's development <a href="https://dev.eclipse.org/mailman/listinfo/mosquitto-dev">mailing list</a>.</p>
+<h2>Search for bugs: </h2>
+<p>This project uses <a href="https://github.com/eclipse/mosquitto/issues">Github</a> to track ongoing development and issues.</p>
+<h2>Create a new bug: </h2>
+<p>Be sure to search for existing bugs before you create another one. Remember that contributions are always welcome!</p>
+<ul>
+<li><a href="https://github.com/eclipse/mosquitto/issues">Create new Paho bug</a> </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

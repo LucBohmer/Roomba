@@ -1,0 +1,6 @@
+<map id="mosq_test.do_client_connect" name="mosq_test.do_client_connect">
+<area shape="rect" id="node2" href="$a00525.html#afda5086bbf376231b3812fc698b0faad" title="mosq_test.expect_packet" alt="" coords="192,13,364,39"/>
+<area shape="rect" id="node3" href="$a00525.html#a1704cf8fdaa7545664ae16eb41e39e58" title="mosq_test.packet_matches" alt="" coords="412,13,595,39"/>
+<area shape="rect" id="node4" href="$a00525.html#a5a92e92a5162db1c03fc73e51596a28d" title="mosq_test.to_string" alt="" coords="643,13,780,39"/>
+<area shape="rect" id="node5" href="$a00525.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="828,5,971,47"/>
+</map>

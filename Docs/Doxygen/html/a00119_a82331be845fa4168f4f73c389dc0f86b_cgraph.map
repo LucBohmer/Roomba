@@ -1,0 +1,6 @@
+<map id="RoombaMQTTClient::cylon" name="RoombaMQTTClient::cylon">
+<area shape="rect" id="node2" href="$a00119.html#ace9f9242f0623f530fc4323c43fe05eb" title="RoombaMQTTClient::cylonPar" alt="" coords="235,5,436,32"/>
+<area shape="rect" id="node3" href="$a00077.html#a00eb3db37486902ee8509a95c1ac09fe" title="LedMatrix::setPixel" alt="" coords="484,5,619,32"/>
+<area shape="rect" id="node4" href="$a00390.html#a80e57b8e92455ad8851540f2a348f009" title="set_pixel" alt="" coords="667,5,741,32"/>
+<area shape="rect" id="node5" href="$a00390.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="789,5,847,32"/>
+</map>

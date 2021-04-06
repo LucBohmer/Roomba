@@ -1,0 +1,11 @@
+<map id="mqtt3_db_messages_easy_queue" name="mqtt3_db_messages_easy_queue">
+<area shape="rect" id="node2" href="$a00192.html#a36e4902f860237756538cc4a58e1321b" title="mqtt3_db_message_store" alt="" coords="239,132,411,159"/>
+<area shape="rect" id="node8" href="$a00197.html#a7a90d0b3b46b09f07e3fa99074e80eca" title="mqtt3_db_messages_queue" alt="" coords="232,259,417,285"/>
+<area shape="rect" id="node3" href="$a00154.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="501,5,632,32"/>
+<area shape="rect" id="node4" href="$a00154.html#ae6550bff1e45b4c074746b31f29ef537" title="_mosquitto_strdup" alt="" coords="502,56,631,83"/>
+<area shape="rect" id="node5" href="$a00154.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="939,284,1053,311"/>
+<area shape="rect" id="node6" href="$a00152.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="493,157,640,184"/>
+<area shape="rect" id="node7" href="$a00192.html#a838cff02f4134c5c060e16009cc7254c" title="mosquitto__db_msg_store_add" alt="" coords="465,208,668,235"/>
+<area shape="rect" id="node9" href="$a00192.html#af19cbc47cd971cdb22e9f48566bb3e68" title="mosquitto__db_msg_store\l_deref" alt="" coords="479,334,654,375"/>
+<area shape="rect" id="node10" href="$a00192.html#a0cdc24cdccc64a0e398b093e2a1bf1b3" title="mosquitto__db_msg_store\l_remove" alt="" coords="716,361,891,402"/>
+</map>

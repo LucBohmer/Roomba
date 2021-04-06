@@ -1,0 +1,4 @@
+<map id="IOhandler::Clean" name="IOhandler::Clean">
+<area shape="rect" id="node2" href="$a00122.html#a32af8865495cc6f233b57706a9c815ae" title="Writes serial Clean command Roomba is started in Clean mode. When called again the Roomba exit Clean ..." alt="" coords="173,5,331,32"/>
+<area shape="rect" id="node3" href="$a00124.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="379,5,493,32"/>
+</map>

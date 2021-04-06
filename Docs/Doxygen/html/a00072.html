@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: /home/iot/Roomba/RoombaMQTT/RoombaMQTTClient.h File Reference</title>
+<title>BestRoombaNA: nlohmann::detail::iteration_proxy&lt; IteratorType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BestRoombaNA
-   &#160;<span id="projectnumber">1.2.1</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Roomba Project voor SEL2</div>
   </td>
@@ -49,8 +49,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -71,8 +72,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -107,106 +110,136 @@ $(document).ready(function(){initNavTree('a00072.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00895.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">RoombaMQTTClient.h File Reference</div>  </div>
+<div class="title">nlohmann::detail::iteration_proxy&lt; IteratorType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00026_source.html">/home/iot/Roomba/_libMQTT/CommandProcessor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00046_source.html">/home/iot/Roomba/_libUtils/ParLoop.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00044_source.html">/home/iot/Roomba/_libSenseHAT/SenseHAT.h</a>&quot;</code><br />
-<code>#include &quot;json.hpp&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00063_source.html">/home/iot/Roomba/I-O/ioHandler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00056_source.html">AppInfo.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00028_source.html">/home/iot/Roomba/_libMQTT/MQTTconfig.h</a>&quot;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;iomanip&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;csignal&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for RoombaMQTTClient.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00142.png" border="0" usemap="#_2home_2iot_2_roomba_2_roomba_m_q_t_t_2_roomba_m_q_t_t_client_8h" alt=""/></div>
-<map name="_2home_2iot_2_roomba_2_roomba_m_q_t_t_2_roomba_m_q_t_t_client_8h" id="_2home_2iot_2_roomba_2_roomba_m_q_t_t_2_roomba_m_q_t_t_client_8h">
-<area shape="rect" id="node2" href="a00026.html" title="/home/iot/Roomba/_libMQTT\l/CommandProcessor.h" alt="" coords="262,95,453,136"/>
-<area shape="rect" id="node9" href="a00046.html" title="/home/iot/Roomba/_libUtils\l/ParLoop.h" alt="" coords="944,184,1124,225"/>
-<area shape="rect" id="node14" href="a00044.html" title="/home/iot/Roomba/_libSense\lHAT/SenseHAT.h" alt="" coords="968,95,1158,136"/>
-<area shape="rect" id="node19" href="a00063.html" title="/home/iot/Roomba/I\l&#45;O/ioHandler.h" alt="" coords="585,95,722,136"/>
-<area shape="rect" id="node30" href="a00056.html" title="AppInfo.h" alt="" coords="1277,102,1356,129"/>
-<area shape="rect" id="node31" href="a00028.html" title="/home/iot/Roomba/_libMQTT\l/MQTTconfig.h" alt="" coords="37,95,228,136"/>
-<area shape="rect" id="node3" href="a00032.html" title="Topic.h" alt="" coords="325,191,390,218"/>
-<area shape="rect" id="node15" href="a00034.html" title="Joystick.h" alt="" coords="1148,191,1231,218"/>
-<area shape="rect" id="node16" href="a00038.html" title="LedMatrix.h" alt="" coords="1260,355,1351,382"/>
-<area shape="rect" id="node20" href="a00064.html" title="motor.h" alt="" coords="620,191,687,218"/>
-<area shape="rect" id="node21" href="a00066.html" title="SerialCommand.h" alt="" coords="554,273,681,300"/>
-<area shape="rect" id="node28" href="a00067.html" title="vacuum.h" alt="" coords="712,191,790,218"/>
-<area shape="rect" id="node29" href="a00065.html" title="sensors.h" alt="" coords="466,191,545,218"/>
-<area shape="rect" id="node22" href="a00052.html" title="/home/iot/Roomba/_libUtils\l/SerialLink/SerialLink.h" alt="" coords="466,348,646,389"/>
-<area shape="rect" id="node27" href="a00050.html" title="/home/iot/Roomba/_libUtils\l/SerialLink/OpenInterfaceConfig.h" alt="" coords="671,348,890,389"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00143.png" border="0" usemap="#_2home_2iot_2_roomba_2_roomba_m_q_t_t_2_roomba_m_q_t_t_client_8hdep" alt=""/></div>
-<map name="_2home_2iot_2_roomba_2_roomba_m_q_t_t_2_roomba_m_q_t_t_client_8hdep" id="_2home_2iot_2_roomba_2_roomba_m_q_t_t_2_roomba_m_q_t_t_client_8hdep">
-<area shape="rect" id="node2" href="a00058.html" title="/home/iot/Roomba/BestRoomba\lNA/BestRoombaNA.h" alt="" coords="121,95,331,136"/>
-<area shape="rect" id="node5" href="a00071.html" title="/home/iot/Roomba/RoombaMQTT\l/RoombaMQTTClient.cpp" alt="" coords="355,95,574,136"/>
-<area shape="rect" id="node3" href="a00057.html" title="/home/iot/Roomba/BestRoomba\lNA/BestRoombaNA.cpp" alt="" coords="5,184,215,225"/>
-<area shape="rect" id="node4" href="a00059.html" title="/home/iot/Roomba/BestRoomba\lNA/main.cpp" alt="" coords="239,184,448,225"/>
-</map>
-</div>
-</div>
-<p><a href="a00072_source.html">Go to the source code of this file.</a></p>
+
+<p>proxy class for the items() function  
+ <a href="a00072.html#details">More...</a></p>
+
+<p><code>#include &quot;<a class="el" href="a00419_source.html">json.hpp</a>&quot;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html">MQTTClient</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle Mosquitto functionalities. Set up broker and client, make connection, subscribtion and publish. Contains functions for controlling senseHat functionalities and Roomba IO.  <a href="a00011.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ab701e3ac61a85b337ec5c1abaad6742d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> = nlohmann::json</td></tr>
-<tr class="separator:ab701e3ac61a85b337ec5c1abaad6742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b3bd6544a775cf1e31cd71610c5765"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> = std::vector&lt; std::string &gt;</td></tr>
-<tr class="separator:ad3b3bd6544a775cf1e31cd71610c5765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:afe257e972e3b4658ef2e355f7389d4a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#afe257e972e3b4658ef2e355f7389d4a5">iteration_proxy</a> (typename IteratorType::reference cont) noexcept</td></tr>
+<tr class="memdesc:afe257e972e3b4658ef2e355f7389d4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct iteration proxy from a container  <a href="#afe257e972e3b4658ef2e355f7389d4a5">More...</a><br /></td></tr>
+<tr class="separator:afe257e972e3b4658ef2e355f7389d4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43612db469c82118fc648c3729e40cee"><td class="memItemLeft" align="right" valign="top">iteration_proxy_internal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#a43612db469c82118fc648c3729e40cee">begin</a> () noexcept</td></tr>
+<tr class="memdesc:a43612db469c82118fc648c3729e40cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">return iterator begin (needed for range-based for)  <a href="#a43612db469c82118fc648c3729e40cee">More...</a><br /></td></tr>
+<tr class="separator:a43612db469c82118fc648c3729e40cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41303419d073f32fcf1956978410d816"><td class="memItemLeft" align="right" valign="top">iteration_proxy_internal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#a41303419d073f32fcf1956978410d816">end</a> () noexcept</td></tr>
+<tr class="memdesc:a41303419d073f32fcf1956978410d816"><td class="mdescLeft">&#160;</td><td class="mdescRight">return iterator end (needed for range-based for)  <a href="#a41303419d073f32fcf1956978410d816">More...</a><br /></td></tr>
+<tr class="separator:a41303419d073f32fcf1956978410d816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="ab701e3ac61a85b337ec5c1abaad6742d"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename IteratorType&gt;<br />
+class nlohmann::detail::iteration_proxy&lt; IteratorType &gt;</h3>
+
+<p>proxy class for the items() function </p>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l03892">3892</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="afe257e972e3b4658ef2e355f7389d4a5"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a00072.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> =  nlohmann::json</td>
+          <td class="memname"><a class="el" href="a00072.html">nlohmann::detail::iteration_proxy</a>&lt; IteratorType &gt;::<a class="el" href="a00072.html">iteration_proxy</a> </td>
+          <td>(</td>
+          <td class="paramtype">typename IteratorType::reference&#160;</td>
+          <td class="paramname"><em>cont</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00072_source.html#l00018">18</a> of file <a class="el" href="a00072_source.html">RoombaMQTTClient.h</a>.</p>
+<p>construct iteration proxy from a container </p>
 
+<p>Definition at line <a class="el" href="a00419_source.html#l04572">4572</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l04573"></a><span class="lineno"> 4573</span>&#160;        : container(cont) {}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="ad3b3bd6544a775cf1e31cd71610c5765"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a43612db469c82118fc648c3729e40cee"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a00072.html#ad3b3bd6544a775cf1e31cd71610c5765">parameters_t</a> =  std::vector&lt;std::string&gt;</td>
+          <td class="memname">iteration_proxy_internal <a class="el" href="a00072.html">nlohmann::detail::iteration_proxy</a>&lt; IteratorType &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00072_source.html#l00020">20</a> of file <a class="el" href="a00072_source.html">RoombaMQTTClient.h</a>.</p>
+<p>return iterator begin (needed for range-based for) </p>
 
+<p>Definition at line <a class="el" href="a00419_source.html#l04576">4576</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l04577"></a><span class="lineno"> 4577</span>&#160;    {</div><div class="line"><a name="l04578"></a><span class="lineno"> 4578</span>&#160;        <span class="keywordflow">return</span> iteration_proxy_internal(container.begin());</div><div class="line"><a name="l04579"></a><span class="lineno"> 4579</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="a41303419d073f32fcf1956978410d816"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">iteration_proxy_internal <a class="el" href="a00072.html">nlohmann::detail::iteration_proxy</a>&lt; IteratorType &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return iterator end (needed for range-based for) </p>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l04582">4582</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l04583"></a><span class="lineno"> 4583</span>&#160;    {</div><div class="line"><a name="l04584"></a><span class="lineno"> 4584</span>&#160;        <span class="keywordflow">return</span> iteration_proxy_internal(container.end());</div><div class="line"><a name="l04585"></a><span class="lineno"> 4585</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00419_source.html">json.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_abff4b1f2f4f8e46b21b755d237028f6.html">RoombaMQTT</a></li><li class="navelem"><a class="el" href="a00072.html">RoombaMQTTClient.h</a></li>
+    <li class="navelem"><a class="el" href="a00526.html">nlohmann</a></li><li class="navelem"><a class="el" href="a00528.html">detail</a></li><li class="navelem"><a class="el" href="a00072.html">iteration_proxy</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

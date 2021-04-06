@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: /home/iot/Roomba/_libUtils/SerialLink/OpenInterfaceConfig.h File Reference</title>
+<title>BestRoombaNA: nlohmann::detail::input_adapter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BestRoombaNA
-   &#160;<span id="projectnumber">1.2.1</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Roomba Project voor SEL2</div>
   </td>
@@ -49,8 +49,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -71,8 +72,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -106,74 +109,51 @@ $(document).ready(function(){initNavTree('a00050.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00859.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">OpenInterfaceConfig.h File Reference</div>  </div>
+<div class="title">nlohmann::detail::input_adapter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for OpenInterfaceConfig.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00113.png" border="0" usemap="#_2home_2iot_2_roomba_2__lib_utils_2_serial_link_2_open_interface_config_8h" alt=""/></div>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00114.png" border="0" usemap="#_2home_2iot_2_roomba_2__lib_utils_2_serial_link_2_open_interface_config_8hdep" alt=""/></div>
-<map name="_2home_2iot_2_roomba_2__lib_utils_2_serial_link_2_open_interface_config_8hdep" id="_2home_2iot_2_roomba_2__lib_utils_2_serial_link_2_open_interface_config_8hdep">
-<area shape="rect" id="node2" href="a00049.html" title="/home/iot/Roomba/_libUtils\l/SerialLink/OpenInterfaceConfig.cpp" alt="" coords="137,95,369,136"/>
-<area shape="rect" id="node3" href="a00066.html" title="/home/iot/Roomba/I\l&#45;O/SerialCommand.h" alt="" coords="393,95,537,136"/>
-<area shape="rect" id="node4" href="a00064.html" title="/home/iot/Roomba/I\l&#45;O/motor.h" alt="" coords="236,184,373,225"/>
-<area shape="rect" id="node5" href="a00063.html" title="/home/iot/Roomba/I\l&#45;O/ioHandler.h" alt="" coords="396,273,533,315"/>
-<area shape="rect" id="node14" href="a00067.html" title="/home/iot/Roomba/I\l&#45;O/vacuum.h" alt="" coords="449,184,587,225"/>
-<area shape="rect" id="node15" href="a00065.html" title="/home/iot/Roomba/I\l&#45;O/sensors.h" alt="" coords="611,184,748,225"/>
-<area shape="rect" id="node6" href="a00054.html" title="/home/iot/Roomba/BestRoomba\lNA/AI.h" alt="" coords="121,363,331,404"/>
-<area shape="rect" id="node11" href="a00072.html" title="/home/iot/Roomba/RoombaMQTT\l/RoombaMQTTClient.h" alt="" coords="355,363,574,404"/>
-<area shape="rect" id="node13" href="a00062.html" title="/home/iot/Roomba/I\l&#45;O/ioHandler.cpp" alt="" coords="599,363,736,404"/>
-<area shape="rect" id="node7" href="a00053.html" title="/home/iot/Roomba/BestRoomba\lNA/AI.cpp" alt="" coords="5,452,215,493"/>
-<area shape="rect" id="node8" href="a00058.html" title="/home/iot/Roomba/BestRoomba\lNA/BestRoombaNA.h" alt="" coords="239,452,448,493"/>
-<area shape="rect" id="node9" href="a00057.html" title="/home/iot/Roomba/BestRoomba\lNA/BestRoombaNA.cpp" alt="" coords="123,541,332,583"/>
-<area shape="rect" id="node10" href="a00059.html" title="/home/iot/Roomba/BestRoomba\lNA/main.cpp" alt="" coords="356,541,565,583"/>
-<area shape="rect" id="node12" href="a00071.html" title="/home/iot/Roomba/RoombaMQTT\l/RoombaMQTTClient.cpp" alt="" coords="473,452,691,493"/>
-</map>
-</div>
-</div>
-<p><a href="a00050_source.html">Go to the source code of this file.</a></p>
+
+<p><code>#include &quot;<a class="el" href="a00419_source.html">json.hpp</a>&quot;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a131c4cecbe4f0fff8d6e5d8229f576bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bb">Baud</a> : unsigned int { <a class="el" href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4">Baud::ROOMBA_SLOW</a> = 19200, 
-<a class="el" href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30">Baud::ROOMBA_DEFAULT</a> = 115200
- }</td></tr>
-<tr class="separator:a131c4cecbe4f0fff8d6e5d8229f576bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a5087cc2366b2f09d85c156f869e59ea3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a5087cc2366b2f09d85c156f869e59ea3">startSafe</a> ()</td></tr>
-<tr class="separator:a5087cc2366b2f09d85c156f869e59ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88e5530ef8a33ec3be814fd769cee47f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a88e5530ef8a33ec3be814fd769cee47f">driveDirect</a> (int16_t rightVelocity, int16_t leftVelocity)</td></tr>
-<tr class="memdesc:a88e5530ef8a33ec3be814fd769cee47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocities in mm/sec.  <a href="#a88e5530ef8a33ec3be814fd769cee47f">More...</a><br /></td></tr>
-<tr class="separator:a88e5530ef8a33ec3be814fd769cee47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:af4b453d3fecbaec0103c2e474273a2c6"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#af4b453d3fecbaec0103c2e474273a2c6">START</a> {128}</td></tr>
-<tr class="separator:af4b453d3fecbaec0103c2e474273a2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e7eeb7c56415769afc380fffec8b6d"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a69e7eeb7c56415769afc380fffec8b6d">BAUD_1</a> {129}</td></tr>
-<tr class="separator:a69e7eeb7c56415769afc380fffec8b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d6b650c639863b30deed333921b1e9b"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a6d6b650c639863b30deed333921b1e9b">MODE_SAFE</a> {131}</td></tr>
-<tr class="separator:a6d6b650c639863b30deed333921b1e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08a8dd9e3089b91d71ab8d0d644f4d6e"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a08a8dd9e3089b91d71ab8d0d644f4d6e">MODE_FULL</a> {132}</td></tr>
-<tr class="separator:a08a8dd9e3089b91d71ab8d0d644f4d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c205895bf8188bf524e63985acaeb74"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a4c205895bf8188bf524e63985acaeb74">DRIVE_DIRECT_4</a> {145}</td></tr>
-<tr class="separator:a4c205895bf8188bf524e63985acaeb74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae89f11268d4724b3080473f7218abe86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#ae89f11268d4724b3080473f7218abe86">input_adapter</a> (std::istream &amp;i)</td></tr>
+<tr class="memdesc:ae89f11268d4724b3080473f7218abe86"><td class="mdescLeft">&#160;</td><td class="mdescRight">input adapter for input stream  <a href="#ae89f11268d4724b3080473f7218abe86">More...</a><br /></td></tr>
+<tr class="separator:ae89f11268d4724b3080473f7218abe86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af002dd2e53ac0855a03cb68d0ce626b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#af002dd2e53ac0855a03cb68d0ce626b2">input_adapter</a> (std::istream &amp;&amp;i)</td></tr>
+<tr class="memdesc:af002dd2e53ac0855a03cb68d0ce626b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">input adapter for input stream  <a href="#af002dd2e53ac0855a03cb68d0ce626b2">More...</a><br /></td></tr>
+<tr class="separator:af002dd2e53ac0855a03cb68d0ce626b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37816622d79ab4a1a76f4d7e872b65e1"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename std::enable_if&lt; std::is_pointer&lt; CharT &gt;::value andstd::is_integral&lt; typename std::remove_pointer&lt; CharT &gt;::type &gt;::value andsizeof(typename std::remove_pointer&lt; CharT &gt;::type)==1, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a37816622d79ab4a1a76f4d7e872b65e1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00050.html#a37816622d79ab4a1a76f4d7e872b65e1">input_adapter</a> (CharT b, std::size_t l)</td></tr>
+<tr class="memdesc:a37816622d79ab4a1a76f4d7e872b65e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">input adapter for buffer  <a href="#a37816622d79ab4a1a76f4d7e872b65e1">More...</a><br /></td></tr>
+<tr class="separator:a37816622d79ab4a1a76f4d7e872b65e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f035d9c4319360014b922b5e433ced"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename std::enable_if&lt; std::is_pointer&lt; CharT &gt;::value andstd::is_integral&lt; typename std::remove_pointer&lt; CharT &gt;::type &gt;::value andsizeof(typename std::remove_pointer&lt; CharT &gt;::type)==1, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a86f035d9c4319360014b922b5e433ced"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00050.html#a86f035d9c4319360014b922b5e433ced">input_adapter</a> (CharT b)</td></tr>
+<tr class="memdesc:a86f035d9c4319360014b922b5e433ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">input adapter for string literal  <a href="#a86f035d9c4319360014b922b5e433ced">More...</a><br /></td></tr>
+<tr class="separator:a86f035d9c4319360014b922b5e433ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6824b0f792691f75186c527fa31a6b4"><td class="memTemplParams" colspan="2">template&lt;class IteratorType , typename std::enable_if&lt; std::is_same&lt; typename std::iterator_traits&lt; IteratorType &gt;::iterator_category, std::random_access_iterator_tag &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:ad6824b0f792691f75186c527fa31a6b4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00050.html#ad6824b0f792691f75186c527fa31a6b4">input_adapter</a> (IteratorType first, IteratorType last)</td></tr>
+<tr class="memdesc:ad6824b0f792691f75186c527fa31a6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">input adapter for iterator range with contiguous storage  <a href="#ad6824b0f792691f75186c527fa31a6b4">More...</a><br /></td></tr>
+<tr class="separator:ad6824b0f792691f75186c527fa31a6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2392138bf8307df1994dc7eb22d51ce"><td class="memTemplParams" colspan="2">template&lt;class T , std::size_t N&gt; </td></tr>
+<tr class="memitem:aa2392138bf8307df1994dc7eb22d51ce"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00050.html#aa2392138bf8307df1994dc7eb22d51ce">input_adapter</a> (T(&amp;<a class="el" href="a00528.html#a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5">array</a>)[N])</td></tr>
+<tr class="memdesc:aa2392138bf8307df1994dc7eb22d51ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">input adapter for array  <a href="#aa2392138bf8307df1994dc7eb22d51ce">More...</a><br /></td></tr>
+<tr class="separator:aa2392138bf8307df1994dc7eb22d51ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f92fe82cb49a508dbfb297c5630cc7f"><td class="memTemplParams" colspan="2">template&lt;class ContiguousContainer , typename std::enable_if&lt; not std::is_pointer&lt; ContiguousContainer &gt;::value andstd::is_base_of&lt; std::random_access_iterator_tag, typename std::iterator_traits&lt; decltype(std::begin(std::declval&lt; ContiguousContainer const  &gt;()))&gt;::iterator_category &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a6f92fe82cb49a508dbfb297c5630cc7f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00050.html#a6f92fe82cb49a508dbfb297c5630cc7f">input_adapter</a> (const ContiguousContainer &amp;c)</td></tr>
+<tr class="memdesc:a6f92fe82cb49a508dbfb297c5630cc7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">input adapter for contiguous container  <a href="#a6f92fe82cb49a508dbfb297c5630cc7f">More...</a><br /></td></tr>
+<tr class="separator:a6f92fe82cb49a508dbfb297c5630cc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef04b9490247fc38f3d1c2a9e18789b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a4ef04b9490247fc38f3d1c2a9e18789b">operator input_adapter_t</a> ()</td></tr>
+<tr class="separator:a4ef04b9490247fc38f3d1c2a9e18789b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a131c4cecbe4f0fff8d6e5d8229f576bb"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="a00419_source.html#l01741">1741</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae89f11268d4724b3080473f7218abe86"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -181,44 +161,74 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bb">Baud</a> : unsigned int</td>
+          <td class="memname">nlohmann::detail::input_adapter::input_adapter </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4"></a>ROOMBA_SLOW&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30"></a>ROOMBA_DEFAULT&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
 
-<p>Definition at line <a class="el" href="a00050_source.html#l00010">10</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;               : <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   <a class="code" href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4">ROOMBA_SLOW</a> = 19200,</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <a class="code" href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30">ROOMBA_DEFAULT</a> = 115200</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div><div class="ttc" id="a00050_html_a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4"><div class="ttname"><a href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4">Baud::ROOMBA_SLOW</a></div></div>
-<div class="ttc" id="a00050_html_a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30"><div class="ttname"><a href="a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30">Baud::ROOMBA_DEFAULT</a></div></div>
-</div><!-- fragment -->
+<p>input adapter for input stream </p>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l01747">1747</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;        : ia(std::make_shared&lt;input_stream_adapter&gt;(i)) {}</div></div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a88e5530ef8a33ec3be814fd769cee47f"></a>
+<a class="anchor" id="af002dd2e53ac0855a03cb68d0ce626b2"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;uint8_t&gt; driveDirect </td>
+          <td class="memname">nlohmann::detail::input_adapter::input_adapter </td>
           <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>rightVelocity</em>, </td>
+          <td class="paramtype">std::istream &amp;&amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>input adapter for input stream </p>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l01751">1751</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;        : ia(std::make_shared&lt;input_stream_adapter&gt;(i)) {}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a37816622d79ab4a1a76f4d7e872b65e1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , typename std::enable_if&lt; std::is_pointer&lt; CharT &gt;::value andstd::is_integral&lt; typename std::remove_pointer&lt; CharT &gt;::type &gt;::value andsizeof(typename std::remove_pointer&lt; CharT &gt;::type)==1, int &gt;::type  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nlohmann::detail::input_adapter::input_adapter </td>
+          <td>(</td>
+          <td class="paramtype">CharT&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>leftVelocity</em>&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -226,111 +236,189 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Velocities in mm/sec. </p>
+<p>input adapter for buffer </p>
 
-<p>Definition at line <a class="el" href="a00049_source.html#l00010">10</a> of file <a class="el" href="a00049_source.html">OpenInterfaceConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <span class="keywordflow">return</span> {<a class="code" href="a00050.html#a4c205895bf8188bf524e63985acaeb74">DRIVE_DIRECT_4</a>,</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;           <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(rightVelocity &gt;&gt; 8),</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;           static_cast&lt;uint8_t&gt;(rightVelocity &amp; 0x00ff),</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;           <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(leftVelocity &gt;&gt; 8),</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;           static_cast&lt;uint8_t&gt;(leftVelocity &amp; 0x00ff)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   };</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}<div class="ttc" id="a00050_html_a4c205895bf8188bf524e63985acaeb74"><div class="ttname"><a href="a00050.html#a4c205895bf8188bf524e63985acaeb74">DRIVE_DIRECT_4</a></div><div class="ttdeci">const uint8_t DRIVE_DIRECT_4</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00024">OpenInterfaceConfig.h:24</a></div></div>
+<p>Definition at line <a class="el" href="a00419_source.html#l01761">1761</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;        : ia(std::make_shared&lt;input_buffer_adapter&gt;(reinterpret_cast&lt;const char*&gt;(b), l)) {}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a86f035d9c4319360014b922b5e433ced"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , typename std::enable_if&lt; std::is_pointer&lt; CharT &gt;::value andstd::is_integral&lt; typename std::remove_pointer&lt; CharT &gt;::type &gt;::value andsizeof(typename std::remove_pointer&lt; CharT &gt;::type)==1, int &gt;::type  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nlohmann::detail::input_adapter::input_adapter </td>
+          <td>(</td>
+          <td class="paramtype">CharT&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>input adapter for string literal </p>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l01773">1773</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;        : <a class="code" href="a00050.html#ae89f11268d4724b3080473f7218abe86">input_adapter</a>(reinterpret_cast&lt;const char*&gt;(b),</div><div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;                        std::strlen(reinterpret_cast&lt;const char*&gt;(b))) {}</div><div class="ttc" id="a00050_html_ae89f11268d4724b3080473f7218abe86"><div class="ttname"><a href="a00050.html#ae89f11268d4724b3080473f7218abe86">nlohmann::detail::input_adapter::input_adapter</a></div><div class="ttdeci">input_adapter(std::istream &amp;i)</div><div class="ttdoc">input adapter for input stream </div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l01747">json.hpp:1747</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a5087cc2366b2f09d85c156f869e59ea3"></a>
+<a class="anchor" id="ad6824b0f792691f75186c527fa31a6b4"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class IteratorType , typename std::enable_if&lt; std::is_same&lt; typename std::iterator_traits&lt; IteratorType &gt;::iterator_category, std::random_access_iterator_tag &gt;::value, int &gt;::type  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;uint8_t&gt; startSafe </td>
+          <td class="memname">nlohmann::detail::input_adapter::input_adapter </td>
+          <td>(</td>
+          <td class="paramtype">IteratorType&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IteratorType&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>input adapter for iterator range with contiguous storage </p>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l01782">1782</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;    {</div><div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;        <span class="comment">// assertion to check that the iterator range is indeed contiguous,</span></div><div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;        <span class="comment">// see http://stackoverflow.com/a/35008842/266378 for more discussion</span></div><div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;        assert(std::accumulate(</div><div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;                   first, last, std::pair&lt;bool, int&gt;(<span class="keyword">true</span>, 0),</div><div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;                   [&amp;first](std::pair&lt;bool, int&gt; res, decltype(*first) val)</div><div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;        {</div><div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;            res.first &amp;= (val == *(std::next(std::addressof(*first), res.second++)));</div><div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;            <span class="keywordflow">return</span> res;</div><div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;        }).first);</div><div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;</div><div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;        <span class="comment">// assertion to check that each element is 1 byte long</span></div><div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;        static_assert(</div><div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;            <span class="keyword">sizeof</span>(<span class="keyword">typename</span> std::iterator_traits&lt;IteratorType&gt;::value_type) == 1,</div><div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;            <span class="stringliteral">&quot;each element in the iterator range must have the size of 1 byte&quot;</span>);</div><div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;</div><div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> len = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(std::distance(first, last));</div><div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a00419.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(len &gt; 0))</div><div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;        {</div><div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;            <span class="comment">// there is at least one element: use the address of first</span></div><div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;            ia = std::make_shared&lt;input_buffer_adapter&gt;(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(&amp;(*first)), len);</div><div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;        }</div><div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;        {</div><div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;            <span class="comment">// the address of first cannot be used: use nullptr</span></div><div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;            ia = std::make_shared&lt;input_buffer_adapter&gt;(<span class="keyword">nullptr</span>, len);</div><div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;        }</div><div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;    }</div><div class="ttc" id="a00419_html_a41ecd1c4cf7c3d56477b9b685b5daa72"><div class="ttname"><a href="a00419.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a></div><div class="ttdeci">#define JSON_LIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l00182">json.hpp:182</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa2392138bf8307df1994dc7eb22d51ce"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nlohmann::detail::input_adapter::input_adapter </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)&#160;</td>
+          <td class="paramname"><em>array</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>input adapter for array </p>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l01814">1814</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;        : <a class="code" href="a00050.html#ae89f11268d4724b3080473f7218abe86">input_adapter</a>(std::begin(<a class="code" href="a00528.html#a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5">array</a>), std::end(<a class="code" href="a00528.html#a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5">array</a>)) {}</div><div class="ttc" id="a00050_html_ae89f11268d4724b3080473f7218abe86"><div class="ttname"><a href="a00050.html#ae89f11268d4724b3080473f7218abe86">nlohmann::detail::input_adapter::input_adapter</a></div><div class="ttdeci">input_adapter(std::istream &amp;i)</div><div class="ttdoc">input adapter for input stream </div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l01747">json.hpp:1747</a></div></div>
+<div class="ttc" id="a00528_html_a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5"><div class="ttname"><a href="a00528.html#a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5">nlohmann::detail::value_t::array</a></div><div class="ttdoc">array (ordered collection of values) </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6f92fe82cb49a508dbfb297c5630cc7f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContiguousContainer , typename std::enable_if&lt; not std::is_pointer&lt; ContiguousContainer &gt;::value andstd::is_base_of&lt; std::random_access_iterator_tag, typename std::iterator_traits&lt; decltype(std::begin(std::declval&lt; ContiguousContainer const  &gt;()))&gt;::iterator_category &gt;::value, int &gt;::type  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nlohmann::detail::input_adapter::input_adapter </td>
+          <td>(</td>
+          <td class="paramtype">const ContiguousContainer &amp;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>input adapter for contiguous container </p>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l01822">1822</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;        : <a class="code" href="a00050.html#ae89f11268d4724b3080473f7218abe86">input_adapter</a>(std::begin(c), std::end(c)) {}</div><div class="ttc" id="a00050_html_ae89f11268d4724b3080473f7218abe86"><div class="ttname"><a href="a00050.html#ae89f11268d4724b3080473f7218abe86">nlohmann::detail::input_adapter::input_adapter</a></div><div class="ttdeci">input_adapter(std::istream &amp;i)</div><div class="ttdoc">input adapter for input stream </div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l01747">json.hpp:1747</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4ef04b9490247fc38f3d1c2a9e18789b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nlohmann::detail::input_adapter::operator <a class="el" href="a00528.html#ae132f8cd5bb24c5e9b40ad0eafedf1c2">input_adapter_t</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00049_source.html#l00004">4</a> of file <a class="el" href="a00049_source.html">OpenInterfaceConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;   <span class="keywordflow">return</span> {<a class="code" href="a00050.html#af4b453d3fecbaec0103c2e474273a2c6">START</a>, <a class="code" href="a00050.html#a6d6b650c639863b30deed333921b1e9b">MODE_SAFE</a>};</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="ttc" id="a00050_html_af4b453d3fecbaec0103c2e474273a2c6"><div class="ttname"><a href="a00050.html#af4b453d3fecbaec0103c2e474273a2c6">START</a></div><div class="ttdeci">const uint8_t START</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00016">OpenInterfaceConfig.h:16</a></div></div>
-<div class="ttc" id="a00050_html_a6d6b650c639863b30deed333921b1e9b"><div class="ttname"><a href="a00050.html#a6d6b650c639863b30deed333921b1e9b">MODE_SAFE</a></div><div class="ttdeci">const uint8_t MODE_SAFE</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00020">OpenInterfaceConfig.h:20</a></div></div>
-</div><!-- fragment -->
+<p>Definition at line <a class="el" href="a00419_source.html#l01825">1825</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;    {</div><div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;        <span class="keywordflow">return</span> ia;</div><div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a69e7eeb7c56415769afc380fffec8b6d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t BAUD_1 {129}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00050_source.html#l00017">17</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4c205895bf8188bf524e63985acaeb74"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t DRIVE_DIRECT_4 {145}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00050_source.html#l00024">24</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a08a8dd9e3089b91d71ab8d0d644f4d6e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t MODE_FULL {132}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00050_source.html#l00021">21</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6d6b650c639863b30deed333921b1e9b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t MODE_SAFE {131}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00050_source.html#l00020">20</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af4b453d3fecbaec0103c2e474273a2c6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t START {128}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00050_source.html#l00016">16</a> of file <a class="el" href="a00050_source.html">OpenInterfaceConfig.h</a>.</p>
-
-</div>
-</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00419_source.html">json.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e62331f6ef9e5b4fb9d3d5b7795cfd4f.html">_libUtils</a></li><li class="navelem"><a class="el" href="dir_d9928afff1aa5c4f4eb86b2777b27b4a.html">SerialLink</a></li><li class="navelem"><a class="el" href="a00050.html">OpenInterfaceConfig.h</a></li>
+    <li class="navelem"><a class="el" href="a00526.html">nlohmann</a></li><li class="navelem"><a class="el" href="a00528.html">detail</a></li><li class="navelem"><a class="el" href="a00050.html">input_adapter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

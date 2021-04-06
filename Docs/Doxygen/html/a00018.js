@@ -1,14 +1,5 @@
 var a00018 =
 [
-    [ "SenseHAT", "a00018.html#a6f1b370e30d524ee6bccaa19c5566fbe", null ],
-    [ "SenseHAT", "a00018.html#a39f7095d97dd434479c05e85bdc32952", null ],
-    [ "~SenseHAT", "a00018.html#a1af79051ee9d294203278d8d3f22036a", null ],
-    [ "get_humidity", "a00018.html#a270dbefc2b736c1ef3dfc996f968611f", null ],
-    [ "get_pressure", "a00018.html#a6fcb3739537d351a60375a8aa8309a4e", null ],
-    [ "get_temperature", "a00018.html#ae0d2f1c110a5dfe453bdb2f22cf719c0", null ],
-    [ "get_temperature_from_humidity", "a00018.html#af1ffda111c9826f7eb3b88aa0ea29a00", null ],
-    [ "get_temperature_from_pressure", "a00018.html#abe8f9a29726dbfeac2bd45cff6f8a984", null ],
-    [ "operator=", "a00018.html#aa05efe7c4e0933067e3b655470dfd6df", null ],
-    [ "leds", "a00018.html#a09557e42b20ddddc1763917bd36f36a7", null ],
-    [ "stick", "a00018.html#a69d5712bf0663364109f9a482178dc2c", null ]
+    [ "next", "a00018.html#a0464e66d5520f27d2545ebe59a0f91eb", null ],
+    [ "topic", "a00018.html#af44d6135ad74423ca467bc0574e47b36", null ]
 ];

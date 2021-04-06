@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: Sensors Class Reference</title>
+<title>BestRoombaNA: nlohmann::adl_serializer&lt; typename, typename &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BestRoombaNA
-   &#160;<span id="projectnumber">1.2.1</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Roomba Project voor SEL2</div>
   </td>
@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -108,63 +109,171 @@ $(document).ready(function(){initNavTree('a00019.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00165.html">List of all members</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a00833.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Sensors Class Reference</div>  </div>
+<div class="title">nlohmann::adl_serializer&lt; typename, typename &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Sensor class for reading the sensors. It sends the right signals to the seriallink with the serialCommand class.  
+<p>default JSONSerializer template argument  
  <a href="a00019.html#details">More...</a></p>
 
-<p><code>#include &quot;<a class="el" href="a00065_source.html">sensors.h</a>&quot;</code></p>
+<p><code>#include &quot;<a class="el" href="a00419_source.html">json.hpp</a>&quot;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a051d64c61802bccb2cb6487f37a66620"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a051d64c61802bccb2cb6487f37a66620">Sensors</a> (<a class="el" href="a00020.html">SerialCommand</a> &amp;SL)</td></tr>
-<tr class="separator:a051d64c61802bccb2cb6487f37a66620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab39cad07c1a2bf4414d6cae5215b4e7a"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename ValueType &gt; </td></tr>
+<tr class="memitem:ab39cad07c1a2bf4414d6cae5215b4e7a"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#ab39cad07c1a2bf4414d6cae5215b4e7a">from_json</a> (BasicJsonType &amp;&amp;j, ValueType &amp;val) noexcept(noexcept(::nlohmann::from_json(std::forward&lt; BasicJsonType &gt;(j), val)))</td></tr>
+<tr class="memdesc:ab39cad07c1a2bf4414d6cae5215b4e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert a JSON value to any value type  <a href="#ab39cad07c1a2bf4414d6cae5215b4e7a">More...</a><br /></td></tr>
+<tr class="separator:ab39cad07c1a2bf4414d6cae5215b4e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8cd96afe6ab243b67392dfe35ace89"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename ValueType &gt; </td></tr>
+<tr class="memitem:adf8cd96afe6ab243b67392dfe35ace89"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#adf8cd96afe6ab243b67392dfe35ace89">to_json</a> (BasicJsonType &amp;j, ValueType &amp;&amp;val) noexcept(noexcept(::nlohmann::to_json(j, std::forward&lt; ValueType &gt;(val))))</td></tr>
+<tr class="memdesc:adf8cd96afe6ab243b67392dfe35ace89"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert any value type to a JSON value  <a href="#adf8cd96afe6ab243b67392dfe35ace89">More...</a><br /></td></tr>
+<tr class="separator:adf8cd96afe6ab243b67392dfe35ace89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Sensor class for reading the sensors. It sends the right signals to the seriallink with the serialCommand class. </p>
+<div class="textblock"><h3>template&lt;typename, typename&gt;<br />
+struct nlohmann::adl_serializer&lt; typename, typename &gt;</h3>
 
-<p>Definition at line <a class="el" href="a00065_source.html#l00011">11</a> of file <a class="el" href="a00065_source.html">sensors.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a051d64c61802bccb2cb6487f37a66620"></a>
+<p>default JSONSerializer template argument </p>
+<p>This serializer ignores the template arguments and uses ADL (<a href="http://en.cppreference.com/w/cpp/language/adl">argument-dependent lookup</a>) for serialization. </p>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l00073">73</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab39cad07c1a2bf4414d6cae5215b4e7a"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename , typename &gt; </div>
+<div class="memtemplate">
+template&lt;typename BasicJsonType , typename ValueType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Sensors::Sensors </td>
+          <td class="memname">static void <a class="el" href="a00019.html">nlohmann::adl_serializer</a>&lt; typename, typename &gt;::from_json </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00020.html">SerialCommand</a> &amp;&#160;</td>
-          <td class="paramname"><em>SL</em></td><td>)</td>
+          <td class="paramtype">BasicJsonType &amp;&amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">ValueType &amp;&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00065_source.html#l00017">17</a> of file <a class="el" href="a00065_source.html">sensors.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                          : SL_(SL)</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{}</div></div><!-- fragment -->
+<p>convert a JSON value to any value type </p>
+<p>This function is usually called by the <code>get()</code> function of the <a class="el" href="a00021.html">basic_json</a> class (either explicit or via conversion operators).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">j</td><td>JSON value to read from </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">val</td><td>value to write to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l09657">9657</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l09659"></a><span class="lineno"> 9659</span>&#160;    {</div><div class="line"><a name="l09660"></a><span class="lineno"> 9660</span>&#160;        <a class="code" href="a00528.html#a8b99ec9b29f3f20a18fc4281fb784e49">::nlohmann::from_json</a>(std::forward&lt;BasicJsonType&gt;(j), val);</div><div class="line"><a name="l09661"></a><span class="lineno"> 9661</span>&#160;    }</div><div class="ttc" id="a00528_html_a8b99ec9b29f3f20a18fc4281fb784e49"><div class="ttname"><a href="a00528.html#a8b99ec9b29f3f20a18fc4281fb784e49">nlohmann::detail::from_json</a></div><div class="ttdeci">void from_json(const BasicJsonType &amp;j, std::tuple&lt; Args... &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l01182">json.hpp:1182</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_ab39cad07c1a2bf4414d6cae5215b4e7a_cgraph.png" border="0" usemap="#a00019_ab39cad07c1a2bf4414d6cae5215b4e7a_cgraph" alt=""/></div>
+<map name="a00019_ab39cad07c1a2bf4414d6cae5215b4e7a_cgraph" id="a00019_ab39cad07c1a2bf4414d6cae5215b4e7a_cgraph">
+<area shape="rect" id="node2" href="a00529.html#a8b99ec9b29f3f20a18fc4281fb784e49" title="nlohmann::detail::from_json" alt="" coords="216,13,399,39"/>
+<area shape="rect" id="node3" href="a00529.html#a28253915d9db4a0112d60eaee0422949" title="nlohmann::detail::from\l_json_tuple_impl" alt="" coords="447,5,597,47"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/iot/Roomba/I-O/<a class="el" href="a00065_source.html">sensors.h</a></li>
+<a class="anchor" id="adf8cd96afe6ab243b67392dfe35ace89"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename , typename &gt; </div>
+<div class="memtemplate">
+template&lt;typename BasicJsonType , typename ValueType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="a00019.html">nlohmann::adl_serializer</a>&lt; typename, typename &gt;::to_json </td>
+          <td>(</td>
+          <td class="paramtype">BasicJsonType &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueType &amp;&amp;&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>convert any value type to a JSON value </p>
+<p>This function is usually called by the constructors of the <a class="el" href="a00021.html">basic_json</a> class.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">j</td><td>JSON value to write to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>value to read from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l09673">9673</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l09675"></a><span class="lineno"> 9675</span>&#160;    {</div><div class="line"><a name="l09676"></a><span class="lineno"> 9676</span>&#160;        <a class="code" href="a00528.html#aa7a47b08eee864c2c108c04954919648">::nlohmann::to_json</a>(j, std::forward&lt;ValueType&gt;(val));</div><div class="line"><a name="l09677"></a><span class="lineno"> 9677</span>&#160;    }</div><div class="ttc" id="a00528_html_aa7a47b08eee864c2c108c04954919648"><div class="ttname"><a href="a00528.html#aa7a47b08eee864c2c108c04954919648">nlohmann::detail::to_json</a></div><div class="ttdeci">void to_json(BasicJsonType &amp;j, const std::tuple&lt; Args... &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l01526">json.hpp:1526</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_adf8cd96afe6ab243b67392dfe35ace89_cgraph.png" border="0" usemap="#a00019_adf8cd96afe6ab243b67392dfe35ace89_cgraph" alt=""/></div>
+<map name="a00019_adf8cd96afe6ab243b67392dfe35ace89_cgraph" id="a00019_adf8cd96afe6ab243b67392dfe35ace89_cgraph">
+<area shape="rect" id="node2" href="a00529.html#aa7a47b08eee864c2c108c04954919648" title="nlohmann::detail::to_json" alt="" coords="216,13,383,39"/>
+<area shape="rect" id="node3" href="a00529.html#a510dfa15b01e9a8afe31600a27b28199" title="nlohmann::detail::to\l_json_tuple_impl" alt="" coords="431,5,567,47"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00419_source.html">json.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00019.html">Sensors</a></li>
+    <li class="navelem"><a class="el" href="a00526.html">nlohmann</a></li><li class="navelem"><a class="el" href="a00019.html">adl_serializer</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

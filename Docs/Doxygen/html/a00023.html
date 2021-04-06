@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: Topic Class Reference</title>
+<title>BestRoombaNA: nlohmann::detail::binary_reader&lt; BasicJsonType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BestRoombaNA
-   &#160;<span id="projectnumber">1.2.1</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Roomba Project voor SEL2</div>
   </td>
@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -109,210 +110,145 @@ $(document).ready(function(){initNavTree('a00023.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00168.html">List of all members</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a00836.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Topic Class Reference</div>  </div>
+<div class="title">nlohmann::detail::binary_reader&lt; BasicJsonType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="a00032_source.html">Topic.h</a>&quot;</code></p>
+<p>deserialization of CBOR and MessagePack values  
+ <a href="a00023.html#details">More...</a></p>
+
+<p><code>#include &quot;<a class="el" href="a00419_source.html">json.hpp</a>&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af3301cb0d535eb066a3ea4ed54e28414"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#af3301cb0d535eb066a3ea4ed54e28414">Topic</a> ()</td></tr>
-<tr class="separator:af3301cb0d535eb066a3ea4ed54e28414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e2b337c972d1766c80b48e4981eb47f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a4e2b337c972d1766c80b48e4981eb47f">Topic</a> (const std::string &amp;root)</td></tr>
-<tr class="separator:a4e2b337c972d1766c80b48e4981eb47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5650ccda9f2d99bfd54e90e1f92bc7b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a5650ccda9f2d99bfd54e90e1f92bc7b2">Topic</a> (const <a class="el" href="a00023.html">Topic</a> &amp;other)=default</td></tr>
-<tr class="separator:a5650ccda9f2d99bfd54e90e1f92bc7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a744c65ee1c771c392945fe1eba061b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html">Topic</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a744c65ee1c771c392945fe1eba061b7d">operator=</a> (const <a class="el" href="a00023.html">Topic</a> &amp;other)=default</td></tr>
-<tr class="separator:a744c65ee1c771c392945fe1eba061b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad87e9349bbd468750670205498a5417a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ad87e9349bbd468750670205498a5417a">~Topic</a> ()=default</td></tr>
-<tr class="separator:ad87e9349bbd468750670205498a5417a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abce06cc663933929b9636f9c3f1e3a39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html">Topic</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#abce06cc663933929b9636f9c3f1e3a39">add</a> (const std::string &amp;item)</td></tr>
-<tr class="separator:abce06cc663933929b9636f9c3f1e3a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a340aa8d9fa92ad882f72f3fdb333a62a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html">Topic</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a340aa8d9fa92ad882f72f3fdb333a62a">add</a> (const char *pItem)</td></tr>
-<tr class="separator:a340aa8d9fa92ad882f72f3fdb333a62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f11bba4553f3294cc6c88b5608965a8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a8f11bba4553f3294cc6c88b5608965a8">c_str</a> () const </td></tr>
-<tr class="separator:a8f11bba4553f3294cc6c88b5608965a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86750eb909dff0a6970dd05ee7e9b8e0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a86750eb909dff0a6970dd05ee7e9b8e0">operator[]</a> (const int nIndex) const </td></tr>
-<tr class="separator:a86750eb909dff0a6970dd05ee7e9b8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e643baadaf4c31718cd74833bdd542f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a7e643baadaf4c31718cd74833bdd542f">binary_reader</a> (<a class="el" href="a00528.html#ae132f8cd5bb24c5e9b40ad0eafedf1c2">input_adapter_t</a> adapter)</td></tr>
+<tr class="memdesc:a7e643baadaf4c31718cd74833bdd542f"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a binary reader  <a href="#a7e643baadaf4c31718cd74833bdd542f">More...</a><br /></td></tr>
+<tr class="separator:a7e643baadaf4c31718cd74833bdd542f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bcdc8f55b26fafa9775a2f89e48fc2"><td class="memItemLeft" align="right" valign="top">BasicJsonType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a04bcdc8f55b26fafa9775a2f89e48fc2">parse_cbor</a> (const bool strict)</td></tr>
+<tr class="memdesc:a04bcdc8f55b26fafa9775a2f89e48fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a JSON value from CBOR input  <a href="#a04bcdc8f55b26fafa9775a2f89e48fc2">More...</a><br /></td></tr>
+<tr class="separator:a04bcdc8f55b26fafa9775a2f89e48fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a4a6f5ab3cc77aac374c9c889e580e"><td class="memItemLeft" align="right" valign="top">BasicJsonType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ab4a4a6f5ab3cc77aac374c9c889e580e">parse_msgpack</a> (const bool strict)</td></tr>
+<tr class="memdesc:ab4a4a6f5ab3cc77aac374c9c889e580e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a JSON value from MessagePack input  <a href="#ab4a4a6f5ab3cc77aac374c9c889e580e">More...</a><br /></td></tr>
+<tr class="separator:ab4a4a6f5ab3cc77aac374c9c889e580e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0be02d1df4ba4fbe601b0985f5300ac"><td class="memItemLeft" align="right" valign="top">BasicJsonType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ad0be02d1df4ba4fbe601b0985f5300ac">parse_ubjson</a> (const bool strict)</td></tr>
+<tr class="memdesc:ad0be02d1df4ba4fbe601b0985f5300ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a JSON value from UBJSON input  <a href="#ad0be02d1df4ba4fbe601b0985f5300ac">More...</a><br /></td></tr>
+<tr class="separator:ad0be02d1df4ba4fbe601b0985f5300ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1d8f70f95d241354f86a0b9ae711c1c3"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a1d8f70f95d241354f86a0b9ae711c1c3">little_endianess</a> (int num=1) noexcept</td></tr>
+<tr class="memdesc:a1d8f70f95d241354f86a0b9ae711c1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine system byte order  <a href="#a1d8f70f95d241354f86a0b9ae711c1c3">More...</a><br /></td></tr>
+<tr class="separator:a1d8f70f95d241354f86a0b9ae711c1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="a00022.html">The</a> class <a class="el" href="a00023.html">Topic</a> represents a MQTT topic string. A topic string consists of text tokens separated by a foreward slash. <a class="el" href="a00023.html">Topic</a> objects are copyable. Strings can be added to the contained #topic_ string. A forward slash is automacicalley added as a seperator. Every topic token is readable by the array index operator. If the index value is out of range an empty string will be returned. </p>
+<div class="textblock"><h3>template&lt;typename BasicJsonType&gt;<br />
+class nlohmann::detail::binary_reader&lt; BasicJsonType &gt;</h3>
 
-<p>Definition at line <a class="el" href="a00032_source.html#l00013">13</a> of file <a class="el" href="a00032_source.html">Topic.h</a>.</p>
+<p>deserialization of CBOR and MessagePack values </p>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l04865">4865</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af3301cb0d535eb066a3ea4ed54e28414"></a>
+<a class="anchor" id="a7e643baadaf4c31718cd74833bdd542f"></a>
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Topic::Topic </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00031_source.html#l00004">4</a> of file <a class="el" href="a00031_source.html">Topic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;            :</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;   topic_{<span class="stringliteral">&quot;&quot;</span>},</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;   cachedSplit_{}</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{}</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a4e2b337c972d1766c80b48e4981eb47f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Topic::Topic </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>root</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00031_source.html#l00009">9</a> of file <a class="el" href="a00031_source.html">Topic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                                 :</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   topic_{root},</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   cachedSplit_{<a class="code" href="a00029.html#a579c0397e8020701433bd794ecfae723">split</a>(topic_, <a class="code" href="a00029.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a>)}</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{}</div><div class="ttc" id="a00029_html_ae29e5e7625dfee577f7816851113d327"><div class="ttname"><a href="a00029.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a></div><div class="ttdeci">int isForwardSlash(int c)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00010">Tokenizer.cpp:10</a></div></div>
-<div class="ttc" id="a00029_html_a579c0397e8020701433bd794ecfae723"><div class="ttname"><a href="a00029.html#a579c0397e8020701433bd794ecfae723">split</a></div><div class="ttdeci">vector&lt; string &gt; split(const string &amp;str, int delimiter(int))</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00016">Tokenizer.cpp:16</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00023_a4e2b337c972d1766c80b48e4981eb47f_cgraph.png" border="0" usemap="#a00023_a4e2b337c972d1766c80b48e4981eb47f_cgraph" alt=""/></div>
-<map name="a00023_a4e2b337c972d1766c80b48e4981eb47f_cgraph" id="a00023_a4e2b337c972d1766c80b48e4981eb47f_cgraph">
-<area shape="rect" id="node2" href="a00029.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="181,5,227,32"/>
-<area shape="rect" id="node3" href="a00029.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="148,56,260,83"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a5650ccda9f2d99bfd54e90e1f92bc7b2"></a>
-<div class="memitem">
-<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Topic::Topic </td>
+          <td class="memname"><a class="el" href="a00023.html">nlohmann::detail::binary_reader</a>&lt; BasicJsonType &gt;::<a class="el" href="a00023.html">binary_reader</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00023.html">Topic</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00528.html#ae132f8cd5bb24c5e9b40ad0eafedf1c2">input_adapter_t</a>&#160;</td>
+          <td class="paramname"><em>adapter</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="ad87e9349bbd468750670205498a5417a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Topic::~Topic </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>create a binary reader </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">adapter</td><td>input adapter to read from </td></tr>
+  </table>
+  </dd>
+</dl>
 
+<p>Definition at line <a class="el" href="a00419_source.html#l04877">4877</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l04877"></a><span class="lineno"> 4877</span>&#160;                                                    : ia(std::move(adapter))</div><div class="line"><a name="l04878"></a><span class="lineno"> 4878</span>&#160;    {</div><div class="line"><a name="l04879"></a><span class="lineno"> 4879</span>&#160;        assert(ia);</div><div class="line"><a name="l04880"></a><span class="lineno"> 4880</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abce06cc663933929b9636f9c3f1e3a39"></a>
+<a class="anchor" id="a1d8f70f95d241354f86a0b9ae711c1c3"></a>
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00023.html">Topic</a> &amp; Topic::add </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>item</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00031_source.html#l00014">14</a> of file <a class="el" href="a00031_source.html">Topic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;   topic_ += <span class="stringliteral">&quot;/&quot;</span> + item;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   cachedSplit_ = <a class="code" href="a00029.html#a579c0397e8020701433bd794ecfae723">split</a>(topic_, <a class="code" href="a00029.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><div class="ttc" id="a00029_html_ae29e5e7625dfee577f7816851113d327"><div class="ttname"><a href="a00029.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a></div><div class="ttdeci">int isForwardSlash(int c)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00010">Tokenizer.cpp:10</a></div></div>
-<div class="ttc" id="a00029_html_a579c0397e8020701433bd794ecfae723"><div class="ttname"><a href="a00029.html#a579c0397e8020701433bd794ecfae723">split</a></div><div class="ttdeci">vector&lt; string &gt; split(const string &amp;str, int delimiter(int))</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00016">Tokenizer.cpp:16</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00023_abce06cc663933929b9636f9c3f1e3a39_cgraph.png" border="0" usemap="#a00023_abce06cc663933929b9636f9c3f1e3a39_cgraph" alt=""/></div>
-<map name="a00023_abce06cc663933929b9636f9c3f1e3a39_cgraph" id="a00023_abce06cc663933929b9636f9c3f1e3a39_cgraph">
-<area shape="rect" id="node2" href="a00029.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="169,5,215,32"/>
-<area shape="rect" id="node3" href="a00029.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="136,56,248,83"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a340aa8d9fa92ad882f72f3fdb333a62a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00023.html">Topic</a> &amp; Topic::add </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>pItem</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="a00031_source.html#l00021">21</a> of file <a class="el" href="a00031_source.html">Topic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   topic_ += (<span class="stringliteral">&quot;/&quot;</span> + std::string(pItem));</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;   cachedSplit_ = <a class="code" href="a00029.html#a579c0397e8020701433bd794ecfae723">split</a>(topic_, <a class="code" href="a00029.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="ttc" id="a00029_html_ae29e5e7625dfee577f7816851113d327"><div class="ttname"><a href="a00029.html#ae29e5e7625dfee577f7816851113d327">isForwardSlash</a></div><div class="ttdeci">int isForwardSlash(int c)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00010">Tokenizer.cpp:10</a></div></div>
-<div class="ttc" id="a00029_html_a579c0397e8020701433bd794ecfae723"><div class="ttname"><a href="a00029.html#a579c0397e8020701433bd794ecfae723">split</a></div><div class="ttdeci">vector&lt; string &gt; split(const string &amp;str, int delimiter(int))</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00016">Tokenizer.cpp:16</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00023_a340aa8d9fa92ad882f72f3fdb333a62a_cgraph.png" border="0" usemap="#a00023_a340aa8d9fa92ad882f72f3fdb333a62a_cgraph" alt=""/></div>
-<map name="a00023_a340aa8d9fa92ad882f72f3fdb333a62a_cgraph" id="a00023_a340aa8d9fa92ad882f72f3fdb333a62a_cgraph">
-<area shape="rect" id="node2" href="a00029.html#a579c0397e8020701433bd794ecfae723" title="split" alt="" coords="169,5,215,32"/>
-<area shape="rect" id="node3" href="a00029.html#ae29e5e7625dfee577f7816851113d327" title="isForwardSlash" alt="" coords="136,56,248,83"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a8f11bba4553f3294cc6c88b5608965a8"></a>
-<div class="memitem">
-<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Topic::c_str </td>
+          <td class="memname">static constexpr bool <a class="el" href="a00023.html">nlohmann::detail::binary_reader</a>&lt; BasicJsonType &gt;::little_endianess </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>determine system byte order </p>
+<dl class="section return"><dt>Returns</dt><dd>true if and only if system's byte order is little endian</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>from <a href="http://stackoverflow.com/a/1001328/266378">http://stackoverflow.com/a/1001328/266378</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l04952">4952</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l04953"></a><span class="lineno"> 4953</span>&#160;    {</div><div class="line"><a name="l04954"></a><span class="lineno"> 4954</span>&#160;        <span class="keywordflow">return</span> (*reinterpret_cast&lt;char*&gt;(&amp;num) == 1);</div><div class="line"><a name="l04955"></a><span class="lineno"> 4955</span>&#160;    }</div></div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00023_a1d8f70f95d241354f86a0b9ae711c1c3_cgraph.png" border="0" usemap="#a00023_a1d8f70f95d241354f86a0b9ae711c1c3_cgraph" alt=""/></div>
+<map name="a00023_a1d8f70f95d241354f86a0b9ae711c1c3_cgraph" id="a00023_a1d8f70f95d241354f86a0b9ae711c1c3_cgraph">
+<area shape="rect" id="node2" href="a00112.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception " alt="" coords="216,71,373,112"/>
+<area shape="rect" id="node4" href="a00525.html#a5a92e92a5162db1c03fc73e51596a28d" title="mosq_test.to_string" alt="" coords="651,82,788,109"/>
+<area shape="rect" id="node6" href="a00103.html#a3f6d82a6f967c4728a1ec735a7867073" title="nlohmann::detail::out\l_of_range::create" alt="" coords="223,5,366,47"/>
+<area shape="rect" id="node3" href="a00035.html#abf41a7e9178356314082284e6cfea278" title="nlohmann::detail::exception\l::name" alt="" coords="421,16,603,57"/>
+<area shape="rect" id="node5" href="a00525.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="836,75,979,116"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a04bcdc8f55b26fafa9775a2f89e48fc2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BasicJsonType <a class="el" href="a00023.html">nlohmann::detail::binary_reader</a>&lt; BasicJsonType &gt;::parse_cbor </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>strict</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -322,72 +258,123 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00032_source.html#l00024">24</a> of file <a class="el" href="a00032_source.html">Topic.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{ <span class="keywordflow">return</span> topic_.c_str(); }</div></div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00023_a8f11bba4553f3294cc6c88b5608965a8_cgraph.png" border="0" usemap="#a00023_a8f11bba4553f3294cc6c88b5608965a8_cgraph" alt=""/></div>
-<map name="a00023_a8f11bba4553f3294cc6c88b5608965a8_cgraph" id="a00023_a8f11bba4553f3294cc6c88b5608965a8_cgraph">
-<area shape="rect" id="node2" href="a00023.html#a86750eb909dff0a6970dd05ee7e9b8e0" title="Topic::operator[]" alt="" coords="144,5,261,32"/>
-</map>
-</div>
-</p>
+<p>create a JSON value from CBOR input </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strict</td><td>whether to expect the input to be consumed completed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON value created from CBOR input</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">parse_error.110</td><td>if input ended unexpectedly or the end of file was not reached when <em>strict</em> was set to true </td></tr>
+    <tr><td class="paramname">parse_error.112</td><td>if unsupported byte was read </td></tr>
+  </table>
+  </dd>
+</dl>
 
+<p>Definition at line <a class="el" href="a00419_source.html#l04892">4892</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l04893"></a><span class="lineno"> 4893</span>&#160;    {</div><div class="line"><a name="l04894"></a><span class="lineno"> 4894</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> res = parse_cbor_internal();</div><div class="line"><a name="l04895"></a><span class="lineno"> 4895</span>&#160;        <span class="keywordflow">if</span> (strict)</div><div class="line"><a name="l04896"></a><span class="lineno"> 4896</span>&#160;        {</div><div class="line"><a name="l04897"></a><span class="lineno"> 4897</span>&#160;            <span class="keyword">get</span>();</div><div class="line"><a name="l04898"></a><span class="lineno"> 4898</span>&#160;            expect_eof();</div><div class="line"><a name="l04899"></a><span class="lineno"> 4899</span>&#160;        }</div><div class="line"><a name="l04900"></a><span class="lineno"> 4900</span>&#160;        <span class="keywordflow">return</span> res;</div><div class="line"><a name="l04901"></a><span class="lineno"> 4901</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a744c65ee1c771c392945fe1eba061b7d"></a>
+<a class="anchor" id="ab4a4a6f5ab3cc77aac374c9c889e580e"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00023.html">Topic</a>&amp; Topic::operator= </td>
+          <td class="memname">BasicJsonType <a class="el" href="a00023.html">nlohmann::detail::binary_reader</a>&lt; BasicJsonType &gt;::parse_msgpack </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00023.html">Topic</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>strict</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>create a JSON value from MessagePack input </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strict</td><td>whether to expect the input to be consumed completed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON value created from MessagePack input</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">parse_error.110</td><td>if input ended unexpectedly or the end of file was not reached when <em>strict</em> was set to true </td></tr>
+    <tr><td class="paramname">parse_error.112</td><td>if unsupported byte was read </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l04913">4913</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l04914"></a><span class="lineno"> 4914</span>&#160;    {</div><div class="line"><a name="l04915"></a><span class="lineno"> 4915</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> res = parse_msgpack_internal();</div><div class="line"><a name="l04916"></a><span class="lineno"> 4916</span>&#160;        <span class="keywordflow">if</span> (strict)</div><div class="line"><a name="l04917"></a><span class="lineno"> 4917</span>&#160;        {</div><div class="line"><a name="l04918"></a><span class="lineno"> 4918</span>&#160;            <span class="keyword">get</span>();</div><div class="line"><a name="l04919"></a><span class="lineno"> 4919</span>&#160;            expect_eof();</div><div class="line"><a name="l04920"></a><span class="lineno"> 4920</span>&#160;        }</div><div class="line"><a name="l04921"></a><span class="lineno"> 4921</span>&#160;        <span class="keywordflow">return</span> res;</div><div class="line"><a name="l04922"></a><span class="lineno"> 4922</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a86750eb909dff0a6970dd05ee7e9b8e0"></a>
+<a class="anchor" id="ad0be02d1df4ba4fbe601b0985f5300ac"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Topic::operator[] </td>
+          <td class="memname">BasicJsonType <a class="el" href="a00023.html">nlohmann::detail::binary_reader</a>&lt; BasicJsonType &gt;::parse_ubjson </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>nIndex</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>strict</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00031_source.html#l00028">28</a> of file <a class="el" href="a00031_source.html">Topic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   <span class="keywordflow">if</span> (<span class="keywordtype">int</span>(nIndex) &lt; <span class="keywordtype">int</span>(cachedSplit_.size())) {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">return</span> cachedSplit_[nIndex];</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;   }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;   <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div></div><!-- fragment -->
+<p>create a JSON value from UBJSON input </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strict</td><td>whether to expect the input to be consumed completed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON value created from UBJSON input</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">parse_error.110</td><td>if input ended unexpectedly or the end of file was not reached when <em>strict</em> was set to true </td></tr>
+    <tr><td class="paramname">parse_error.112</td><td>if unsupported byte was read </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="a00419_source.html#l04934">4934</a> of file <a class="el" href="a00419_source.html">json.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l04935"></a><span class="lineno"> 4935</span>&#160;    {</div><div class="line"><a name="l04936"></a><span class="lineno"> 4936</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> res = parse_ubjson_internal();</div><div class="line"><a name="l04937"></a><span class="lineno"> 4937</span>&#160;        <span class="keywordflow">if</span> (strict)</div><div class="line"><a name="l04938"></a><span class="lineno"> 4938</span>&#160;        {</div><div class="line"><a name="l04939"></a><span class="lineno"> 4939</span>&#160;            get_ignore_noop();</div><div class="line"><a name="l04940"></a><span class="lineno"> 4940</span>&#160;            expect_eof();</div><div class="line"><a name="l04941"></a><span class="lineno"> 4941</span>&#160;        }</div><div class="line"><a name="l04942"></a><span class="lineno"> 4942</span>&#160;        <span class="keywordflow">return</span> res;</div><div class="line"><a name="l04943"></a><span class="lineno"> 4943</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/iot/Roomba/_libMQTT/<a class="el" href="a00032_source.html">Topic.h</a></li>
-<li>/home/iot/Roomba/_libMQTT/<a class="el" href="a00031_source.html">Topic.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00419_source.html">json.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00023.html">Topic</a></li>
+    <li class="navelem"><a class="el" href="a00526.html">nlohmann</a></li><li class="navelem"><a class="el" href="a00528.html">detail</a></li><li class="navelem"><a class="el" href="a00023.html">binary_reader</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

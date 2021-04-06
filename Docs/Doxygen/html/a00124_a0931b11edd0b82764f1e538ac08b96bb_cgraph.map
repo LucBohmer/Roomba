@@ -1,0 +1,4 @@
+<map id="SerialLink::writeRead" name="SerialLink::writeRead">
+<area shape="rect" id="node2" href="$a00124.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="200,5,315,32"/>
+<area shape="rect" id="node3" href="$a00124.html#a72e3bc4cbecf4909a9df216f4393075a" title="SerialLink::read reads data from the serial devie. " alt="" coords="201,56,313,83"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$a00035.html" title="general exception of the basic_json class " alt="" coords="132,143,313,170"/>
+<area shape="rect" id="node3" href="$a00055.html" title="exception indicating errors with iterators " alt="" coords="361,5,524,47"/>
+<area shape="rect" id="node4" href="$a00102.html" title="exception indicating other library errors " alt="" coords="365,71,520,112"/>
+<area shape="rect" id="node5" href="$a00103.html" title="exception indicating access out of the defined range " alt="" coords="371,136,514,177"/>
+<area shape="rect" id="node6" href="$a00112.html" title="exception indicating a parse error " alt="" coords="364,201,521,243"/>
+<area shape="rect" id="node7" href="$a00130.html" title="exception indicating executing a member function with a wrong type " alt="" coords="367,267,518,308"/>
+</map>

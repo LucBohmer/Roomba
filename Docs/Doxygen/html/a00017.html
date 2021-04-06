@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: RandomWalk Class Reference</title>
+<title>BestRoombaNA: _mqtt3_listener Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BestRoombaNA
-   &#160;<span id="projectnumber">1.2.1</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Roomba Project voor SEL2</div>
   </td>
@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -108,179 +109,191 @@ $(document).ready(function(){initNavTree('a00017.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00162.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00765.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">RandomWalk Class Reference</div>  </div>
+<div class="title">_mqtt3_listener Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="a00070_source.html">RandomWalk.h</a>&quot;</code></p>
+<p><code>#include &quot;<a class="el" href="a00196_source.html">mosquitto_broker.h</a>&quot;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aac8a07be03c85b193a056382b42356c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aac8a07be03c85b193a056382b42356c3">RandomWalk</a> (<a class="el" href="a00009.html">LedMatrix</a> &amp;leds, const <a class="el" href="a00016.html">Pixel</a> &amp;pixel, int walkStepSeconds)</td></tr>
-<tr class="separator:aac8a07be03c85b193a056382b42356c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b74787a3673dd7023fa8d2893c7a4a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a5b74787a3673dd7023fa8d2893c7a4a1">RandomWalk</a> (const <a class="el" href="a00017.html">RandomWalk</a> &amp;other)=delete</td></tr>
-<tr class="separator:a5b74787a3673dd7023fa8d2893c7a4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3afac7bd8c8c5aee961e8f8506b25eb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00017.html">RandomWalk</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a3afac7bd8c8c5aee961e8f8506b25eb5">operator=</a> (const <a class="el" href="a00017.html">RandomWalk</a> &amp;other)=delete</td></tr>
-<tr class="separator:a3afac7bd8c8c5aee961e8f8506b25eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90d75ccc484629a8e631c6da39a998b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a90d75ccc484629a8e631c6da39a998b9">randomWalk</a> ()</td></tr>
-<tr class="separator:a90d75ccc484629a8e631c6da39a998b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a6625c6bd922e847caf58e0d969ce3e60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a6625c6bd922e847caf58e0d969ce3e60">fd</a></td></tr>
+<tr class="separator:a6625c6bd922e847caf58e0d969ce3e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3e15dab6e5bae10bb2d930034f4d9f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a8f3e15dab6e5bae10bb2d930034f4d9f">host</a></td></tr>
+<tr class="separator:a8f3e15dab6e5bae10bb2d930034f4d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae260347bb57e825c09097bff30b69c88"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ae260347bb57e825c09097bff30b69c88">port</a></td></tr>
+<tr class="separator:ae260347bb57e825c09097bff30b69c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802f0208ed0cc099a4e3cbaa5383b44e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a802f0208ed0cc099a4e3cbaa5383b44e">max_connections</a></td></tr>
+<tr class="separator:a802f0208ed0cc099a4e3cbaa5383b44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8cd1be8f3eb14461532b260c78d1a8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a0a8cd1be8f3eb14461532b260c78d1a8">mount_point</a></td></tr>
+<tr class="separator:a0a8cd1be8f3eb14461532b260c78d1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a8b4323b336b3033ebcf904716fe09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00160.html#ae9ecb8ae965b1d3af4bebd2cc031998e">mosq_sock_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a60a8b4323b336b3033ebcf904716fe09">socks</a></td></tr>
+<tr class="separator:a60a8b4323b336b3033ebcf904716fe09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac74fcfd0ef8ab1775b8e8292b9a5b95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aac74fcfd0ef8ab1775b8e8292b9a5b95">sock_count</a></td></tr>
+<tr class="separator:aac74fcfd0ef8ab1775b8e8292b9a5b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d4b8710a09924861317deac08472fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ad5d4b8710a09924861317deac08472fb">client_count</a></td></tr>
+<tr class="separator:ad5d4b8710a09924861317deac08472fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d78649594bccaac148977ebfbc7e367"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="a00196.html#a2016ca244d8a59290552cd83840faa17">mosquitto_protocol</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a7d78649594bccaac148977ebfbc7e367">protocol</a></td></tr>
+<tr class="separator:a7d78649594bccaac148977ebfbc7e367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90c9af6612aaf612ecd5917989a423c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aa90c9af6612aaf612ecd5917989a423c">use_username_as_clientid</a></td></tr>
+<tr class="separator:aa90c9af6612aaf612ecd5917989a423c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Active class, uses <a class="el" href="a00013.html">ParLoop</a> class for executing the random walk of one pixel on the <a class="el" href="a00018.html" title="Contains functionalities of RPi senseHAT. Functionalities: ">SenseHAT</a> device #leds_. <a class="el" href="a00022.html">The</a> function <a class="el" href="a00017.html#a90d75ccc484629a8e631c6da39a998b9">randomWalk</a> is thread safe, using a shared mutex object #mtx_. </p>
-
-<p>Definition at line <a class="el" href="a00070_source.html#l00016">16</a> of file <a class="el" href="a00070_source.html">RandomWalk.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aac8a07be03c85b193a056382b42356c3"></a>
+<div class="textblock">
+<p>Definition at line <a class="el" href="a00196_source.html#l00072">72</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ad5d4b8710a09924861317deac08472fb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RandomWalk::RandomWalk </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00009.html">LedMatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>leds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00016.html">Pixel</a> &amp;&#160;</td>
-          <td class="paramname"><em>pixel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>walkStepSeconds</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">int _mqtt3_listener::client_count</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00069_source.html#l00006">6</a> of file <a class="el" href="a00069_source.html">RandomWalk.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                           :</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   rdev_{},</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   reng_{rdev_()},</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   uniformRandom_{-1, 1},</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   leds_{},</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;   x_{4},</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   y_{4},</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;   pixel_{pixel},</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   pl_{std::bind(&amp;<a class="code" href="a00017.html#a90d75ccc484629a8e631c6da39a998b9">RandomWalk::randomWalk</a>, <span class="keyword">this</span>), walkStepSeconds}</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;   <a class="code" href="a00069.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(leds);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="ttc" id="a00017_html_a90d75ccc484629a8e631c6da39a998b9"><div class="ttname"><a href="a00017.html#a90d75ccc484629a8e631c6da39a998b9">RandomWalk::randomWalk</a></div><div class="ttdeci">void randomWalk()</div><div class="ttdef"><b>Definition:</b> <a href="a00069_source.html#l00022">RandomWalk.cpp:22</a></div></div>
-<div class="ttc" id="a00069_html_a86d500a34c624c2cae56bc25a31b12f3"><div class="ttname"><a href="a00069.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a></div><div class="ttdeci">#define UNUSED(x)</div><div class="ttdef"><b>Definition:</b> <a href="a00069_source.html#l00002">RandomWalk.cpp:2</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00017_aac8a07be03c85b193a056382b42356c3_cgraph.png" border="0" usemap="#a00017_aac8a07be03c85b193a056382b42356c3_cgraph" alt=""/></div>
-<map name="a00017_aac8a07be03c85b193a056382b42356c3_cgraph" id="a00017_aac8a07be03c85b193a056382b42356c3_cgraph">
-<area shape="rect" id="node2" href="a00017.html#a90d75ccc484629a8e631c6da39a998b9" title="RandomWalk::randomWalk" alt="" coords="241,31,424,57"/>
-<area shape="rect" id="node3" href="a00009.html#a7f46ff6f7d413db5ac77225d47219397" title="LedMatrix::getPixel" alt="" coords="472,5,607,32"/>
-<area shape="rect" id="node6" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe" title="LedMatrix::setPixel" alt="" coords="472,56,607,83"/>
-<area shape="rect" id="node4" href="a00039.html#ae6094a71213cd0ae1172a64c8140b0a4" title="get_pixel" alt="" coords="655,5,729,32"/>
-<area shape="rect" id="node5" href="a00039.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="777,31,835,57"/>
-<area shape="rect" id="node7" href="a00039.html#a80e57b8e92455ad8851540f2a348f009" title="set_pixel" alt="" coords="655,56,729,83"/>
-</map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="a00196_source.html#l00080">80</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5b74787a3673dd7023fa8d2893c7a4a1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">RandomWalk::RandomWalk </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00017.html">RandomWalk</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3afac7bd8c8c5aee961e8f8506b25eb5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00017.html">RandomWalk</a>&amp; RandomWalk::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00017.html">RandomWalk</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a90d75ccc484629a8e631c6da39a998b9"></a>
+<a class="anchor" id="a6625c6bd922e847caf58e0d969ce3e60"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RandomWalk::randomWalk </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">int _mqtt3_listener::fd</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="a00069_source.html#l00022">22</a> of file <a class="el" href="a00069_source.html">RandomWalk.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;   <span class="keywordtype">int</span> xPrevious_ = x_;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   <span class="keywordtype">int</span> yPrevious_ = y_;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;   std::lock_guard&lt;std::mutex&gt; lgLeds(mtx_);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   <span class="keywordflow">do</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      x_ = std::min(std::max(<a class="code" href="a00009.html#a30e3af90d4c9a83aec44e71914f86aa3">LedMatrix::MIN_X</a>, x_ + uniformRandom_(reng_)),</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    <a class="code" href="a00009.html#a6da341535a246a5395b0a46569618830">LedMatrix::MAX_X</a>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      y_ = std::min(std::max(<a class="code" href="a00009.html#a4bb052cfec297bc54387decb20a0f17f">LedMatrix::MIN_Y</a>, y_ + uniformRandom_(reng_)),</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    <a class="code" href="a00009.html#aa6cf03e172a1efe233aaac293be202bd">LedMatrix::MAX_Y</a>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   } <span class="keywordflow">while</span> (leds_.<a class="code" href="a00009.html#a7f46ff6f7d413db5ac77225d47219397">getPixel</a>(x_, y_) != <a class="code" href="a00016.html#a77c8aab7dad0995df6fdc8ccf65e92ee">Pixel::BLANK</a>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;   leds_.<a class="code" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">setPixel</a>(xPrevious_, yPrevious_, <a class="code" href="a00016.html#a77c8aab7dad0995df6fdc8ccf65e92ee">Pixel::BLANK</a>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   leds_.<a class="code" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">setPixel</a>(x_, y_, pixel_);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="ttc" id="a00016_html_a77c8aab7dad0995df6fdc8ccf65e92ee"><div class="ttname"><a href="a00016.html#a77c8aab7dad0995df6fdc8ccf65e92ee">Pixel::BLANK</a></div><div class="ttdeci">static const Pixel BLANK</div><div class="ttdef"><b>Definition:</b> <a href="a00042_source.html#l00019">Pixel.h:19</a></div></div>
-<div class="ttc" id="a00009_html_aa6cf03e172a1efe233aaac293be202bd"><div class="ttname"><a href="a00009.html#aa6cf03e172a1efe233aaac293be202bd">LedMatrix::MAX_Y</a></div><div class="ttdeci">static const int MAX_Y</div><div class="ttdef"><b>Definition:</b> <a href="a00038_source.html#l00012">LedMatrix.h:12</a></div></div>
-<div class="ttc" id="a00009_html_a7f46ff6f7d413db5ac77225d47219397"><div class="ttname"><a href="a00009.html#a7f46ff6f7d413db5ac77225d47219397">LedMatrix::getPixel</a></div><div class="ttdeci">Pixel getPixel(uint8_t x, uint8_t y) const </div><div class="ttdef"><b>Definition:</b> <a href="a00037_source.html#l00044">LedMatrix.cpp:44</a></div></div>
-<div class="ttc" id="a00009_html_a00eb3db37486902ee8509a95c1ac09fe"><div class="ttname"><a href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe">LedMatrix::setPixel</a></div><div class="ttdeci">int setPixel(uint8_t x, uint8_t y, const Pixel &amp;pixel)</div><div class="ttdef"><b>Definition:</b> <a href="a00037_source.html#l00036">LedMatrix.cpp:36</a></div></div>
-<div class="ttc" id="a00009_html_a6da341535a246a5395b0a46569618830"><div class="ttname"><a href="a00009.html#a6da341535a246a5395b0a46569618830">LedMatrix::MAX_X</a></div><div class="ttdeci">static const int MAX_X</div><div class="ttdef"><b>Definition:</b> <a href="a00038_source.html#l00011">LedMatrix.h:11</a></div></div>
-<div class="ttc" id="a00009_html_a30e3af90d4c9a83aec44e71914f86aa3"><div class="ttname"><a href="a00009.html#a30e3af90d4c9a83aec44e71914f86aa3">LedMatrix::MIN_X</a></div><div class="ttdeci">static const int MIN_X</div><div class="ttdef"><b>Definition:</b> <a href="a00038_source.html#l00013">LedMatrix.h:13</a></div></div>
-<div class="ttc" id="a00009_html_a4bb052cfec297bc54387decb20a0f17f"><div class="ttname"><a href="a00009.html#a4bb052cfec297bc54387decb20a0f17f">LedMatrix::MIN_Y</a></div><div class="ttdeci">static const int MIN_Y</div><div class="ttdef"><b>Definition:</b> <a href="a00038_source.html#l00014">LedMatrix.h:14</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00017_a90d75ccc484629a8e631c6da39a998b9_cgraph.png" border="0" usemap="#a00017_a90d75ccc484629a8e631c6da39a998b9_cgraph" alt=""/></div>
-<map name="a00017_a90d75ccc484629a8e631c6da39a998b9_cgraph" id="a00017_a90d75ccc484629a8e631c6da39a998b9_cgraph">
-<area shape="rect" id="node2" href="a00009.html#a7f46ff6f7d413db5ac77225d47219397" title="LedMatrix::getPixel" alt="" coords="236,5,371,32"/>
-<area shape="rect" id="node5" href="a00009.html#a00eb3db37486902ee8509a95c1ac09fe" title="LedMatrix::setPixel" alt="" coords="236,56,371,83"/>
-<area shape="rect" id="node3" href="a00039.html#ae6094a71213cd0ae1172a64c8140b0a4" title="get_pixel" alt="" coords="419,5,493,32"/>
-<area shape="rect" id="node4" href="a00039.html#a4c81786c254e658a3c16e7b17bf19c87" title="Control senseHAT ledmatrix. " alt="" coords="541,31,599,57"/>
-<area shape="rect" id="node6" href="a00039.html#a80e57b8e92455ad8851540f2a348f009" title="set_pixel" alt="" coords="419,56,493,83"/>
-</map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="a00196_source.html#l00073">73</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00070_source.html">RandomWalk.h</a></li>
-<li>/home/iot/Roomba/RoombaMQTT/<a class="el" href="a00069_source.html">RandomWalk.cpp</a></li>
+<a class="anchor" id="a8f3e15dab6e5bae10bb2d930034f4d9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* _mqtt3_listener::host</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00196_source.html#l00074">74</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a802f0208ed0cc099a4e3cbaa5383b44e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _mqtt3_listener::max_connections</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00196_source.html#l00076">76</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a8cd1be8f3eb14461532b260c78d1a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* _mqtt3_listener::mount_point</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00196_source.html#l00077">77</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae260347bb57e825c09097bff30b69c88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t _mqtt3_listener::port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00196_source.html#l00075">75</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d78649594bccaac148977ebfbc7e367"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00196.html#a2016ca244d8a59290552cd83840faa17">mosquitto_protocol</a> _mqtt3_listener::protocol</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00196_source.html#l00081">81</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac74fcfd0ef8ab1775b8e8292b9a5b95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _mqtt3_listener::sock_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00196_source.html#l00079">79</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a60a8b4323b336b3033ebcf904716fe09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00160.html#ae9ecb8ae965b1d3af4bebd2cc031998e">mosq_sock_t</a>* _mqtt3_listener::socks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00196_source.html#l00078">78</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa90c9af6612aaf612ecd5917989a423c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _mqtt3_listener::use_username_as_clientid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00196_source.html#l00082">82</a> of file <a class="el" href="a00196_source.html">mosquitto_broker.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>/home/iot/Downloads/mosquitto-1.4.14/src/<a class="el" href="a00196_source.html">mosquitto_broker.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00017.html">RandomWalk</a></li>
+    <li class="navelem"><a class="el" href="a00017.html">_mqtt3_listener</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

@@ -1,5 +1,5 @@
 var a00026 =
 [
-    [ "CommandProcessor", "a00006.html", "a00006" ],
-    [ "commandfunction", "a00026.html#a28db7178a71eff1027c055c9b19f6215", null ]
+    [ "address", "a00026.html#a69e437835539f6e43c8085bb65daeeeb", null ],
+    [ "port", "a00026.html#a335523cccca2b850fa25c738cefdd0d2", null ]
 ];

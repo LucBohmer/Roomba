@@ -1,0 +1,9 @@
+<map id="AI::AI" name="AI::AI">
+<area shape="rect" id="node2" href="$a00020.html#aa881b9ee68540c5f595343c9f8906edf" title="Start instance of AI. Calls function start() of IOh instance to start Motor and Vacuum object and ope..." alt="" coords="109,56,192,83"/>
+<area shape="rect" id="node3" href="$a00056.html#ac70cba066f4fa2c826145ea504e318a9" title="Starts all the actuators and sends safeMode signal. " alt="" coords="240,56,352,83"/>
+<area shape="rect" id="node4" href="$a00096.html#a4611645742488ec6e915e555b6468a27" title="Motor start. Enables motorspeed to be changed. " alt="" coords="446,5,535,32"/>
+<area shape="rect" id="node5" href="$a00134.html#a54ec5e56215e32d1c3c537ff4794915e" title="Vacuum::start" alt="" coords="439,56,543,83"/>
+<area shape="rect" id="node6" href="$a00122.html#a30f54181d6e33e968b48e74c781ec2e4" title="Writes serial command to turn Roomba on in Safe mode. " alt="" coords="400,107,581,133"/>
+<area shape="rect" id="node7" href="$a00124.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="629,81,744,108"/>
+<area shape="rect" id="node8" href="$a00401.html#a5087cc2366b2f09d85c156f869e59ea3" title="startSafe" alt="" coords="649,132,724,159"/>
+</map>

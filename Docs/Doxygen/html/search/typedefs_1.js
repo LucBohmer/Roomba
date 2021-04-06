@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['jshandler',['jshandler',['../a00034.html#a76b70dda4842c659a65f6b5ebf8685c6',1,'Joystick.h']]],
-  ['json',['json',['../a00072.html#ab701e3ac61a85b337ec5c1abaad6742d',1,'RoombaMQTTClient.h']]]
+  ['base_5fiterator',['base_iterator',['../a00076.html#a6b2ef1d632fe49bfcc22fbd1abd62395',1,'nlohmann::detail::json_reverse_iterator']]],
+  ['boolean_5ft',['boolean_t',['../a00021.html#a4c919102a9b4fe0d588af64801436082',1,'nlohmann::basic_json']]]
 ];

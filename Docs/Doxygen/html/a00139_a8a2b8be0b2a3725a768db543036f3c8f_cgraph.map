@@ -1,0 +1,10 @@
+<map id="client_connect" name="client_connect">
+<area shape="rect" id="node2" href="$a00160.html#a5c2529f2bb98ce6308d3f43a72775b5a" title="mosquitto_connect_srv" alt="" coords="163,31,320,57"/>
+<area shape="rect" id="node5" href="$a00158.html#a93f2d8781d6a9bf12e43417831bc41ac" title="mosquitto_connect_bind" alt="" coords="160,81,323,108"/>
+<area shape="rect" id="node6" href="$a00158.html#a1aa2f37d78379bd12a98e393c1ab1056" title="mosquitto_strerror" alt="" coords="178,132,305,159"/>
+<area shape="rect" id="node8" href="$a00158.html#af68f0637eb65e020072067ac8897043f" title="mosquitto_lib_cleanup" alt="" coords="166,183,317,209"/>
+<area shape="rect" id="node3" href="$a00154.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="387,5,517,32"/>
+<area shape="rect" id="node4" href="$a00154.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="395,56,509,83"/>
+<area shape="rect" id="node7" href="$a00526.html#ad2f696a3275eecbb98f8a9fda93e661c" title="mosqpp::strerror" alt="" coords="393,132,511,159"/>
+<area shape="rect" id="node9" href="$a00163.html#aa64d7dd65d855a86c26952fade52d4c5" title="_mosquitto_net_cleanup" alt="" coords="371,183,533,209"/>
+</map>

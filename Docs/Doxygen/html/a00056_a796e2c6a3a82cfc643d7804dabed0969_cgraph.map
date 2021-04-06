@@ -1,0 +1,8 @@
+<map id="IOhandler::stop" name="IOhandler::stop">
+<area shape="rect" id="node2" href="$a00096.html#a015fd5308d4d27e5dcf7f9ea3d5c03f6" title="Motor stop. Diables motorspeed to be changed. " alt="" coords="171,5,259,32"/>
+<area shape="rect" id="node6" href="$a00134.html#ab2ec5d94d77af106451046e67aa78a62" title="Vacuum::stop" alt="" coords="164,56,267,83"/>
+<area shape="rect" id="node3" href="$a00122.html#a159e3998d96b74caa77025740a26e395" title="Writes serial command to let Roomba drive. " alt="" coords="323,5,477,32"/>
+<area shape="rect" id="node4" href="$a00124.html#af0e94df5c46bb1b89f2b79eda8312fde" title="SerialLink::write writes data to the connected device. " alt="" coords="533,56,648,83"/>
+<area shape="rect" id="node5" href="$a00401.html#a88e5530ef8a33ec3be814fd769cee47f" title="Velocities in mm/sec. " alt="" coords="548,5,633,32"/>
+<area shape="rect" id="node7" href="$a00122.html#a4e08e3c36644f4af624a1e8ca53a23fa" title="Turns Roomba vacuum ON or OFF;. " alt="" coords="315,56,485,83"/>
+</map>

@@ -1,14 +1,11 @@
 var a00050 =
 [
-    [ "Baud", "a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bb", [
-      [ "ROOMBA_SLOW", "a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bba67a5da0be73f958e253fae1b1db5aff4", null ],
-      [ "ROOMBA_DEFAULT", "a00050.html#a131c4cecbe4f0fff8d6e5d8229f576bbac4af6a2722c1b3d32fc4b22cdbe46a30", null ]
-    ] ],
-    [ "driveDirect", "a00050.html#a88e5530ef8a33ec3be814fd769cee47f", null ],
-    [ "startSafe", "a00050.html#a5087cc2366b2f09d85c156f869e59ea3", null ],
-    [ "BAUD_1", "a00050.html#a69e7eeb7c56415769afc380fffec8b6d", null ],
-    [ "DRIVE_DIRECT_4", "a00050.html#a4c205895bf8188bf524e63985acaeb74", null ],
-    [ "MODE_FULL", "a00050.html#a08a8dd9e3089b91d71ab8d0d644f4d6e", null ],
-    [ "MODE_SAFE", "a00050.html#a6d6b650c639863b30deed333921b1e9b", null ],
-    [ "START", "a00050.html#af4b453d3fecbaec0103c2e474273a2c6", null ]
+    [ "input_adapter", "a00050.html#ae89f11268d4724b3080473f7218abe86", null ],
+    [ "input_adapter", "a00050.html#af002dd2e53ac0855a03cb68d0ce626b2", null ],
+    [ "input_adapter", "a00050.html#a37816622d79ab4a1a76f4d7e872b65e1", null ],
+    [ "input_adapter", "a00050.html#a86f035d9c4319360014b922b5e433ced", null ],
+    [ "input_adapter", "a00050.html#ad6824b0f792691f75186c527fa31a6b4", null ],
+    [ "input_adapter", "a00050.html#aa2392138bf8307df1994dc7eb22d51ce", null ],
+    [ "input_adapter", "a00050.html#a6f92fe82cb49a508dbfb297c5630cc7f", null ],
+    [ "operator input_adapter_t", "a00050.html#a4ef04b9490247fc38f3d1c2a9e18789b", null ]
 ];

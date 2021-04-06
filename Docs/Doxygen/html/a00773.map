@@ -1,0 +1,4 @@
+<map id="CommandProcessor" name="CommandProcessor">
+<area shape="rect" id="node3" href="$a00099.html" title="Handle Mosquitto functionalities. Set up broker and client, make connection, subscribtion and publish..." alt="" coords="32,155,125,181"/>
+<area shape="rect" id="node2" href="$a00094.html" title="mosqpp::mosquittopp" alt="" coords="5,5,152,32"/>
+</map>

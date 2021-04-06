@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$a00057.html" title="nlohmann::detail::is\l_basic_json\&lt; typename \&gt;" alt="" coords="165,5,337,47"/>
+<area shape="rect" id="node3" href="$a00063.html" title="nlohmann::detail::is\l_compatible_integer_type\l_impl\&lt; bool, typename, typename \&gt;" alt="" coords="136,70,367,126"/>
+<area shape="rect" id="node4" href="$a00066.html" title="nlohmann::detail::is\l_compatible_object_type\l_impl\&lt; B, RealType, Compatible\lObjectType \&gt;" alt="" coords="145,151,357,221"/>
+<area shape="rect" id="node5" href="$a00069.html" title="nlohmann::detail::is\l_complete_type\&lt; T, typename \&gt;" alt="" coords="146,245,357,287"/>
+</map>

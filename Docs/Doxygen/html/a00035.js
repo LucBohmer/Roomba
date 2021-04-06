@@ -1,9 +1,6 @@
 var a00035 =
 [
-    [ "_GNU_SOURCE", "a00035.html#a369266c24eacffb87046522897a570d5", null ],
-    [ "DEV_INPUT_EVENT", "a00035.html#a477188d9f90b56f0ab2d13020495a9b6", null ],
-    [ "EVENT_DEV_NAME", "a00035.html#a985f060b1ceec122b9560e92d000f01e", null ],
-    [ "handle_events", "a00035.html#a20d8b9178a57ee6b94df80ba718f058d", null ],
-    [ "initEventDevice", "a00035.html#aad9a5320b4ad2191c8aeec01cc8240e0", null ],
-    [ "pollingEventDevice", "a00035.html#a36a7a5c243539b3a04fa0ff1271c6204", null ]
+    [ "exception", "a00035.html#ae323ad0d53bc724414c2233164e65657", null ],
+    [ "what", "a00035.html#a56e006c6ac214875115049ae5b9b569a", null ],
+    [ "id", "a00035.html#a0d4589a3fb54e81646d986c05efa3b9a", null ]
 ];

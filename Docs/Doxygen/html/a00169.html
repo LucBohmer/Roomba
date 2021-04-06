@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BestRoombaNA: Member List</title>
+<title>BestRoombaNA: /home/iot/Downloads/mosquitto-1.4.14/lib/read_handle_shared.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BestRoombaNA
-   &#160;<span id="projectnumber">1.2.1</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Roomba Project voor SEL2</div>
   </td>
@@ -49,8 +49,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -71,10 +72,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -89,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a00024.html','');});
+$(document).ready(function(){initNavTree('a00169.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -107,23 +106,632 @@ $(document).ready(function(){initNavTree('a00024.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Vacuum Member List</div>  </div>
+<div class="title">read_handle_shared.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00159_source.html">mosquitto.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00152_source.html">logging_mosq.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00154_source.html">memory_mosq.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00156_source.html">messages_mosq.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00161_source.html">mqtt3_protocol.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00163_source.html">net_mosq.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00166_source.html">read_handle.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00172_source.html">send_mosq.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00182_source.html">util_mosq.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for read_handle_shared.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00575.png" border="0" usemap="#_2home_2iot_2_downloads_2mosquitto-1_84_814_2lib_2read__handle__shared_8c" alt=""/></div>
+<map name="_2home_2iot_2_downloads_2mosquitto-1_84_814_2lib_2read__handle__shared_8c" id="_2home_2iot_2_downloads_2mosquitto-1_84_814_2lib_2read__handle__shared_8c">
+<area shape="rect" id="node5" href="a00159.html" title="mosquitto.h" alt="" coords="660,259,751,285"/>
+<area shape="rect" id="node7" href="a00152.html" title="logging_mosq.h" alt="" coords="902,184,1015,211"/>
+<area shape="rect" id="node8" href="a00154.html" title="memory_mosq.h" alt="" coords="106,109,225,136"/>
+<area shape="rect" id="node10" href="a00156.html" title="messages_mosq.h" alt="" coords="467,109,599,136"/>
+<area shape="rect" id="node18" href="a00161.html" title="mqtt3_protocol.h" alt="" coords="1093,109,1211,136"/>
+<area shape="rect" id="node19" href="a00163.html" title="net_mosq.h" alt="" coords="675,109,765,136"/>
+<area shape="rect" id="node21" href="a00166.html" title="read_handle.h" alt="" coords="1039,184,1142,211"/>
+<area shape="rect" id="node22" href="a00172.html" title="send_mosq.h" alt="" coords="582,184,682,211"/>
+<area shape="rect" id="node23" href="a00182.html" title="util_mosq.h" alt="" coords="342,109,431,136"/>
+<area shape="rect" id="node11" href="a00160.html" title="mosquitto_internal.h" alt="" coords="317,184,456,211"/>
+<area shape="rect" id="node12" href="a00141.html" title="config.h" alt="" coords="367,259,435,285"/>
+<area shape="rect" id="node15" href="a00150.html" title="dummypthread.h" alt="" coords="14,259,133,285"/>
+<area shape="rect" id="node17" href="a00178.html" title="time_mosq.h" alt="" coords="246,259,343,285"/>
+<area shape="rect" id="node24" href="a00180.html" title="tls_mosq.h" alt="" coords="206,184,293,211"/>
+</map>
+</div>
+</div>
+<p><a href="a00169_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9d1c01afbdb0b171d789389b04285dae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a9d1c01afbdb0b171d789389b04285dae">_mosquitto_handle_pingreq</a> (struct <a class="el" href="a00086.html">mosquitto</a> *mosq)</td></tr>
+<tr class="separator:a9d1c01afbdb0b171d789389b04285dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0332f54846d87207a9f5c0b7c5213a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a8b0332f54846d87207a9f5c0b7c5213a">_mosquitto_handle_pingresp</a> (struct <a class="el" href="a00086.html">mosquitto</a> *mosq)</td></tr>
+<tr class="separator:a8b0332f54846d87207a9f5c0b7c5213a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d98465bd0a71f82092b31ff17cbad24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a7d98465bd0a71f82092b31ff17cbad24">_mosquitto_handle_pubackcomp</a> (struct <a class="el" href="a00086.html">mosquitto</a> *mosq, const char *type)</td></tr>
+<tr class="separator:a7d98465bd0a71f82092b31ff17cbad24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23085c99d7e0c4b83d3f0c3c95b6046"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#ad23085c99d7e0c4b83d3f0c3c95b6046">_mosquitto_handle_pubrec</a> (struct <a class="el" href="a00086.html">mosquitto</a> *mosq)</td></tr>
+<tr class="separator:ad23085c99d7e0c4b83d3f0c3c95b6046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467343261ece717bef7eea433f48ee0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a467343261ece717bef7eea433f48ee0d">_mosquitto_handle_pubrel</a> (struct <a class="el" href="a00089.html">mosquitto_db</a> *db, struct <a class="el" href="a00086.html">mosquitto</a> *mosq)</td></tr>
+<tr class="separator:a467343261ece717bef7eea433f48ee0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e4ec24207865a6040b2e0b484b8bc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#ac0e4ec24207865a6040b2e0b484b8bc8">_mosquitto_handle_suback</a> (struct <a class="el" href="a00086.html">mosquitto</a> *mosq)</td></tr>
+<tr class="separator:ac0e4ec24207865a6040b2e0b484b8bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006c0821c402b954b3665cd28a99e833"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a006c0821c402b954b3665cd28a99e833">_mosquitto_handle_unsuback</a> (struct <a class="el" href="a00086.html">mosquitto</a> *mosq)</td></tr>
+<tr class="separator:a006c0821c402b954b3665cd28a99e833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a9d1c01afbdb0b171d789389b04285dae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _mosquitto_handle_pingreq </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="a00086.html">mosquitto</a> *&#160;</td>
+          <td class="paramname"><em>mosq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-<p>This is the complete list of members for <a class="el" href="a00024.html">Vacuum</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00024.html#aea55938cbaba7800040d17f15d676275">setOnOff</a>(bool state)</td><td class="entry"><a class="el" href="a00024.html">Vacuum</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00024.html#a54ec5e56215e32d1c3c537ff4794915e">start</a>()</td><td class="entry"><a class="el" href="a00024.html">Vacuum</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00024.html#ab2ec5d94d77af106451046e67aa78a62">stop</a>()</td><td class="entry"><a class="el" href="a00024.html">Vacuum</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00024.html#a4fb79de03f603b993a5b7cd3e2c2bfda">Vacuum</a>(SerialCommand &amp;SL)</td><td class="entry"><a class="el" href="a00024.html">Vacuum</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00024.html#a4ee42dfa1bb599d67ee1584173f5a715">~Vacuum</a>()</td><td class="entry"><a class="el" href="a00024.html">Vacuum</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-</table></div><!-- contents -->
+<p>Definition at line <a class="el" href="a00169_source.html#l00034">34</a> of file <a class="el" href="a00169_source.html">read_handle_shared.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    assert(mosq);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifdef WITH_BROKER</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Received PINGREQ from %s&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(mosq, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Client %s received PINGREQ&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00171.html#afc621f5b30461d6e90cb0e13d8a8044a">_mosquitto_send_pingresp</a>(mosq);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="ttc" id="a00086_html_a6c7e54cb56bc80a99cc96f4005166dcd"><div class="ttname"><a href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">mosquitto::id</a></div><div class="ttdeci">char * id</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00163">mosquitto_internal.h:163</a></div></div>
+<div class="ttc" id="a00159_html_a9a0714eb912755e4dc621c1e902c0bcf"><div class="ttname"><a href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a></div><div class="ttdeci">#define MOSQ_LOG_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00058">mosquitto.h:58</a></div></div>
+<div class="ttc" id="a00171_html_afc621f5b30461d6e90cb0e13d8a8044a"><div class="ttname"><a href="a00171.html#afc621f5b30461d6e90cb0e13d8a8044a">_mosquitto_send_pingresp</a></div><div class="ttdeci">int _mosquitto_send_pingresp(struct mosquitto *mosq)</div><div class="ttdef"><b>Definition:</b> <a href="a00171_source.html#l00054">send_mosq.c:54</a></div></div>
+<div class="ttc" id="a00151_html_ab88a2fffe8ac34ae60e449e2e6ec506a"><div class="ttname"><a href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a></div><div class="ttdeci">int _mosquitto_log_printf(struct mosquitto *mosq, int priority, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="a00151_source.html#l00025">logging_mosq.c:25</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00169_a9d1c01afbdb0b171d789389b04285dae_cgraph.png" border="0" usemap="#a00169_a9d1c01afbdb0b171d789389b04285dae_cgraph" alt=""/></div>
+<map name="a00169_a9d1c01afbdb0b171d789389b04285dae_cgraph" id="a00169_a9d1c01afbdb0b171d789389b04285dae_cgraph">
+<area shape="rect" id="node2" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="2083,1806,2229,1833"/>
+<area shape="rect" id="node3" href="a00171.html#afc621f5b30461d6e90cb0e13d8a8044a" title="_mosquitto_send_pingresp" alt="" coords="233,2577,411,2604"/>
+<area shape="rect" id="node4" href="a00171.html#a271c30997be399041e068b2ea604c6ec" title="_mosquitto_send_simple\l_command" alt="" coords="459,2408,625,2450"/>
+<area shape="rect" id="node5" href="a00153.html#a1ecbcb0ab8e51c000672d9d2bdf8172c" title="_mosquitto_calloc" alt="" coords="1849,1072,1976,1098"/>
+<area shape="rect" id="node6" href="a00181.html#a3c897feee454d60aec163e3bd0eab52e" title="_mosquitto_packet_alloc" alt="" coords="1111,2565,1277,2592"/>
+<area shape="rect" id="node13" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="1855,296,1970,322"/>
+<area shape="rect" id="node17" href="a00162.html#ae1643651ecb33c5a8d5138851bcfd986" title="_mosquitto_packet_queue" alt="" coords="673,2389,848,2416"/>
+<area shape="rect" id="node7" href="a00524.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="1349,2572,1492,2614"/>
+<area shape="rect" id="node8" href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="2091,422,2221,449"/>
+<area shape="rect" id="node9" href="a00181.html#ae8314371001e5cbc7ed7f9c03efb3ca8" title="_mosquitto_check_keepalive" alt="" coords="1325,2638,1516,2665"/>
+<area shape="rect" id="node10" href="a00177.html#a9fb48d8f8ce208443e2e7bae489770fe" title="mosquitto_time" alt="" coords="2293,2237,2404,2264"/>
+<area shape="rect" id="node11" href="a00162.html#af8fce1657e21306ca1e448b75774ccfb" title="_mosquitto_socket_close" alt="" coords="1576,2364,1747,2390"/>
+<area shape="rect" id="node16" href="a00171.html#add1543fe2a0a0f158610a8e9f83c91bf" title="_mosquitto_send_pingreq" alt="" coords="1827,2572,1998,2598"/>
+<area shape="rect" id="node12" href="a00163.html#aba710f8004a961fbbc7b9a47952ca49a" title="_mosquitto_try_connect\l_step1" alt="" coords="1832,2390,1993,2431"/>
+<area shape="rect" id="node14" href="a00163.html#a6c7a52047909e92de2f75c334923500d" title="_mosquitto_try_connect\l_step2" alt="" coords="1832,2455,1993,2496"/>
+<area shape="rect" id="node15" href="a00162.html#a09dc43fbc8f662dd7f71b56937af5253" title="_mosquitto_socket_nonblock" alt="" coords="1817,2338,2008,2365"/>
+<area shape="rect" id="node18" href="a00162.html#a7554da94994edf7f11886ba9bd042e2f" title="_mosquitto_packet_write" alt="" coords="896,2237,1063,2264"/>
+<area shape="rect" id="node19" href="a00162.html#ac25f5eedd4fdb5e35e32e9d0eaf7351f" title="_mosquitto_net_write" alt="" coords="1121,2237,1267,2264"/>
+<area shape="rect" id="node20" href="a00162.html#a1f5ae38a1ad0ff58a7c7aba084282cb5" title="_mosquitto_packet_cleanup" alt="" coords="1329,1249,1513,1276"/>
+<area shape="rect" id="node21" href="a00162.html#afab51e299ec6bfa4fcf4c9fb4860d2e0" title="_mosquitto_packet_read" alt="" coords="1112,1477,1276,1504"/>
+<area shape="rect" id="node22" href="a00162.html#a2c3799cccb12ac4785061599ff18e153" title="_mosquitto_net_read" alt="" coords="1349,1806,1492,1833"/>
+<area shape="rect" id="node23" href="a00196.html#a09d1e4a05c245369c22ecae0e8a42bfb" title="mqtt3_packet_handle" alt="" coords="1347,1300,1494,1326"/>
+<area shape="rect" id="node48" href="a00164.html#a907a402de77d5cd171278a02d026afc7" title="_mosquitto_packet_handle" alt="" coords="1332,1477,1509,1504"/>
+<area shape="rect" id="node24" href="a00166.html#a9d1c01afbdb0b171d789389b04285dae" title="_mosquitto_handle_pingreq" alt="" coords="1571,1300,1751,1326"/>
+<area shape="rect" id="node25" href="a00166.html#a8b0332f54846d87207a9f5c0b7c5213a" title="_mosquitto_handle_pingresp" alt="" coords="1568,1604,1755,1630"/>
+<area shape="rect" id="node30" href="a00166.html#a7d98465bd0a71f82092b31ff17cbad24" title="_mosquitto_handle_pubackcomp" alt="" coords="1807,1426,2019,1453"/>
+<area shape="rect" id="node31" href="a00165.html#ab73094667db8b9226ef81e7895b934f6" title="mqtt3_handle_publish" alt="" coords="1587,701,1735,728"/>
+<area shape="rect" id="node39" href="a00166.html#ad23085c99d7e0c4b83d3f0c3c95b6046" title="_mosquitto_handle_pubrec" alt="" coords="1573,1452,1750,1478"/>
+<area shape="rect" id="node40" href="a00166.html#a467343261ece717bef7eea433f48ee0d" title="_mosquitto_handle_pubrel" alt="" coords="1575,1502,1748,1529"/>
+<area shape="rect" id="node41" href="a00196.html#ab7f0afc1ca9700b58f5e6a817687d081" title="mqtt3_handle_connect" alt="" coords="1585,861,1738,888"/>
+<area shape="rect" id="node42" href="a00196.html#a1e6ad6e84cfeebd256ba58cd2553aca2" title="mqtt3_handle_disconnect" alt="" coords="1576,1350,1747,1377"/>
+<area shape="rect" id="node43" href="a00196.html#ad028e30a6047ea57b94d503668d6ea80" title="mqtt3_handle_subscribe" alt="" coords="1580,296,1743,322"/>
+<area shape="rect" id="node44" href="a00196.html#a2fb8082975605cecae2cd5e0a5789a13" title="mqtt3_handle_unsubscribe" alt="" coords="1573,448,1750,474"/>
+<area shape="rect" id="node45" href="a00196.html#ad6b09e9305be77b254fbff1759f3c7c7" title="mqtt3_handle_connack" alt="" coords="1583,498,1739,525"/>
+<area shape="rect" id="node46" href="a00166.html#ac0e4ec24207865a6040b2e0b484b8bc8" title="_mosquitto_handle_suback" alt="" coords="1571,1148,1751,1174"/>
+<area shape="rect" id="node47" href="a00166.html#a006c0821c402b954b3665cd28a99e833" title="_mosquitto_handle_unsuback" alt="" coords="1564,1401,1759,1428"/>
+<area shape="rect" id="node26" href="a00169.html#a7d98465bd0a71f82092b31ff17cbad24" title="_mosquitto_handle_pubackcomp" alt="" coords="1807,1477,2019,1504"/>
+<area shape="rect" id="node27" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8" title="_mosquitto_read_uint16" alt="" coords="2076,1198,2236,1225"/>
+<area shape="rect" id="node28" href="a00191.html#afd644b64d7bc7a0f7a06688a3aca8e4f" title="mqtt3_db_message_delete" alt="" coords="2067,1426,2245,1453"/>
+<area shape="rect" id="node29" href="a00155.html#acd91f51fa239a0490db5f5cfcb1e2be7" title="_mosquitto_message\l_delete" alt="" coords="2083,1478,2229,1519"/>
+<area shape="rect" id="node32" href="a00162.html#a3f8290ea4ea68607b546aaac08a4d8d7" title="_mosquitto_read_string" alt="" coords="1834,448,1991,474"/>
+<area shape="rect" id="node33" href="a00159.html#abebbf4017c11827f1ac999082980cf2f" title="mosquitto_topic_matches_sub" alt="" coords="1813,549,2012,576"/>
+<area shape="rect" id="node34" href="a00153.html#ae6550bff1e45b4c074746b31f29ef537" title="_mosquitto_strdup" alt="" coords="1848,802,1977,829"/>
+<area shape="rect" id="node35" href="a00159.html#a37608453ba85c5b8f9f15cff802a8319" title="mosquitto_pub_topic\l_check" alt="" coords="1841,854,1984,895"/>
+<area shape="rect" id="node36" href="a00162.html#a668e43fc39fa0ae062aaa427b15382a9" title="_mosquitto_read_bytes" alt="" coords="1834,920,1991,946"/>
+<area shape="rect" id="node37" href="a00196.html#a6c132b4fe96e98b267516e77036cd409" title="mosquitto_acl_check" alt="" coords="1840,752,1985,778"/>
+<area shape="rect" id="node38" href="a00191.html#a69b7b5c13ef8ca9d3968a208b3cbb7f6" title="mqtt3_db_message_store_find" alt="" coords="1813,600,2013,626"/>
+<area shape="rect" id="node49" href="a00164.html#a819a75a1f9631089244fa64738731a17" title="_mosquitto_handle_publish" alt="" coords="1572,1198,1751,1225"/>
+<area shape="rect" id="node50" href="a00166.html#a455f01d5b31fc8090bc97c89c7849e91" title="_mosquitto_handle_connack" alt="" coords="1568,2085,1755,2112"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b0332f54846d87207a9f5c0b7c5213a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _mosquitto_handle_pingresp </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="a00086.html">mosquitto</a> *&#160;</td>
+          <td class="paramname"><em>mosq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00169_source.html#l00045">45</a> of file <a class="el" href="a00169_source.html">read_handle_shared.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    assert(mosq);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    mosq-&gt;<a class="code" href="a00086.html#afcd9d470e36f0a52613364bb4ede9e3a">ping_t</a> = 0; <span class="comment">/* No longer waiting for a PINGRESP. */</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef WITH_BROKER</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Received PINGRESP from %s&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(mosq, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Client %s received PINGRESP&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div><div class="ttc" id="a00086_html_afcd9d470e36f0a52613364bb4ede9e3a"><div class="ttname"><a href="a00086.html#afcd9d470e36f0a52613364bb4ede9e3a">mosquitto::ping_t</a></div><div class="ttdeci">time_t ping_t</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00171">mosquitto_internal.h:171</a></div></div>
+<div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00067">mosquitto.h:67</a></div></div>
+<div class="ttc" id="a00086_html_a6c7e54cb56bc80a99cc96f4005166dcd"><div class="ttname"><a href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">mosquitto::id</a></div><div class="ttdeci">char * id</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00163">mosquitto_internal.h:163</a></div></div>
+<div class="ttc" id="a00159_html_a9a0714eb912755e4dc621c1e902c0bcf"><div class="ttname"><a href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a></div><div class="ttdeci">#define MOSQ_LOG_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00058">mosquitto.h:58</a></div></div>
+<div class="ttc" id="a00151_html_ab88a2fffe8ac34ae60e449e2e6ec506a"><div class="ttname"><a href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a></div><div class="ttdeci">int _mosquitto_log_printf(struct mosquitto *mosq, int priority, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="a00151_source.html#l00025">logging_mosq.c:25</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00169_a8b0332f54846d87207a9f5c0b7c5213a_cgraph.png" border="0" usemap="#a00169_a8b0332f54846d87207a9f5c0b7c5213a_cgraph" alt=""/></div>
+<map name="a00169_a8b0332f54846d87207a9f5c0b7c5213a_cgraph" id="a00169_a8b0332f54846d87207a9f5c0b7c5213a_cgraph">
+<area shape="rect" id="node2" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="3806,1309,3953,1336"/>
+<area shape="rect" id="node3" href="a00169.html#a7d98465bd0a71f82092b31ff17cbad24" title="_mosquitto_handle_pubackcomp" alt="" coords="240,1847,452,1873"/>
+<area shape="rect" id="node4" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8" title="_mosquitto_read_uint16" alt="" coords="3559,1563,3719,1589"/>
+<area shape="rect" id="node5" href="a00191.html#afd644b64d7bc7a0f7a06688a3aca8e4f" title="mqtt3_db_message_delete" alt="" coords="3550,2035,3729,2061"/>
+<area shape="rect" id="node7" href="a00155.html#acd91f51fa239a0490db5f5cfcb1e2be7" title="_mosquitto_message\l_delete" alt="" coords="500,1751,647,1793"/>
+<area shape="rect" id="node6" href="a00177.html#a9fb48d8f8ce208443e2e7bae489770fe" title="mosquitto_time" alt="" coords="3824,2111,3935,2137"/>
+<area shape="rect" id="node8" href="a00155.html#a6b113b8436762caeb1d53e384ea558b1" title="_mosquitto_message\l_remove" alt="" coords="695,1414,841,1455"/>
+<area shape="rect" id="node41" href="a00155.html#a6a97f20e0fac5e9ce65ce9bb207539ae" title="_mosquitto_message\l_cleanup" alt="" coords="3566,1867,3713,1909"/>
+<area shape="rect" id="node9" href="a00171.html#a7b111a5ceccb7bbc5fdadab085a33c03" title="_mosquitto_send_publish" alt="" coords="1084,755,1253,781"/>
+<area shape="rect" id="node50" href="a00155.html#a3604f1572a4a0c4f7b94f63f32b5fdfb" title="_mosquitto_message\l_retry_check_actual" alt="" coords="889,747,1036,789"/>
+<area shape="rect" id="node10" href="a00159.html#abebbf4017c11827f1ac999082980cf2f" title="mosquitto_topic_matches_sub" alt="" coords="3540,651,3739,677"/>
+<area shape="rect" id="node11" href="a00153.html#ae6550bff1e45b4c074746b31f29ef537" title="_mosquitto_strdup" alt="" coords="3575,1107,3704,1133"/>
+<area shape="rect" id="node12" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="4026,752,4141,779"/>
+<area shape="rect" id="node13" href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="3574,1157,3705,1184"/>
+<area shape="rect" id="node14" href="a00171.html#aec1dbc12b0482663fdfbc95c13124bf3" title="_mosquitto_send_real\l_publish" alt="" coords="1301,747,1451,789"/>
+<area shape="rect" id="node15" href="a00153.html#a1ecbcb0ab8e51c000672d9d2bdf8172c" title="_mosquitto_calloc" alt="" coords="4020,307,4147,333"/>
+<area shape="rect" id="node16" href="a00181.html#a3c897feee454d60aec163e3bd0eab52e" title="_mosquitto_packet_alloc" alt="" coords="1499,805,1665,832"/>
+<area shape="rect" id="node25" href="a00162.html#ae1643651ecb33c5a8d5138851bcfd986" title="_mosquitto_packet_queue" alt="" coords="2385,973,2560,1000"/>
+<area shape="rect" id="node46" href="a00162.html#a74c4a3cbe02bca478cb9621cca8191e8" title="_mosquitto_write_string" alt="" coords="1502,704,1662,731"/>
+<area shape="rect" id="node47" href="a00162.html#a73189d0cf764846d8b74fe2d4a55d79f" title="_mosquitto_write_uint16" alt="" coords="1727,603,1890,629"/>
+<area shape="rect" id="node49" href="a00162.html#a307413f45257069e76295c70a6d899d8" title="_mosquitto_write_bytes" alt="" coords="1729,653,1889,680"/>
+<area shape="rect" id="node17" href="a00524.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="1737,907,1880,949"/>
+<area shape="rect" id="node18" href="a00181.html#ae8314371001e5cbc7ed7f9c03efb3ca8" title="_mosquitto_check_keepalive" alt="" coords="1713,856,1904,883"/>
+<area shape="rect" id="node19" href="a00162.html#af8fce1657e21306ca1e448b75774ccfb" title="_mosquitto_socket_close" alt="" coords="2823,1091,2993,1117"/>
+<area shape="rect" id="node23" href="a00171.html#add1543fe2a0a0f158610a8e9f83c91bf" title="_mosquitto_send_pingreq" alt="" coords="1952,907,2123,933"/>
+<area shape="rect" id="node20" href="a00163.html#aba710f8004a961fbbc7b9a47952ca49a" title="_mosquitto_try_connect\l_step1" alt="" coords="3056,1158,3217,1199"/>
+<area shape="rect" id="node21" href="a00163.html#a6c7a52047909e92de2f75c334923500d" title="_mosquitto_try_connect\l_step2" alt="" coords="3056,1041,3217,1082"/>
+<area shape="rect" id="node22" href="a00162.html#a09dc43fbc8f662dd7f71b56937af5253" title="_mosquitto_socket_nonblock" alt="" coords="3041,1107,3232,1133"/>
+<area shape="rect" id="node24" href="a00171.html#a271c30997be399041e068b2ea604c6ec" title="_mosquitto_send_simple\l_command" alt="" coords="2171,689,2337,730"/>
+<area shape="rect" id="node26" href="a00162.html#a7554da94994edf7f11886ba9bd042e2f" title="_mosquitto_packet_write" alt="" coords="2608,1224,2775,1251"/>
+<area shape="rect" id="node27" href="a00162.html#ac25f5eedd4fdb5e35e32e9d0eaf7351f" title="_mosquitto_net_write" alt="" coords="2835,1275,2981,1301"/>
+<area shape="rect" id="node28" href="a00162.html#a1f5ae38a1ad0ff58a7c7aba084282cb5" title="_mosquitto_packet_cleanup" alt="" coords="3045,1224,3229,1251"/>
+<area shape="rect" id="node29" href="a00162.html#afab51e299ec6bfa4fcf4c9fb4860d2e0" title="_mosquitto_packet_read" alt="" coords="2826,1477,2990,1504"/>
+<area shape="rect" id="node30" href="a00162.html#a2c3799cccb12ac4785061599ff18e153" title="_mosquitto_net_read" alt="" coords="3065,1579,3208,1605"/>
+<area shape="rect" id="node31" href="a00196.html#a09d1e4a05c245369c22ecae0e8a42bfb" title="mqtt3_packet_handle" alt="" coords="3063,1477,3210,1504"/>
+<area shape="rect" id="node45" href="a00164.html#a907a402de77d5cd171278a02d026afc7" title="_mosquitto_packet_handle" alt="" coords="3048,1528,3225,1555"/>
+<area shape="rect" id="node32" href="a00166.html#a9d1c01afbdb0b171d789389b04285dae" title="_mosquitto_handle_pingreq" alt="" coords="3296,1469,3476,1496"/>
+<area shape="rect" id="node33" href="a00166.html#a8b0332f54846d87207a9f5c0b7c5213a" title="_mosquitto_handle_pingresp" alt="" coords="3293,1419,3479,1445"/>
+<area shape="rect" id="node34" href="a00166.html#a7d98465bd0a71f82092b31ff17cbad24" title="_mosquitto_handle_pubackcomp" alt="" coords="3280,1731,3492,1757"/>
+<area shape="rect" id="node35" href="a00165.html#ab73094667db8b9226ef81e7895b934f6" title="mqtt3_handle_publish" alt="" coords="3312,955,3460,981"/>
+<area shape="rect" id="node38" href="a00166.html#ad23085c99d7e0c4b83d3f0c3c95b6046" title="_mosquitto_handle_pubrec" alt="" coords="3297,1520,3475,1547"/>
+<area shape="rect" id="node40" href="a00166.html#a467343261ece717bef7eea433f48ee0d" title="_mosquitto_handle_pubrel" alt="" coords="3299,1621,3473,1648"/>
+<area shape="rect" id="node42" href="a00196.html#ab7f0afc1ca9700b58f5e6a817687d081" title="mqtt3_handle_connect" alt="" coords="3309,1317,3463,1344"/>
+<area shape="rect" id="node43" href="a00196.html#a1e6ad6e84cfeebd256ba58cd2553aca2" title="mqtt3_handle_disconnect" alt="" coords="3554,1309,3725,1336"/>
+<area shape="rect" id="node44" href="a00196.html#ad028e30a6047ea57b94d503668d6ea80" title="mqtt3_handle_subscribe" alt="" coords="3305,1571,3467,1597"/>
+<area shape="rect" id="node36" href="a00171.html#a07fb7f8b0c76e21162abb92404ac8630" title="_mosquitto_send_pubrec" alt="" coords="3556,499,3723,525"/>
+<area shape="rect" id="node37" href="a00171.html#a45df200bf3b771869380b69c143ed251" title="_mosquitto_send_command\l_with_mid" alt="" coords="3787,419,3972,461"/>
+<area shape="rect" id="node39" href="a00171.html#afbde2c162bd4b8e9fa52b0d45aa43b81" title="_mosquitto_send_pubrel" alt="" coords="3558,549,3721,576"/>
+<area shape="rect" id="node48" href="a00162.html#adc64d22375628582aa20cb1f8e9435a3" title="_mosquitto_write_byte" alt="" coords="1961,603,2114,629"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d98465bd0a71f82092b31ff17cbad24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _mosquitto_handle_pubackcomp </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="a00086.html">mosquitto</a> *&#160;</td>
+          <td class="paramname"><em>mosq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00169_source.html#l00060">60</a> of file <a class="el" href="a00169_source.html">read_handle_shared.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    uint16_t <a class="code" href="a00443.html#a37759e081882db58436303e92962515d">mid</a>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    assert(mosq);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    rc = <a class="code" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8">_mosquitto_read_uint16</a>(&amp;mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>, &amp;mid);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span>(rc) <span class="keywordflow">return</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifdef WITH_BROKER</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Received %s from %s (Mid: %d)&quot;</span>, type, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>, mid);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span>(mid){</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        rc = <a class="code" href="a00191.html#afd644b64d7bc7a0f7a06688a3aca8e4f">mqtt3_db_message_delete</a>(db, mosq, mid, <a class="code" href="a00160.html#a0ddbf4e46aceb72a173e52d7d15e0c84a120d221fb10f57c9074ce90ac7cce032">mosq_md_out</a>);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span>(rc == <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a2bc2f56777d402b0d6b80d522efd9a49">MOSQ_ERR_NOT_FOUND</a>){</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(mosq, <a class="code" href="a00159.html#af42b074947ad51304b224e61307ff523">MOSQ_LOG_WARNING</a>, <span class="stringliteral">&quot;Warning: Received %s from %s for an unknown packet identifier %d.&quot;</span>, type, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>, mid);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(mosq, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Client %s received %s (Mid: %d)&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>, type, mid);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="a00155.html#acd91f51fa239a0490db5f5cfcb1e2be7">_mosquitto_message_delete</a>(mosq, mid, <a class="code" href="a00160.html#a0ddbf4e46aceb72a173e52d7d15e0c84a120d221fb10f57c9074ce90ac7cce032">mosq_md_out</a>)){</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">/* Only inform the client the message has been sent once. */</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="a00150.html#a2726154dadd99f6ec33dcd12266d4811">pthread_mutex_lock</a>(&amp;mosq-&gt;callback_mutex);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span>(mosq-&gt;<a class="code" href="a00086.html#a5bb7a8d1ab1787cdec76e9cd5af5c01f">on_publish</a>){</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            mosq-&gt;<a class="code" href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">in_callback</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            mosq-&gt;<a class="code" href="a00086.html#a5bb7a8d1ab1787cdec76e9cd5af5c01f">on_publish</a>(mosq, mosq-&gt;<a class="code" href="a00086.html#a3603e0befb1a5692e434de7757fec986">userdata</a>, mid);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            mosq-&gt;<a class="code" href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">in_callback</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="a00150.html#ac130da7532d3b537cbd31b46ea1112a3">pthread_mutex_unlock</a>(&amp;mosq-&gt;callback_mutex);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div><div class="ttc" id="a00191_html_afd644b64d7bc7a0f7a06688a3aca8e4f"><div class="ttname"><a href="a00191.html#afd644b64d7bc7a0f7a06688a3aca8e4f">mqtt3_db_message_delete</a></div><div class="ttdeci">int mqtt3_db_message_delete(struct mosquitto_db *db, struct mosquitto *context, uint16_t mid, enum mosquitto_msg_direction dir)</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00256">database.c:256</a></div></div>
+<div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00067">mosquitto.h:67</a></div></div>
+<div class="ttc" id="a00086_html_a3603e0befb1a5692e434de7757fec986"><div class="ttname"><a href="a00086.html#a3603e0befb1a5692e434de7757fec986">mosquitto::userdata</a></div><div class="ttdeci">void * userdata</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00237">mosquitto_internal.h:237</a></div></div>
+<div class="ttc" id="a00086_html_a6c7e54cb56bc80a99cc96f4005166dcd"><div class="ttname"><a href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">mosquitto::id</a></div><div class="ttdeci">char * id</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00163">mosquitto_internal.h:163</a></div></div>
+<div class="ttc" id="a00427_html_a64b6ff859f6938c4b3c1d92ba0abe053"><div class="ttname"><a href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">01-connect-anon-denied.rc</a></div><div class="ttdeci">int rc</div><div class="ttdef"><b>Definition:</b> <a href="a00211_source.html#l00013">01-connect-anon-denied.py:13</a></div></div>
+<div class="ttc" id="a00160_html_a0ddbf4e46aceb72a173e52d7d15e0c84a120d221fb10f57c9074ce90ac7cce032"><div class="ttname"><a href="a00160.html#a0ddbf4e46aceb72a173e52d7d15e0c84a120d221fb10f57c9074ce90ac7cce032">mosq_md_out</a></div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00074">mosquitto_internal.h:74</a></div></div>
+<div class="ttc" id="a00159_html_a9a0714eb912755e4dc621c1e902c0bcf"><div class="ttname"><a href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a></div><div class="ttdeci">#define MOSQ_LOG_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00058">mosquitto.h:58</a></div></div>
+<div class="ttc" id="a00150_html_a2726154dadd99f6ec33dcd12266d4811"><div class="ttname"><a href="a00150.html#a2726154dadd99f6ec33dcd12266d4811">pthread_mutex_lock</a></div><div class="ttdeci">#define pthread_mutex_lock(A)</div><div class="ttdef"><b>Definition:</b> <a href="a00150_source.html#l00010">dummypthread.h:10</a></div></div>
+<div class="ttc" id="a00086_html_a5bb7a8d1ab1787cdec76e9cd5af5c01f"><div class="ttname"><a href="a00086.html#a5bb7a8d1ab1787cdec76e9cd5af5c01f">mosquitto::on_publish</a></div><div class="ttdeci">void(* on_publish)(struct mosquitto *, void *userdata, int mid)</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00247">mosquitto_internal.h:247</a></div></div>
+<div class="ttc" id="a00162_html_a01f59932d591f15b0376fd1f24a437e8"><div class="ttname"><a href="a00162.html#a01f59932d591f15b0376fd1f24a437e8">_mosquitto_read_uint16</a></div><div class="ttdeci">int _mosquitto_read_uint16(struct _mosquitto_packet *packet, uint16_t *word)</div><div class="ttdef"><b>Definition:</b> <a href="a00162_source.html#l00731">net_mosq.c:731</a></div></div>
+<div class="ttc" id="a00086_html_a8230ee1e4ed2fbbd2739e32116bfbf8f"><div class="ttname"><a href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">mosquitto::in_callback</a></div><div class="ttdeci">bool in_callback</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00238">mosquitto_internal.h:238</a></div></div>
+<div class="ttc" id="a00150_html_ac130da7532d3b537cbd31b46ea1112a3"><div class="ttname"><a href="a00150.html#ac130da7532d3b537cbd31b46ea1112a3">pthread_mutex_unlock</a></div><div class="ttdeci">#define pthread_mutex_unlock(A)</div><div class="ttdef"><b>Definition:</b> <a href="a00150_source.html#l00011">dummypthread.h:11</a></div></div>
+<div class="ttc" id="a00155_html_acd91f51fa239a0490db5f5cfcb1e2be7"><div class="ttname"><a href="a00155.html#acd91f51fa239a0490db5f5cfcb1e2be7">_mosquitto_message_delete</a></div><div class="ttdeci">int _mosquitto_message_delete(struct mosquitto *mosq, uint16_t mid, enum mosquitto_msg_direction dir)</div><div class="ttdef"><b>Definition:</b> <a href="a00155_source.html#l00083">messages_mosq.c:83</a></div></div>
+<div class="ttc" id="a00443_html_a37759e081882db58436303e92962515d"><div class="ttname"><a href="a00443.html#a37759e081882db58436303e92962515d">02-subpub-qos0.mid</a></div><div class="ttdeci">int mid</div><div class="ttdef"><b>Definition:</b> <a href="a00222_source.html#l00014">02-subpub-qos0.py:14</a></div></div>
+<div class="ttc" id="a00151_html_ab88a2fffe8ac34ae60e449e2e6ec506a"><div class="ttname"><a href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a></div><div class="ttdeci">int _mosquitto_log_printf(struct mosquitto *mosq, int priority, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="a00151_source.html#l00025">logging_mosq.c:25</a></div></div>
+<div class="ttc" id="a00086_html_a369673718987016a39c5e8ea6fdb3b95"><div class="ttname"><a href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">mosquitto::in_packet</a></div><div class="ttdeci">struct _mosquitto_packet in_packet</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00172">mosquitto_internal.h:172</a></div></div>
+<div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a2bc2f56777d402b0d6b80d522efd9a49"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a2bc2f56777d402b0d6b80d522efd9a49">MOSQ_ERR_NOT_FOUND</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00073">mosquitto.h:73</a></div></div>
+<div class="ttc" id="a00159_html_af42b074947ad51304b224e61307ff523"><div class="ttname"><a href="a00159.html#af42b074947ad51304b224e61307ff523">MOSQ_LOG_WARNING</a></div><div class="ttdeci">#define MOSQ_LOG_WARNING</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00056">mosquitto.h:56</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00169_a7d98465bd0a71f82092b31ff17cbad24_cgraph.png" border="0" usemap="#a00169_a7d98465bd0a71f82092b31ff17cbad24_cgraph" alt=""/></div>
+<map name="a00169_a7d98465bd0a71f82092b31ff17cbad24_cgraph" id="a00169_a7d98465bd0a71f82092b31ff17cbad24_cgraph">
+<area shape="rect" id="node2" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8" title="_mosquitto_read_uint16" alt="" coords="3325,1435,3485,1462"/>
+<area shape="rect" id="node3" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="3571,1536,3718,1563"/>
+<area shape="rect" id="node4" href="a00191.html#afd644b64d7bc7a0f7a06688a3aca8e4f" title="mqtt3_db_message_delete" alt="" coords="3315,2094,3494,2120"/>
+<area shape="rect" id="node6" href="a00155.html#acd91f51fa239a0490db5f5cfcb1e2be7" title="_mosquitto_message\l_delete" alt="" coords="265,1614,412,1656"/>
+<area shape="rect" id="node5" href="a00177.html#a9fb48d8f8ce208443e2e7bae489770fe" title="mosquitto_time" alt="" coords="3589,2220,3700,2247"/>
+<area shape="rect" id="node7" href="a00155.html#a6b113b8436762caeb1d53e384ea558b1" title="_mosquitto_message\l_remove" alt="" coords="460,1352,607,1393"/>
+<area shape="rect" id="node40" href="a00155.html#a6a97f20e0fac5e9ce65ce9bb207539ae" title="_mosquitto_message\l_cleanup" alt="" coords="3331,153,3478,194"/>
+<area shape="rect" id="node8" href="a00171.html#a7b111a5ceccb7bbc5fdadab085a33c03" title="_mosquitto_send_publish" alt="" coords="849,519,1019,546"/>
+<area shape="rect" id="node50" href="a00155.html#a3604f1572a4a0c4f7b94f63f32b5fdfb" title="_mosquitto_message\l_retry_check_actual" alt="" coords="655,972,801,1013"/>
+<area shape="rect" id="node9" href="a00159.html#abebbf4017c11827f1ac999082980cf2f" title="mosquitto_topic_matches_sub" alt="" coords="3305,422,3504,448"/>
+<area shape="rect" id="node10" href="a00153.html#ae6550bff1e45b4c074746b31f29ef537" title="_mosquitto_strdup" alt="" coords="3340,472,3469,499"/>
+<area shape="rect" id="node11" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="3791,346,3906,372"/>
+<area shape="rect" id="node12" href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="3339,523,3470,550"/>
+<area shape="rect" id="node13" href="a00171.html#aec1dbc12b0482663fdfbc95c13124bf3" title="_mosquitto_send_real\l_publish" alt="" coords="1067,576,1216,617"/>
+<area shape="rect" id="node14" href="a00153.html#a1ecbcb0ab8e51c000672d9d2bdf8172c" title="_mosquitto_calloc" alt="" coords="3785,882,3912,908"/>
+<area shape="rect" id="node15" href="a00181.html#a3c897feee454d60aec163e3bd0eab52e" title="_mosquitto_packet_alloc" alt="" coords="1264,688,1431,715"/>
+<area shape="rect" id="node24" href="a00162.html#ae1643651ecb33c5a8d5138851bcfd986" title="_mosquitto_packet_queue" alt="" coords="2151,1302,2325,1328"/>
+<area shape="rect" id="node46" href="a00162.html#a74c4a3cbe02bca478cb9621cca8191e8" title="_mosquitto_write_string" alt="" coords="1267,558,1427,584"/>
+<area shape="rect" id="node47" href="a00162.html#a73189d0cf764846d8b74fe2d4a55d79f" title="_mosquitto_write_uint16" alt="" coords="1493,507,1655,534"/>
+<area shape="rect" id="node49" href="a00162.html#a307413f45257069e76295c70a6d899d8" title="_mosquitto_write_bytes" alt="" coords="1494,558,1654,584"/>
+<area shape="rect" id="node16" href="a00524.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="1503,710,1645,752"/>
+<area shape="rect" id="node17" href="a00181.html#ae8314371001e5cbc7ed7f9c03efb3ca8" title="_mosquitto_check_keepalive" alt="" coords="1479,1403,1669,1430"/>
+<area shape="rect" id="node18" href="a00162.html#af8fce1657e21306ca1e448b75774ccfb" title="_mosquitto_socket_close" alt="" coords="2588,1382,2759,1408"/>
+<area shape="rect" id="node22" href="a00171.html#add1543fe2a0a0f158610a8e9f83c91bf" title="_mosquitto_send_pingreq" alt="" coords="1717,1302,1888,1328"/>
+<area shape="rect" id="node19" href="a00163.html#aba710f8004a961fbbc7b9a47952ca49a" title="_mosquitto_try_connect\l_step1" alt="" coords="2821,1470,2983,1512"/>
+<area shape="rect" id="node20" href="a00163.html#a6c7a52047909e92de2f75c334923500d" title="_mosquitto_try_connect\l_step2" alt="" coords="2821,1353,2983,1394"/>
+<area shape="rect" id="node21" href="a00162.html#a09dc43fbc8f662dd7f71b56937af5253" title="_mosquitto_socket_nonblock" alt="" coords="2807,1419,2997,1446"/>
+<area shape="rect" id="node23" href="a00171.html#a271c30997be399041e068b2ea604c6ec" title="_mosquitto_send_simple\l_command" alt="" coords="1936,761,2103,802"/>
+<area shape="rect" id="node25" href="a00162.html#a7554da94994edf7f11886ba9bd042e2f" title="_mosquitto_packet_write" alt="" coords="2373,1302,2540,1328"/>
+<area shape="rect" id="node26" href="a00162.html#ac25f5eedd4fdb5e35e32e9d0eaf7351f" title="_mosquitto_net_write" alt="" coords="2600,1663,2747,1690"/>
+<area shape="rect" id="node27" href="a00162.html#a1f5ae38a1ad0ff58a7c7aba084282cb5" title="_mosquitto_packet_cleanup" alt="" coords="2810,928,2994,955"/>
+<area shape="rect" id="node28" href="a00162.html#afab51e299ec6bfa4fcf4c9fb4860d2e0" title="_mosquitto_packet_read" alt="" coords="2591,1302,2755,1328"/>
+<area shape="rect" id="node29" href="a00162.html#a2c3799cccb12ac4785061599ff18e153" title="_mosquitto_net_read" alt="" coords="2831,1688,2973,1715"/>
+<area shape="rect" id="node30" href="a00196.html#a09d1e4a05c245369c22ecae0e8a42bfb" title="mqtt3_packet_handle" alt="" coords="2829,1302,2975,1328"/>
+<area shape="rect" id="node45" href="a00164.html#a907a402de77d5cd171278a02d026afc7" title="_mosquitto_packet_handle" alt="" coords="2813,1638,2991,1664"/>
+<area shape="rect" id="node31" href="a00166.html#a9d1c01afbdb0b171d789389b04285dae" title="_mosquitto_handle_pingreq" alt="" coords="3061,1638,3241,1664"/>
+<area shape="rect" id="node32" href="a00166.html#a8b0332f54846d87207a9f5c0b7c5213a" title="_mosquitto_handle_pingresp" alt="" coords="3058,1688,3245,1715"/>
+<area shape="rect" id="node33" href="a00166.html#a7d98465bd0a71f82092b31ff17cbad24" title="_mosquitto_handle_pubackcomp" alt="" coords="3045,1790,3257,1816"/>
+<area shape="rect" id="node34" href="a00165.html#ab73094667db8b9226ef81e7895b934f6" title="mqtt3_handle_publish" alt="" coords="3077,718,3225,744"/>
+<area shape="rect" id="node37" href="a00166.html#ad23085c99d7e0c4b83d3f0c3c95b6046" title="_mosquitto_handle_pubrec" alt="" coords="3063,1587,3240,1614"/>
+<area shape="rect" id="node39" href="a00166.html#a467343261ece717bef7eea433f48ee0d" title="_mosquitto_handle_pubrel" alt="" coords="3065,1478,3238,1504"/>
+<area shape="rect" id="node41" href="a00196.html#ab7f0afc1ca9700b58f5e6a817687d081" title="mqtt3_handle_connect" alt="" coords="3075,928,3228,955"/>
+<area shape="rect" id="node42" href="a00196.html#a1e6ad6e84cfeebd256ba58cd2553aca2" title="mqtt3_handle_disconnect" alt="" coords="3319,1486,3490,1512"/>
+<area shape="rect" id="node43" href="a00196.html#ad028e30a6047ea57b94d503668d6ea80" title="mqtt3_handle_subscribe" alt="" coords="3070,1302,3233,1328"/>
+<area shape="rect" id="node44" href="a00196.html#a2fb8082975605cecae2cd5e0a5789a13" title="mqtt3_handle_unsubscribe" alt="" coords="3063,1352,3240,1379"/>
+<area shape="rect" id="node35" href="a00171.html#a07fb7f8b0c76e21162abb92404ac8630" title="_mosquitto_send_pubrec" alt="" coords="3321,827,3488,854"/>
+<area shape="rect" id="node36" href="a00171.html#a45df200bf3b771869380b69c143ed251" title="_mosquitto_send_command\l_with_mid" alt="" coords="3552,820,3737,861"/>
+<area shape="rect" id="node38" href="a00171.html#afbde2c162bd4b8e9fa52b0d45aa43b81" title="_mosquitto_send_pubrel" alt="" coords="3323,1131,3486,1158"/>
+<area shape="rect" id="node48" href="a00162.html#adc64d22375628582aa20cb1f8e9435a3" title="_mosquitto_write_byte" alt="" coords="1726,507,1879,534"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad23085c99d7e0c4b83d3f0c3c95b6046"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _mosquitto_handle_pubrec </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="a00086.html">mosquitto</a> *&#160;</td>
+          <td class="paramname"><em>mosq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00169_source.html#l00099">99</a> of file <a class="el" href="a00169_source.html">read_handle_shared.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    uint16_t <a class="code" href="a00443.html#a37759e081882db58436303e92962515d">mid</a>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    assert(mosq);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    rc = <a class="code" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8">_mosquitto_read_uint16</a>(&amp;mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>, &amp;mid);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span>(rc) <span class="keywordflow">return</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#ifdef WITH_BROKER</span></div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Received PUBREC from %s (Mid: %d)&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>, mid);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    rc = <a class="code" href="a00191.html#a89e1a33a5ba53721bbb006eb9ff6c048">mqtt3_db_message_update</a>(mosq, mid, <a class="code" href="a00160.html#a0ddbf4e46aceb72a173e52d7d15e0c84a120d221fb10f57c9074ce90ac7cce032">mosq_md_out</a>, <a class="code" href="a00160.html#a0e031a82726a0816cbbe03bc4958a8eaa624a9a77ebc8789389ec5592e3425184">mosq_ms_wait_for_pubcomp</a>);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(mosq, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Client %s received PUBREC (Mid: %d)&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>, mid);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    rc = <a class="code" href="a00155.html#ab57363e22eb54533b1fb2be945c62217">_mosquitto_message_out_update</a>(mosq, mid, <a class="code" href="a00160.html#a0e031a82726a0816cbbe03bc4958a8eaa624a9a77ebc8789389ec5592e3425184">mosq_ms_wait_for_pubcomp</a>);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span>(rc == <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a2bc2f56777d402b0d6b80d522efd9a49">MOSQ_ERR_NOT_FOUND</a>){</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(mosq, <a class="code" href="a00159.html#af42b074947ad51304b224e61307ff523">MOSQ_LOG_WARNING</a>, <span class="stringliteral">&quot;Warning: Received PUBREC from %s for an unknown packet identifier %d.&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>, mid);</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(rc != <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a>){</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    rc = <a class="code" href="a00171.html#afbde2c162bd4b8e9fa52b0d45aa43b81">_mosquitto_send_pubrel</a>(mosq, mid);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">if</span>(rc) <span class="keywordflow">return</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a>;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div><div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00067">mosquitto.h:67</a></div></div>
+<div class="ttc" id="a00191_html_a89e1a33a5ba53721bbb006eb9ff6c048"><div class="ttname"><a href="a00191.html#a89e1a33a5ba53721bbb006eb9ff6c048">mqtt3_db_message_update</a></div><div class="ttdeci">int mqtt3_db_message_update(struct mosquitto *context, uint16_t mid, enum mosquitto_msg_direction dir, enum mosquitto_msg_state state)</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00470">database.c:470</a></div></div>
+<div class="ttc" id="a00086_html_a6c7e54cb56bc80a99cc96f4005166dcd"><div class="ttname"><a href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">mosquitto::id</a></div><div class="ttdeci">char * id</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00163">mosquitto_internal.h:163</a></div></div>
+<div class="ttc" id="a00427_html_a64b6ff859f6938c4b3c1d92ba0abe053"><div class="ttname"><a href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">01-connect-anon-denied.rc</a></div><div class="ttdeci">int rc</div><div class="ttdef"><b>Definition:</b> <a href="a00211_source.html#l00013">01-connect-anon-denied.py:13</a></div></div>
+<div class="ttc" id="a00160_html_a0e031a82726a0816cbbe03bc4958a8eaa624a9a77ebc8789389ec5592e3425184"><div class="ttname"><a href="a00160.html#a0e031a82726a0816cbbe03bc4958a8eaa624a9a77ebc8789389ec5592e3425184">mosq_ms_wait_for_pubcomp</a></div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00087">mosquitto_internal.h:87</a></div></div>
+<div class="ttc" id="a00160_html_a0ddbf4e46aceb72a173e52d7d15e0c84a120d221fb10f57c9074ce90ac7cce032"><div class="ttname"><a href="a00160.html#a0ddbf4e46aceb72a173e52d7d15e0c84a120d221fb10f57c9074ce90ac7cce032">mosq_md_out</a></div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00074">mosquitto_internal.h:74</a></div></div>
+<div class="ttc" id="a00155_html_ab57363e22eb54533b1fb2be945c62217"><div class="ttname"><a href="a00155.html#ab57363e22eb54533b1fb2be945c62217">_mosquitto_message_out_update</a></div><div class="ttdeci">int _mosquitto_message_out_update(struct mosquitto *mosq, uint16_t mid, enum mosquitto_msg_state state)</div><div class="ttdef"><b>Definition:</b> <a href="a00155_source.html#l00371">messages_mosq.c:371</a></div></div>
+<div class="ttc" id="a00159_html_a9a0714eb912755e4dc621c1e902c0bcf"><div class="ttname"><a href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a></div><div class="ttdeci">#define MOSQ_LOG_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00058">mosquitto.h:58</a></div></div>
+<div class="ttc" id="a00162_html_a01f59932d591f15b0376fd1f24a437e8"><div class="ttname"><a href="a00162.html#a01f59932d591f15b0376fd1f24a437e8">_mosquitto_read_uint16</a></div><div class="ttdeci">int _mosquitto_read_uint16(struct _mosquitto_packet *packet, uint16_t *word)</div><div class="ttdef"><b>Definition:</b> <a href="a00162_source.html#l00731">net_mosq.c:731</a></div></div>
+<div class="ttc" id="a00443_html_a37759e081882db58436303e92962515d"><div class="ttname"><a href="a00443.html#a37759e081882db58436303e92962515d">02-subpub-qos0.mid</a></div><div class="ttdeci">int mid</div><div class="ttdef"><b>Definition:</b> <a href="a00222_source.html#l00014">02-subpub-qos0.py:14</a></div></div>
+<div class="ttc" id="a00151_html_ab88a2fffe8ac34ae60e449e2e6ec506a"><div class="ttname"><a href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a></div><div class="ttdeci">int _mosquitto_log_printf(struct mosquitto *mosq, int priority, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="a00151_source.html#l00025">logging_mosq.c:25</a></div></div>
+<div class="ttc" id="a00086_html_a369673718987016a39c5e8ea6fdb3b95"><div class="ttname"><a href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">mosquitto::in_packet</a></div><div class="ttdeci">struct _mosquitto_packet in_packet</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00172">mosquitto_internal.h:172</a></div></div>
+<div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a2bc2f56777d402b0d6b80d522efd9a49"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a2bc2f56777d402b0d6b80d522efd9a49">MOSQ_ERR_NOT_FOUND</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00073">mosquitto.h:73</a></div></div>
+<div class="ttc" id="a00171_html_afbde2c162bd4b8e9fa52b0d45aa43b81"><div class="ttname"><a href="a00171.html#afbde2c162bd4b8e9fa52b0d45aa43b81">_mosquitto_send_pubrel</a></div><div class="ttdeci">int _mosquitto_send_pubrel(struct mosquitto *mosq, uint16_t mid)</div><div class="ttdef"><b>Definition:</b> <a href="a00171_source.html#l00189">send_mosq.c:189</a></div></div>
+<div class="ttc" id="a00159_html_af42b074947ad51304b224e61307ff523"><div class="ttname"><a href="a00159.html#af42b074947ad51304b224e61307ff523">MOSQ_LOG_WARNING</a></div><div class="ttdeci">#define MOSQ_LOG_WARNING</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00056">mosquitto.h:56</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00169_ad23085c99d7e0c4b83d3f0c3c95b6046_cgraph.png" border="0" usemap="#a00169_ad23085c99d7e0c4b83d3f0c3c95b6046_cgraph" alt=""/></div>
+<map name="a00169_ad23085c99d7e0c4b83d3f0c3c95b6046_cgraph" id="a00169_ad23085c99d7e0c4b83d3f0c3c95b6046_cgraph">
+<area shape="rect" id="node2" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8" title="_mosquitto_read_uint16" alt="" coords="2960,1675,3120,1702"/>
+<area shape="rect" id="node3" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="2967,940,3113,967"/>
+<area shape="rect" id="node4" href="a00191.html#a89e1a33a5ba53721bbb006eb9ff6c048" title="mqtt3_db_message_update" alt="" coords="2705,38,2888,64"/>
+<area shape="rect" id="node6" href="a00155.html#ab57363e22eb54533b1fb2be945c62217" title="_mosquitto_message\l_out_update" alt="" coords="2723,89,2870,130"/>
+<area shape="rect" id="node7" href="a00171.html#afbde2c162bd4b8e9fa52b0d45aa43b81" title="_mosquitto_send_pubrel" alt="" coords="231,231,393,258"/>
+<area shape="rect" id="node5" href="a00177.html#a9fb48d8f8ce208443e2e7bae489770fe" title="mosquitto_time" alt="" coords="3177,231,3288,258"/>
+<area shape="rect" id="node8" href="a00171.html#a45df200bf3b771869380b69c143ed251" title="_mosquitto_send_command\l_with_mid" alt="" coords="441,756,627,797"/>
+<area shape="rect" id="node9" href="a00153.html#a1ecbcb0ab8e51c000672d9d2bdf8172c" title="_mosquitto_calloc" alt="" coords="2733,814,2860,840"/>
+<area shape="rect" id="node10" href="a00181.html#a3c897feee454d60aec163e3bd0eab52e" title="_mosquitto_packet_alloc" alt="" coords="675,723,841,750"/>
+<area shape="rect" id="node16" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="2739,1928,2854,1955"/>
+<area shape="rect" id="node21" href="a00162.html#ae1643651ecb33c5a8d5138851bcfd986" title="_mosquitto_packet_queue" alt="" coords="1561,810,1736,836"/>
+<area shape="rect" id="node11" href="a00524.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="913,657,1056,698"/>
+<area shape="rect" id="node12" href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="2975,2055,3105,2082"/>
+<area shape="rect" id="node13" href="a00181.html#ae8314371001e5cbc7ed7f9c03efb3ca8" title="_mosquitto_check_keepalive" alt="" coords="889,459,1080,486"/>
+<area shape="rect" id="node14" href="a00162.html#af8fce1657e21306ca1e448b75774ccfb" title="_mosquitto_socket_close" alt="" coords="1999,830,2169,856"/>
+<area shape="rect" id="node19" href="a00171.html#add1543fe2a0a0f158610a8e9f83c91bf" title="_mosquitto_send_pingreq" alt="" coords="1128,459,1299,486"/>
+<area shape="rect" id="node15" href="a00163.html#aba710f8004a961fbbc7b9a47952ca49a" title="_mosquitto_try_connect\l_step1" alt="" coords="2232,830,2393,872"/>
+<area shape="rect" id="node17" href="a00163.html#a6c7a52047909e92de2f75c334923500d" title="_mosquitto_try_connect\l_step2" alt="" coords="2232,713,2393,754"/>
+<area shape="rect" id="node18" href="a00162.html#a09dc43fbc8f662dd7f71b56937af5253" title="_mosquitto_socket_nonblock" alt="" coords="2217,779,2408,806"/>
+<area shape="rect" id="node20" href="a00171.html#a271c30997be399041e068b2ea604c6ec" title="_mosquitto_send_simple\l_command" alt="" coords="1347,694,1513,736"/>
+<area shape="rect" id="node22" href="a00162.html#a7554da94994edf7f11886ba9bd042e2f" title="_mosquitto_packet_write" alt="" coords="1784,1362,1951,1388"/>
+<area shape="rect" id="node23" href="a00162.html#ac25f5eedd4fdb5e35e32e9d0eaf7351f" title="_mosquitto_net_write" alt="" coords="2011,611,2157,638"/>
+<area shape="rect" id="node24" href="a00162.html#a1f5ae38a1ad0ff58a7c7aba084282cb5" title="_mosquitto_packet_cleanup" alt="" coords="2221,1776,2405,1803"/>
+<area shape="rect" id="node25" href="a00162.html#afab51e299ec6bfa4fcf4c9fb4860d2e0" title="_mosquitto_packet_read" alt="" coords="2002,1362,2166,1388"/>
+<area shape="rect" id="node26" href="a00162.html#a2c3799cccb12ac4785061599ff18e153" title="_mosquitto_net_read" alt="" coords="2241,947,2384,974"/>
+<area shape="rect" id="node27" href="a00196.html#a09d1e4a05c245369c22ecae0e8a42bfb" title="mqtt3_packet_handle" alt="" coords="2239,1472,2386,1499"/>
+<area shape="rect" id="node48" href="a00164.html#a907a402de77d5cd171278a02d026afc7" title="_mosquitto_packet_handle" alt="" coords="2224,1200,2401,1227"/>
+<area shape="rect" id="node28" href="a00166.html#a9d1c01afbdb0b171d789389b04285dae" title="_mosquitto_handle_pingreq" alt="" coords="2459,1048,2639,1075"/>
+<area shape="rect" id="node30" href="a00166.html#a8b0332f54846d87207a9f5c0b7c5213a" title="_mosquitto_handle_pingresp" alt="" coords="2456,1254,2643,1280"/>
+<area shape="rect" id="node34" href="a00166.html#a7d98465bd0a71f82092b31ff17cbad24" title="_mosquitto_handle_pubackcomp" alt="" coords="2691,1523,2903,1550"/>
+<area shape="rect" id="node35" href="a00165.html#ab73094667db8b9226ef81e7895b934f6" title="mqtt3_handle_publish" alt="" coords="2475,2080,2623,2107"/>
+<area shape="rect" id="node39" href="a00166.html#ad23085c99d7e0c4b83d3f0c3c95b6046" title="_mosquitto_handle_pubrec" alt="" coords="2461,307,2638,334"/>
+<area shape="rect" id="node40" href="a00166.html#a467343261ece717bef7eea433f48ee0d" title="_mosquitto_handle_pubrel" alt="" coords="2710,1067,2883,1094"/>
+<area shape="rect" id="node41" href="a00196.html#ab7f0afc1ca9700b58f5e6a817687d081" title="mqtt3_handle_connect" alt="" coords="2473,1979,2626,2006"/>
+<area shape="rect" id="node42" href="a00196.html#a1e6ad6e84cfeebd256ba58cd2553aca2" title="mqtt3_handle_disconnect" alt="" coords="2464,1150,2635,1176"/>
+<area shape="rect" id="node43" href="a00196.html#ad028e30a6047ea57b94d503668d6ea80" title="mqtt3_handle_subscribe" alt="" coords="2468,1675,2631,1702"/>
+<area shape="rect" id="node44" href="a00196.html#a2fb8082975605cecae2cd5e0a5789a13" title="mqtt3_handle_unsubscribe" alt="" coords="2461,2030,2638,2056"/>
+<area shape="rect" id="node45" href="a00196.html#ad6b09e9305be77b254fbff1759f3c7c7" title="mqtt3_handle_connack" alt="" coords="2471,1624,2627,1651"/>
+<area shape="rect" id="node46" href="a00166.html#ac0e4ec24207865a6040b2e0b484b8bc8" title="_mosquitto_handle_suback" alt="" coords="2459,1574,2639,1600"/>
+<area shape="rect" id="node47" href="a00166.html#a006c0821c402b954b3665cd28a99e833" title="_mosquitto_handle_unsuback" alt="" coords="2699,1472,2894,1499"/>
+<area shape="rect" id="node29" href="a00171.html#afc621f5b30461d6e90cb0e13d8a8044a" title="_mosquitto_send_pingresp" alt="" coords="2708,611,2885,638"/>
+<area shape="rect" id="node31" href="a00169.html#a7d98465bd0a71f82092b31ff17cbad24" title="_mosquitto_handle_pubackcomp" alt="" coords="2691,1422,2903,1448"/>
+<area shape="rect" id="node32" href="a00191.html#afd644b64d7bc7a0f7a06688a3aca8e4f" title="mqtt3_db_message_delete" alt="" coords="2951,1480,3129,1507"/>
+<area shape="rect" id="node33" href="a00155.html#acd91f51fa239a0490db5f5cfcb1e2be7" title="_mosquitto_message\l_delete" alt="" coords="2967,1414,3113,1456"/>
+<area shape="rect" id="node36" href="a00162.html#a3f8290ea4ea68607b546aaac08a4d8d7" title="_mosquitto_read_string" alt="" coords="2718,2030,2875,2056"/>
+<area shape="rect" id="node37" href="a00159.html#abebbf4017c11827f1ac999082980cf2f" title="mosquitto_topic_matches_sub" alt="" coords="2697,2283,2896,2310"/>
+<area shape="rect" id="node38" href="a00153.html#ae6550bff1e45b4c074746b31f29ef537" title="_mosquitto_strdup" alt="" coords="2732,2182,2861,2208"/>
+<area shape="rect" id="node49" href="a00164.html#a819a75a1f9631089244fa64738731a17" title="_mosquitto_handle_publish" alt="" coords="2460,1099,2639,1126"/>
+<area shape="rect" id="node50" href="a00166.html#a455f01d5b31fc8090bc97c89c7849e91" title="_mosquitto_handle_connack" alt="" coords="2456,763,2643,790"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a467343261ece717bef7eea433f48ee0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _mosquitto_handle_pubrel </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="a00089.html">mosquitto_db</a> *&#160;</td>
+          <td class="paramname"><em>db</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="a00086.html">mosquitto</a> *&#160;</td>
+          <td class="paramname"><em>mosq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00169_source.html#l00127">127</a> of file <a class="el" href="a00169_source.html">read_handle_shared.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    uint16_t <a class="code" href="a00443.html#a37759e081882db58436303e92962515d">mid</a>;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#ifndef WITH_BROKER</span></div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">struct </span><a class="code" href="a00091.html">mosquitto_message_all</a> *message = NULL;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    assert(mosq);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span>(mosq-&gt;<a class="code" href="a00086.html#a63df5a9670ff1c1336edc45e9a9500d6">protocol</a> == <a class="code" href="a00160.html#a157834b9c1df5876b0fd037d3765807ba1936285f402b5d9e522879d2e5a039b4">mosq_p_mqtt311</a>){</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">if</span>((mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>.<a class="code" href="a00011.html#a42171b2c83d8c83babc555d32ef84f7f">command</a>&amp;0x0F) != 0x02){</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5ae3b280b8a7d893c462c4c171a31b64bd">MOSQ_ERR_PROTOCOL</a>;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    rc = <a class="code" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8">_mosquitto_read_uint16</a>(&amp;mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>, &amp;mid);</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">if</span>(rc) <span class="keywordflow">return</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#ifdef WITH_BROKER</span></div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Received PUBREL from %s (Mid: %d)&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>, mid);</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="a00191.html#ab17a596b2baedf8dace3f85db644b4ec">mqtt3_db_message_release</a>(db, mosq, mid, <a class="code" href="a00160.html#a0ddbf4e46aceb72a173e52d7d15e0c84a163ade994e1623a1a2d789c20cb95020">mosq_md_in</a>)){</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="comment">/* Message not found. Still send a PUBCOMP anyway because this could be</span></div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">         * due to a repeated PUBREL after a client has reconnected. */</span></div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(mosq, <a class="code" href="a00159.html#af42b074947ad51304b224e61307ff523">MOSQ_LOG_WARNING</a>, <span class="stringliteral">&quot;Warning: Received PUBREL from %s for an unknown packet identifier %d.&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>, mid);</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(mosq, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Client %s received PUBREL (Mid: %d)&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>, mid);</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="a00155.html#a6b113b8436762caeb1d53e384ea558b1">_mosquitto_message_remove</a>(mosq, mid, <a class="code" href="a00160.html#a0ddbf4e46aceb72a173e52d7d15e0c84a163ade994e1623a1a2d789c20cb95020">mosq_md_in</a>, &amp;message)){</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="comment">/* Only pass the message on if we have removed it from the queue - this</span></div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">         * prevents multiple callbacks for the same message. */</span></div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="a00150.html#a2726154dadd99f6ec33dcd12266d4811">pthread_mutex_lock</a>(&amp;mosq-&gt;callback_mutex);</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span>(mosq-&gt;<a class="code" href="a00086.html#a6e1f53254eade8d90771b1cba0e47f55">on_message</a>){</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            mosq-&gt;<a class="code" href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">in_callback</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            mosq-&gt;<a class="code" href="a00086.html#a6e1f53254eade8d90771b1cba0e47f55">on_message</a>(mosq, mosq-&gt;<a class="code" href="a00086.html#a3603e0befb1a5692e434de7757fec986">userdata</a>, &amp;message-&gt;<a class="code" href="a00091.html#adce2e408796b722d62196a3cbca38067">msg</a>);</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            mosq-&gt;<a class="code" href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">in_callback</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="a00150.html#ac130da7532d3b537cbd31b46ea1112a3">pthread_mutex_unlock</a>(&amp;mosq-&gt;callback_mutex);</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="a00155.html#a6a97f20e0fac5e9ce65ce9bb207539ae">_mosquitto_message_cleanup</a>(&amp;message);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    rc = <a class="code" href="a00171.html#aaeba60c4fd6e50c8f7f599246c6f91fb">_mosquitto_send_pubcomp</a>(mosq, mid);</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span>(rc) <span class="keywordflow">return</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a>;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div><div class="ttc" id="a00091_html"><div class="ttname"><a href="a00091.html">mosquitto_message_all</a></div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00144">mosquitto_internal.h:144</a></div></div>
+<div class="ttc" id="a00086_html_a63df5a9670ff1c1336edc45e9a9500d6"><div class="ttname"><a href="a00086.html#a63df5a9670ff1c1336edc45e9a9500d6">mosquitto::protocol</a></div><div class="ttdeci">enum _mosquitto_protocol protocol</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00161">mosquitto_internal.h:161</a></div></div>
+<div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00067">mosquitto.h:67</a></div></div>
+<div class="ttc" id="a00086_html_a3603e0befb1a5692e434de7757fec986"><div class="ttname"><a href="a00086.html#a3603e0befb1a5692e434de7757fec986">mosquitto::userdata</a></div><div class="ttdeci">void * userdata</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00237">mosquitto_internal.h:237</a></div></div>
+<div class="ttc" id="a00171_html_aaeba60c4fd6e50c8f7f599246c6f91fb"><div class="ttname"><a href="a00171.html#aaeba60c4fd6e50c8f7f599246c6f91fb">_mosquitto_send_pubcomp</a></div><div class="ttdeci">int _mosquitto_send_pubcomp(struct mosquitto *mosq, uint16_t mid)</div><div class="ttdef"><b>Definition:</b> <a href="a00171_source.html#l00074">send_mosq.c:74</a></div></div>
+<div class="ttc" id="a00191_html_ab17a596b2baedf8dace3f85db644b4ec"><div class="ttname"><a href="a00191.html#ab17a596b2baedf8dace3f85db644b4ec">mqtt3_db_message_release</a></div><div class="ttdeci">int mqtt3_db_message_release(struct mosquitto_db *db, struct mosquitto *context, uint16_t mid, enum mosquitto_msg_direction dir)</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00743">database.c:743</a></div></div>
+<div class="ttc" id="a00086_html_a6c7e54cb56bc80a99cc96f4005166dcd"><div class="ttname"><a href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">mosquitto::id</a></div><div class="ttdeci">char * id</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00163">mosquitto_internal.h:163</a></div></div>
+<div class="ttc" id="a00011_html_a42171b2c83d8c83babc555d32ef84f7f"><div class="ttname"><a href="a00011.html#a42171b2c83d8c83babc555d32ef84f7f">_mosquitto_packet::command</a></div><div class="ttdeci">uint8_t command</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00140">mosquitto_internal.h:140</a></div></div>
+<div class="ttc" id="a00427_html_a64b6ff859f6938c4b3c1d92ba0abe053"><div class="ttname"><a href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">01-connect-anon-denied.rc</a></div><div class="ttdeci">int rc</div><div class="ttdef"><b>Definition:</b> <a href="a00211_source.html#l00013">01-connect-anon-denied.py:13</a></div></div>
+<div class="ttc" id="a00086_html_a6e1f53254eade8d90771b1cba0e47f55"><div class="ttname"><a href="a00086.html#a6e1f53254eade8d90771b1cba0e47f55">mosquitto::on_message</a></div><div class="ttdeci">void(* on_message)(struct mosquitto *, void *userdata, const struct mosquitto_message *message)</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00248">mosquitto_internal.h:248</a></div></div>
+<div class="ttc" id="a00160_html_a157834b9c1df5876b0fd037d3765807ba1936285f402b5d9e522879d2e5a039b4"><div class="ttname"><a href="a00160.html#a157834b9c1df5876b0fd037d3765807ba1936285f402b5d9e522879d2e5a039b4">mosq_p_mqtt311</a></div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00114">mosquitto_internal.h:114</a></div></div>
+<div class="ttc" id="a00159_html_a9a0714eb912755e4dc621c1e902c0bcf"><div class="ttname"><a href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a></div><div class="ttdeci">#define MOSQ_LOG_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00058">mosquitto.h:58</a></div></div>
+<div class="ttc" id="a00150_html_a2726154dadd99f6ec33dcd12266d4811"><div class="ttname"><a href="a00150.html#a2726154dadd99f6ec33dcd12266d4811">pthread_mutex_lock</a></div><div class="ttdeci">#define pthread_mutex_lock(A)</div><div class="ttdef"><b>Definition:</b> <a href="a00150_source.html#l00010">dummypthread.h:10</a></div></div>
+<div class="ttc" id="a00162_html_a01f59932d591f15b0376fd1f24a437e8"><div class="ttname"><a href="a00162.html#a01f59932d591f15b0376fd1f24a437e8">_mosquitto_read_uint16</a></div><div class="ttdeci">int _mosquitto_read_uint16(struct _mosquitto_packet *packet, uint16_t *word)</div><div class="ttdef"><b>Definition:</b> <a href="a00162_source.html#l00731">net_mosq.c:731</a></div></div>
+<div class="ttc" id="a00086_html_a8230ee1e4ed2fbbd2739e32116bfbf8f"><div class="ttname"><a href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">mosquitto::in_callback</a></div><div class="ttdeci">bool in_callback</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00238">mosquitto_internal.h:238</a></div></div>
+<div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5ae3b280b8a7d893c462c4c171a31b64bd"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5ae3b280b8a7d893c462c4c171a31b64bd">MOSQ_ERR_PROTOCOL</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00069">mosquitto.h:69</a></div></div>
+<div class="ttc" id="a00091_html_adce2e408796b722d62196a3cbca38067"><div class="ttname"><a href="a00091.html#adce2e408796b722d62196a3cbca38067">mosquitto_message_all::msg</a></div><div class="ttdeci">struct mosquitto_message msg</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00150">mosquitto_internal.h:150</a></div></div>
+<div class="ttc" id="a00150_html_ac130da7532d3b537cbd31b46ea1112a3"><div class="ttname"><a href="a00150.html#ac130da7532d3b537cbd31b46ea1112a3">pthread_mutex_unlock</a></div><div class="ttdeci">#define pthread_mutex_unlock(A)</div><div class="ttdef"><b>Definition:</b> <a href="a00150_source.html#l00011">dummypthread.h:11</a></div></div>
+<div class="ttc" id="a00155_html_a6a97f20e0fac5e9ce65ce9bb207539ae"><div class="ttname"><a href="a00155.html#a6a97f20e0fac5e9ce65ce9bb207539ae">_mosquitto_message_cleanup</a></div><div class="ttdeci">void _mosquitto_message_cleanup(struct mosquitto_message_all **message)</div><div class="ttdef"><b>Definition:</b> <a href="a00155_source.html#l00028">messages_mosq.c:28</a></div></div>
+<div class="ttc" id="a00443_html_a37759e081882db58436303e92962515d"><div class="ttname"><a href="a00443.html#a37759e081882db58436303e92962515d">02-subpub-qos0.mid</a></div><div class="ttdeci">int mid</div><div class="ttdef"><b>Definition:</b> <a href="a00222_source.html#l00014">02-subpub-qos0.py:14</a></div></div>
+<div class="ttc" id="a00160_html_a0ddbf4e46aceb72a173e52d7d15e0c84a163ade994e1623a1a2d789c20cb95020"><div class="ttname"><a href="a00160.html#a0ddbf4e46aceb72a173e52d7d15e0c84a163ade994e1623a1a2d789c20cb95020">mosq_md_in</a></div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00073">mosquitto_internal.h:73</a></div></div>
+<div class="ttc" id="a00151_html_ab88a2fffe8ac34ae60e449e2e6ec506a"><div class="ttname"><a href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a></div><div class="ttdeci">int _mosquitto_log_printf(struct mosquitto *mosq, int priority, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="a00151_source.html#l00025">logging_mosq.c:25</a></div></div>
+<div class="ttc" id="a00086_html_a369673718987016a39c5e8ea6fdb3b95"><div class="ttname"><a href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">mosquitto::in_packet</a></div><div class="ttdeci">struct _mosquitto_packet in_packet</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00172">mosquitto_internal.h:172</a></div></div>
+<div class="ttc" id="a00155_html_a6b113b8436762caeb1d53e384ea558b1"><div class="ttname"><a href="a00155.html#a6b113b8436762caeb1d53e384ea558b1">_mosquitto_message_remove</a></div><div class="ttdeci">int _mosquitto_message_remove(struct mosquitto *mosq, uint16_t mid, enum mosquitto_msg_direction dir, struct mosquitto_message_all **message)</div><div class="ttdef"><b>Definition:</b> <a href="a00155_source.html#l00214">messages_mosq.c:214</a></div></div>
+<div class="ttc" id="a00159_html_af42b074947ad51304b224e61307ff523"><div class="ttname"><a href="a00159.html#af42b074947ad51304b224e61307ff523">MOSQ_LOG_WARNING</a></div><div class="ttdeci">#define MOSQ_LOG_WARNING</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00056">mosquitto.h:56</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00169_a467343261ece717bef7eea433f48ee0d_cgraph.png" border="0" usemap="#a00169_a467343261ece717bef7eea433f48ee0d_cgraph" alt=""/></div>
+<map name="a00169_a467343261ece717bef7eea433f48ee0d_cgraph" id="a00169_a467343261ece717bef7eea433f48ee0d_cgraph">
+<area shape="rect" id="node2" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8" title="_mosquitto_read_uint16" alt="" coords="3419,1175,3579,1202"/>
+<area shape="rect" id="node3" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="3661,1454,3807,1481"/>
+<area shape="rect" id="node4" href="a00191.html#ab17a596b2baedf8dace3f85db644b4ec" title="mqtt3_db_message_release" alt="" coords="227,665,412,691"/>
+<area shape="rect" id="node39" href="a00155.html#a6b113b8436762caeb1d53e384ea558b1" title="_mosquitto_message\l_remove" alt="" coords="2967,1067,3113,1108"/>
+<area shape="rect" id="node47" href="a00155.html#a6a97f20e0fac5e9ce65ce9bb207539ae" title="_mosquitto_message\l_cleanup" alt="" coords="2967,295,3113,336"/>
+<area shape="rect" id="node48" href="a00171.html#aaeba60c4fd6e50c8f7f599246c6f91fb" title="_mosquitto_send_pubcomp" alt="" coords="2949,2154,3131,2181"/>
+<area shape="rect" id="node5" href="a00177.html#a9fb48d8f8ce208443e2e7bae489770fe" title="mosquitto_time" alt="" coords="3444,1875,3555,1902"/>
+<area shape="rect" id="node6" href="a00171.html#a07fb7f8b0c76e21162abb92404ac8630" title="_mosquitto_send_pubrec" alt="" coords="460,1795,627,1822"/>
+<area shape="rect" id="node33" href="a00196.html#a7a90d0b3b46b09f07e3fa99074e80eca" title="mqtt3_db_messages_queue" alt="" coords="3179,358,3364,385"/>
+<area shape="rect" id="node7" href="a00171.html#a45df200bf3b771869380b69c143ed251" title="_mosquitto_send_command\l_with_mid" alt="" coords="675,1788,860,1829"/>
+<area shape="rect" id="node8" href="a00153.html#a1ecbcb0ab8e51c000672d9d2bdf8172c" title="_mosquitto_calloc" alt="" coords="3898,46,4025,73"/>
+<area shape="rect" id="node9" href="a00181.html#a3c897feee454d60aec163e3bd0eab52e" title="_mosquitto_packet_alloc" alt="" coords="908,1610,1075,1637"/>
+<area shape="rect" id="node15" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="3904,517,4019,543"/>
+<area shape="rect" id="node20" href="a00162.html#ae1643651ecb33c5a8d5138851bcfd986" title="_mosquitto_packet_queue" alt="" coords="1795,1003,1969,1030"/>
+<area shape="rect" id="node10" href="a00524.html#a1a90c42e436a349a4c5dd9a39a015644" title="mosq_test.remaining\l_length" alt="" coords="1147,1573,1289,1615"/>
+<area shape="rect" id="node11" href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="3669,669,3799,695"/>
+<area shape="rect" id="node12" href="a00181.html#ae8314371001e5cbc7ed7f9c03efb3ca8" title="_mosquitto_check_keepalive" alt="" coords="1123,1639,1313,1666"/>
+<area shape="rect" id="node13" href="a00162.html#af8fce1657e21306ca1e448b75774ccfb" title="_mosquitto_socket_close" alt="" coords="2232,941,2403,967"/>
+<area shape="rect" id="node18" href="a00171.html#add1543fe2a0a0f158610a8e9f83c91bf" title="_mosquitto_send_pingreq" alt="" coords="1361,943,1532,970"/>
+<area shape="rect" id="node14" href="a00163.html#aba710f8004a961fbbc7b9a47952ca49a" title="_mosquitto_try_connect\l_step1" alt="" coords="2465,923,2627,964"/>
+<area shape="rect" id="node16" href="a00163.html#a6c7a52047909e92de2f75c334923500d" title="_mosquitto_try_connect\l_step2" alt="" coords="2465,988,2627,1029"/>
+<area shape="rect" id="node17" href="a00162.html#a09dc43fbc8f662dd7f71b56937af5253" title="_mosquitto_socket_nonblock" alt="" coords="2451,871,2641,898"/>
+<area shape="rect" id="node19" href="a00171.html#a271c30997be399041e068b2ea604c6ec" title="_mosquitto_send_simple\l_command" alt="" coords="1580,700,1747,741"/>
+<area shape="rect" id="node21" href="a00162.html#a7554da94994edf7f11886ba9bd042e2f" title="_mosquitto_packet_write" alt="" coords="2017,1155,2184,1182"/>
+<area shape="rect" id="node22" href="a00162.html#ac25f5eedd4fdb5e35e32e9d0eaf7351f" title="_mosquitto_net_write" alt="" coords="2244,1477,2391,1503"/>
+<area shape="rect" id="node23" href="a00162.html#a1f5ae38a1ad0ff58a7c7aba084282cb5" title="_mosquitto_packet_cleanup" alt="" coords="2454,1155,2638,1182"/>
+<area shape="rect" id="node24" href="a00162.html#afab51e299ec6bfa4fcf4c9fb4860d2e0" title="_mosquitto_packet_read" alt="" coords="2235,1257,2399,1283"/>
+<area shape="rect" id="node25" href="a00162.html#a2c3799cccb12ac4785061599ff18e153" title="_mosquitto_net_read" alt="" coords="2724,1249,2867,1275"/>
+<area shape="rect" id="node26" href="a00196.html#a09d1e4a05c245369c22ecae0e8a42bfb" title="mqtt3_packet_handle" alt="" coords="2473,1317,2619,1343"/>
+<area shape="rect" id="node50" href="a00164.html#a907a402de77d5cd171278a02d026afc7" title="_mosquitto_packet_handle" alt="" coords="2457,1445,2635,1471"/>
+<area shape="rect" id="node27" href="a00166.html#a9d1c01afbdb0b171d789389b04285dae" title="_mosquitto_handle_pingreq" alt="" coords="2705,1445,2885,1471"/>
+<area shape="rect" id="node28" href="a00166.html#a8b0332f54846d87207a9f5c0b7c5213a" title="_mosquitto_handle_pingresp" alt="" coords="2702,1495,2889,1522"/>
+<area shape="rect" id="node29" href="a00166.html#a7d98465bd0a71f82092b31ff17cbad24" title="_mosquitto_handle_pubackcomp" alt="" coords="2689,1334,2901,1361"/>
+<area shape="rect" id="node30" href="a00165.html#ab73094667db8b9226ef81e7895b934f6" title="mqtt3_handle_publish" alt="" coords="2966,694,3114,721"/>
+<area shape="rect" id="node36" href="a00166.html#ad23085c99d7e0c4b83d3f0c3c95b6046" title="_mosquitto_handle_pubrec" alt="" coords="3183,1429,3360,1455"/>
+<area shape="rect" id="node38" href="a00166.html#a467343261ece717bef7eea433f48ee0d" title="_mosquitto_handle_pubrel" alt="" coords="2709,1158,2882,1185"/>
+<area shape="rect" id="node49" href="a00196.html#ab7f0afc1ca9700b58f5e6a817687d081" title="mqtt3_handle_connect" alt="" coords="3195,821,3348,847"/>
+<area shape="rect" id="node31" href="a00159.html#abebbf4017c11827f1ac999082980cf2f" title="mosquitto_topic_matches_sub" alt="" coords="3635,795,3833,822"/>
+<area shape="rect" id="node32" href="a00153.html#ae6550bff1e45b4c074746b31f29ef537" title="_mosquitto_strdup" alt="" coords="3669,871,3799,898"/>
+<area shape="rect" id="node34" href="a00191.html#af19cbc47cd971cdb22e9f48566bb3e68" title="mosquitto__db_msg_store\l_deref" alt="" coords="3412,349,3587,391"/>
+<area shape="rect" id="node35" href="a00191.html#a0cdc24cdccc64a0e398b093e2a1bf1b3" title="mosquitto__db_msg_store\l_remove" alt="" coords="3647,325,3821,367"/>
+<area shape="rect" id="node37" href="a00171.html#afbde2c162bd4b8e9fa52b0d45aa43b81" title="_mosquitto_send_pubrel" alt="" coords="3418,1534,3581,1561"/>
+<area shape="rect" id="node40" href="a00171.html#a7b111a5ceccb7bbc5fdadab085a33c03" title="_mosquitto_send_publish" alt="" coords="3415,1023,3584,1050"/>
+<area shape="rect" id="node46" href="a00155.html#a3604f1572a4a0c4f7b94f63f32b5fdfb" title="_mosquitto_message\l_retry_check_actual" alt="" coords="3198,1531,3345,1572"/>
+<area shape="rect" id="node41" href="a00171.html#aec1dbc12b0482663fdfbc95c13124bf3" title="_mosquitto_send_real\l_publish" alt="" coords="3659,1505,3809,1547"/>
+<area shape="rect" id="node42" href="a00162.html#a74c4a3cbe02bca478cb9621cca8191e8" title="_mosquitto_write_string" alt="" coords="3881,1513,4041,1539"/>
+<area shape="rect" id="node43" href="a00162.html#a73189d0cf764846d8b74fe2d4a55d79f" title="_mosquitto_write_uint16" alt="" coords="4089,1487,4252,1514"/>
+<area shape="rect" id="node45" href="a00162.html#a307413f45257069e76295c70a6d899d8" title="_mosquitto_write_bytes" alt="" coords="4091,1538,4251,1565"/>
+<area shape="rect" id="node44" href="a00162.html#adc64d22375628582aa20cb1f8e9435a3" title="_mosquitto_write_byte" alt="" coords="4300,1487,4453,1514"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0e4ec24207865a6040b2e0b484b8bc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _mosquitto_handle_suback </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="a00086.html">mosquitto</a> *&#160;</td>
+          <td class="paramname"><em>mosq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00169_source.html#l00173">173</a> of file <a class="el" href="a00169_source.html">read_handle_shared.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    uint16_t <a class="code" href="a00443.html#a37759e081882db58436303e92962515d">mid</a>;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    uint8_t qos;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">int</span> *granted_qos;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">int</span> qos_count;</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">int</span> i = 0;</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    assert(mosq);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#ifdef WITH_BROKER</span></div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Received SUBACK from %s&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>);</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(mosq, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Client %s received SUBACK&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>);</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    rc = <a class="code" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8">_mosquitto_read_uint16</a>(&amp;mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>, &amp;mid);</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">if</span>(rc) <span class="keywordflow">return</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    qos_count = mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>.<a class="code" href="a00011.html#a5616fcfbaf0e409e06b1c857c940471a">remaining_length</a> - mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>.<a class="code" href="a00011.html#aee3849504ce401add5fdf9235541f274">pos</a>;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    granted_qos = <a class="code" href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e">_mosquitto_malloc</a>(qos_count*<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">if</span>(!granted_qos) <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a5a7098f2f59ec49126110b033c934ba6">MOSQ_ERR_NOMEM</a>;</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">while</span>(mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>.<a class="code" href="a00011.html#aee3849504ce401add5fdf9235541f274">pos</a> &lt; mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>.<a class="code" href="a00011.html#a5616fcfbaf0e409e06b1c857c940471a">remaining_length</a>){</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        rc = <a class="code" href="a00162.html#aa0425b094c40c000e3bdcef6c2766fc1">_mosquitto_read_byte</a>(&amp;mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>, &amp;qos);</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span>(rc){</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <a class="code" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae">_mosquitto_free</a>(granted_qos);</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        granted_qos[i] = (int)qos;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        i++;</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#ifndef WITH_BROKER</span></div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="a00150.html#a2726154dadd99f6ec33dcd12266d4811">pthread_mutex_lock</a>(&amp;mosq-&gt;callback_mutex);</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span>(mosq-&gt;<a class="code" href="a00086.html#ad3445bc44de8cd6a36cc518835ee7068">on_subscribe</a>){</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        mosq-&gt;<a class="code" href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">in_callback</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        mosq-&gt;<a class="code" href="a00086.html#ad3445bc44de8cd6a36cc518835ee7068">on_subscribe</a>(mosq, mosq-&gt;<a class="code" href="a00086.html#a3603e0befb1a5692e434de7757fec986">userdata</a>, mid, qos_count, granted_qos);</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        mosq-&gt;<a class="code" href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">in_callback</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="a00150.html#ac130da7532d3b537cbd31b46ea1112a3">pthread_mutex_unlock</a>(&amp;mosq-&gt;callback_mutex);</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <a class="code" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae">_mosquitto_free</a>(granted_qos);</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a>;</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div><div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00067">mosquitto.h:67</a></div></div>
+<div class="ttc" id="a00086_html_a3603e0befb1a5692e434de7757fec986"><div class="ttname"><a href="a00086.html#a3603e0befb1a5692e434de7757fec986">mosquitto::userdata</a></div><div class="ttdeci">void * userdata</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00237">mosquitto_internal.h:237</a></div></div>
+<div class="ttc" id="a00011_html_aee3849504ce401add5fdf9235541f274"><div class="ttname"><a href="a00011.html#aee3849504ce401add5fdf9235541f274">_mosquitto_packet::pos</a></div><div class="ttdeci">uint32_t pos</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00138">mosquitto_internal.h:138</a></div></div>
+<div class="ttc" id="a00153_html_a1d3fe4692d190d384133af9cfb8019ae"><div class="ttname"><a href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae">_mosquitto_free</a></div><div class="ttdeci">void _mosquitto_free(void *mem)</div><div class="ttdef"><b>Definition:</b> <a href="a00153_source.html#l00054">memory_mosq.c:54</a></div></div>
+<div class="ttc" id="a00162_html_aa0425b094c40c000e3bdcef6c2766fc1"><div class="ttname"><a href="a00162.html#aa0425b094c40c000e3bdcef6c2766fc1">_mosquitto_read_byte</a></div><div class="ttdeci">int _mosquitto_read_byte(struct _mosquitto_packet *packet, uint8_t *byte)</div><div class="ttdef"><b>Definition:</b> <a href="a00162_source.html#l00661">net_mosq.c:661</a></div></div>
+<div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a5a7098f2f59ec49126110b033c934ba6"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a5a7098f2f59ec49126110b033c934ba6">MOSQ_ERR_NOMEM</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00068">mosquitto.h:68</a></div></div>
+<div class="ttc" id="a00086_html_a6c7e54cb56bc80a99cc96f4005166dcd"><div class="ttname"><a href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">mosquitto::id</a></div><div class="ttdeci">char * id</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00163">mosquitto_internal.h:163</a></div></div>
+<div class="ttc" id="a00427_html_a64b6ff859f6938c4b3c1d92ba0abe053"><div class="ttname"><a href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">01-connect-anon-denied.rc</a></div><div class="ttdeci">int rc</div><div class="ttdef"><b>Definition:</b> <a href="a00211_source.html#l00013">01-connect-anon-denied.py:13</a></div></div>
+<div class="ttc" id="a00159_html_a9a0714eb912755e4dc621c1e902c0bcf"><div class="ttname"><a href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a></div><div class="ttdeci">#define MOSQ_LOG_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00058">mosquitto.h:58</a></div></div>
+<div class="ttc" id="a00150_html_a2726154dadd99f6ec33dcd12266d4811"><div class="ttname"><a href="a00150.html#a2726154dadd99f6ec33dcd12266d4811">pthread_mutex_lock</a></div><div class="ttdeci">#define pthread_mutex_lock(A)</div><div class="ttdef"><b>Definition:</b> <a href="a00150_source.html#l00010">dummypthread.h:10</a></div></div>
+<div class="ttc" id="a00162_html_a01f59932d591f15b0376fd1f24a437e8"><div class="ttname"><a href="a00162.html#a01f59932d591f15b0376fd1f24a437e8">_mosquitto_read_uint16</a></div><div class="ttdeci">int _mosquitto_read_uint16(struct _mosquitto_packet *packet, uint16_t *word)</div><div class="ttdef"><b>Definition:</b> <a href="a00162_source.html#l00731">net_mosq.c:731</a></div></div>
+<div class="ttc" id="a00086_html_a8230ee1e4ed2fbbd2739e32116bfbf8f"><div class="ttname"><a href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">mosquitto::in_callback</a></div><div class="ttdeci">bool in_callback</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00238">mosquitto_internal.h:238</a></div></div>
+<div class="ttc" id="a00153_html_af77494a3afe6d474b2cedb3b9a99283e"><div class="ttname"><a href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e">_mosquitto_malloc</a></div><div class="ttdeci">void * _mosquitto_malloc(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="a00153_source.html#l00065">memory_mosq.c:65</a></div></div>
+<div class="ttc" id="a00150_html_ac130da7532d3b537cbd31b46ea1112a3"><div class="ttname"><a href="a00150.html#ac130da7532d3b537cbd31b46ea1112a3">pthread_mutex_unlock</a></div><div class="ttdeci">#define pthread_mutex_unlock(A)</div><div class="ttdef"><b>Definition:</b> <a href="a00150_source.html#l00011">dummypthread.h:11</a></div></div>
+<div class="ttc" id="a00086_html_ad3445bc44de8cd6a36cc518835ee7068"><div class="ttname"><a href="a00086.html#ad3445bc44de8cd6a36cc518835ee7068">mosquitto::on_subscribe</a></div><div class="ttdeci">void(* on_subscribe)(struct mosquitto *, void *userdata, int mid, int qos_count, const int *granted_qos)</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00249">mosquitto_internal.h:249</a></div></div>
+<div class="ttc" id="a00443_html_a37759e081882db58436303e92962515d"><div class="ttname"><a href="a00443.html#a37759e081882db58436303e92962515d">02-subpub-qos0.mid</a></div><div class="ttdeci">int mid</div><div class="ttdef"><b>Definition:</b> <a href="a00222_source.html#l00014">02-subpub-qos0.py:14</a></div></div>
+<div class="ttc" id="a00151_html_ab88a2fffe8ac34ae60e449e2e6ec506a"><div class="ttname"><a href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a></div><div class="ttdeci">int _mosquitto_log_printf(struct mosquitto *mosq, int priority, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="a00151_source.html#l00025">logging_mosq.c:25</a></div></div>
+<div class="ttc" id="a00011_html_a5616fcfbaf0e409e06b1c857c940471a"><div class="ttname"><a href="a00011.html#a5616fcfbaf0e409e06b1c857c940471a">_mosquitto_packet::remaining_length</a></div><div class="ttdeci">uint32_t remaining_length</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00135">mosquitto_internal.h:135</a></div></div>
+<div class="ttc" id="a00086_html_a369673718987016a39c5e8ea6fdb3b95"><div class="ttname"><a href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">mosquitto::in_packet</a></div><div class="ttdeci">struct _mosquitto_packet in_packet</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00172">mosquitto_internal.h:172</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00169_ac0e4ec24207865a6040b2e0b484b8bc8_cgraph.png" border="0" usemap="#a00169_ac0e4ec24207865a6040b2e0b484b8bc8_cgraph" alt=""/></div>
+<map name="a00169_ac0e4ec24207865a6040b2e0b484b8bc8_cgraph" id="a00169_ac0e4ec24207865a6040b2e0b484b8bc8_cgraph">
+<area shape="rect" id="node2" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="240,5,387,32"/>
+<area shape="rect" id="node3" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8" title="_mosquitto_read_uint16" alt="" coords="233,56,393,83"/>
+<area shape="rect" id="node4" href="a00153.html#af77494a3afe6d474b2cedb3b9a99283e" title="_mosquitto_malloc" alt="" coords="248,107,379,133"/>
+<area shape="rect" id="node5" href="a00162.html#aa0425b094c40c000e3bdcef6c2766fc1" title="_mosquitto_read_byte" alt="" coords="238,157,389,184"/>
+<area shape="rect" id="node6" href="a00153.html#a1d3fe4692d190d384133af9cfb8019ae" title="_mosquitto_free" alt="" coords="256,208,371,235"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a006c0821c402b954b3665cd28a99e833"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _mosquitto_handle_unsuback </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="a00086.html">mosquitto</a> *&#160;</td>
+          <td class="paramname"><em>mosq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="a00169_source.html#l00217">217</a> of file <a class="el" href="a00169_source.html">read_handle_shared.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    uint16_t <a class="code" href="a00443.html#a37759e081882db58436303e92962515d">mid</a>;</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    assert(mosq);</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#ifdef WITH_BROKER</span></div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(NULL, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Received UNSUBACK from %s&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>);</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a>(mosq, <a class="code" href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a>, <span class="stringliteral">&quot;Client %s received UNSUBACK&quot;</span>, mosq-&gt;<a class="code" href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">id</a>);</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    rc = <a class="code" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8">_mosquitto_read_uint16</a>(&amp;mosq-&gt;<a class="code" href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">in_packet</a>, &amp;mid);</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span>(rc) <span class="keywordflow">return</span> <a class="code" href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">rc</a>;</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#ifndef WITH_BROKER</span></div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="a00150.html#a2726154dadd99f6ec33dcd12266d4811">pthread_mutex_lock</a>(&amp;mosq-&gt;callback_mutex);</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">if</span>(mosq-&gt;<a class="code" href="a00086.html#af21214b472d6e0729168daceec8a7b71">on_unsubscribe</a>){</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        mosq-&gt;<a class="code" href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">in_callback</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        mosq-&gt;<a class="code" href="a00086.html#af21214b472d6e0729168daceec8a7b71">on_unsubscribe</a>(mosq, mosq-&gt;<a class="code" href="a00086.html#a3603e0befb1a5692e434de7757fec986">userdata</a>, mid);</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        mosq-&gt;<a class="code" href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">in_callback</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <a class="code" href="a00150.html#ac130da7532d3b537cbd31b46ea1112a3">pthread_mutex_unlock</a>(&amp;mosq-&gt;callback_mutex);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a>;</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div><div class="ttc" id="a00159_html_a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2"><div class="ttname"><a href="a00159.html#a8edcb6a39bbaf5d5895bf204b0f57da5a9933a6888ec02c72e08c6eda7b1ed5b2">MOSQ_ERR_SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00067">mosquitto.h:67</a></div></div>
+<div class="ttc" id="a00086_html_a3603e0befb1a5692e434de7757fec986"><div class="ttname"><a href="a00086.html#a3603e0befb1a5692e434de7757fec986">mosquitto::userdata</a></div><div class="ttdeci">void * userdata</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00237">mosquitto_internal.h:237</a></div></div>
+<div class="ttc" id="a00086_html_a6c7e54cb56bc80a99cc96f4005166dcd"><div class="ttname"><a href="a00086.html#a6c7e54cb56bc80a99cc96f4005166dcd">mosquitto::id</a></div><div class="ttdeci">char * id</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00163">mosquitto_internal.h:163</a></div></div>
+<div class="ttc" id="a00427_html_a64b6ff859f6938c4b3c1d92ba0abe053"><div class="ttname"><a href="a00427.html#a64b6ff859f6938c4b3c1d92ba0abe053">01-connect-anon-denied.rc</a></div><div class="ttdeci">int rc</div><div class="ttdef"><b>Definition:</b> <a href="a00211_source.html#l00013">01-connect-anon-denied.py:13</a></div></div>
+<div class="ttc" id="a00159_html_a9a0714eb912755e4dc621c1e902c0bcf"><div class="ttname"><a href="a00159.html#a9a0714eb912755e4dc621c1e902c0bcf">MOSQ_LOG_DEBUG</a></div><div class="ttdeci">#define MOSQ_LOG_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="a00159_source.html#l00058">mosquitto.h:58</a></div></div>
+<div class="ttc" id="a00150_html_a2726154dadd99f6ec33dcd12266d4811"><div class="ttname"><a href="a00150.html#a2726154dadd99f6ec33dcd12266d4811">pthread_mutex_lock</a></div><div class="ttdeci">#define pthread_mutex_lock(A)</div><div class="ttdef"><b>Definition:</b> <a href="a00150_source.html#l00010">dummypthread.h:10</a></div></div>
+<div class="ttc" id="a00086_html_af21214b472d6e0729168daceec8a7b71"><div class="ttname"><a href="a00086.html#af21214b472d6e0729168daceec8a7b71">mosquitto::on_unsubscribe</a></div><div class="ttdeci">void(* on_unsubscribe)(struct mosquitto *, void *userdata, int mid)</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00250">mosquitto_internal.h:250</a></div></div>
+<div class="ttc" id="a00162_html_a01f59932d591f15b0376fd1f24a437e8"><div class="ttname"><a href="a00162.html#a01f59932d591f15b0376fd1f24a437e8">_mosquitto_read_uint16</a></div><div class="ttdeci">int _mosquitto_read_uint16(struct _mosquitto_packet *packet, uint16_t *word)</div><div class="ttdef"><b>Definition:</b> <a href="a00162_source.html#l00731">net_mosq.c:731</a></div></div>
+<div class="ttc" id="a00086_html_a8230ee1e4ed2fbbd2739e32116bfbf8f"><div class="ttname"><a href="a00086.html#a8230ee1e4ed2fbbd2739e32116bfbf8f">mosquitto::in_callback</a></div><div class="ttdeci">bool in_callback</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00238">mosquitto_internal.h:238</a></div></div>
+<div class="ttc" id="a00150_html_ac130da7532d3b537cbd31b46ea1112a3"><div class="ttname"><a href="a00150.html#ac130da7532d3b537cbd31b46ea1112a3">pthread_mutex_unlock</a></div><div class="ttdeci">#define pthread_mutex_unlock(A)</div><div class="ttdef"><b>Definition:</b> <a href="a00150_source.html#l00011">dummypthread.h:11</a></div></div>
+<div class="ttc" id="a00443_html_a37759e081882db58436303e92962515d"><div class="ttname"><a href="a00443.html#a37759e081882db58436303e92962515d">02-subpub-qos0.mid</a></div><div class="ttdeci">int mid</div><div class="ttdef"><b>Definition:</b> <a href="a00222_source.html#l00014">02-subpub-qos0.py:14</a></div></div>
+<div class="ttc" id="a00151_html_ab88a2fffe8ac34ae60e449e2e6ec506a"><div class="ttname"><a href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a">_mosquitto_log_printf</a></div><div class="ttdeci">int _mosquitto_log_printf(struct mosquitto *mosq, int priority, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="a00151_source.html#l00025">logging_mosq.c:25</a></div></div>
+<div class="ttc" id="a00086_html_a369673718987016a39c5e8ea6fdb3b95"><div class="ttname"><a href="a00086.html#a369673718987016a39c5e8ea6fdb3b95">mosquitto::in_packet</a></div><div class="ttdeci">struct _mosquitto_packet in_packet</div><div class="ttdef"><b>Definition:</b> <a href="a00160_source.html#l00172">mosquitto_internal.h:172</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00169_a006c0821c402b954b3665cd28a99e833_cgraph.png" border="0" usemap="#a00169_a006c0821c402b954b3665cd28a99e833_cgraph" alt=""/></div>
+<map name="a00169_a006c0821c402b954b3665cd28a99e833_cgraph" id="a00169_a006c0821c402b954b3665cd28a99e833_cgraph">
+<area shape="rect" id="node2" href="a00151.html#ab88a2fffe8ac34ae60e449e2e6ec506a" title="_mosquitto_log_printf" alt="" coords="255,5,401,32"/>
+<area shape="rect" id="node3" href="a00162.html#a01f59932d591f15b0376fd1f24a437e8" title="_mosquitto_read_uint16" alt="" coords="248,56,408,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_2c12105386bcc5c3935feab96f296a41.html">Downloads</a></li><li class="navelem"><a class="el" href="dir_fc335ca7d1193ba7b396ec7f5696994c.html">mosquitto-1.4.14</a></li><li class="navelem"><a class="el" href="dir_8d20ae462adcbc455919e815d4150c65.html">lib</a></li><li class="navelem"><a class="el" href="a00169.html">read_handle_shared.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

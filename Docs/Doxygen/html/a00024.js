@@ -1,8 +1,7 @@
 var a00024 =
 [
-    [ "Vacuum", "a00024.html#a4fb79de03f603b993a5b7cd3e2c2bfda", null ],
-    [ "~Vacuum", "a00024.html#a4ee42dfa1bb599d67ee1584173f5a715", null ],
-    [ "setOnOff", "a00024.html#aea55938cbaba7800040d17f15d676275", null ],
-    [ "start", "a00024.html#a54ec5e56215e32d1c3c537ff4794915e", null ],
-    [ "stop", "a00024.html#ab2ec5d94d77af106451046e67aa78a62", null ]
+    [ "binary_writer", "a00024.html#a373289af95a946c19bb4a58a5df71a78", null ],
+    [ "write_cbor", "a00024.html#aa0ab8d27fd88a33a2f801413ac4c7fbc", null ],
+    [ "write_msgpack", "a00024.html#ae4e0852b64102ce4b07d99f08f828b7c", null ],
+    [ "write_ubjson", "a00024.html#a0f6c65053d859269f88eb4ebb0cd7060", null ]
 ];

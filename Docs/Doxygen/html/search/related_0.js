@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['operator_21_3d',['operator!=',['../a00016.html#a96c765b304a1ef8aad3e454b02d21de5',1,'Pixel']]],
-  ['operator_3d_3d',['operator==',['../a00016.html#aacd4ab1e37e7b6507b3580d2a3cd0fd9',1,'Pixel']]]
+  ['binary_5freader',['binary_reader',['../a00021.html#af0bb1c07bf0d88f8b86a235c92893a39',1,'nlohmann::basic_json']]],
+  ['binary_5fwriter',['binary_writer',['../a00021.html#a69d491bbda88ade6d3c7a2b11309e8bf',1,'nlohmann::basic_json']]],
+  ['iter_5fimpl',['iter_impl',['../a00021.html#a842e5c7ca096025c18b11e715d3401f4',1,'nlohmann::basic_json']]]
 ];

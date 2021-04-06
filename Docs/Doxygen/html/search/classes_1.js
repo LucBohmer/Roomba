@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['bestroombana',['BestRoombaNA',['../a00005.html',1,'']]]
+  ['adl_5fserializer',['adl_serializer',['../a00019.html',1,'nlohmann']]],
+  ['ai',['AI',['../a00020.html',1,'']]]
 ];
