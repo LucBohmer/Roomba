@@ -11,7 +11,7 @@ class BestRoombaNA{
     +~BestRoombaNA()
     +startApplication()
   .. Private ..
-    -MQTTClient mqttClient
+    -RoombaMQTTClient mqttClient
     -showAppInfo()
     -string mqttBroker()
     -int mqttBrokerPort()
@@ -126,8 +126,7 @@ class SerialCommand{
     -SerialLink sl
 }
 
-class CommandProcessor <<abstract>>{
-{abstract}
+class CommandProcessor{
 }
 
 class mosquittopp <<abstract>>{
